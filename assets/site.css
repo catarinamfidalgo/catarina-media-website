@@ -367,7 +367,9 @@
   @media (max-width: 640px) { .agency-grid { grid-template-columns: 1fr; gap: 16px; margin-top: 30px; } }
 
   /* The portfolio began almost flush against the dark hero; it needs room to
-     breathe where the two meet. */
-  .hero-reed + .container.section { padding-top: 84px; }
-  @media (max-width: 1024px) { .hero-reed + .container.section { padding-top: 68px; } }
-  @media (max-width: 640px)  { .hero-reed + .container.section { padding-top: 56px; } }
+     breathe where the two meet. Margin, not padding: .container's horizontal
+     padding is what holds the page off the screen edge, and a more specific
+     padding rule here overrode the phone breakpoints and flattened it to 0. */
+  .hero-reed + .container.section { margin-top: 24px; }
+  @media (max-width: 1024px) { .hero-reed + .container.section { margin-top: 14px; } }
+  @media (max-width: 640px)  { .hero-reed + .container.section { margin-top: 8px; } }
