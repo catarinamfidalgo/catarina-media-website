@@ -140,6 +140,14 @@ PAGE = """<!DOCTYPE html>
 {header}
 {main}
 {footer}
+  <script>
+  function toggleNav(b){{var n=document.getElementById('siteNav');
+    var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o);}}
+  function closeNav(){{var n=document.getElementById('siteNav'),b=document.querySelector('.nav-toggle');
+    if(n)n.classList.remove('open'); if(b)b.setAttribute('aria-expanded','false');}}
+  document.addEventListener('click',function(e){{if(!e.target.closest('header.site'))closeNav();}});
+  document.addEventListener('keydown',function(e){{if(e.key==='Escape')closeNav();}});
+  </script>
 </body>
 </html>
 """
@@ -148,6 +156,7 @@ def header(root):
     return f"""  <div class="container">
     <header class="site">
       <div class="brand"><a href="{root}">Catarina <i>Fidalgo</i></a></div>
+      <button class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="siteNav" onclick="toggleNav(this)"><span></span><span></span><span></span></button>
       <nav class="main" id="siteNav">
         <a href="{root}">Home</a>
         <a href="{root}#portfolio">Portfolio</a>
