@@ -55,6 +55,18 @@
         type ? (type + " — " + (name || "enquiry")) : ("Enquiry" + (name ? " — " + name : ""))) +
       "&body=" + encodeURIComponent(body);
 
+    // Tell Analytics an enquiry was sent, so ad spend can be judged against
+    // enquiries rather than clicks. This records that the visitor completed
+    // the form and their mail app was opened — not that the mail was sent,
+    // which nothing on a static site can know. Fires only where consent was
+    // given, since gtag does not exist otherwise.
+    if (typeof window.gtag === "function") {
+      window.gtag("event", "generate_lead", {
+        form_name: "contact",
+        video_type: type || "unspecified"
+      });
+    }
+
     window.location.href = href;
 
     if (status) {
