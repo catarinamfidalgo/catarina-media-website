@@ -27,6 +27,27 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../../assets/site.css?v=e30c1f2b">
+
+<!-- Google Analytics (GA4).
+     Paste the measurement ID from analytics.google.com — Admin → Data streams →
+     your web stream. It looks like G-XXXXXXXXXX. Until a real one is in place
+     this block does nothing at all: no script is fetched and no request is made,
+     so there is no cookie banner question and no page weight. One edit here
+     switches it on across every page and every language. -->
+<script>
+  (function () {
+    var GA_ID = "G-XXXXXXXXXX";
+    if (GA_ID.indexOf("XXXX") !== -1) return;   // not configured yet
+    var s = document.createElement("script");
+    s.async = true;
+    s.src = "https://www.googletagmanager.com/gtag/js?id=" + GA_ID;
+    document.head.appendChild(s);
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = function () { window.dataLayer.push(arguments); };
+    window.gtag("js", new Date());
+    window.gtag("config", GA_ID);
+  })();
+</script>
 </head>
 <body>
   <div class="lang-bar">
@@ -42,28 +63,28 @@
     <header class="site">
       <div class="brand-block">
         <div class="brand">Catarina <i>Fidalgo</i></div>
-        <span class="brand-tag">Montaje y posproducción</span>
+        <span class="brand-tag">Editing &amp; post-production</span>
       </div>
 
       <button class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="siteNav" onclick="toggleNav(this)"><span></span><span></span><span></span></button>
       <nav class="main" id="siteNav">
-        <a href="../../">Inicio</a>
-        <a href="../#portfolio">Portafolio</a>
-        <a href="../services/">Servicios</a>
-        <a href="../about/" class="active">Sobre mí</a>
-        <a href="../agencies/">Para Agencias</a>
+        <a href="../../">Home</a>
+        <a href="../#portfolio">Portfolio</a>
+        <a href="../services/">Services</a>
+        <a href="../about/" class="active">About</a>
+        <a href="../agencies/">For Agencies</a>
         <a href="../../blog/">Blog</a>
-        <a href="../contact/">Contacto</a>
+        <a href="../contact/">Contact</a>
       </nav>
     </header>
   </div>  <div class="container section" id="about">
     <div class="about-wrap">
       <div class="about-photo"><img src="../../assets/img/catarina-portrait.jpg" alt="Catarina Fidalgo"></div>
       <div class="about-text">
-        <h2 class="eyebrow">Sobre mí</h2>
-        <p class="copy">Soy montadora de vídeo, afincada en Portugal. Desde hace unos diez años trabajo con marcas, agencias y equipos creativos de todo el mundo.</p>
-        <p class="copy">La mayor parte de lo que hago son anuncios, películas de marca, YouTube, contenido para redes sociales y vídeo corporativo. Lo que más me importa es la historia que hay debajo del material, porque suele ser lo que decide si un montaje funciona.</p>
-        <p class="copy">Trabajo en inglés, portugués y español, algo que ayuda cuando una marca hace la misma pieza para más de un mercado.</p>
+        <h2 class="eyebrow">About</h2>
+        <p class="copy">I'm a video editor based in Portugal. For about ten years I've worked with brands, agencies, and creative teams around the world.</p>
+        <p class="copy">Most of what I do is commercials, brand films, YouTube, social content, and corporate video. I care most about the story underneath the footage, since that's usually what decides whether an edit lands.</p>
+        <p class="copy">I work in English, Portuguese, and Spanish, which helps when a brand is making the same thing for more than one market.</p>
       </div>
     </div>
   </div>
@@ -72,10 +93,10 @@
       <div class="foot-brand">
         <div class="foot-logo">Catarina <i>Fidalgo</i></div>
         <div class="foot-tag">Made in the edit</div>
-        <div class="copy">© <span id="yr">2026</span> Catarina Fidalgo · Todos los derechos reservados</div>
+        <div class="copy">© <span id="yr">2026</span> Catarina Fidalgo · All rights reserved</div>
       </div>
       <div class="foot-cta">
-        <a class="btn btn--ghost-light" href="#contact">Empezar un proyecto</a>
+        <a class="btn btn--ghost-light" href="#contact">Start a project</a>
       </div>
     </div>
   </footer>
@@ -87,7 +108,7 @@
       <div class="modal-media">
         <video id="modalVideo" muted controls autoplay loop playsinline></video>
         <iframe id="modalEmbed" title="Project video" allow="accelerometer; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe>
-        <div class="modal-media-empty" id="modalMediaEmpty"><span>Vídeo próximamente</span></div>
+        <div class="modal-media-empty" id="modalMediaEmpty"><span>Video coming soon</span></div>
         <div class="modal-counter" id="modalCounter"></div>
       </div>
       <div class="modal-thumbs" id="modalThumbs"></div>
@@ -96,8 +117,8 @@
         <div class="modal-title" id="modalTitle"></div>
         <div class="modal-media-caption" id="modalMediaCaption"></div>
         <div class="modal-desc" id="modalDesc"></div>
-        <div class="modal-meta" id="modalTasksRow"><span class="modal-meta-label">Tareas</span><span id="modalTasks"></span></div>
-        <div class="modal-meta" id="modalIndustryRow"><span class="modal-meta-label">Sector</span><span class="modal-tags" id="modalIndustry"></span></div>
+        <div class="modal-meta" id="modalTasksRow"><span class="modal-meta-label">Tasks</span><span id="modalTasks"></span></div>
+        <div class="modal-meta" id="modalIndustryRow"><span class="modal-meta-label">Industry</span><span class="modal-tags" id="modalIndustry"></span></div>
       </div>
     </div>
   </div>

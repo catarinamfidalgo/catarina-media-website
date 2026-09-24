@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://catarina.media/</loc>
+    <lastmod>2026-09-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://catarina.media/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://catarina.media/pt/"/>
+    <xhtml:link rel="alternate" hreflang="es-ES" href="https://catarina.media/es/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://catarina.media/"/>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://catarina.media/pt/</loc>
+    <lastmod>2026-09-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://catarina.media/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://catarina.media/pt/"/>
+    <xhtml:link rel="alternate" hreflang="es-ES" href="https://catarina.media/es/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://catarina.media/"/>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://catarina.media/es/</loc>
+    <lastmod>2026-09-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://catarina.media/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://catarina.media/pt/"/>
+    <xhtml:link rel="alternate" hreflang="es-ES" href="https://catarina.media/es/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://catarina.media/"/>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://catarina.media/services/</loc>
+    <lastmod>2026-09-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://catarina.media/services/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://catarina.media/pt/services/"/>
+    <xhtml:link rel="alternate" hreflang="es-ES" href="https://catarina.media/es/services/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://catarina.media/services/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://catarina.media/pt/services/</loc>
+    <lastmod>2026-09-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://catarina.media/services/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://catarina.media/pt/services/"/>
+    <xhtml:link rel="alternate" hreflang="es-ES" href="https://catarina.media/es/services/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://catarina.media/services/"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://catarina.media/es/services/</loc>
+    <lastmod>2026-09-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://catarina.media/services/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://catarina.media/pt/services/"/>
+    <xhtml:link rel="alternate" hreflang="es-ES" href="https://catarina.media/es/services/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://catarina.media/services/"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://catarina.media/about/</loc>
+    <lastmod>2026-09-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://catarina.media/about/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://catarina.media/pt/about/"/>
+    <xhtml:link rel="alternate" hreflang="es-ES" href="https://catarina.media/es/about/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://catarina.media/about/"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://catarina.media/pt/about/</loc>
+    <lastmod>2026-09-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://catarina.media/about/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://catarina.media/pt/about/"/>
+    <xhtml:link rel="alternate" hreflang="es-ES" href="https://catarina.media/es/about/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://catarina.media/about/"/>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://catarina.media/es/about/</loc>
+    <lastmod>2026-09-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://catarina.media/about/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://catarina.media/pt/about/"/>
+    <xhtml:link rel="alternate" hreflang="es-ES" href="https://catarina.media/es/about/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://catarina.media/about/"/>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://catarina.media/agencies/</loc>
+    <lastmod>2026-09-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://catarina.media/agencies/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://catarina.media/pt/agencies/"/>
+    <xhtml:link rel="alternate" hreflang="es-ES" href="https://catarina.media/es/agencies/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://catarina.media/agencies/"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://catarina.media/pt/agencies/</loc>
+    <lastmod>2026-09-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://catarina.media/agencies/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://catarina.media/pt/agencies/"/>
+    <xhtml:link rel="alternate" hreflang="es-ES" href="https://catarina.media/es/agencies/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://catarina.media/agencies/"/>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://catarina.media/es/agencies/</loc>
+    <lastmod>2026-09-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://catarina.media/agencies/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://catarina.media/pt/agencies/"/>
+    <xhtml:link rel="alternate" hreflang="es-ES" href="https://catarina.media/es/agencies/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://catarina.media/agencies/"/>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://catarina.media/contact/</loc>
+    <lastmod>2026-09-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://catarina.media/contact/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://catarina.media/pt/contact/"/>
+    <xhtml:link rel="alternate" hreflang="es-ES" href="https://catarina.media/es/contact/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://catarina.media/contact/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://catarina.media/pt/contact/</loc>
+    <lastmod>2026-09-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://catarina.media/contact/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://catarina.media/pt/contact/"/>
+    <xhtml:link rel="alternate" hreflang="es-ES" href="https://catarina.media/es/contact/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://catarina.media/contact/"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://catarina.media/es/contact/</loc>
+    <lastmod>2026-09-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://catarina.media/contact/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://catarina.media/pt/contact/"/>
+    <xhtml:link rel="alternate" hreflang="es-ES" href="https://catarina.media/es/contact/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://catarina.media/contact/"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://catarina.media/blog/ai-in-the-edit/</loc>
+    <lastmod>2026-09-24</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://catarina.media/blog/</loc>
+    <lastmod>2026-09-24</lastmod>
+    <priority>0.6</priority>
+  </url>
+</urlset>

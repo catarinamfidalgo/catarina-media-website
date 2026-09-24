@@ -15,6 +15,27 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../../assets/site.css?v=e30c1f2b">
+
+<!-- Google Analytics (GA4).
+     Paste the measurement ID from analytics.google.com — Admin → Data streams →
+     your web stream. It looks like G-XXXXXXXXXX. Until a real one is in place
+     this block does nothing at all: no script is fetched and no request is made,
+     so there is no cookie banner question and no page weight. One edit here
+     switches it on across every page and every language. -->
+<script>
+  (function () {
+    var GA_ID = "G-XXXXXXXXXX";
+    if (GA_ID.indexOf("XXXX") !== -1) return;   // not configured yet
+    var s = document.createElement("script");
+    s.async = true;
+    s.src = "https://www.googletagmanager.com/gtag/js?id=" + GA_ID;
+    document.head.appendChild(s);
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = function () { window.dataLayer.push(arguments); };
+    window.gtag("js", new Date());
+    window.gtag("config", GA_ID);
+  })();
+</script>
 </head>
 <body>
   <div class="container">
