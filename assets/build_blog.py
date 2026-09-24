@@ -47,9 +47,9 @@ POSTS = [
 feed do LinkedIn, como reel vertical e, às vezes, em seis segundos antes de um vídeo no YouTube.
 São filmes diferentes. O erro está em encomendá-los como trabalhos diferentes.</p>
 
-<p>Encomendados um de cada vez — o filme em março, os reels em junho, qualquer coisa para uma
-feira em setembro — deixam de parecer uma campanha. Parecem três campanhas feitas por três
-pessoas, que normalmente é exatamente o que são.</p>
+<p>Encomendados um de cada vez — primeiro o filme, os reels uns meses depois, qualquer coisa para
+uma feira mais para a frente — deixam de parecer uma campanha. Parecem três campanhas feitas por
+três pessoas, que normalmente é exatamente o que são.</p>
 
 <p>Convém dizer onde é que eu entro nisto: não produzo o material, faço a montagem e a
 pós-produção. Tudo o que se segue vem de ser a pessoa a quem o material chega, muitas vezes meses
@@ -157,9 +157,9 @@ digo-lhe o que pedir, e o que me faz falta para construir a campanha inteira a p
 homepage, in a LinkedIn feed, as a vertical reel, and sometimes as six seconds before a YouTube
 video. Those are different films. The mistake is commissioning them as different jobs.</p>
 
-<p>Ordered one at a time — the film in March, the reels in June, something for a trade show in
-September — they stop looking like one campaign. They look like three campaigns by three people,
-which is usually exactly what they are.</p>
+<p>Ordered one at a time — the film first, the reels a few months later, something for a trade
+show after that — they stop looking like one campaign. They look like three campaigns by three
+people, which is usually exactly what they are.</p>
 
 <p>Where I sit in this: I don't produce the material, I edit it. Everything here comes from being
 the person it arrives to, often months after it was made, with a brief to make it match something
