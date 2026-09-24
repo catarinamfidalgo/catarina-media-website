@@ -137,7 +137,7 @@ PAGE = """<!DOCTYPE html>
 <meta property="og:title" content="{title}">
 <meta property="og:description" content="{excerpt}">
 <meta property="og:url" content="{canonical}">
-<link rel="stylesheet" href="{root}assets/site.css?v=2f8982e2">
+<link rel="stylesheet" href="{root}assets/site.css?v=c670fefa">
 
 <!-- Google Analytics (GA4).
      Paste the measurement ID from analytics.google.com — Admin → Data streams →
