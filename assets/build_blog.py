@@ -137,10 +137,7 @@ PAGE = """<!DOCTYPE html>
 <meta property="og:title" content="{title}">
 <meta property="og:description" content="{excerpt}">
 <meta property="og:url" content="{canonical}">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="{root}assets/site.css?v=e30c1f2b">
+<link rel="stylesheet" href="{root}assets/site.css?v=2f8982e2">
 
 <!-- Google Analytics (GA4).
      Paste the measurement ID from analytics.google.com — Admin → Data streams →
