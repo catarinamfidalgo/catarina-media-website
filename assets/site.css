@@ -23,6 +23,18 @@
   header.site { display: flex; align-items: baseline; justify-content: space-between; gap: 20px; padding: 30px 0 24px; }
   .brand { font-weight: 800; font-size: 1.25rem; letter-spacing: .01em; text-transform: uppercase; font-family: 'Hanken Grotesk', sans-serif; line-height: 1.05; }
   .brand i { font-style: normal; color: var(--accent); }
+  /* The tagline sits beside the name on a shared baseline, divided by a
+     hairline. Stacked, the two had to be optically nudged into line because
+     every letter carries its own side bearing; side by side that problem
+     does not arise, and the masthead stays one object rather than two. */
+  .brand-block { display: flex; align-items: baseline; gap: 14px; min-width: 0; }
+  .brand-tag { position: relative; padding-left: 15px; white-space: nowrap;
+    font-size: .64rem; font-weight: 600; letter-spacing: .14em;
+    text-transform: uppercase; color: var(--muted); }
+  .brand-tag::before { content: ""; position: absolute; left: 0; bottom: .05em;
+    width: 1px; height: 1.05em; background: var(--line); }
+  /* Below this the name and the menu button need the whole row. */
+  @media (max-width: 860px) { .brand-tag { display: none; } }
   header.site { position: relative; align-items: center; }
   /* The pages live behind the button rather than all on show. The panel is
      taken out of flow so opening it does not push the page around. */
