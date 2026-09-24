@@ -121,7 +121,18 @@ def build_page(lang, path, slug):
     s = head + script
 
     # 3. metadata
-    s = re.sub(r"<title>[^<]*</title>", "<title>%s</title>" % t.META["title"], s)
+    # Each page needs its own title. Using the site title everywhere left the
+    # five pt/ pages — and the five es/ — sharing one, which reads to a search
+    # engine as near-duplicates of each other rather than distinct pages.
+    PAGE_NAME = {"services": "Services", "about": "About",
+                 "agencies": "For Agencies", "contact": "Contact",
+                 "privacy": "Privacy"}
+    if slug in PAGE_NAME:
+        name = t.UI.get(PAGE_NAME[slug], PAGE_NAME[slug])
+        title = "Catarina Fidalgo — %s" % name
+    else:
+        title = t.META["title"]
+    s = re.sub(r"<title>[^<]*</title>", "<title>%s</title>" % title, s)
     s = re.sub(r'(name="description" content=")[^"]*(")', r"\g<1>%s\g<2>" % t.META["description"], s)
     s = re.sub(r'(og:description" content=")[^"]*(")', r"\g<1>%s\g<2>" % t.META["description"], s)
     # each language is its own page, not a duplicate of the English one
