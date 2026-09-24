@@ -34,13 +34,23 @@
      the centre of the letters. Cap height is .697em in this face, so the
      tagline rises by half the difference — .332em of its own size. Both
      are set in rem at a fixed ratio, so this holds at every width. */
-  .brand-tag { position: relative; padding-left: 15px; white-space: nowrap;
-    font-size: .64rem; font-weight: 600; letter-spacing: .14em;
+  /* The tagline is sized so it measures exactly as wide as the name — 190px
+     — which is what makes the pair sit as one object. Each language needs
+     its own size to get there, and the lift and the rule follow from it:
+        lift = capHeight x (nameSize/tagSize - 1) / 2
+        rule = nameCapHeight expressed in em of the tagline
+     Recompute all three together if the wording or the name ever changes. */
+  .brand-tag { --tag-size: .684rem; --tag-lift: .2886em; --tag-rule: 1.274em;
+    position: relative; padding-left: 15px; white-space: nowrap;
+    font-size: var(--tag-size); font-weight: 600; letter-spacing: .14em;
     text-transform: uppercase; color: var(--muted);
-    transform: translateY(-.332em); }
-  /* The rule spans the name's cap height, centred on that same centre. */
-  .brand-tag::before { content: ""; position: absolute; left: 0; bottom: -.332em;
-    width: 1px; height: 1.36em; background: var(--line); }
+    transform: translateY(calc(-1 * var(--tag-lift))); }
+  html[lang^="pt"] .brand-tag { --tag-size: .787rem; --tag-lift: .205em;  --tag-rule: 1.107em; }
+  html[lang^="es"] .brand-tag { --tag-size: .695rem; --tag-lift: .278em;  --tag-rule: 1.254em; }
+  /* The rule spans the name's cap height, centred on that shared centre. */
+  .brand-tag::before { content: ""; position: absolute; left: 0;
+    bottom: calc(-1 * var(--tag-lift));
+    width: 1px; height: var(--tag-rule); background: var(--line); }
   /* Below this the name and the menu button need the whole row. */
   @media (max-width: 860px) { .brand-tag { display: none; } }
   header.site { position: relative; align-items: center; }

@@ -3,7 +3,7 @@
 
 # Interface chrome
 UI = {
-    "Video editing &amp; post-production": "Montagem e pós-produção de vídeo",
+    "Editing &amp; post-production": "Edição e pós-produção",
     "Home": "Início",
     "Portfolio": "Portfólio",
     "About": "Sobre",
@@ -40,7 +40,7 @@ UI = {
 
 # Service list
 SERVICES = {
-    "Video Editing": "Montagem de Vídeo",
+    "Video Editing": "Edição de Vídeo",
     "I build the story out of raw footage and find the pace that holds it together.":
         "Construo a história a partir do material bruto e encontro o ritmo que a sustenta.",
     "Color Grading": "Correção de Cor",
@@ -117,7 +117,7 @@ TASKS = {
     "Color Correction": "Correção de cor",
     "Color Grading": "Tratamento de cor",
     "Color Grading and Correction": "Tratamento e correção de cor",
-    "Editing": "Montagem",
+    "Editing": "Edição",
     "Keying": "Recorte de croma",
     "Licensed Music": "Música licenciada",
     "Licensed Stock Footage": "Imagens de arquivo licenciadas",

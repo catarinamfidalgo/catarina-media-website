@@ -134,7 +134,7 @@ PAGE = """<!DOCTYPE html>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="{root}assets/site.css?v=00a93426">
+<link rel="stylesheet" href="{root}assets/site.css?v=d754b307">
 </head>
 <body>
 {header}
@@ -157,7 +157,7 @@ def header(root):
     <header class="site">
       <div class="brand-block">
         <div class="brand"><a href="{root}">Catarina <i>Fidalgo</i></a></div>
-        <span class="brand-tag">Video editing &amp; post-production</span>
+        <span class="brand-tag">Editing &amp; post-production</span>
       </div>
       <button class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="siteNav" onclick="toggleNav(this)"><span></span><span></span><span></span></button>
       <nav class="main" id="siteNav">
