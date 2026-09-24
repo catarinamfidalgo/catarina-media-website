@@ -78,8 +78,8 @@ comum. Quando as versões curtas são cortadas a partir da longa, a peça de qui
 noventa sem o meio. Quem viu uma viu todas. Pagaram-se quatro peças e publicou-se uma ideia.</p>
 
 <p>Coerentes no aspeto, distintas no conteúdo. Uma abre no CEO. Outra mostra o produto a ser
-usado, sem uma única palavra. Outra são trinta segundos de processo, porque o processo funciona
-sempre e a maioria das marcas tem pudor em mostrá-lo. A mesma família, funções diferentes.</p>
+usado, sem uma única palavra. Outra são trinta segundos de processo. A mesma família, funções
+diferentes.</p>
 
 <h3>Onde é que as encomendas separadas se desviam</h3>
 
@@ -179,9 +179,8 @@ as common. When the short versions are cut down from the long one, the fifteen-s
 the ninety-second piece with the middle removed. Anyone who has seen one has seen them all. You
 paid for four pieces and published one idea.</p>
 
-<p>Cohesive in look, distinct in content. One opens on the CEO. One is the product being
-used, no words at all. One is thirty seconds of process, because process performs and most brands
-are too polite to show it. Same family, different jobs.</p>
+<p>Cohesive in look, distinct in content. One opens on the CEO. One is the product being used,
+no words at all. One is thirty seconds of process. Same family, different jobs.</p>
 
 <h3>Where separate commissions drift</h3>
 
