@@ -28,11 +28,19 @@
      every letter carries its own side bearing; side by side that problem
      does not arise, and the masthead stays one object rather than two. */
   .brand-block { display: flex; align-items: baseline; gap: 14px; min-width: 0; }
+  /* A shared baseline is the wrong alignment for these two: the name is
+     nearly twice the size, so on a common baseline its mass sits 3.4px
+     high and the tagline reads as having slipped. What should line up is
+     the centre of the letters. Cap height is .697em in this face, so the
+     tagline rises by half the difference — .332em of its own size. Both
+     are set in rem at a fixed ratio, so this holds at every width. */
   .brand-tag { position: relative; padding-left: 15px; white-space: nowrap;
     font-size: .64rem; font-weight: 600; letter-spacing: .14em;
-    text-transform: uppercase; color: var(--muted); }
-  .brand-tag::before { content: ""; position: absolute; left: 0; bottom: .05em;
-    width: 1px; height: 1.05em; background: var(--line); }
+    text-transform: uppercase; color: var(--muted);
+    transform: translateY(-.332em); }
+  /* The rule spans the name's cap height, centred on that same centre. */
+  .brand-tag::before { content: ""; position: absolute; left: 0; bottom: -.332em;
+    width: 1px; height: 1.36em; background: var(--line); }
   /* Below this the name and the menu button need the whole row. */
   @media (max-width: 860px) { .brand-tag { display: none; } }
   header.site { position: relative; align-items: center; }
