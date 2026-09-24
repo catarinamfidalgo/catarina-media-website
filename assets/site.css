@@ -40,15 +40,20 @@
         lift = capHeight x (nameSize/tagSize - 1) / 2
         rule = nameCapHeight expressed in em of the tagline
      Recompute all three together if the wording or the name ever changes. */
-  /* Set at the name's own size. Equal sizes mean equal cap heights, so the
-     baseline the two already share IS the cap centre — no lift is needed
-     and no per-language sizing either. Weight and colour carry what size
-     used to: 600 against 800, muted against ink. */
-  .brand-tag { --tag-size: 1.25rem; --tag-lift: 0em; --tag-rule: .697em;
+  /* Horizontal: each language is sized so the tagline measures the name's
+     190px exactly. Vertical: --tag-lift raises it from the shared baseline
+     to the shared cap centre, and --tag-nudge is the optical correction on
+     top of that — true centre reads a touch high for small caps beside
+     large ones, so it sits fractionally below. Raise the nudge to drop it
+     further; it is the only number to touch. */
+  .brand-tag { --tag-size: .684rem; --tag-lift: .2884em; --tag-rule: 1.274em;
+    --tag-nudge: .5px;
     position: relative; padding-left: 15px; white-space: nowrap;
     font-size: var(--tag-size); font-weight: 600; letter-spacing: .14em;
     text-transform: uppercase; color: var(--muted);
-    transform: translateY(calc(-1 * var(--tag-lift))); }
+    transform: translateY(calc(var(--tag-nudge) - var(--tag-lift))); }
+  html[lang^="pt"] .brand-tag { --tag-size: .787rem; --tag-lift: .205em;  --tag-rule: 1.107em; }
+  html[lang^="es"] .brand-tag { --tag-size: .695rem; --tag-lift: .278em;  --tag-rule: 1.254em; }
   /* The rule spans the name's cap height, centred on that shared centre. */
   .brand-tag::before { content: ""; position: absolute; left: 0;
     bottom: calc(-1 * var(--tag-lift));
