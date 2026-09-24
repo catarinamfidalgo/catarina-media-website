@@ -115,7 +115,13 @@
   @media (prefers-reduced-motion: reduce) { .hero-reed-media::before { animation: none; } }
 
   .hero-reed-inner { position: relative; z-index: 2; width: 100%; max-width: 1200px; margin: 0 auto; padding: 0 40px 9vh; }
-  .hero-title { font-size: clamp(3rem,9.5vw,7.4rem); font-weight: 900; line-height: .9; letter-spacing: -.025em; text-transform: uppercase; margin: 0 0 30px; color: #fff; }
+  /* What the site is for, said plainly above the headline — the same
+     eyebrow idiom the Portfolio and Services sections already use. */
+  .hero-role { margin: 0 0 16px; font-size: .72rem; font-weight: 700; letter-spacing: .2em;
+    text-transform: uppercase; color: var(--lav-bright); }
+  .hero-title { font-size: clamp(3rem,9.5vw,7.4rem); font-weight: 900; line-height: .9; letter-spacing: -.025em; text-transform: uppercase; margin: 0 0 20px; color: #fff; }
+  .hero-sub { margin: 0 0 32px; max-width: 46ch; font-weight: 500;
+    font-size: clamp(1rem,1.4vw,1.15rem); line-height: 1.5; color: rgba(255,255,255,.84); }
   .hero-title span { color: var(--lav-bright); }
   .hero-reed .btn-row { justify-content: flex-start; }
   .btn--ghost-light { background: transparent; color: #fff; border-color: rgba(255,255,255,.55); }
@@ -328,7 +334,9 @@
 
   @media (max-width: 640px) {
     /* the hero line has to fit "IN THE EDIT" on one line at 390pt */
-    .hero-title { font-size: clamp(2.6rem, 12vw, 7.4rem); }
+    .hero-title { font-size: clamp(2.6rem, 12vw, 7.4rem); margin-bottom: 16px; }
+    .hero-role { font-size: .64rem; letter-spacing: .16em; margin-bottom: 12px; }
+    .hero-sub { font-size: .95rem; margin-bottom: 26px; }
     .hero-reed-inner { padding: 0 20px 10vh; }
 
     .project-card .title { font-size: 1.12rem; }
