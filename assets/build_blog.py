@@ -127,6 +127,11 @@ PAGE = """<!DOCTYPE html>
 <meta name="description" content="{excerpt}">
 <link rel="canonical" href="{canonical}">
 <link rel="icon" href="{root}assets/favicon.svg" type="image/svg+xml">
+<!-- Raster sizes too: Google's favicon crawler prefers them, and iOS
+     uses the touch icon for a home-screen bookmark. -->
+<link rel="icon" href="{root}assets/favicon-96.png" type="image/png" sizes="96x96">
+<link rel="icon" href="{root}assets/favicon-48.png" type="image/png" sizes="48x48">
+<link rel="apple-touch-icon" href="{root}assets/apple-touch-icon.png">
 <meta property="og:type" content="article">
 <meta property="og:title" content="{title}">
 <meta property="og:description" content="{excerpt}">
