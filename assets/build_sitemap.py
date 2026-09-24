@@ -17,12 +17,13 @@ SITE = "https://catarina.media"
 ROOT = pathlib.Path(".")
 
 # Pages that exist in all three languages, keyed by the English path.
-TRANSLATED = ["", "services/", "about/", "agencies/", "contact/"]
+TRANSLATED = ["", "services/", "about/", "agencies/", "contact/", "privacy/"]
 LANGS = {"en": "", "pt": "pt/", "es": "es/"}
 
 # Rough sense of how often each changes, and how much it matters.
 PRIORITY = {"": "1.0", "contact/": "0.8", "services/": "0.8",
-            "agencies/": "0.7", "about/": "0.7", "blog/": "0.6"}
+            "agencies/": "0.7", "about/": "0.7", "blog/": "0.6",
+            "privacy/": "0.2"}
 
 
 def lastmod(path):

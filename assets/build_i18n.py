@@ -50,7 +50,7 @@ def translate_projects(block, t):
     return "\n".join(out)
 
 
-PAGES = ["", "services", "about", "agencies", "contact"]
+PAGES = ["", "services", "about", "agencies", "contact", "privacy"]
 
 
 def build(lang, path):

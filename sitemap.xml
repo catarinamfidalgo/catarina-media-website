@@ -137,6 +137,33 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://catarina.media/privacy/</loc>
+    <lastmod>2026-09-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://catarina.media/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://catarina.media/pt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es-ES" href="https://catarina.media/es/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://catarina.media/privacy/"/>
+    <priority>0.2</priority>
+  </url>
+  <url>
+    <loc>https://catarina.media/pt/privacy/</loc>
+    <lastmod>2026-09-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://catarina.media/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://catarina.media/pt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es-ES" href="https://catarina.media/es/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://catarina.media/privacy/"/>
+    <priority>0.1</priority>
+  </url>
+  <url>
+    <loc>https://catarina.media/es/privacy/</loc>
+    <lastmod>2026-09-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://catarina.media/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://catarina.media/pt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es-ES" href="https://catarina.media/es/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://catarina.media/privacy/"/>
+    <priority>0.1</priority>
+  </url>
+  <url>
     <loc>https://catarina.media/blog/ai-in-the-edit/</loc>
     <lastmod>2026-09-24</lastmod>
     <priority>0.5</priority>

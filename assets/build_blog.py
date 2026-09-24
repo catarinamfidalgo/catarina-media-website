@@ -137,26 +137,59 @@ PAGE = """<!DOCTYPE html>
 <meta property="og:title" content="{title}">
 <meta property="og:description" content="{excerpt}">
 <meta property="og:url" content="{canonical}">
-<link rel="stylesheet" href="{root}assets/site.css?v=822078fc">
+<link rel="stylesheet" href="{root}assets/site.css?v=b8e000f2">
 
-<!-- Google Analytics (GA4).
-     Paste the measurement ID from analytics.google.com — Admin → Data streams →
-     your web stream. It looks like G-XXXXXXXXXX. Until a real one is in place
-     this block does nothing at all: no script is fetched and no request is made,
-     so there is no cookie banner question and no page weight. One edit here
-     switches it on across every page and every language. -->
+<!-- Google Analytics (GA4), behind consent.
+     Analytics sets a cookie, so under EU law it may not run until the visitor
+     agrees. Nothing here loads until consent is stored: no script is fetched,
+     no cookie is written, no request reaches Google. Declining is remembered
+     too, so the bar is not shown again.
+     The choice lives in localStorage, not a cookie — storing a consent record
+     in a cookie you have not yet been allowed to set is its own problem. -->
 <script>
   (function () {{
     var GA_ID = "G-DS7JJYXNM5";
-    if (!/^G-[A-Z0-9]+$/.test(GA_ID)) return;   // not configured
-    var s = document.createElement("script");
-    s.async = true;
-    s.src = "https://www.googletagmanager.com/gtag/js?id=" + GA_ID;
-    document.head.appendChild(s);
-    window.dataLayer = window.dataLayer || [];
-    window.gtag = function () {{ window.dataLayer.push(arguments); }};
-    window.gtag("js", new Date());
-    window.gtag("config", GA_ID);
+    var KEY = "cm-consent";
+
+    function load() {{
+      if (!/^G-[A-Z0-9]+$/.test(GA_ID) || window.__gaLoaded) return;
+      window.__gaLoaded = true;
+      var s = document.createElement("script");
+      s.async = true;
+      s.src = "https://www.googletagmanager.com/gtag/js?id=" + GA_ID;
+      document.head.appendChild(s);
+      window.dataLayer = window.dataLayer || [];
+      window.gtag = function () {{ window.dataLayer.push(arguments); }};
+      window.gtag("js", new Date());
+      window.gtag("config", GA_ID, {{ anonymize_ip: true }});
+    }}
+
+    function stored() {{
+      try {{ return localStorage.getItem(KEY); }} catch (e) {{ return null; }}
+    }}
+
+    // Exposed so the bar and the privacy page can call them.
+    window.setConsent = function (yes) {{
+      try {{ localStorage.setItem(KEY, yes ? "granted" : "denied"); }} catch (e) {{}}
+      var bar = document.getElementById("cookieBar");
+      if (bar) bar.hidden = true;
+      if (yes) load();
+    }};
+
+    window.resetConsent = function () {{
+      try {{ localStorage.removeItem(KEY); }} catch (e) {{}}
+      var bar = document.getElementById("cookieBar");
+      if (bar) bar.hidden = false;
+    }};
+
+    if (stored() === "granted") load();
+
+    // Show the bar only when no choice has been made yet.
+    document.addEventListener("DOMContentLoaded", function () {{
+      if (stored()) return;
+      var bar = document.getElementById("cookieBar");
+      if (bar) bar.hidden = false;
+    }});
   }})();
 </script>
 </head>

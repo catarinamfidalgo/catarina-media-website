@@ -29,26 +29,59 @@
 <meta name="twitter:description" content="Video editor and post-production, based in Portugal. Commercials, brand films, YouTube, social and corporate video for brands and agencies.">
 <meta name="twitter:image" content="https://catarina.media/assets/img/catarina-portrait.jpg">
 
-<link rel="stylesheet" href="assets/site.css?v=822078fc">
+<link rel="stylesheet" href="assets/site.css?v=b8e000f2">
 
-<!-- Google Analytics (GA4).
-     Paste the measurement ID from analytics.google.com — Admin → Data streams →
-     your web stream. It looks like G-XXXXXXXXXX. Until a real one is in place
-     this block does nothing at all: no script is fetched and no request is made,
-     so there is no cookie banner question and no page weight. One edit here
-     switches it on across every page and every language. -->
+<!-- Google Analytics (GA4), behind consent.
+     Analytics sets a cookie, so under EU law it may not run until the visitor
+     agrees. Nothing here loads until consent is stored: no script is fetched,
+     no cookie is written, no request reaches Google. Declining is remembered
+     too, so the bar is not shown again.
+     The choice lives in localStorage, not a cookie — storing a consent record
+     in a cookie you have not yet been allowed to set is its own problem. -->
 <script>
   (function () {
     var GA_ID = "G-DS7JJYXNM5";
-    if (!/^G-[A-Z0-9]+$/.test(GA_ID)) return;   // not configured
-    var s = document.createElement("script");
-    s.async = true;
-    s.src = "https://www.googletagmanager.com/gtag/js?id=" + GA_ID;
-    document.head.appendChild(s);
-    window.dataLayer = window.dataLayer || [];
-    window.gtag = function () { window.dataLayer.push(arguments); };
-    window.gtag("js", new Date());
-    window.gtag("config", GA_ID);
+    var KEY = "cm-consent";
+
+    function load() {
+      if (!/^G-[A-Z0-9]+$/.test(GA_ID) || window.__gaLoaded) return;
+      window.__gaLoaded = true;
+      var s = document.createElement("script");
+      s.async = true;
+      s.src = "https://www.googletagmanager.com/gtag/js?id=" + GA_ID;
+      document.head.appendChild(s);
+      window.dataLayer = window.dataLayer || [];
+      window.gtag = function () { window.dataLayer.push(arguments); };
+      window.gtag("js", new Date());
+      window.gtag("config", GA_ID, { anonymize_ip: true });
+    }
+
+    function stored() {
+      try { return localStorage.getItem(KEY); } catch (e) { return null; }
+    }
+
+    // Exposed so the bar and the privacy page can call them.
+    window.setConsent = function (yes) {
+      try { localStorage.setItem(KEY, yes ? "granted" : "denied"); } catch (e) {}
+      var bar = document.getElementById("cookieBar");
+      if (bar) bar.hidden = true;
+      if (yes) load();
+    };
+
+    window.resetConsent = function () {
+      try { localStorage.removeItem(KEY); } catch (e) {}
+      var bar = document.getElementById("cookieBar");
+      if (bar) bar.hidden = false;
+    };
+
+    if (stored() === "granted") load();
+
+    // Show the bar only when no choice has been made yet.
+    document.addEventListener("DOMContentLoaded", function () {
+      if (stored()) return;
+      var bar = document.getElementById("cookieBar");
+      if (bar) bar.hidden = false;
+    });
   })();
 </script>
 
@@ -111,6 +144,18 @@
       </div>
     </div>
   </footer>
+
+
+  <div class="cookie-bar" id="cookieBar" role="dialog" aria-live="polite"
+       aria-label="Cookie choice" hidden>
+    <div class="cookie-inner">
+      <p class="cookie-text">This site can use Google Analytics to count visits. It sets a cookie, so it only runs if you agree. <a href="privacy/">What that means</a>.</p>
+      <div class="cookie-actions">
+        <button type="button" class="btn btn--ghost cookie-no" onclick="setConsent(false)">Decline</button>
+        <button type="button" class="btn cookie-yes" onclick="setConsent(true)">Accept</button>
+      </div>
+    </div>
+  </div>
   <div class="modal-overlay" id="modalOverlay" onclick="if(event.target===this) closeModal()">
     <div class="modal-box">
       <button class="modal-close" onclick="closeModal()">&times;</button>

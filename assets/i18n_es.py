@@ -3,6 +3,40 @@
 montaje for editing, etalonaje for grading, vosotros when addressing agencies."""
 
 UI = {
+    'Privacy':
+        'Privacidad',
+    'What this site <i>collects.</i>':
+        'Lo que este sitio <i>recoge.</i>',
+    'Short version: almost nothing, and nothing without asking.':
+        'Versión corta: casi nada, y nada sin preguntar.',
+    'Visitor numbers':
+        'Número de visitas',
+    'If you agree to it, this site uses Google Analytics to count visits — which pages get read, roughly where people are, and whether they came from a search. It sets a cookie to tell one visit from another. If you decline, Analytics is never loaded at all, and no cookie is set. You can change your mind at any time using the button below.':
+        'Si estás de acuerdo, este sitio usa Google Analytics para contar visitas — qué páginas se leen, aproximadamente desde dónde llega la gente, y si vinieron de una búsqueda. Instala una cookie para distinguir una visita de otra. Si lo rechazas, Analytics no llega a cargarse y no se instala ninguna cookie. Puedes cambiar de opinión cuando quieras con el botón de abajo.',
+    'The contact form':
+        'El formulario de contacto',
+    'The form does not send anything to this site. It opens your own email app with the details filled in, and nothing is sent until you press send yourself. Nothing you type is stored here, and there is no database.':
+        'El formulario no envía nada a este sitio. Abre tu propia aplicación de correo con los datos rellenados, y no se envía nada hasta que pulses enviar. Nada de lo que escribes se guarda aquí, y no hay ninguna base de datos.',
+    'Nothing else':
+        'Nada más',
+    'No advertising trackers, no social media pixels, no mailing list, no profiling. Fonts are served from this site rather than from Google, so no third party sees your visit.':
+        'Sin rastreadores publicitarios, sin píxeles de redes sociales, sin newsletter, sin perfilado. Las tipografías se sirven desde este sitio y no desde Google, así que ningún tercero ve tu visita.',
+    'Your choice':
+        'Tu elección',
+    'Analytics is off unless you turn it on, and you can withdraw that at any time.':
+        'Analytics está desactivado a menos que lo actives, y puedes retirar ese permiso cuando quieras.',
+    'Change my cookie choice':
+        'Cambiar mi elección de cookies',
+    'Questions about any of this can go through the contact form.':
+        'Cualquier duda sobre esto puede ir por el formulario de contacto.',
+    'This site can use Google Analytics to count visits. It sets a cookie, so it only runs if you agree.':
+        'Este sitio puede usar Google Analytics para contar visitas. Instala una cookie, así que solo funciona si estás de acuerdo.',
+    'What that means':
+        'Qué significa eso',
+    'Decline':
+        'Rechazar',
+    'Accept':
+        'Aceptar',
     "Editing &amp; post-production": "Montaje y posproducción",
     "Home": "Inicio",
     "Portfolio": "Portafolio",

@@ -37,7 +37,9 @@ def extract(src):
     frag["services"] = between(body, r'  <div class="container services section"', r'\n  <div class="container section" id="about"')
     frag["about"] = between(body, r'  <div class="container section" id="about"', r'\n  <div class="container section" id="for-agencies"')
     frag["agencies"] = between(body, r'  <div class="container section" id="for-agencies"', r'\n  <div class="container section" id="contact"')
-    frag["contact"] = between(body, r'  <div class="container section" id="contact"', r'\n  <footer class="site"')
+    frag["contact"] = between(body, r'  <div class="container section" id="contact"', r'\n  <div class="container section" id="privacy"')
+    frag["privacy"] = between(body, r'  <div class="container section" id="privacy"', r'\n  <footer class="site"')
+    # the cookie bar lives at the end of the footer fragment, so every page has it
     frag["footer"] = between(body, r'  <footer class="site"', r'\n  <div class="modal-overlay"')
     frag["modal"] = between(body, r'  <div class="modal-overlay"', r'\n  <script>')
     frag["script"] = body[body.index("  <script>"):]
@@ -51,6 +53,7 @@ PAGES = [
     ("about",     "About",                          ["about"],              False),
     ("agencies",  "For Agencies",                   ["agencies"],           False),
     ("contact",   "Contact",                        ["contact"],            False),
+    ("privacy",   "Privacy",                        ["privacy"],            False),
 ]
 
 
