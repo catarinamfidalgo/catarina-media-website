@@ -126,6 +126,7 @@ PAGE = """<!DOCTYPE html>
 <title>{title} — Catarina Fidalgo</title>
 <meta name="description" content="{excerpt}">
 <link rel="canonical" href="{canonical}">
+<link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" href="{root}assets/favicon.svg" type="image/svg+xml">
 <!-- Raster sizes too: Google's favicon crawler prefers them, and iOS
      uses the touch icon for a home-screen bookmark. -->
