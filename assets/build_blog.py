@@ -136,11 +136,7 @@ after:</p>
   <li>Will the shoot be framed so vertical crops work?</li>
   <li>Does the music licence cover every cut, on every platform?</li>
   <li>Are subtitles included, and in which languages?</li>
-  <li>Who owns the project files if we want more cuts next year?</li>
 </ul>
-
-<p>That last one catches more people than it should. [Catarina — worth a line here on how you
-handle project files, since it's a real differentiator and most clients never think to ask.]</p>
 
 <h3>The short version</h3>
 
