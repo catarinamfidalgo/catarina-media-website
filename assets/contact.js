@@ -1,90 +1,74 @@
 /* Contact form handler.
-   Primary path: POST the fields to a form backend (Formspree) so submissions
-   land reliably in the inbox. Until an endpoint is configured, it falls back to
-   opening a pre-filled email to catarinamesquitafidalgo@gmail.com.
 
-   TO ACTIVATE RELIABLE SUBMISSIONS:
-   1. Create a free form at https://formspree.io (use catarinamesquitafidalgo@gmail.com).
-   2. Copy your form endpoint (looks like https://formspree.io/f/abcdwxyz).
-   3. Paste it into FORM_ENDPOINT below, replacing YOUR_FORM_ID.
+   Submissions POST to a form backend, which forwards them to the inbox.
+   The destination address is held by the backend and is deliberately NOT in
+   this file: everything here is public at /assets/contact.js, so any address
+   written here would be harvested by spam scrapers. The endpoint ID below
+   reveals nothing on its own.
+
+   TO ACTIVATE:
+   1. Sign up free at https://formspree.io and create a form.
+   2. Point it at the destination inbox there, in their dashboard.
+   3. Copy the endpoint it gives you (https://formspree.io/f/xxxxxxxx)
+      and replace YOUR_FORM_ID below. That is the only edit needed.
 */
 (function () {
   "use strict";
 
   var FORM_ENDPOINT = "https://formspree.io/f/YOUR_FORM_ID";
-  var EMAIL = "catarinamesquitafidalgo@gmail.com";
 
   var form = document.getElementById("contact-form");
   if (!form) return;
+
   var status = document.getElementById("form-status");
+  var configured = FORM_ENDPOINT.indexOf("YOUR_FORM_ID") === -1;
 
-  var val = function (id) {
-    var el = document.getElementById(id);
-    return el ? el.value.trim() : "";
-  };
-
-  function fields() {
-    return {
-      name: val("name"),
-      email: val("email"),
-      company: val("company"),
-      video_type: val("video-type"),
-      message: val("message")
-    };
+  function say(msg) {
+    if (status) status.textContent = msg;
   }
 
-  function mailtoFallback(f) {
-    var subject = "Website inquiry — " + (f.name || "New message");
-    var body =
-      "Name: " + f.name + "\n" +
-      "Email: " + f.email + "\n" +
-      "Company: " + (f.company || "—") + "\n" +
-      "Type of video: " + (f.video_type || "—") + "\n\n" +
-      "Message:\n" + f.message + "\n";
-    window.location.href = "mailto:" + EMAIL +
-      "?subject=" + encodeURIComponent(subject) +
-      "&body=" + encodeURIComponent(body);
-    if (status) status.textContent = "Opening your email app… if nothing happens, email me directly at " + EMAIL + ".";
+  function val(id) {
+    var el = document.getElementById(id);
+    return el ? el.value.trim() : "";
   }
 
   form.addEventListener("submit", function (e) {
     e.preventDefault();
+
     if (typeof form.reportValidity === "function" && !form.reportValidity()) return;
 
-    var f = fields();
+    // Honeypot: a real person never sees this field, so anything in it is a bot.
+    var trap = form.querySelector("input[name=_gotcha]");
+    if (trap && trap.value) return;
 
-    // Not yet configured → keep the site working via a pre-filled email.
-    if (FORM_ENDPOINT.indexOf("YOUR_FORM_ID") !== -1 || !window.fetch) {
-      mailtoFallback(f);
+    if (!configured || !window.fetch) {
+      say("The form isn't connected yet. Please try again shortly.");
       return;
     }
 
-    if (status) status.textContent = "Sending…";
     var btn = form.querySelector("button[type=submit]");
+    say("Sending…");
     if (btn) btn.disabled = true;
 
     fetch(FORM_ENDPOINT, {
       method: "POST",
       headers: { "Accept": "application/json", "Content-Type": "application/json" },
       body: JSON.stringify({
-        name: f.name,
-        email: f.email,
-        company: f.company,
-        video_type: f.video_type,
-        message: f.message,
-        _subject: "Website inquiry — " + (f.name || "New message")
+        name: val("name"),
+        email: val("email"),
+        company: val("company"),
+        video_type: val("video-type"),
+        message: val("message"),
+        _subject: "Website inquiry — " + (val("name") || "New message")
       })
     })
       .then(function (res) {
-        if (res.ok) {
-          form.reset();
-          if (status) status.textContent = "Thank you — your message is on its way. I'll get back to you personally.";
-        } else {
-          if (status) status.textContent = "Something went wrong. Please email me directly at " + EMAIL + ".";
-        }
+        if (!res.ok) throw new Error(res.status);
+        form.reset();
+        say("Thank you — your message has been sent. I'll get back to you personally.");
       })
       .catch(function () {
-        if (status) status.textContent = "Couldn't send just now. Please email me directly at " + EMAIL + ".";
+        say("Sorry, that didn't send. Please check your connection and try again.");
       })
       .finally(function () {
         if (btn) btn.disabled = false;

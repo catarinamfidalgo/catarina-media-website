@@ -3,6 +3,7 @@
 
 # Interface chrome
 UI = {
+    "Video editing &amp; post-production": "Montagem e pós-produção de vídeo",
     "Home": "Início",
     "Portfolio": "Portfólio",
     "About": "Sobre",
@@ -80,8 +81,8 @@ COPY = {
         "Um projeto pontual ou um avençado mensal. Qualquer um funciona.",
     "Tell me a little about your project and I'll get back to you personally.":
         "Conte-me um pouco sobre o seu projeto e respondo-lhe pessoalmente.",
-    "This opens your email app with the details pre-filled — no data is stored on this site.":
-        "Isto abre a sua aplicação de email com os dados preenchidos — não é guardada qualquer informação neste site.",
+    "Your message comes straight to my inbox. I'll reply personally, usually within a day or two.":
+        "A sua mensagem chega diretamente à minha caixa de entrada. Respondo pessoalmente, normalmente dentro de um ou dois dias.",
     "Notes on editing, post-production, and working with video.":
         "Notas sobre montagem, pós-produção e trabalhar com vídeo.",
 }

@@ -113,6 +113,11 @@ def build():
                      "  document.addEventListener('click',function(e){if(!e.target.closest('header.site'))closeNav();});\n"
                      "  document.addEventListener('keydown',function(e){if(e.key==='Escape')closeNav();});\n"
                      "  </script>\n")
+        # The contact form needs its handler wherever the form appears, not just
+        # on the homepage — without this the standalone /contact/ page submits
+        # into nothing. depth_fix() rewrites the path for nested pages.
+        if "contact" in parts and not needs_js:
+            body += '  <script src="assets/contact.js"></script>\n'
 
         page = "<!DOCTYPE html>\n<html lang=\"en\">\n<head>" + head + "</head>\n<body>\n" + body + "</body>\n</html>\n"
         page = depth_fix(page, depth, slug)

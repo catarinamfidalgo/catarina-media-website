@@ -16,6 +16,10 @@
   header.site { display: flex; align-items: baseline; justify-content: space-between; gap: 20px; padding: 30px 0 24px; }
   .brand { font-weight: 800; font-size: 1.25rem; letter-spacing: .01em; text-transform: uppercase; font-family: 'Hanken Grotesk', sans-serif; }
   .brand i { font-style: normal; color: var(--accent); }
+  /* Says what the site is for, right under the name. */
+  .brand-block { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+  .brand-tag { margin: 0; font-size: .68rem; font-weight: 600; letter-spacing: .15em;
+    text-transform: uppercase; color: var(--muted); line-height: 1.3; }
   header.site { position: relative; align-items: center; }
   /* The pages live behind the button rather than all on show. The panel is
      taken out of flow so opening it does not push the page around. */
@@ -314,6 +318,7 @@
     .container { padding: 0 16px; }
     .hero-title { font-size: clamp(2.3rem, 11.5vw, 7.4rem); }
     .brand { font-size: 1.1rem; }
+    .brand-tag { font-size: .6rem; letter-spacing: .12em; }
     .lang-switch { font-size: .62rem; gap: 8px; }
   }
 

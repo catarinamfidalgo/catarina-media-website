@@ -3,6 +3,7 @@
 montaje for editing, etalonaje for grading, vosotros when addressing agencies."""
 
 UI = {
+    "Video editing &amp; post-production": "Montaje y posproducción de vídeo",
     "Home": "Inicio",
     "Portfolio": "Portafolio",
     "About": "Sobre mí",
@@ -77,8 +78,8 @@ COPY = {
         "Un proyecto puntual o un acuerdo mensual continuo. Cualquiera de los dos funciona.",
     "Tell me a little about your project and I'll get back to you personally.":
         "Cuéntame un poco sobre tu proyecto y te respondo personalmente.",
-    "This opens your email app with the details pre-filled — no data is stored on this site.":
-        "Esto abre tu aplicación de correo con los datos rellenados: en esta web no se guarda ninguna información.",
+    "Your message comes straight to my inbox. I'll reply personally, usually within a day or two.":
+        "Tu mensaje llega directamente a mi bandeja de entrada. Te respondo personalmente, normalmente en uno o dos días.",
     "Notes on editing, post-production, and working with video.":
         "Notas sobre montaje, posproducción y trabajar con vídeo.",
 }
