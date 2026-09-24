@@ -90,6 +90,19 @@
   header.site { display: flex; align-items: baseline; justify-content: space-between; gap: 20px; padding: 30px 0 24px; }
   .brand { font-weight: 800; font-size: 1.25rem; letter-spacing: .01em; text-transform: uppercase; font-family: 'Hanken Grotesk', sans-serif; line-height: 1.05; }
   .brand i { font-style: normal; color: var(--accent); }
+  /* A doodle drawn over the name, sitting on the gap between the two words.
+     No fill anywhere: the type reads straight through it, which is what makes
+     it a drawing rather than a badge. Placed in em of .brand so it moves with
+     the wordmark, using measured positions — 4.166em is the centre of the word
+     space, and the feet land just under the baseline. currentColor, so the
+     dark theme inverts it along with everything else. */
+  .brand { position: relative; }
+  .brand-bunny { position: absolute; left: 4.166em; bottom: -.103em;
+    width: 1.96em; height: 2.87em; color: var(--accent);
+    pointer-events: none; overflow: visible; }
+  /* The ears clear the cap line by a good margin, so the row needs the space. */
+  header.site { padding-top: 46px; }
+  @media (max-width: 400px) { .brand-bunny { width: 1.72em; height: 2.52em; } }
   /* The tagline sits beside the name on a shared baseline, divided by a
      hairline. Stacked, the two had to be optically nudged into line because
      every letter carries its own side bearing; side by side that problem
