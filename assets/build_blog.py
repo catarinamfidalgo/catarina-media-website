@@ -29,107 +29,107 @@ NAV = {
 
 POSTS = [
     {
-        "slug": "ai-in-the-edit",
-        "date": "2026-09-15",
+        "slug": "brand-video-package",
+        "date": "2026-09-24",
         "date_label": "September 2026",
-        "title": "I use AI in the edit. It doesn't do the editing.",
-        "excerpt": "Clients have started asking whether AI can just do this now. "
-                   "Here's the honest answer from inside the edit — what it genuinely helps with, "
-                   "and the part it can't touch.",
+        "title": "One film isn't enough: what a brand video package actually includes",
+        "excerpt": "Most brands commission a single film, then spend the next month trying to "
+                   "cut it into something that works on Instagram. Here's what to ask for "
+                   "instead, and why deciding it before the shoot costs less than fixing it after.",
         "body": """
-<p class="lede">Clients have started asking me whether AI can just do this now. It's a fair
-question and it deserves a straight answer rather than a defensive one, so here it is from
-inside the edit.</p>
+<p class="lede">Most of the work I get asked to rescue starts the same way. A brand commissions
+one film. It comes out well. Then someone asks for the Instagram version, and the whole thing
+has to be taken apart.</p>
 
-<p>I do use AI. Most editors I know do. But it does none of the editing, and the distinction
-matters if you're the one paying for the result.</p>
+<p>The film was shot to be watched once, in widescreen, with sound. What's needed now is
+fifteen seconds, vertical, and legible with the sound off. Those aren't the same film, and no
+amount of editing turns one into the other cleanly.</p>
 
-<h3>What it's genuinely good at</h3>
+<h3>What actually goes wrong</h3>
 
-<p>The honest list is longer than people who sell editing like to admit:</p>
+<p>It's rarely the edit. It's decisions that were made months earlier, on set, by people who
+weren't thinking about a phone screen.</p>
 
 <ul>
-  <li><strong>Transcription.</strong> Two hours of interview becomes searchable text in minutes. This used to be an afternoon.</li>
-  <li><strong>Rough selects.</strong> Point it at ten interviews and ask where somebody talks about pricing, and it will find the moments.</li>
-  <li><strong>Audio cleanup.</strong> Room tone, hum, a bad lavalier — these are solved problems now.</li>
-  <li><strong>Masking and rotoscoping.</strong> Work that was genuinely tedious and is now mostly not.</li>
-  <li><strong>Subtitle timing.</strong> Still needs checking, but the first pass is close.</li>
+  <li><strong>The framing doesn't survive the crop.</strong> A beautifully composed wide shot
+  with your product on the left and your founder on the right becomes, in vertical, a shot of
+  neither. Cropping to 9:16 throws away three quarters of the frame, and it's never the
+  quarter you'd have chosen.</li>
+  <li><strong>There's no room to cut.</strong> A 90-second film built as one continuous
+  argument has no natural 15-second piece inside it. Every possible cut ends mid-thought.</li>
+  <li><strong>It doesn't work silent.</strong> Most social video is watched with the sound off.
+  If the message lives in a voiceover and nothing on screen carries it, the film says nothing
+  to the majority of people who see it.</li>
+  <li><strong>The music licence doesn't cover it.</strong> Track licensed for one film, one
+  platform. Now it's on six cuts across three channels, and either the licence is extended or
+  everything gets rescored.</li>
 </ul>
 
-<p>Notice what those have in common. They're all <strong>labour</strong>. None of them is a
-decision. Every one is a job I was happy to stop doing by hand, and none of them is the reason
-a client hires me.</p>
+<p>Each of these is fixable in post. All of them are cheaper to avoid.</p>
 
-<h3>What it can't do</h3>
+<h3>What a package actually is</h3>
 
-<p><strong>Decide what the film is about.</strong> Ten interviews don't contain one story until
-somebody chooses which one to tell. That choice isn't in the footage — it comes from
-understanding what the client needs the film to achieve, which is usually not what the brief
-says.</p>
+<p>A brand video package means deciding, before anyone shoots anything, that you're making
+several finished pieces from one production. Usually:</p>
 
-<p><strong>Know which take carries it.</strong> Two takes can be identical on paper. One of
-them lands and the other doesn't. The difference is a half-second of hesitation before an
-answer, or an eye-line that reads as honest. A model scoring transcripts picks the clearest
-sentence. The clearest sentence is often the least true one.</p>
+<ul>
+  <li><strong>The brand film.</strong> 60 to 120 seconds. The full argument. This is what goes
+  on your homepage and gets sent to people who already want to know more.</li>
+  <li><strong>A trailer or cutdown.</strong> 15 to 30 seconds. Not a shortened version of the
+  film — a different piece with its own shape, made to stop someone scrolling.</li>
+  <li><strong>Social cuts.</strong> Three to six vertical pieces, each built around one idea.
+  Subtitled, legible silent, sized for where they're going.</li>
+</ul>
 
-<p><strong>Hold a pace.</strong> Knowing when to sit on a shot two seconds longer than is
-comfortable, and when to cut away before the viewer is ready — that's the whole craft. It's
-felt, against a specific audience, in a specific context.</p>
+<p>The word that matters is <em>before</em>. Planned in advance, the same shoot day yields all
+of it. Decided afterwards, you're either cropping badly or booking a second day.</p>
 
-<p><strong>Be accountable.</strong> When a piece goes out under a brand's name, someone has to
-have made the calls and be able to defend them.</p>
+<h3>Why it costs less</h3>
 
-<h3>Where it actually goes wrong</h3>
+<p>People assume a package costs more because it's more deliverables. It usually costs less
+than buying the same pieces separately, for reasons that are all about the shoot rather than
+the edit:</p>
 
-<p>The failures are rarely dramatic. Nothing explodes. It's that the tool is confidently
-slightly wrong, in ways you only catch if you already know what right looks like.</p>
+<ul>
+  <li>Shots get framed with the crop in mind — subject centred, space left top and bottom, so
+  the vertical version is a real composition rather than a salvage job.</li>
+  <li>The interview gets two or three extra questions, specifically to give the short cuts
+  something to be about.</li>
+  <li>Enough B-roll is shot to cover cuts that don't exist yet.</li>
+  <li>Music is licensed once, for everything, at the start.</li>
+  <li>The colour and sound work is done once across all the pieces instead of being repeated
+  each time something new is ordered.</li>
+</ul>
 
-<p><strong>Transcription outside English.</strong> I work in English, Portuguese and Spanish,
-and the gap is obvious. English transcripts come back near-perfect. Portuguese comes back
-readable but wrong in the places that matter — names, industry terms, and anything where a
-speaker switches languages mid-sentence, which in my work happens constantly. It doesn't flag
-uncertainty. It writes a plausible word and moves on. If you cut from the transcript without
-watching, you'll cut a sentence the person didn't say.</p>
+<p>[Catarina — a real example here would carry this whole piece. A project where the package
+was planned up front versus one where the social cuts were an afterthought, and what the
+difference actually looked like.]</p>
 
-<p><strong>Selects that optimise for clarity.</strong> Ask a tool for the best answer to a
-question and it returns the most articulate one. But in a testimonial, the most articulate
-answer is often the most rehearsed, and rehearsed doesn't persuade. The take you want is
-usually the one where somebody pauses, corrects themselves, and then says the true thing. On a
-transcript that looks like the worse option.</p>
+<h3>What to ask for</h3>
 
-<p><strong>Auto-reframe.</strong> Useful for turning a landscape cut into vertical, right up
-until the moment two people are talking and it decides which one matters. It follows movement,
-not meaning, so it will drift off the person listening — and in an interview, the reaction is
-frequently the shot.</p>
+<p>If you're commissioning, these are the questions worth asking before the shoot rather than
+after:</p>
 
-<p><strong>Noise reduction pushed too far.</strong> It's excellent at removing hum. It is also
-happy to remove the room, and a voice with no room around it sounds like a voice in a box.
-Nobody can say why the video feels cheap; it just does.</p>
+<ul>
+  <li>What are all the places this video will end up? List them, including the ones that feel
+  obvious.</li>
+  <li>Which pieces do we need, at what lengths and what aspect ratios?</li>
+  <li>Will the shoot be framed so vertical crops work?</li>
+  <li>Does the music licence cover every cut, on every platform?</li>
+  <li>Are subtitles included, and in which languages?</li>
+  <li>Who owns the project files if we want more cuts next year?</li>
+</ul>
 
-<p><strong>Automatic colour matching.</strong> It will make your shots consistent by making
-them average. If the look was deliberate — warm, cool, deliberately flat — average is exactly
-wrong.</p>
+<p>That last one catches more people than it should. [Catarina — worth a line here on how you
+handle project files, since it's a real differentiator and most clients never think to ask.]</p>
 
-<p>None of this makes the tools bad. It makes them tools. Every one of these is fine when
-somebody is watching the output and knows what they're looking for.</p>
+<h3>The short version</h3>
 
-<h3>How I use it</h3>
+<p>One film is a deliverable. A package is a plan. The plan costs less, because the expensive
+decisions — framing, coverage, music, language — get made while they're still cheap to make.</p>
 
-<p>Sparingly, and always pointed at something. A transcript so I can navigate an interview by
-text instead of scrubbing. Noise reduction on a take that's otherwise the best one. Never for
-the structure, never for the selects, never for the pacing.</p>
-
-<p>The tool is fast at the parts that were slow. It's useless at the parts that were hard.</p>
-
-<h3>If you're the one hiring</h3>
-
-<p>An AI-assembled edit tends to look fine the first time you watch it and hollow the second.
-The cuts are on the beat, the information is present, and nothing quite lands. If your video
-exists to persuade somebody — to trust a brand, to take a training seriously, to book
-something — then pacing <em>is</em> the persuasion, and that's precisely the part nothing has
-automated.</p>
-
-<p>Use the tools. Just don't confuse the labour with the work.</p>
+<p>If you're working out what you actually need, I'm happy to talk it through before anyone
+quotes you anything.</p>
 """
     },
 ]
@@ -154,7 +154,7 @@ PAGE = """<!DOCTYPE html>
 <meta property="og:title" content="{title}">
 <meta property="og:description" content="{excerpt}">
 <meta property="og:url" content="{canonical}">
-<link rel="stylesheet" href="{root}assets/site.css?v=b8e000f2">
+<link rel="stylesheet" href="{root}assets/site.css?v=fbe4c606">
 
 <!-- Google Analytics (GA4), behind consent.
      Analytics sets a cookie, so under EU law it may not run until the visitor
@@ -209,6 +209,26 @@ PAGE = """<!DOCTYPE html>
     }});
   }})();
 </script>
+<script>
+  /* Applied before the page paints, so a dark-theme visitor never sees a
+     white flash. An explicit choice is remembered; otherwise the system
+     setting decides and nothing is stamped on the element. */
+  (function () {{
+    try {{
+      var t = localStorage.getItem("cm-theme");
+      if (t === "dark" || t === "light") document.documentElement.setAttribute("data-theme", t);
+    }} catch (e) {{}}
+    window.toggleTheme = function () {{
+      var el = document.documentElement, cur = el.getAttribute("data-theme");
+      if (!cur) {{
+        cur = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+      }}
+      var next = cur === "dark" ? "light" : "dark";
+      el.setAttribute("data-theme", next);
+      try {{ localStorage.setItem("cm-theme", next); }} catch (e) {{}}
+    }};
+  }})();
+</script>
 </head>
 <body>
 {header}
@@ -247,6 +267,11 @@ def header(root, lang, other):
         <div class="brand"><a href="{root}{pre}">Catarina <i>Fidalgo</i></a></div>
         <span class="brand-tag">{nav['tag']}</span>
       </div>
+      <button class="theme-toggle" type="button" onclick="toggleTheme()"
+              aria-label="Light or dark" title="Light or dark">
+        <svg class="icon-light" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2M12 19.5v2M2.5 12h2M19.5 12h2M5.2 5.2l1.4 1.4M17.4 17.4l1.4 1.4M18.8 5.2l-1.4 1.4M6.6 17.4l-1.4 1.4"/></svg>
+        <svg class="icon-dark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8.2 8.2 0 0 1 9.5 4a8.3 8.3 0 1 0 10.5 10.5z"/></svg>
+      </button>
       <button class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="siteNav" onclick="toggleNav(this)"><span></span><span></span><span></span></button>
       <nav class="main" id="siteNav">
         <a href="{root}{pre}">{nav['home']}</a>

@@ -25,6 +25,56 @@
     --r-sm:6px; --r-md:10px; --r-lg:16px; --r-pill:999px; --radius:var(--r-sm);
     /* One gutter for the whole site. The hero used to carry its own. */
     --gutter:28px;
+    /* Surfaces, so a dark theme has something to swap rather than chasing
+       hardcoded whites through the stylesheet. */
+    --surface:#ffffff; --panel:rgba(250,249,252,.86); --panel-solid:rgba(250,249,252,.94);
+    color-scheme: light;
+  }
+
+  /* Dark theme. Applied when the visitor's system asks for it, unless they
+     have explicitly chosen light here; an explicit choice always wins. The
+     accent lifts to the brighter lavender — #7259c4 on a dark ground is too
+     close to the background to read as a link. */
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg:#131217; --text:#f1eff6; --muted:#a29fad; --accent:#a98bef; --onaccent:#17151c;
+      --lav:#241f33; --lav-bright:#c9b4ff; --ink:#0c0b0f;
+      --line:rgba(241,239,246,.17);
+      --surface:#1b1922; --panel:rgba(27,25,34,.88); --panel-solid:rgba(23,21,29,.95);
+      --sh-sm: 0 2px 6px rgba(0,0,0,.5);
+      --sh-md: 0 12px 28px rgba(0,0,0,.55), 0 3px 8px rgba(0,0,0,.4);
+      --sh-lg: 0 34px 80px rgba(0,0,0,.7), 0 10px 24px rgba(0,0,0,.5);
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg:#131217; --text:#f1eff6; --muted:#a29fad; --accent:#a98bef; --onaccent:#17151c;
+    --lav:#241f33; --lav-bright:#c9b4ff; --ink:#0c0b0f;
+    --line:rgba(241,239,246,.17);
+    --surface:#1b1922; --panel:rgba(27,25,34,.88); --panel-solid:rgba(23,21,29,.95);
+    --sh-sm: 0 2px 6px rgba(0,0,0,.5);
+    --sh-md: 0 12px 28px rgba(0,0,0,.55), 0 3px 8px rgba(0,0,0,.4);
+    --sh-lg: 0 34px 80px rgba(0,0,0,.7), 0 10px 24px rgba(0,0,0,.5);
+    color-scheme: dark;
+  }
+
+  /* The toggle sits beside the menu button and reads as part of it. */
+  .theme-toggle { display: inline-flex; align-items: center; justify-content: center;
+    width: 36px; height: 36px; padding: 0; margin-left: 6px; flex-shrink: 0;
+    background: none; border: 1px solid var(--line); border-radius: var(--r-sm);
+    color: var(--muted); cursor: pointer;
+    transition: color .15s ease, border-color .15s ease, background .15s ease; }
+  .theme-toggle:hover { color: var(--accent); border-color: var(--accent);
+    background: rgba(114,89,196,.07); }
+  .theme-toggle svg { width: 17px; height: 17px; display: block; }
+  .theme-toggle .icon-dark { display: none; }
+  :root[data-theme="dark"] .theme-toggle .icon-light { display: none; }
+  :root[data-theme="dark"] .theme-toggle .icon-dark { display: block; }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) .theme-toggle .icon-light { display: none; }
+    :root:not([data-theme="light"]) .theme-toggle .icon-dark { display: block; }
+    :root[data-theme="light"] .theme-toggle .icon-light { display: block; }
+    :root[data-theme="light"] .theme-toggle .icon-dark { display: none; }
   }
   * { box-sizing: border-box; }
   html { scroll-behavior: smooth; }
@@ -93,7 +143,7 @@
     display: flex; flex-direction: column; align-items: stretch; gap: 1px;
     width: max-content; min-width: 168px; padding: 8px; line-height: 1.5;
     font-size: .72rem; font-weight: 700; letter-spacing: .16em; text-transform: uppercase;
-    background: rgba(250,249,252,.86);
+    background: var(--panel);
     -webkit-backdrop-filter: blur(16px) saturate(1.5);
     backdrop-filter: blur(16px) saturate(1.5);
     border: 1px solid rgba(27,26,31,.08); border-radius: 12px;
@@ -279,7 +329,7 @@
   .contact-form .req { color: var(--accent); }
   .contact-form input, .contact-form select, .contact-form textarea {
     font-family: 'Hanken Grotesk', sans-serif; font-size: .95rem; padding: .7em .9em;
-    border: 1px solid var(--line); border-radius: var(--r-sm); background: #fff; color: var(--text);
+    border: 1px solid var(--line); border-radius: var(--r-sm); background: var(--surface); color: var(--text);
   }
   .contact-form textarea { min-height: 110px; resize: vertical; }
   .contact-form button.btn { border: none; cursor: pointer; align-self: flex-start; }
@@ -480,7 +530,7 @@
      question, not an obstacle, and nothing about the site is withheld until
      it is answered. Hidden entirely once a choice is stored. */
   .cookie-bar { position: fixed; left: 0; right: 0; bottom: 0; z-index: 120;
-    background: rgba(250,249,252,.94);
+    background: var(--panel-solid);
     -webkit-backdrop-filter: blur(16px) saturate(1.5);
     backdrop-filter: blur(16px) saturate(1.5);
     border-top: 1px solid var(--line);
