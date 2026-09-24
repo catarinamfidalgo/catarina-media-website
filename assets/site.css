@@ -97,12 +97,13 @@
      space, and the feet land just under the baseline. currentColor, so the
      dark theme inverts it along with everything else. */
   .brand { position: relative; }
-  .brand-bunny { position: absolute; left: 4.166em; bottom: -.103em;
-    width: 1.96em; height: 2.87em; color: var(--accent);
+  .brand-bunny { position: absolute; left: 4.446em; bottom: .697em;
+    width: 1.4em; height: 2.1em; color: var(--accent);
     pointer-events: none; overflow: visible; }
-  /* The ears clear the cap line by a good margin, so the row needs the space. */
-  header.site { padding-top: 46px; }
-  @media (max-width: 400px) { .brand-bunny { width: 1.72em; height: 2.52em; } }
+  /* .697em is the cap height, so the feet rest on the tops of the letters
+     rather than sitting across them. Nothing in the name is covered. */
+  header.site { padding-top: 54px; }
+  @media (max-width: 400px) { .brand-bunny { width: 1.26em; height: 1.89em; } }
   /* The tagline sits beside the name on a shared baseline, divided by a
      hairline. Stacked, the two had to be optically nudged into line because
      every letter carries its own side bearing; side by side that problem
