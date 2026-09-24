@@ -264,7 +264,7 @@ PAGE = """<!DOCTYPE html>
 <meta property="og:title" content="{title}">
 <meta property="og:description" content="{excerpt}">
 <meta property="og:url" content="{canonical}">
-<link rel="stylesheet" href="{root}assets/site.css?v=6e8627e1">
+<link rel="stylesheet" href="{root}assets/site.css?v=aedb7671">
 
 <!-- Google Analytics (GA4), behind consent.
      Analytics sets a cookie, so under EU law it may not run until the visitor
@@ -375,19 +375,6 @@ def header(root, lang, other):
     <header class="site">
       <div class="brand-block">
         <div class="brand"><a href="{root}{pre}">Catarina <i>Fidalgo</i></a>
-        <svg class="brand-bunny" viewBox="0 0 34 62" aria-hidden="true" focusable="false">
-          <g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M10 21C7.5 14 8 4.5 11 2c3-2.5 5 1.5 4.3 7.5-.7 5-2.1 9-2.8 11.5"/>
-            <path d="M19.5 21.5c0-7.5 2-15 5.5-17.5 3.5-2 4.2 2.5 2 7.5s-4.5 8.5-5.2 10.5"/>
-            <path d="M7 29c0-6 4-9.5 9-9.5s9 3.5 9 9.5c0 5.2-3.2 8-8 8.4"/>
-            <path d="M16 30v1.5M16 31.5c-1 1-2.1.7-2.4-.1M16 31.5c1 1 2.1.7 2.4-.1"/>
-            <path d="M8 46c0-6.5 3.6-10.6 8.4-10.6C21.6 35.4 26 39.6 26 46c0 6.4-3.8 10.4-9 10.4S8 52.4 8 46Z"/>
-            <path d="M11.5 55.5c-.6 2.6 1.2 4 3 3.4M22 55.5c.6 2.6-1.2 4-3 3.4"/>
-            <circle cx="28.5" cy="46" r="3.4"/>
-          </g>
-          <circle cx="12.6" cy="27.4" r="1.25" fill="currentColor"/>
-          <circle cx="19.4" cy="27.4" r="1.25" fill="currentColor"/>
-        </svg>
       </div>
         <span class="brand-tag">{nav['tag']}</span>
       </div>

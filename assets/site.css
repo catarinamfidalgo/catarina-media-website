@@ -97,20 +97,6 @@
      space, and the feet land just under the baseline. currentColor, so the
      dark theme inverts it along with everything else. */
   .brand { position: relative; }
-  /* Beside the name rather than over it: sitting to the left of CATARINA,
-     the purple reads against black instead of against the purple FIDALGO,
-     and nothing in the wordmark is covered. Feet on the baseline, so it
-     stands on the same line as the type. The padding on .brand makes the
-     room it occupies. */
-  .brand { padding-left: 1.716em; }
-  .brand-bunny { position: absolute; left: 0; bottom: 0;
-    width: 1.316em; height: 2.4em; color: var(--accent);
-    pointer-events: none; overflow: visible; }
-  header.site { padding-top: 50px; }
-  @media (max-width: 400px) {
-    .brand { padding-left: 1.55em; }
-    .brand-bunny { width: 1.18em; height: 2.16em; }
-  }
   /* The tagline sits beside the name on a shared baseline, divided by a
      hairline. Stacked, the two had to be optically nudged into line because
      every letter carries its own side bearing; side by side that problem
