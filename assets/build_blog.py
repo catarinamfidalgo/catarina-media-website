@@ -144,8 +144,8 @@ PAGE = """<!DOCTYPE html>
      switches it on across every page and every language. -->
 <script>
   (function () {{
-    var GA_ID = "G-XXXXXXXXXX";
-    if (GA_ID.indexOf("XXXX") !== -1) return;   // not configured yet
+    var GA_ID = "G-DS7JJYXNM5";
+    if (!/^G-[A-Z0-9]+$/.test(GA_ID)) return;   // not configured
     var s = document.createElement("script");
     s.async = true;
     s.src = "https://www.googletagmanager.com/gtag/js?id=" + GA_ID;
