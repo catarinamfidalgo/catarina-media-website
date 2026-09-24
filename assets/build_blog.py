@@ -324,6 +324,12 @@ PAGE = """<!DOCTYPE html>
      white flash. An explicit choice is remembered; otherwise the system
      setting decides and nothing is stamped on the element. */
   (function () {{
+    // Browsers remember where you were on a page and put you back there on
+    // your next visit. For a one-screen page that means arriving halfway down
+    // the contact form with the heading already scrolled past. Turn it off and
+    // start at the top unless the URL actually asks for a section.
+    if ("scrollRestoration" in history) history.scrollRestoration = "manual";
+    if (!location.hash) window.scrollTo(0, 0);
     try {{
       var t = localStorage.getItem("cm-theme");
       if (t === "dark" || t === "light") document.documentElement.setAttribute("data-theme", t);
