@@ -100,6 +100,13 @@ def build():
         canon = SITE + "/" + (slug + "/" if slug else "")
         head = re.sub(r'(rel="canonical" href=")[^"]*(")', r"\g<1>%s\g<2>" % canon, head)
         head = re.sub(r'(og:url" content=")[^"]*(")', r"\g<1>%s\g<2>" % canon, head)
+        # hreflang must name this page's own translations, not the homepages.
+        # Copied unchanged, /pt/services/ claimed its English twin was "/".
+        tail = (slug + "/") if slug else ""
+        for code, prefix in (("en", ""), ("pt-PT", "pt/"), ("es-ES", "es/"),
+                             ("x-default", "")):
+            head = re.sub(r'(hreflang="%s" href=")[^"]*(")' % code,
+                          r"\g<1>%s/%s%s\g<2>" % (SITE, prefix, tail), head)
 
         body = f["header"].replace(f["header"][f["header"].index('      <nav class="main"'):
                                                f["header"].index("</nav>")],
