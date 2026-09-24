@@ -34,27 +34,22 @@ POSTS = [
         "date_label": "September 2026",
         "title": "One campaign, every platform: why a brand video package should be one job",
         "excerpt": "Why a brand campaign that runs across platforms has to be commissioned as one "
-                   "job — what cohesion actually means, where separate commissions drift, and "
+                   "job: what cohesion actually means, where separate commissions drift, and "
                    "what a brand video package covers.",
         "pt": {
             "date_label": "Setembro de 2026",
             "title": "Uma campanha, várias plataformas: porque é que um branding film package se encomenda de uma vez",
             "excerpt": "Porque é que uma campanha que corre em várias plataformas tem de ser "
-                       "encomendada como um só trabalho — o que é coerência, onde é que as "
+                       "encomendada como um só trabalho: o que é coerência, onde é que as "
                        "encomendas separadas se desviam, e o que inclui um branding film package.",
             "body": """
 <p class="lede">Uma campanha já não vive num só sítio. A mesma ideia tem de funcionar no site, no
 feed do LinkedIn, como reel vertical e, às vezes, em seis segundos antes de um vídeo no YouTube.
 São filmes diferentes. O erro está em encomendá-los como trabalhos diferentes.</p>
 
-<p>Encomendados um de cada vez — primeiro o filme, os reels uns meses depois, qualquer coisa para
-uma feira mais para a frente — deixam de parecer uma campanha. Parecem três campanhas feitas por
-três pessoas, que normalmente é exatamente o que são.</p>
-
-<p>Convém dizer onde é que eu entro nisto: não produzo o material, faço a montagem e a
-pós-produção. Tudo o que se segue vem de ser a pessoa a quem o material chega, muitas vezes meses
-depois de ter sido feito, com o pedido de o fazer condizer com qualquer coisa que já ficou pronta
-há muito tempo.</p>
+<p>Encomendados um de cada vez, deixam de parecer uma campanha. Primeiro o filme, os reels uns
+meses depois, qualquer coisa para uma feira mais para a frente. Três campanhas feitas por três
+pessoas, que normalmente é exatamente o que são.</p>
 
 <h3>O que é, na prática, uma campanha incoerente</h3>
 
@@ -62,8 +57,8 @@ há muito tempo.</p>
 
 <p>A cor está ligeiramente mais quente no segundo lote, porque o trabalho foi feito seis meses
 depois noutro monitor. Os oráculos usam uma tipografia que não é bem a da marca, porque quem os
-fez não tinha o ficheiro. A música é outra — a licença original cobria um filme, não uma campanha
-— e por isso os reels parecem ser de outra empresa qualquer.</p>
+fez não tinha o ficheiro. A música é outra, porque a licença original cobria um filme e não uma
+campanha, e por isso os reels parecem ser de outra empresa qualquer.</p>
 
 <p>Ninguém que veja isto consegue dizer o que está errado. Simplesmente não liga as peças umas às
 outras, e o resultado é que cada peça tem de apresentar a marca do zero. É a repetição que faz uma
@@ -86,21 +81,21 @@ noventa sem o meio. Quem viu uma viu todas. Pagaram-se quatro peças e publicou-
 usado, sem uma única palavra. Outra são trinta segundos de processo, porque o processo funciona
 sempre e a maioria das marcas tem pudor em mostrá-lo. A mesma família, funções diferentes.</p>
 
-<h3>Porque é que encomendas separadas não lá chegam</h3>
+<h3>Onde é que as encomendas separadas se desviam</h3>
 
-<p>Porque a coerência não é uma coisa que se acrescente no fim. Depende de decisões tomadas antes,
-e cada uma delas é barata à primeira e cara à segunda:</p>
+<p>A coerência dificilmente se acrescenta no fim. Depende sobretudo de decisões tomadas antes, e
+cada uma delas é barata à primeira e cara à segunda:</p>
 
 <ul>
   <li><strong>Uma cor só, com as mesmas referências.</strong> Igualar seis meses depois um
   tratamento de cor feito noutro projeto é adivinhar.</li>
   <li><strong>Uma licença de música</strong> que cubra todos os cortes em todas as plataformas,
   em vez de uma faixa nova de cada vez porque a anterior não estava autorizada para aquilo.</li>
-  <li><strong>Um conjunto de grafismos</strong> — títulos, oráculos, animação de logótipo — feito
+  <li><strong>Um conjunto de grafismos</strong> (títulos, oráculos, animação de logótipo), feito
   uma vez e reutilizado, em vez de refeito ligeiramente diferente a cada ronda.</li>
   <li><strong>Material feito a saber que todos os formatos vinham a caminho.</strong> Uma
   composição 16:9 perde cerca de 60% do enquadramento num corte 9:16, e o que se perde são os
-  lados — que é onde costuma estar a composição.</li>
+  lados, que é onde costuma estar a composição.</li>
 </ul>
 
 <p>É por causa deste último que me escrevem. Às vezes consigo reenquadrar plano a plano, a aproximar
@@ -112,12 +107,12 @@ um dia de trabalho, e continua a ler-se como um plano aberto salvo à pressa.</p
 <p>Encomendado como um só trabalho, o mesmo material dá:</p>
 
 <ul>
-  <li><strong>O filme de marca</strong>, ou brand film — 60 a 120 segundos, em 16:9. O argumento
+  <li><strong>O filme de marca</strong>, ou brand film: 60 a 120 segundos, em 16:9. O argumento
   completo.</li>
-  <li><strong>O trailer</strong> — 30 a 45 segundos. Condensa o argumento em qualquer coisa que
-  se aguenta sozinha, e não num filme encurtado.</li>
-  <li><strong>O teaser</strong> — 10 a 15 segundos. Um só gancho, feito para que alguém olhe.</li>
-  <li><strong>Os reels</strong> — três a seis peças verticais, em 9:16 ou 4:5, legendadas, feitas
+  <li><strong>O trailer</strong>: 30 a 45 segundos. Condensa o argumento em qualquer coisa que se
+  aguenta sozinha, e não num filme encurtado.</li>
+  <li><strong>O teaser</strong>: 10 a 15 segundos. Um só gancho, feito para que alguém olhe.</li>
+  <li><strong>Os reels</strong>: três a seis peças verticais, em 9:16 ou 4:5, legendadas, feitas
   para funcionar sem som.</li>
 </ul>
 
@@ -138,14 +133,10 @@ resolver isto com quem produz o material:</p>
   <li>Legendas: incluídas, e em que línguas.</li>
 </ul>
 
-<p>Esta última pesa mais do que parece quando a campanha corre em vários mercados. Trabalho em
-português, inglês e espanhol, e a diferença entre uma legenda traduzida e uma legenda escrita para
-o corte nota-se logo.</p>
-
 <h3>Em resumo</h3>
 
 <p>Se o vídeo só vai viver no site, encomende um filme e está bem assim. Se vai correr em várias
-plataformas — e vai quase sempre — encomende a campanha toda de uma vez. Não por causa do
+plataformas, e vai quase sempre, encomende a campanha toda de uma vez. Não por causa do
 orçamento, embora normalmente também compense, mas porque a coerência não se acrescenta depois.</p>
 
 <p>Se está a preparar alguma coisa, <a href="../../contact/">diga-me o que tem em mãos</a> e
@@ -157,13 +148,9 @@ digo-lhe o que pedir, e o que me faz falta para construir a campanha inteira a p
 homepage, in a LinkedIn feed, as a vertical reel, and sometimes as six seconds before a YouTube
 video. Those are different films. The mistake is commissioning them as different jobs.</p>
 
-<p>Ordered one at a time — the film first, the reels a few months later, something for a trade
-show after that — they stop looking like one campaign. They look like three campaigns by three
-people, which is usually exactly what they are.</p>
-
-<p>Where I sit in this: I don't produce the material, I edit it. Everything here comes from being
-the person it arrives to, often months after it was made, with a brief to make it match something
-that was finished long ago.</p>
+<p>Ordered one at a time, they stop looking like one campaign. The film first, the reels a few
+months later, something for a trade show after that. Three campaigns by three people, which is
+usually exactly what they are.</p>
 
 <h3>What incoherence actually looks like</h3>
 
@@ -171,8 +158,9 @@ that was finished long ago.</p>
 
 <p>The grade is slightly warmer in the second batch, because it was done six months later on a
 different monitor. The lower-thirds use a typeface that isn't quite the brand one, because
-whoever made them didn't have the file. The music is a different track — the original licence
-covered one film, not a campaign — so the reels feel like they belong to another company.</p>
+whoever made them didn't have the file. The music is a different track, because the original
+licence covered one film and not a campaign, so the reels feel like they belong to another
+company.</p>
 
 <p>Nobody watching could tell you what's wrong. They just don't connect the pieces to each other,
 which means every piece has to do the work of introducing you from scratch. Repetition is what
@@ -183,7 +171,7 @@ belonging to the first.</p>
 
 <p>Here's the tension, and it's the whole job.</p>
 
-<p>The pieces have to be recognisably the same campaign — same grade, same typography, same world
+<p>The pieces have to be recognisably the same campaign: same grade, same typography, same world
 of music, same rhythm in the cutting. Someone should know it's you before the logo appears.</p>
 
 <p>But they can't be the same film at different lengths. That's the other failure, and it's just
@@ -195,20 +183,20 @@ paid for four pieces and published one idea.</p>
 used, no words at all. One is thirty seconds of process, because process performs and most brands
 are too polite to show it. Same family, different jobs.</p>
 
-<h3>Why separate commissions can't get there</h3>
+<h3>Where separate commissions drift</h3>
 
-<p>Because cohesion isn't something you add at the end. It's decided by things that happen
-before, and each of them is cheap once and expensive twice:</p>
+<p>Cohesion is hard to add at the end. It is mostly decided by things that happen before, and
+each of them is cheap once and expensive twice:</p>
 
 <ul>
   <li><strong>One grade, one set of references.</strong> Matching a grade you did six months ago
   from a different project file is guesswork.</li>
   <li><strong>One music licence</strong> covering every cut on every platform, rather than a new
   track each time because the old one wasn't cleared for this.</li>
-  <li><strong>One set of motion assets</strong> — titles, lower-thirds, logo animation — built
+  <li><strong>One set of motion assets</strong> (titles, lower-thirds, logo animation), built
   once and reused, instead of rebuilt slightly differently each round.</li>
   <li><strong>Material made knowing every format was coming.</strong> A wide 16:9 composition
-  loses about 60% of the frame in a 9:16 crop, and it's the sides that go — which is where the
+  loses about 60% of the frame in a 9:16 crop, and it's the sides that go, which is where the
   composition usually lives.</li>
 </ul>
 
@@ -221,12 +209,12 @@ day, and it still reads as a wide shot being rescued.</p>
 <p>Commissioned as one job, the same material gives:</p>
 
 <ul>
-  <li><strong>The brand film</strong> — 60 to 120 seconds, 16:9. The full argument.</li>
-  <li><strong>The trailer</strong> — 30 to 45 seconds. Condenses the argument into something
-  that stands on its own rather than a shortened film.</li>
-  <li><strong>The teaser</strong> — 10 to 15 seconds. One hook, built to make someone look.</li>
-  <li><strong>Social cuts</strong> — three to six vertical pieces, 9:16 or 4:5, subtitled,
-  built to work with the sound off.</li>
+  <li><strong>The brand film</strong>: 60 to 120 seconds, 16:9. The full argument.</li>
+  <li><strong>The trailer</strong>: 30 to 45 seconds. Condenses the argument into something that
+  stands on its own rather than a shortened film.</li>
+  <li><strong>The teaser</strong>: 10 to 15 seconds. One hook, built to make someone look.</li>
+  <li><strong>The reels</strong>: three to six vertical pieces, 9:16 or 4:5, subtitled, built to
+  work with the sound off.</li>
 </ul>
 
 <p>Stills and a 6-second pre-roll bumper come nearly free if the material allows it.</p>
@@ -237,7 +225,7 @@ day, and it still reads as a wide shot being rescued.</p>
 whoever is making the material:</p>
 
 <ul>
-  <li>Every platform this campaign will run on. Write the list — the obvious ones get
+  <li>Every platform this campaign will run on. Write the list, because the obvious ones get
   forgotten.</li>
   <li>Which pieces, at what lengths, in which aspect ratios.</li>
   <li>Whether the material is framed knowing vertical crops are coming.</li>
@@ -245,14 +233,10 @@ whoever is making the material:</p>
   <li>Subtitles: included, and in which languages.</li>
 </ul>
 
-<p>That last one matters more than people expect across markets. I work in English, Portuguese and
-Spanish, and the difference between a subtitle that was translated and one written for the cut is
-visible.</p>
-
 <h3>The short version</h3>
 
 <p>If the video only ever lives on your website, buy one film. If it's going to run across
-platforms — and it almost always is — commission the whole campaign at once. Not to save money,
+platforms, and it almost always is, commission the whole campaign at once. Not to save money,
 though it usually does, but because cohesion cannot be retrofitted.</p>
 
 <p>If you're planning something, <a href="../../contact/">tell me what you have in mind</a> and
