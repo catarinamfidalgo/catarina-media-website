@@ -81,8 +81,8 @@ COPY = {
         "Um projeto pontual ou um avençado mensal. Qualquer um funciona.",
     "Tell me a little about your project and I'll get back to you personally.":
         "Conte-me um pouco sobre o seu projeto e respondo-lhe pessoalmente.",
-    "Your message comes straight to my inbox. I'll reply personally, usually within a day or two.":
-        "A sua mensagem chega diretamente à minha caixa de entrada. Respondo pessoalmente, normalmente dentro de um ou dois dias.",
+    "This opens your email app with everything filled in — just press send.":
+        "Isto abre a sua aplicação de email com tudo preenchido — é só enviar.",
     "Notes on editing, post-production, and working with video.":
         "Notas sobre montagem, pós-produção e trabalhar com vídeo.",
 }

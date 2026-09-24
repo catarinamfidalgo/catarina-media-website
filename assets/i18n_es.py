@@ -78,8 +78,8 @@ COPY = {
         "Un proyecto puntual o un acuerdo mensual continuo. Cualquiera de los dos funciona.",
     "Tell me a little about your project and I'll get back to you personally.":
         "Cuéntame un poco sobre tu proyecto y te respondo personalmente.",
-    "Your message comes straight to my inbox. I'll reply personally, usually within a day or two.":
-        "Tu mensaje llega directamente a mi bandeja de entrada. Te respondo personalmente, normalmente en uno o dos días.",
+    "This opens your email app with everything filled in — just press send.":
+        "Esto abre tu aplicación de correo con todo rellenado — solo tienes que enviarlo.",
     "Notes on editing, post-production, and working with video.":
         "Notas sobre montaje, posproducción y trabajar con vídeo.",
 }

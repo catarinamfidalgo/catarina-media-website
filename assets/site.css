@@ -47,16 +47,21 @@
      large ones, so it sits fractionally below. Raise the nudge to drop it
      further; it is the only number to touch. */
   .brand-tag { --tag-size: .684rem; --tag-lift: .2884em; --tag-rule: 1.274em;
-    --tag-nudge: .5px;
+    --tag-nudge: 0px;
     position: relative; padding-left: 15px; white-space: nowrap;
     font-size: var(--tag-size); font-weight: 600; letter-spacing: .14em;
     text-transform: uppercase; color: var(--muted);
+    /* line-height:1 is load-bearing. This face has ascent 1.0 and descent
+       .303, so at that line-height the cap centre falls at exactly 50% of
+       the box — which lets the rule below centre itself instead of being
+       placed by a number measured from the wrong edge. */
+    line-height: 1;
     transform: translateY(calc(var(--tag-nudge) - var(--tag-lift))); }
   html[lang^="pt"] .brand-tag { --tag-size: .787rem; --tag-lift: .205em;  --tag-rule: 1.107em; }
   html[lang^="es"] .brand-tag { --tag-size: .695rem; --tag-lift: .278em;  --tag-rule: 1.254em; }
   /* The rule spans the name's cap height, centred on that shared centre. */
   .brand-tag::before { content: ""; position: absolute; left: 0;
-    bottom: calc(-1 * var(--tag-lift));
+    top: 50%; transform: translateY(-50%);
     width: 1px; height: var(--tag-rule); background: var(--line); }
   /* Below this the name and the menu button need the whole row. */
   @media (max-width: 860px) { .brand-tag { display: none; } }
