@@ -148,6 +148,11 @@ def build():
             href = ("../" * depth) + target
             if anchor == "portfolio":
                 href += "#portfolio"
+            elif anchor == "contact":
+                # Land on the form itself, not the top of the page. Someone who
+                # pressed "Start a project" has already decided; make them scroll
+                # past the heading first and some of them will not.
+                href += "#contact-form"
             page_body = 'href="#%s"' % anchor
             body = body.replace(page_body, 'href="%s"' % href)
 

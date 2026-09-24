@@ -78,7 +78,7 @@
   }
   * { box-sizing: border-box; }
   html { scroll-behavior: smooth; }
-  section[id], div[id] { scroll-margin-top: 24px; }
+  section[id], div[id], form[id] { scroll-margin-top: 24px; }
   body { margin: 0; font-family: 'Hanken Grotesk', sans-serif; background: var(--bg); color: var(--text);
     font-feature-settings: "kern" 1, "liga" 1; text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased; }
