@@ -33,118 +33,115 @@ POSTS = [
         "date": "2026-09-24",
         "date_label": "September 2026",
         "title": "One film isn't enough: what a brand video package actually includes",
-        "excerpt": "Most brands commission a single film, then spend the next month trying to "
-                   "cut it into something that works on Instagram. Here's what to ask for "
-                   "instead, and why deciding it before the shoot costs less than fixing it after.",
+        "excerpt": "What a brand video package includes, why cropping a 16:9 film for Instagram "
+                   "doesn't work, and what to decide before the shoot. From a video editor who "
+                   "gets called in when it wasn't.",
         "body": """
-<p class="lede">Most of the work I get asked to rescue starts the same way. A brand commissions
-one film. It comes out well. Then someone asks for the Instagram version, and the whole thing
-has to be taken apart.</p>
+<p class="lede">A brand video package means commissioning the brand film, the short cutdown and
+the social versions as one job, before anything is shot. Most people don't. They order the film,
+it turns out well, and three weeks later someone asks for the Instagram version.</p>
 
-<p>The film was shot to be watched once, in widescreen, with sound. What's needed now is
-fifteen seconds, vertical, and legible with the sound off. Those aren't the same film, and no
-amount of editing turns one into the other cleanly.</p>
+<p>That's when I usually get the call.</p>
 
-<h3>What actually goes wrong</h3>
+<p>The request sounds small. It isn't. What exists is ninety seconds, 16:9, built around a
+voiceover. What's needed is fifteen seconds, 9:16, that works with the sound off. Those aren't
+versions of each other. They're different films that happen to share footage.</p>
 
-<p>It's rarely the edit. It's decisions that were made months earlier, on set, by people who
-weren't thinking about a phone screen.</p>
+<h3>Why you can't just crop a brand film for Instagram</h3>
+
+<p>Going from 16:9 to 9:16 throws away about 60% of the frame. Not the edges — the sides, where
+most of the composition lives. Your founder sitting slightly off-centre with the product visible
+behind her becomes a close-up of her shoulder.</p>
+
+<p>Sometimes I can reframe shot by shot, pushing in and tracking to keep the subject in frame.
+It works when there's resolution to spare. It costs a day, and it always looks like what it is:
+a wide shot being rescued.</p>
+
+<p>The other problem is sound. Most social video is watched muted, and a film carried by
+voiceover says nothing in silence. Subtitles help. They're not the same as a piece that was
+built to work without audio in the first place.</p>
+
+<h3>What's included in a brand video package</h3>
+
+<p>When it's planned properly, one shoot produces:</p>
 
 <ul>
-  <li><strong>The framing doesn't survive the crop.</strong> A beautifully composed wide shot
-  with your product on the left and your founder on the right becomes, in vertical, a shot of
-  neither. Cropping to 9:16 throws away three quarters of the frame, and it's never the
-  quarter you'd have chosen.</li>
-  <li><strong>There's no room to cut.</strong> A 90-second film built as one continuous
-  argument has no natural 15-second piece inside it. Every possible cut ends mid-thought.</li>
-  <li><strong>It doesn't work silent.</strong> Most social video is watched with the sound off.
-  If the message lives in a voiceover and nothing on screen carries it, the film says nothing
-  to the majority of people who see it.</li>
-  <li><strong>The music licence doesn't cover it.</strong> Track licensed for one film, one
-  platform. Now it's on six cuts across three channels, and either the licence is extended or
-  everything gets rescored.</li>
+  <li><strong>The brand film</strong> — 60 to 120 seconds, 16:9. The full argument. Homepage,
+  sales deck, trade show.</li>
+  <li><strong>A cutdown</strong> — 15 to 30 seconds. Not the film with the middle removed. Its
+  own piece, with its own opening.</li>
+  <li><strong>Social cuts</strong> — three to six vertical pieces, 9:16 or 4:5, subtitled,
+  usually 10 to 20 seconds each.</li>
 </ul>
 
-<p>Each of these is fixable in post. All of them are cheaper to avoid.</p>
+<p>Some clients also want stills pulled from the footage, or a 6-second bumper for pre-roll. Both
+are close to free if you ask before the shoot and expensive afterwards.</p>
 
-<h3>What a package actually is</h3>
+<h3>The part almost nobody plans for</h3>
 
-<p>A brand video package means deciding, before anyone shoots anything, that you're making
-several finished pieces from one production. Usually:</p>
+<p>Here's what actually goes wrong, and it isn't the cropping.</p>
+
+<p>When the short cuts are an afterthought, they end up being the same film at three lengths. The
+fifteen-second version is the ninety-second version with the middle taken out. Someone who has
+seen one has seen all of them — the others just repeat it faster. You paid for three pieces and
+published one idea.</p>
+
+<p>Commissioned together, each piece gets to be about something. One opens on the founder. One is
+the product being used, no words at all. One is thirty seconds of process, because process
+performs and most brands are too polite to show it. Different hooks, different shapes, three
+reasons to stop scrolling instead of one reason repeated.</p>
+
+<p>They still have to belong to each other, though. Same grade, same typeface, same world of
+music, same rhythm in the cutting. Recognisably yours before the logo appears — but distinct
+enough to earn a place in the feed.</p>
+
+<p>That balance can't be found in the edit. Distinct pieces need distinct material, and material
+is decided on the shoot day.</p>
+
+<h3>Does a video package cost more?</h3>
+
+<p>Usually less than buying the same pieces separately, and the reason has nothing to do with a
+bulk discount. It's that the expensive decisions get made while they're still cheap:</p>
 
 <ul>
-  <li><strong>The brand film.</strong> 60 to 120 seconds. The full argument. This is what goes
-  on your homepage and gets sent to people who already want to know more.</li>
-  <li><strong>A trailer or cutdown.</strong> 15 to 30 seconds. Not a shortened version of the
-  film — a different piece with its own shape, made to stop someone scrolling.</li>
-  <li><strong>Social cuts.</strong> Three to six vertical pieces, each built around one idea.
-  Subtitled, legible silent, sized for where they're going.</li>
-</ul>
-
-<p>The word that matters is <em>before</em>. Planned in advance, the same shoot day yields all
-of it. Decided afterwards, you're either cropping badly or booking a second day.</p>
-
-<h3>Why it costs less</h3>
-
-<p>People assume a package costs more because it's more deliverables. It usually costs less
-than buying the same pieces separately, for reasons that are all about the shoot rather than
-the edit:</p>
-
-<ul>
-  <li>Shots get framed with the crop in mind — subject centred, space left top and bottom, so
-  the vertical version is a real composition rather than a salvage job.</li>
-  <li>The interview gets two or three extra questions, specifically to give the short cuts
+  <li>Shots get framed knowing a vertical crop is coming, with headroom and centring built in.</li>
+  <li>The interview gets three or four extra questions, asked specifically to give the short cuts
   something to be about.</li>
-  <li>Enough B-roll is shot to cover cuts that don't exist yet.</li>
-  <li>Music is licensed once, for everything, at the start.</li>
-  <li>The colour and sound work is done once across all the pieces instead of being repeated
-  each time something new is ordered.</li>
+  <li>Music is licensed once, for every cut and every platform, rather than renegotiated when the
+  fourth piece appears.</li>
+  <li>Grade and sound are done once across everything instead of being redone each time.</li>
 </ul>
 
-<h3>The part most people miss</h3>
+<p>Ordering the social cuts six weeks later means a second edit, often a second licence, and
+sometimes a second shoot day. That's where the money goes.</p>
 
-<p>The saving is real, but it isn't the main reason to plan the cuts together. The main reason
-is that the pieces come out genuinely different from each other.</p>
+<h3>What to ask before the shoot</h3>
 
-<p>When the short cuts are an afterthought, they're the same film with bits removed. The
-15-second version is the 90-second version with the middle taken out. Anyone who has seen one
-has effectively seen them all — the second and third add nothing, they just repeat the first
-more briefly. You've paid for three pieces and published one idea.</p>
-
-<p>Commissioned together, each piece gets to be about something. One opens on the founder, one
-opens on the product in use, one is just the process with no words at all. Different hooks,
-different structures, different reasons to stop scrolling. Someone who sees all three has
-learned three things about you rather than the same thing three times.</p>
-
-<p>The balance to hold is that they still have to belong to each other. Same grade, same
-typography, same world of music, the same rhythm in the cutting. Cohesive enough that the
-third one is recognisably yours before anyone sees the logo — but distinct enough that it
-earns its place in the feed.</p>
-
-<p>That balance can't be found afterwards. Distinct pieces need distinct material, and
-material is decided on the shoot day.</p>
-
-<h3>What to ask for</h3>
-
-<p>If you're commissioning, these are the questions worth asking before the shoot rather than
-after:</p>
+<p>If you're commissioning <a href="../../services/">video editing and post-production</a>, these
+are worth settling before anyone books a camera:</p>
 
 <ul>
-  <li>What are all the places this video will end up? List them, including the ones that feel
-  obvious.</li>
-  <li>Which pieces do we need, at what lengths and what aspect ratios?</li>
-  <li>Will the shoot be framed so vertical crops work?</li>
-  <li>Does the music licence cover every cut, on every platform?</li>
-  <li>Are subtitles included, and in which languages?</li>
+  <li>Every place this video will end up. Write the list down — the obvious ones get forgotten.</li>
+  <li>Which pieces, at what lengths, in which aspect ratios.</li>
+  <li>Whether the shoot will be framed so vertical crops are compositions rather than rescues.</li>
+  <li>Whether the music licence covers every cut on every platform.</li>
+  <li>Subtitles: included or not, and in which languages.</li>
 </ul>
 
-<h3>The short version</h3>
+<p>That last one matters more than people expect if you're running in more than one market. I
+work in English, Portuguese and Spanish, and the difference between a subtitle that was
+translated and one that was written for the cut is visible.</p>
 
-<p>One film is a deliverable. A package is a plan. The plan costs less, because the expensive
-decisions — framing, coverage, music, language — get made while they're still cheap to make.</p>
+<h3>So what should you actually commission?</h3>
 
-<p>If you're working out what you actually need, I'm happy to talk it through before anyone
-quotes you anything.</p>
+<p>If the video only ever lives on your website, one film is fine. Buy one film.</p>
+
+<p>If it's going anywhere near social — and it almost always is — decide that now, not in
+November. The shoot day is the only moment when adding pieces is cheap.</p>
+
+<p>If you're working out what you need, <a href="../../contact/">tell me what you're planning</a>
+and I'll tell you what's worth shooting. That conversation is free and usually saves more than it
+costs.</p>
 """
     },
 ]
