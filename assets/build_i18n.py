@@ -135,11 +135,14 @@ def build_page(lang, path, slug):
     s = re.sub(r"<title>[^<]*</title>", "<title>%s</title>" % title, s)
     s = re.sub(r'(name="description" content=")[^"]*(")', r"\g<1>%s\g<2>" % t.META["description"], s)
     s = re.sub(r'(og:description" content=")[^"]*(")', r"\g<1>%s\g<2>" % t.META["description"], s)
-    # each language is its own page, not a duplicate of the English one
-    s = s.replace('<link rel="canonical" href="https://catarina.media/">',
-                  '<link rel="canonical" href="https://catarina.media/%s/">' % lang)
-    s = s.replace('<meta property="og:url" content="https://catarina.media/">',
-                  '<meta property="og:url" content="https://catarina.media/%s/">' % lang)
+    # Each language is its own page, not a duplicate of the English one. This
+    # has to rewrite every canonical, not just the homepage's: an inner page
+    # kept pointing at the English URL, which tells a crawler to index that one
+    # instead — the pt/ and es/ inner pages were asking not to be indexed.
+    s = re.sub(r'(rel="canonical" href="https://catarina\.media/)([^"]*")',
+               lambda m: m.group(1) + lang + "/" + m.group(2), s)
+    s = re.sub(r'(og:url" content="https://catarina\.media/)([^"]*")',
+               lambda m: m.group(1) + lang + "/" + m.group(2), s)
 
     s = s.replace('<html lang="en">', '<html lang="%s">' % {"pt": "pt-PT", "es": "es-ES"}.get(lang, lang))
 
