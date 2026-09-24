@@ -6,6 +6,8 @@
     --lav:#ece6fa; --lav-bright:#a98bef; --ink:#1b1a1f; --line:rgba(27,26,31,.16);
     /* A scale rather than one hard 2px everywhere. */
     --r-sm:6px; --r-md:10px; --r-lg:16px; --r-pill:999px; --radius:var(--r-sm);
+    /* One gutter for the whole site. The hero used to carry its own. */
+    --gutter:28px;
   }
   * { box-sizing: border-box; }
   html { scroll-behavior: smooth; }
@@ -16,7 +18,7 @@
   img { max-width: 100%; display: block; }
   a { color: inherit; text-decoration: none; }
   .container { max-width: 1000px; margin: 0 auto;
-    padding: 0 max(28px, env(safe-area-inset-left), env(safe-area-inset-right)); }
+    padding: 0 max(var(--gutter), env(safe-area-inset-left), env(safe-area-inset-right)); }
 
   header.site { display: flex; align-items: baseline; justify-content: space-between; gap: 20px; padding: 30px 0 24px; }
   .brand { font-weight: 800; font-size: 1.25rem; letter-spacing: .01em; text-transform: uppercase; font-family: 'Hanken Grotesk', sans-serif; line-height: 1.05; }
@@ -114,21 +116,16 @@
   @keyframes timeline-drift { from { background-position: 0 center; } to { background-position: -2400px center; } }
   @media (prefers-reduced-motion: reduce) { .hero-reed-media::before { animation: none; } }
 
-  .hero-reed-inner { position: relative; z-index: 2; width: 100%; max-width: 1200px; margin: 0 auto; padding: 0 40px 9vh; }
-  /* What the site is for, said plainly above the headline — the same
-     eyebrow idiom the Portfolio and Services sections already use. */
-  .hero-role { margin: 0 0 16px; font-size: .72rem; font-weight: 700; letter-spacing: .2em;
-    text-transform: uppercase; color: var(--lav-bright); }
-  .hero-title { font-size: clamp(3rem,9.5vw,7.4rem); font-weight: 900; line-height: .9; letter-spacing: -.025em; text-transform: uppercase; margin: 0 0 20px; color: #fff; }
-  .hero-sub { margin: 0 0 32px; max-width: 46ch; font-weight: 500;
-    font-size: clamp(1rem,1.4vw,1.15rem); line-height: 1.5; color: rgba(255,255,255,.84); }
+  .hero-reed-inner { position: relative; z-index: 2; width: 100%; max-width: 1000px; margin: 0 auto;
+    padding: 0 max(var(--gutter), env(safe-area-inset-left), env(safe-area-inset-right)) 9vh; }
+  .hero-title { font-size: clamp(3rem,9.5vw,7.4rem); font-weight: 900; line-height: .9; letter-spacing: -.025em; text-transform: uppercase; margin: 0 0 30px; color: #fff; }
   .hero-title span { color: var(--lav-bright); }
   .hero-reed .btn-row { justify-content: flex-start; }
   .btn--ghost-light { background: transparent; color: #fff; border-color: rgba(255,255,255,.55); }
   .btn--ghost-light:hover { background: #fff; color: var(--ink); border-color: #fff; }
   .scroll-cue { position: absolute; right: 38px; bottom: 9vh; z-index: 3; writing-mode: vertical-rl; text-orientation: mixed; text-transform: uppercase; letter-spacing: .18em; font-size: .68rem; font-weight: 700; color: rgba(255,255,255,.7); display: inline-flex; align-items: center; gap: 16px; }
   .scroll-cue::after { content: ''; width: 1px; height: 66px; background: rgba(255,255,255,.55); }
-  @media (max-width: 720px) { .scroll-cue { display: none; } .hero-reed-inner { padding: 0 24px 12vh; } }
+  @media (max-width: 720px) { .scroll-cue { display: none; } .hero-reed-inner { padding-bottom: 12vh; } }
 
   .about-wrap { display: flex; gap: 44px; align-items: center; flex-wrap: wrap; }
   .about-photo { flex: 0 0 210px; width: 210px; height: 210px; border-radius: 50%; overflow: hidden; box-shadow: 0 22px 48px rgba(19,18,23,.34), 0 4px 12px rgba(19,18,23,.18); }
@@ -263,12 +260,12 @@
 
   /* ---------- Phone ---------- */
   @media (max-width: 640px) {
-    .container { padding: 0 20px; }
+    :root { --gutter: 20px; }
     .section { padding: 56px 0; }
     .services { padding: 52px 0; }
     /* svh accounts for the browser's collapsing address bar; vh does not */
     .hero-reed { min-height: 78svh; }
-    .hero-reed-inner { padding: 0 20px 10vh; }
+    .hero-reed-inner { padding-bottom: 10vh; }
     header.site { padding: 20px 0 16px; }
     .about-wrap { gap: 26px; }
     .about-photo { margin: 0 auto; }
@@ -334,10 +331,8 @@
 
   @media (max-width: 640px) {
     /* the hero line has to fit "IN THE EDIT" on one line at 390pt */
-    .hero-title { font-size: clamp(2.6rem, 12vw, 7.4rem); margin-bottom: 16px; }
-    .hero-role { font-size: .64rem; letter-spacing: .16em; margin-bottom: 12px; }
-    .hero-sub { font-size: .95rem; margin-bottom: 26px; }
-    .hero-reed-inner { padding: 0 20px 10vh; }
+    .hero-title { font-size: clamp(2.6rem, 12vw, 7.4rem); }
+    .hero-reed-inner { padding-bottom: 10vh; }
 
     .project-card .title { font-size: 1.12rem; }
     .project-card .overlay { padding: 16px; }
@@ -357,7 +352,7 @@
   }
 
   @media (max-width: 400px) {
-    .container { padding: 0 16px; }
+    :root { --gutter: 16px; }
     .hero-title { font-size: clamp(2.3rem, 11.5vw, 7.4rem); }
     .brand { font-size: 1.1rem; }
     .lang-switch { font-size: .62rem; gap: 8px; }

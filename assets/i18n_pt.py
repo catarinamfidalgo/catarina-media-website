@@ -3,10 +3,6 @@
 
 # Interface chrome
 UI = {
-    "Video Editor &amp; Post-Production":
-        "Montagem e Pós-Produção de Vídeo",
-    "Commercials, brand films and social video for brands and agencies — in English, Portuguese and Spanish.":
-        "Publicidade, filmes de marca e vídeo para redes sociais, para marcas e agências — em inglês, português e espanhol.",
     "Home": "Início",
     "Portfolio": "Portfólio",
     "About": "Sobre",

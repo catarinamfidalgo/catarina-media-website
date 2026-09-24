@@ -3,10 +3,6 @@
 montaje for editing, etalonaje for grading, vosotros when addressing agencies."""
 
 UI = {
-    "Video Editor &amp; Post-Production":
-        "Montaje y Posproducción de Vídeo",
-    "Commercials, brand films and social video for brands and agencies — in English, Portuguese and Spanish.":
-        "Publicidad, películas de marca y vídeo para redes sociales, para marcas y agencias — en inglés, portugués y español.",
     "Home": "Inicio",
     "Portfolio": "Portafolio",
     "About": "Sobre mí",
