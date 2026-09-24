@@ -75,7 +75,7 @@ SERVICES = {
     "Video Editing": "Montaje de Vídeo",
     "I build the story out of raw footage and find the pace that holds it together.":
         "Construyo la historia a partir del material bruto y encuentro el ritmo que la sostiene.",
-    "Color Grading": "Etalonaje",
+    "Color Grading": "Color Grading y Etalonaje",
     "Grading every shot so the piece feels like one film and fits your brand.":
         "Etalono cada plano para que la pieza parezca una sola película y encaje con tu marca.",
     "Motion Graphics &amp; Animation": "Motion Graphics y Animación",
@@ -89,7 +89,7 @@ SERVICES = {
         "Subtítulos y versiones completas en inglés, portugués y español.",
     "Licensed Music &amp; Stock": "Música e Imágenes con Licencia",
     "Finding and licensing the right music and stock, cleared and ready to publish.":
-        "Buscar y licenciar la música y las imágenes adecuadas, ya liberadas para publicar.",
+        "Buscar y licenciar la música y el stock footage adecuado, ya liberadas para publicar.",
 }
 
 COPY = {

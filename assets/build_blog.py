@@ -38,12 +38,12 @@ POSTS = [
                    "gets called in when it wasn't.",
         "pt": {
             "date_label": "Setembro de 2026",
-            "title": "Um filme não chega: o que inclui um pacote de vídeo de marca",
-            "excerpt": "O que inclui um pacote de vídeo para marcas — brand film, corte curto e "
+            "title": "Um filme não chega: o que inclui um branding film package",
+            "excerpt": "O que inclui um branding film package — brand film, corte curto e "
                        "reels — porque não resulta cortar um 16:9 para o Instagram, e o que "
                        "decidir antes da filmagem.",
             "body": """
-<p class="lede">Um pacote de vídeo de marca — ou pacote de vídeo para marcas — é encomendar o
+<p class="lede">Um branding film package — ou pacote de vídeo para marcas — é encomendar o
 brand film, o corte curto e os reels como um só trabalho, antes de se filmar seja o que for. Quase ninguém faz assim.
 Encomenda-se o filme, corre bem, e três semanas depois alguém pergunta pela versão para o
 Instagram.</p>
@@ -68,7 +68,7 @@ que é: um plano aberto a ser salvo.</p>
 voz off não diz nada em silêncio. As legendas ajudam. Não são o mesmo que uma peça pensada de
 raiz para funcionar sem áudio.</p>
 
-<h3>O que inclui um pacote de vídeo para marcas (brand film package)</h3>
+<h3>O que inclui um branding film package</h3>
 
 <p>Quando é bem planeado, uma filmagem dá:</p>
 

@@ -76,10 +76,10 @@ UI = {
 SERVICES = {
     "Video Editing": "Edição de Vídeo",
     "I build the story out of raw footage and find the pace that holds it together.":
-        "Construo a história a partir do material bruto e encontro o ritmo que a sustenta.",
-    "Color Grading": "Correção de Cor",
+        "Construo a história a partir do material bruto — a montagem e o ritmo que a sustentam.",
+    "Color Grading": "Color Grading e Correção de Cor",
     "Grading every shot so the piece feels like one film and fits your brand.":
-        "Trato cada plano para que a peça pareça um só filme e encaixe na sua marca.",
+        "Faço o color grading plano a plano para que a peça pareça um só filme e encaixe na sua marca.",
     "Motion Graphics &amp; Animation": "Motion Graphics e Animação",
     "Titles, lower-thirds, logo animation, and light 2D work when a scene needs it.":
         "Títulos, oráculos, animação de logótipo e trabalho 2D leve quando a cena pede.",
@@ -91,7 +91,7 @@ SERVICES = {
         "Legendas e versões completas em inglês, português e espanhol.",
     "Licensed Music &amp; Stock": "Música e Imagens Licenciadas",
     "Finding and licensing the right music and stock, cleared and ready to publish.":
-        "Encontrar e licenciar a música e as imagens certas, já libertadas para publicação.",
+        "Encontrar e licenciar a música e o stock footage certos, já libertados para publicação.",
 }
 
 # Body copy
