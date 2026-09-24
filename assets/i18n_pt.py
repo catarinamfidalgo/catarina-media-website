@@ -3,7 +3,6 @@
 
 # Interface chrome
 UI = {
-    "Video editing &amp; post-production": "Montagem e pós-produção de vídeo",
     "Home": "Início",
     "Portfolio": "Portfólio",
     "About": "Sobre",

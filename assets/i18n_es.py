@@ -3,7 +3,6 @@
 montaje for editing, etalonaje for grading, vosotros when addressing agencies."""
 
 UI = {
-    "Video editing &amp; post-production": "Montaje y posproducción de vídeo",
     "Home": "Inicio",
     "Portfolio": "Portafolio",
     "About": "Sobre mí",
