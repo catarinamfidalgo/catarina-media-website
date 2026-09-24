@@ -62,6 +62,11 @@ def depth_fix(html, depth, slug=""):
     up = "../" * depth
     html = re.sub(r'((?:href|src)=")(assets/)', r"\g<1>" + up + r"\g<2>", html)
     html = re.sub(r'((?:href|src)=")(blog/)', r"\g<1>" + up + r"\g<2>", html)
+    # Links written from the master as if from the root — the cookie bar's link
+    # to the privacy page among them — need the same treatment, or they resolve
+    # under whatever directory the page happens to live in.
+    for slug in ("privacy/", "contact/", "services/", "about/", "agencies/"):
+        html = re.sub(r'(href=")(%s)' % slug, r"\g<1>" + up + r"\g<2>", html)
     html = html.replace("'assets/", "'" + up + "assets/")
     # the switcher should land on the same page in the other language
     tail = (slug + "/") if slug else ""
@@ -128,6 +133,23 @@ def build():
         # into nothing. depth_fix() rewrites the path for nested pages.
         if "contact" in parts and not needs_js:
             body += '  <script src="assets/contact.js"></script>\n'
+
+        # In-page anchors only work on the page that carries that section.
+        # After the split, "Start a project" pointed at #contact from fifteen
+        # pages that have no contact section, so the button did nothing at all.
+        # Anything whose target is absent becomes a link to the page that owns
+        # it instead.
+        section_page = {"contact": "contact/", "about": "about/",
+                        "for-agencies": "agencies/", "portfolio": ""}
+        present = set(re.findall(r'id="([^"]+)"', body))
+        for anchor, target in section_page.items():
+            if anchor in present:
+                continue
+            href = ("../" * depth) + target
+            if anchor == "portfolio":
+                href += "#portfolio"
+            page_body = 'href="#%s"' % anchor
+            body = body.replace(page_body, 'href="%s"' % href)
 
         page = "<!DOCTYPE html>\n<html lang=\"en\">\n<head>" + head + "</head>\n<body>\n" + body + "</body>\n</html>\n"
         page = depth_fix(page, depth, slug)
