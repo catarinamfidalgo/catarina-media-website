@@ -36,6 +36,123 @@ POSTS = [
         "excerpt": "What a brand video package includes, why cropping a 16:9 film for Instagram "
                    "doesn't work, and what to decide before the shoot. From a video editor who "
                    "gets called in when it wasn't.",
+        "pt": {
+            "date_label": "Setembro de 2026",
+            "title": "Um filme não chega: o que inclui um pacote de vídeo de marca",
+            "excerpt": "O que inclui um pacote de vídeo de marca, porque não resulta cortar "
+                       "um filme 16:9 para o Instagram, e o que decidir antes da filmagem. "
+                       "Escrito por quem é chamada quando não se decidiu.",
+            "body": """
+<p class="lede">Um pacote de vídeo de marca é encomendar o filme, o corte curto e as versões para
+redes sociais como um só trabalho, antes de se filmar seja o que for. Quase ninguém faz assim.
+Encomenda-se o filme, corre bem, e três semanas depois alguém pergunta pela versão para o
+Instagram.</p>
+
+<p>É normalmente aí que me ligam.</p>
+
+<p>O pedido parece pequeno. Não é. O que existe são noventa segundos, 16:9, construídos à volta
+de uma voz off. O que é preciso são quinze segundos, 9:16, que funcionem sem som. Não são versões
+um do outro. São filmes diferentes que por acaso partilham imagens.</p>
+
+<h3>Porque não resulta cortar um filme de marca para o Instagram</h3>
+
+<p>Passar de 16:9 para 9:16 deita fora cerca de 60% do enquadramento. Não as margens — os lados,
+que é onde vive quase toda a composição. A fundadora ligeiramente descentrada com o produto atrás
+passa a ser um grande plano do ombro dela.</p>
+
+<p>Às vezes consigo reenquadrar plano a plano, aproximando e acompanhando o movimento para manter
+o sujeito dentro do quadro. Resulta quando há resolução a mais. Demora um dia. E nota-se sempre o
+que é: um plano aberto a ser salvo.</p>
+
+<p>Depois há o som. A maioria dos vídeos nas redes é vista sem som, e um filme que assenta numa
+voz off não diz nada em silêncio. As legendas ajudam. Não são o mesmo que uma peça pensada de
+raiz para funcionar sem áudio.</p>
+
+<h3>O que inclui um pacote de vídeo de marca</h3>
+
+<p>Quando é bem planeado, uma filmagem dá:</p>
+
+<ul>
+  <li><strong>O filme de marca</strong> — 60 a 120 segundos, 16:9. O argumento completo. Site,
+  apresentações comerciais, feiras.</li>
+  <li><strong>Um corte curto</strong> — 15 a 30 segundos. Não é o filme sem o meio. É uma peça
+  própria, com abertura própria.</li>
+  <li><strong>Cortes para redes sociais</strong> — três a seis peças verticais, 9:16 ou 4:5,
+  legendadas, normalmente entre 10 e 20 segundos.</li>
+</ul>
+
+<p>Há clientes que querem também fotografias tiradas das imagens, ou um bumper de 6 segundos para
+pré-roll. Qualquer um deles sai quase de graça se for pedido antes da filmagem, e caro depois.</p>
+
+<h3>A parte que quase ninguém planeia</h3>
+
+<p>O que corre mal a sério não é o enquadramento.</p>
+
+<p>Quando os cortes curtos são uma ideia posterior, acabam por ser o mesmo filme em três
+durações. A versão de quinze segundos é a de noventa sem o meio. Quem viu uma viu todas — as
+outras limitam-se a repetir mais depressa. Pagou três peças e publicou uma ideia.</p>
+
+<p>Encomendados em conjunto, cada peça pode ser sobre alguma coisa. Uma abre na fundadora. Outra é
+o produto a ser usado, sem uma palavra. Outra são trinta segundos de processo, porque processo
+funciona e a maioria das marcas tem pudor em mostrá-lo. Ganchos diferentes, formas diferentes,
+três razões para parar o scroll em vez de uma repetida.</p>
+
+<p>Mas têm de pertencer umas às outras. Mesma cor, mesma tipografia, mesmo mundo sonoro, mesmo
+ritmo de montagem. Reconhecivelmente vossas antes de aparecer o logótipo — e ainda assim
+suficientemente distintas para merecerem lugar no feed.</p>
+
+<p>Esse equilíbrio não se encontra na montagem. Peças distintas precisam de material distinto, e o
+material decide-se no dia da filmagem.</p>
+
+<h3>Um pacote fica mais caro?</h3>
+
+<p>Normalmente fica mais barato do que comprar as mesmas peças em separado, e não por causa de
+desconto de quantidade. É que as decisões caras são tomadas enquanto ainda são baratas:</p>
+
+<ul>
+  <li>Os planos são enquadrados já a contar com o corte vertical, com margem em cima e em baixo.</li>
+  <li>A entrevista leva mais três ou quatro perguntas, feitas de propósito para dar assunto aos
+  cortes curtos.</li>
+  <li>A música é licenciada uma vez, para todos os cortes e todas as plataformas, em vez de se
+  renegociar quando aparece a quarta peça.</li>
+  <li>Cor e som fazem-se uma vez para tudo, em vez de se repetirem a cada encomenda.</li>
+</ul>
+
+<p>Encomendar os cortes para redes seis semanas depois significa uma segunda montagem, muitas
+vezes uma segunda licença, e por vezes um segundo dia de filmagem. É aí que o dinheiro se
+perde.</p>
+
+<h3>O que perguntar antes da filmagem</h3>
+
+<p>Se está a encomendar <a href="../../services/">montagem e pós-produção</a>, vale a pena
+resolver isto antes de se marcar câmara:</p>
+
+<ul>
+  <li>Todos os sítios onde este vídeo vai parar. Escreva a lista — os óbvios são os que se
+  esquecem.</li>
+  <li>Que peças, com que durações, em que formatos.</li>
+  <li>Se a filmagem vai ser enquadrada para que os cortes verticais sejam composições e não
+  salvamentos.</li>
+  <li>Se a licença de música cobre todos os cortes em todas as plataformas.</li>
+  <li>Legendas: incluídas ou não, e em que línguas.</li>
+</ul>
+
+<p>Esta última conta mais do que se pensa se a campanha correr em mais do que um mercado. Trabalho
+em português, inglês e espanhol, e nota-se a diferença entre uma legenda traduzida e uma legenda
+escrita para o corte.</p>
+
+<h3>Então o que deve encomendar?</h3>
+
+<p>Se o vídeo só vai viver no site, um filme chega. Encomende um filme.</p>
+
+<p>Se vai parar às redes — e vai quase sempre — decida isso agora, não em novembro. O dia da
+filmagem é o único momento em que acrescentar peças é barato.</p>
+
+<p>Se está a tentar perceber o que precisa, <a href="../../contact/">diga-me o que tem em
+mãos</a> e digo-lhe o que vale a pena filmar. Essa conversa não se paga e costuma poupar mais do
+que custa.</p>
+""",
+        },
         "body": """
 <p class="lede">A brand video package means commissioning the brand film, the short cutdown and
 the social versions as one job, before anything is shot. Most people don't. They order the film,
