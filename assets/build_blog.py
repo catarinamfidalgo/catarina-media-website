@@ -101,9 +101,28 @@ the edit:</p>
   each time something new is ordered.</li>
 </ul>
 
-<p>[Catarina — a real example here would carry this whole piece. A project where the package
-was planned up front versus one where the social cuts were an afterthought, and what the
-difference actually looked like.]</p>
+<h3>The part most people miss</h3>
+
+<p>The saving is real, but it isn't the main reason to plan the cuts together. The main reason
+is that the pieces come out genuinely different from each other.</p>
+
+<p>When the short cuts are an afterthought, they're the same film with bits removed. The
+15-second version is the 90-second version with the middle taken out. Anyone who has seen one
+has effectively seen them all — the second and third add nothing, they just repeat the first
+more briefly. You've paid for three pieces and published one idea.</p>
+
+<p>Commissioned together, each piece gets to be about something. One opens on the founder, one
+opens on the product in use, one is just the process with no words at all. Different hooks,
+different structures, different reasons to stop scrolling. Someone who sees all three has
+learned three things about you rather than the same thing three times.</p>
+
+<p>The balance to hold is that they still have to belong to each other. Same grade, same
+typography, same world of music, the same rhythm in the cutting. Cohesive enough that the
+third one is recognisably yours before anyone sees the logo — but distinct enough that it
+earns its place in the feed.</p>
+
+<p>That balance can't be found afterwards. Distinct pieces need distinct material, and
+material is decided on the shoot day.</p>
 
 <h3>What to ask for</h3>
 
