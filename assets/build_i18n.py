@@ -80,9 +80,14 @@ def build_page(lang, path, slug):
     spanning = {k: v for k, v in table.items() if "<" in k}   # phrases containing markup
     plain = {k: v for k, v in table.items() if "<" not in k}
 
+    # Split off the page's own script block, which is not translated. Search
+    # from </head> onwards: the analytics tag in the head is also a <script>,
+    # and splitting on the first one left the entire body on the wrong side —
+    # silently shipping English navigation on the pt/ and es/ pages.
     head, script, tail = s, "", ""
-    if "<script>" in s:
-        i = s.index("<script>")
+    body_at = s.index("</head>") if "</head>" in s else 0
+    i = s.find("<script>", body_at)
+    if i != -1:
         head, script = s[:i], s[i:]
 
     def in_text_nodes(chunk):
