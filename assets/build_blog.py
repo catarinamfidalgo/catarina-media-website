@@ -32,16 +32,16 @@ POSTS = [
         "slug": "brand-video-package",
         "date": "2026-09-24",
         "date_label": "September 2026",
-        "title": "One campaign, every platform: why a brand video package should be one job",
-        "excerpt": "Why a brand campaign that runs across platforms has to be commissioned as one "
-                   "job: what cohesion actually means, where separate commissions drift, and "
-                   "what a brand video package covers.",
+        "title": "One campaign, every platform: commission it all at once",
+        "excerpt": "A campaign that runs across several platforms works better commissioned as one "
+                   "job. What cohesion actually means, where separate commissions drift, and what "
+                   "you end up with.",
         "pt": {
             "date_label": "Setembro de 2026",
-            "title": "Uma campanha, várias plataformas: porque é que um branding film package se encomenda de uma vez",
-            "excerpt": "Porque é que uma campanha que corre em várias plataformas tem de ser "
-                       "encomendada como um só trabalho: o que é coerência, onde é que as "
-                       "encomendas separadas se desviam, e o que inclui um branding film package.",
+            "title": "Uma campanha, várias plataformas: encomende tudo de uma vez",
+            "excerpt": "Uma campanha que corre em várias plataformas funciona melhor encomendada como "
+                       "um só trabalho. O que é a coerência, onde é que as encomendas separadas "
+                       "se desviam, e o que fica pronto no fim.",
             "body": """
 <p class="lede">Uma campanha já não vive num só sítio. A mesma ideia tem de funcionar no site, no
 feed do LinkedIn, como reel vertical e, às vezes, em seis segundos antes de um vídeo no YouTube.
@@ -102,7 +102,7 @@ cada uma delas é barata à primeira e cara à segunda:</p>
 e a acompanhar o movimento para manter o sujeito no quadro. Resulta quando sobra resolução, leva
 um dia de trabalho, e continua a ler-se como um plano aberto salvo à pressa.</p>
 
-<h3>O que inclui um branding film package</h3>
+<h3>O que fica pronto</h3>
 
 <p>Encomendado como um só trabalho, o mesmo material dá:</p>
 
@@ -204,7 +204,7 @@ each of them is cheap once and expensive twice:</p>
 and tracking to keep the subject in frame. It works when there's resolution to spare, it costs a
 day, and it still reads as a wide shot being rescued.</p>
 
-<h3>What a brand video package covers</h3>
+<h3>What you end up with</h3>
 
 <p>Commissioned as one job, the same material gives:</p>
 
