@@ -32,252 +32,231 @@ POSTS = [
         "slug": "brand-video-package",
         "date": "2026-09-24",
         "date_label": "September 2026",
-        "title": "One film isn't enough: what a brand video package actually includes",
-        "excerpt": "What a brand video package includes, why cropping a 16:9 film for Instagram "
-                   "doesn't work, and what to decide before the shoot. From a video editor who "
-                   "gets called in when it wasn't.",
+        "title": "One campaign, every platform: why a brand video package should be one job",
+        "excerpt": "Why a brand campaign that runs across platforms has to be commissioned as one "
+                   "job — what cohesion actually means, where separate commissions drift, and "
+                   "what a brand video package covers.",
         "pt": {
             "date_label": "Setembro de 2026",
-            "title": "Um filme não chega: o que inclui um branding film package",
-            "excerpt": "O que inclui um branding film package — brand film, corte curto e "
-                       "reels — porque não resulta cortar um 16:9 para o Instagram, e o que "
-                       "decidir antes da filmagem.",
+            "title": "Uma campanha, várias plataformas: porque é que um branding film package se encomenda de uma vez",
+            "excerpt": "Porque é que uma campanha que corre em várias plataformas tem de ser "
+                       "encomendada como um só trabalho — o que é coerência, onde é que as "
+                       "encomendas separadas se desviam, e o que inclui um branding film package.",
             "body": """
-<p class="lede">Um branding film package — ou pacote de vídeo para marcas — é encomendar de uma
-só vez o brand film, o corte curto e os reels, antes de se filmar seja o que for. Quase ninguém
-encomenda assim. Encomenda-se o filme, o filme corre bem, e três semanas depois aparece o pedido
-da versão para o Instagram.</p>
+<p class="lede">Uma campanha já não vive num só sítio. A mesma ideia tem de funcionar no site, no
+feed do LinkedIn, como reel vertical e, às vezes, em seis segundos antes de um vídeo no YouTube.
+São filmes diferentes. O erro está em encomendá-los como trabalhos diferentes.</p>
 
-<p>Costuma ser nessa altura que me ligam.</p>
+<p>Encomendados um de cada vez — o filme em março, os reels em junho, qualquer coisa para uma
+feira em setembro — deixam de parecer uma campanha. Parecem três campanhas feitas por três
+pessoas, que normalmente é exatamente o que são.</p>
 
-<p>Convém deixar claro onde é que eu entro nisto: não filmo. Faço montagem e pós-produção. Tudo o
-que se segue vem de ser a pessoa a quem o material chega depois, que é precisamente a razão pela
-qual vejo sempre o mesmo padrão.</p>
+<p>Convém dizer onde é que eu entro nisto: não produzo o material, faço a montagem e a
+pós-produção. Tudo o que se segue vem de ser a pessoa a quem o material chega, muitas vezes meses
+depois de ter sido feito, com o pedido de o fazer condizer com qualquer coisa que já ficou pronta
+há muito tempo.</p>
 
-<p>O pedido parece simples, mas não é. O que existe são noventa segundos em 16:9 construídos à
-volta de uma voz off; o que é preciso são quinze segundos em 9:16 que funcionem com o som
-desligado. Não são duas versões da mesma coisa — são filmes diferentes que apenas partilham o
-mesmo material.</p>
+<h3>O que é, na prática, uma campanha incoerente</h3>
 
-<h3>Porque não resulta cortar um brand film para o Instagram</h3>
+<p>Raramente é uma coisa evidente. É um desvio lento.</p>
 
-<p>Ao passar de 16:9 para 9:16 perde-se cerca de 60% do enquadramento, e não são as margens que
-se perdem: são os lados, que é precisamente onde está quase toda a composição. Aquele plano em
-que a fundadora aparece ligeiramente descentrada, com o produto atrás dela, fica reduzido a um
-grande plano do ombro.</p>
+<p>A cor está ligeiramente mais quente no segundo lote, porque o trabalho foi feito seis meses
+depois noutro monitor. Os oráculos usam uma tipografia que não é bem a da marca, porque quem os
+fez não tinha o ficheiro. A música é outra — a licença original cobria um filme, não uma campanha
+— e por isso os reels parecem ser de outra empresa qualquer.</p>
 
-<p>Há casos em que consigo reenquadrar plano a plano, a aproximar e a acompanhar o movimento para
-manter o sujeito dentro do quadro. Resulta quando sobra resolução, leva um dia de trabalho, e
-nota-se sempre — continua a ler-se como um plano aberto salvo à pressa.</p>
+<p>Ninguém que veja isto consegue dizer o que está errado. Simplesmente não liga as peças umas às
+outras, e o resultado é que cada peça tem de apresentar a marca do zero. É a repetição que faz uma
+campanha ficar na memória, e só há repetição se as pessoas reconhecerem a segunda coisa como
+pertencendo à primeira.</p>
 
-<p>Depois há o som. A maior parte do vídeo nas redes é vista sem som, e um filme que assenta numa
-voz off não diz nada em silêncio. As legendas ajudam, mas não substituem uma peça pensada de raiz
-para funcionar sem áudio.</p>
+<h3>Coerentes, mas não iguais</h3>
+
+<p>É aqui que está a tensão, e é nisto que consiste o trabalho.</p>
+
+<p>As peças têm de ser reconhecivelmente da mesma campanha: a mesma cor, a mesma tipografia, o
+mesmo mundo sonoro, o mesmo ritmo de montagem. Quem vê deve perceber que é a marca antes sequer
+de aparecer o logótipo.</p>
+
+<p>Mas não podem ser o mesmo filme em durações diferentes. Essa é a outra falha, e é igualmente
+comum. Quando as versões curtas são cortadas a partir da longa, a peça de quinze segundos é a de
+noventa sem o meio. Quem viu uma viu todas. Pagaram-se quatro peças e publicou-se uma ideia.</p>
+
+<p>Coerentes no aspeto, distintas no conteúdo. Uma abre na fundadora. Outra mostra o produto a ser
+usado, sem uma única palavra. Outra são trinta segundos de processo, porque o processo funciona
+sempre e a maioria das marcas tem pudor em mostrá-lo. A mesma família, funções diferentes.</p>
+
+<h3>Porque é que encomendas separadas não lá chegam</h3>
+
+<p>Porque a coerência não é uma coisa que se acrescente no fim. Depende de decisões tomadas antes,
+e cada uma delas é barata à primeira e cara à segunda:</p>
+
+<ul>
+  <li><strong>Uma cor só, com as mesmas referências.</strong> Igualar seis meses depois um
+  tratamento de cor feito noutro projeto é adivinhar.</li>
+  <li><strong>Uma licença de música</strong> que cubra todos os cortes em todas as plataformas,
+  em vez de uma faixa nova de cada vez porque a anterior não estava autorizada para aquilo.</li>
+  <li><strong>Um conjunto de grafismos</strong> — títulos, oráculos, animação de logótipo — feito
+  uma vez e reutilizado, em vez de refeito ligeiramente diferente a cada ronda.</li>
+  <li><strong>Material feito a saber que todos os formatos vinham a caminho.</strong> Uma
+  composição 16:9 perde cerca de 60% do enquadramento num corte 9:16, e o que se perde são os
+  lados — que é onde costuma estar a composição.</li>
+</ul>
+
+<p>É por causa deste último que me escrevem. Às vezes consigo reenquadrar plano a plano, a aproximar
+e a acompanhar o movimento para manter o sujeito no quadro. Resulta quando sobra resolução, leva
+um dia de trabalho, e continua a ler-se como um plano aberto salvo à pressa.</p>
 
 <h3>O que inclui um branding film package</h3>
 
-<p>Quando é bem planeado — ou seja, quando se pensa na montagem antes de a câmara andar — o
-material de um único dia de filmagem chega-me com o suficiente para entregar isto:</p>
+<p>Encomendado como um só trabalho, o mesmo material dá:</p>
 
 <ul>
-  <li><strong>O filme de marca</strong>, ou brand film — 60 a 120 segundos, em 16:9. É o
-  argumento completo, o que fica no site, nas apresentações comerciais e nas feiras.</li>
-  <li><strong>Um corte curto</strong> — 15 a 30 segundos. Não é o filme sem o meio: é uma peça
-  com vida própria e abertura própria.</li>
-  <li><strong>Os reels</strong> — três a seis peças verticais, em 9:16 ou 4:5, legendadas, entre
-  os 10 e os 20 segundos.</li>
+  <li><strong>O filme de marca</strong>, ou brand film — 60 a 120 segundos, em 16:9. O argumento
+  completo.</li>
+  <li><strong>O trailer</strong> — 30 a 45 segundos. Condensa o argumento em qualquer coisa que
+  se aguenta sozinha, e não num filme encurtado.</li>
+  <li><strong>O teaser</strong> — 10 a 15 segundos. Um só gancho, feito para que alguém olhe.</li>
+  <li><strong>Os reels</strong> — três a seis peças verticais, em 9:16 ou 4:5, legendadas, feitas
+  para funcionar sem som.</li>
 </ul>
 
-<p>Fotografias retiradas do material e um bumper de 6 segundos para pré-roll saem quase de graça
-se o material o permitir, e são simplesmente impossíveis se não permitir.</p>
+<p>Fotografias e um bumper de 6 segundos para pré-roll saem quase de graça, se o material o
+permitir.</p>
 
-<h3>A parte que quase ninguém planeia</h3>
+<h3>O que decidir à partida</h3>
 
-<p>O que corre mal a sério não tem que ver com o enquadramento.</p>
-
-<p>Quando os cortes curtos aparecem como ideia posterior, acabam por ser o mesmo filme em três
-durações diferentes. A versão de quinze segundos é a de noventa sem o meio, e quem viu uma viu
-todas — as outras limitam-se a repetir a mesma coisa mais depressa. No fim, pagaram-se três peças
-e publicou-se uma ideia.</p>
-
-<p>Encomendadas em conjunto, cada peça pode ser sobre qualquer coisa diferente. Uma abre na
-fundadora. Outra mostra o produto a ser usado, sem uma única palavra. Outra são trinta segundos
-de processo, porque o processo funciona sempre e a maioria das marcas tem pudor em mostrá-lo. São
-três ganchos, três formas, três razões para alguém parar o scroll, em vez de uma razão repetida
-três vezes.</p>
-
-<p>Ainda assim, têm de pertencer umas às outras: a mesma cor, a mesma tipografia, o mesmo mundo
-sonoro, o mesmo ritmo de montagem. Devem ser reconhecíveis como sendo da mesma marca antes sequer
-de aparecer o logótipo, e mesmo assim suficientemente distintas para merecerem lugar no feed.</p>
-
-<p>Este equilíbrio não se encontra na montagem. Peças distintas precisam de material distinto, e o
-material decide-se no dia da filmagem.</p>
-
-<h3>Um branding film package fica mais caro?</h3>
-
-<p>Normalmente fica mais barato do que comprar as mesmas peças em separado, e não por causa de
-descontos de quantidade. Fica mais barato porque as decisões caras são tomadas enquanto ainda são
-baratas:</p>
+<p>Nada disto é da minha competência, mas é o que decide o que consigo fazer depois. Vale a pena
+resolver isto com quem produz o material:</p>
 
 <ul>
-  <li>Os planos são enquadrados já a contar com o corte vertical, com margem em cima e em
-  baixo.</li>
-  <li>A entrevista leva mais três ou quatro perguntas, feitas de propósito para dar assunto aos
-  cortes curtos.</li>
-  <li>A música é licenciada de uma vez, para todos os cortes e todas as plataformas, em vez de se
-  renegociar quando aparece a quarta peça.</li>
-  <li>A cor e o som tratam-se uma vez para o conjunto, em vez de se repetir o trabalho a cada
-  nova encomenda.</li>
-</ul>
-
-<p>Encomendar os reels seis semanas depois implica uma segunda montagem, muitas vezes uma segunda
-licença de música, e não raras vezes um segundo dia de filmagem. É aí que o orçamento se
-perde.</p>
-
-<h3>O que perguntar antes da filmagem</h3>
-
-<p>Nada disto é da minha competência, mas é o que decide o que consigo fazer depois — por isso
-vale a pena pôr estas questões a quem vai filmar, antes de se marcar equipa e câmara:</p>
-
-<ul>
-  <li>Todos os sítios onde o vídeo vai acabar por ser publicado. Convém escrever a lista, porque
-  são sempre os óbvios que se esquecem.</li>
-  <li>Que peças são precisas, com que durações e em que formatos.</li>
-  <li>Se a filmagem vai ser enquadrada de maneira a que os cortes verticais sejam composições e
-  não salvamentos.</li>
+  <li>Todas as plataformas onde a campanha vai correr. Convém escrever a lista, porque são sempre
+  as óbvias que se esquecem.</li>
+  <li>Que peças, com que durações e em que formatos.</li>
+  <li>Se o material vai ser enquadrado já a contar com os cortes verticais.</li>
   <li>Se a licença de música cobre todos os cortes em todas as plataformas.</li>
-  <li>Se as legendas estão incluídas e em que línguas.</li>
+  <li>Legendas: incluídas, e em que línguas.</li>
 </ul>
 
-<p>Esta última pesa mais do que parece quando a campanha corre em mais do que um mercado. Trabalho
-em português, inglês e espanhol, e a diferença entre uma legenda traduzida e uma legenda escrita
-para o corte nota-se logo.</p>
+<p>Esta última pesa mais do que parece quando a campanha corre em vários mercados. Trabalho em
+português, inglês e espanhol, e a diferença entre uma legenda traduzida e uma legenda escrita para
+o corte nota-se logo.</p>
 
-<h3>Então o que vale a pena encomendar?</h3>
+<h3>Em resumo</h3>
 
-<p>Se o vídeo só vai viver no site, um filme chega perfeitamente. Encomende um filme.</p>
+<p>Se o vídeo só vai viver no site, encomende um filme e está bem assim. Se vai correr em várias
+plataformas — e vai quase sempre — encomende a campanha toda de uma vez. Não por causa do
+orçamento, embora normalmente também compense, mas porque a coerência não se acrescenta depois.</p>
 
-<p>Se vai parar às redes — e vai quase sempre — mais vale decidir isso agora do que em novembro. O
-dia da filmagem é o único momento em que acrescentar peças ainda é barato.</p>
-
-<p>Se ainda está a tentar perceber o que precisa, <a href="../../contact/">diga-me o que tem em
-mãos</a> e digo-lhe o que pedir a quem vai filmar, e o que me faz falta para entregar o pacote
-completo a partir daí. Essa parte já é <a href="../../services/">comigo</a>, e a conversa não
-custa nada.</p>
+<p>Se está a preparar alguma coisa, <a href="../../contact/">diga-me o que tem em mãos</a> e
+digo-lhe o que pedir, e o que me faz falta para construir a campanha inteira a partir daí. Essa parte já é <a href="../../services/">comigo</a>.</p>
 """,
         },
         "body": """
-<p class="lede">A brand video package means commissioning the brand film, the short cutdown and
-the social versions as one job, before anything is shot. Most people don't. They order the film,
-it turns out well, and three weeks later someone asks for the Instagram version.</p>
+<p class="lede">A campaign doesn't live in one place any more. The same idea has to work on your
+homepage, in a LinkedIn feed, as a vertical reel, and sometimes as six seconds before a YouTube
+video. Those are different films. The mistake is commissioning them as different jobs.</p>
 
-<p>That's when I usually get the call.</p>
+<p>Ordered one at a time — the film in March, the reels in June, something for a trade show in
+September — they stop looking like one campaign. They look like three campaigns by three people,
+which is usually exactly what they are.</p>
 
-<p>I should be clear about where I sit in this: I don't shoot anything. I edit. Everything below
-comes from being the person the material arrives to afterwards, which is exactly why I keep
-seeing the same pattern.</p>
+<p>Where I sit in this: I don't produce the material, I edit it. Everything here comes from being
+the person it arrives to, often months after it was made, with a brief to make it match something
+that was finished long ago.</p>
 
-<p>The request sounds small. It isn't. What exists is ninety seconds, 16:9, built around a
-voiceover. What's needed is fifteen seconds, 9:16, that works with the sound off. Those aren't
-versions of each other. They're different films that happen to share footage.</p>
+<h3>What incoherence actually looks like</h3>
 
-<h3>Why you can't just crop a brand film for Instagram</h3>
+<p>It's rarely dramatic. It's drift.</p>
 
-<p>Going from 16:9 to 9:16 throws away about 60% of the frame. Not the edges — the sides, where
-most of the composition lives. Your founder sitting slightly off-centre with the product visible
-behind her becomes a close-up of her shoulder.</p>
+<p>The grade is slightly warmer in the second batch, because it was done six months later on a
+different monitor. The lower-thirds use a typeface that isn't quite the brand one, because
+whoever made them didn't have the file. The music is a different track — the original licence
+covered one film, not a campaign — so the reels feel like they belong to another company.</p>
 
-<p>Sometimes I can reframe shot by shot, pushing in and tracking to keep the subject in frame.
-It works when there's resolution to spare. It costs a day, and it always looks like what it is:
-a wide shot being rescued.</p>
+<p>Nobody watching could tell you what's wrong. They just don't connect the pieces to each other,
+which means every piece has to do the work of introducing you from scratch. Repetition is what
+makes a campaign stick, and repetition only happens if people recognise the second thing as
+belonging to the first.</p>
 
-<p>The other problem is sound. Most social video is watched muted, and a film carried by
-voiceover says nothing in silence. Subtitles help. They're not the same as a piece that was
-built to work without audio in the first place.</p>
+<h3>Cohesive, but not identical</h3>
 
-<h3>What's included in a brand video package</h3>
+<p>Here's the tension, and it's the whole job.</p>
 
-<p>Planned properly — meaning the edit is thought about before the camera rolls — one shoot's
-worth of material gives me enough to deliver:</p>
+<p>The pieces have to be recognisably the same campaign — same grade, same typography, same world
+of music, same rhythm in the cutting. Someone should know it's you before the logo appears.</p>
+
+<p>But they can't be the same film at different lengths. That's the other failure, and it's just
+as common. When the short versions are cut down from the long one, the fifteen-second piece is
+the ninety-second piece with the middle removed. Anyone who has seen one has seen them all. You
+paid for four pieces and published one idea.</p>
+
+<p>Cohesive in look, distinct in content. One opens on the founder. One is the product being
+used, no words at all. One is thirty seconds of process, because process performs and most brands
+are too polite to show it. Same family, different jobs.</p>
+
+<h3>Why separate commissions can't get there</h3>
+
+<p>Because cohesion isn't something you add at the end. It's decided by things that happen
+before, and each of them is cheap once and expensive twice:</p>
 
 <ul>
-  <li><strong>The brand film</strong> — 60 to 120 seconds, 16:9. The full argument. Homepage,
-  sales deck, trade show.</li>
-  <li><strong>A cutdown</strong> — 15 to 30 seconds. Not the film with the middle removed. Its
-  own piece, with its own opening.</li>
+  <li><strong>One grade, one set of references.</strong> Matching a grade you did six months ago
+  from a different project file is guesswork.</li>
+  <li><strong>One music licence</strong> covering every cut on every platform, rather than a new
+  track each time because the old one wasn't cleared for this.</li>
+  <li><strong>One set of motion assets</strong> — titles, lower-thirds, logo animation — built
+  once and reused, instead of rebuilt slightly differently each round.</li>
+  <li><strong>Material made knowing every format was coming.</strong> A wide 16:9 composition
+  loses about 60% of the frame in a 9:16 crop, and it's the sides that go — which is where the
+  composition usually lives.</li>
+</ul>
+
+<p>That last one is the one that reaches me. Sometimes I can reframe shot by shot, pushing in
+and tracking to keep the subject in frame. It works when there's resolution to spare, it costs a
+day, and it still reads as a wide shot being rescued.</p>
+
+<h3>What a brand video package covers</h3>
+
+<p>Commissioned as one job, the same material gives:</p>
+
+<ul>
+  <li><strong>The brand film</strong> — 60 to 120 seconds, 16:9. The full argument.</li>
+  <li><strong>The trailer</strong> — 30 to 45 seconds. Condenses the argument into something
+  that stands on its own rather than a shortened film.</li>
+  <li><strong>The teaser</strong> — 10 to 15 seconds. One hook, built to make someone look.</li>
   <li><strong>Social cuts</strong> — three to six vertical pieces, 9:16 or 4:5, subtitled,
-  usually 10 to 20 seconds each.</li>
+  built to work with the sound off.</li>
 </ul>
 
-<p>Stills pulled from the footage and a 6-second bumper for pre-roll are close to free if the
-material allows it, and impossible if it doesn't.</p>
+<p>Stills and a 6-second pre-roll bumper come nearly free if the material allows it.</p>
 
-<h3>The part almost nobody plans for</h3>
+<h3>What to settle up front</h3>
 
-<p>Here's what actually goes wrong, and it isn't the cropping.</p>
-
-<p>When the short cuts are an afterthought, they end up being the same film at three lengths. The
-fifteen-second version is the ninety-second version with the middle taken out. Someone who has
-seen one has seen all of them — the others just repeat it faster. You paid for three pieces and
-published one idea.</p>
-
-<p>Commissioned together, each piece gets to be about something. One opens on the founder. One is
-the product being used, no words at all. One is thirty seconds of process, because process
-performs and most brands are too polite to show it. Different hooks, different shapes, three
-reasons to stop scrolling instead of one reason repeated.</p>
-
-<p>They still have to belong to each other, though. Same grade, same typeface, same world of
-music, same rhythm in the cutting. Recognisably yours before the logo appears — but distinct
-enough to earn a place in the feed.</p>
-
-<p>That balance can't be found in the edit. Distinct pieces need distinct material, and material
-is decided on the shoot day.</p>
-
-<h3>Does a video package cost more?</h3>
-
-<p>Usually less than buying the same pieces separately, and the reason has nothing to do with a
-bulk discount. It's that the expensive decisions get made while they're still cheap:</p>
+<p>None of this is my department, but it decides what I can do afterwards. Worth settling with
+whoever is making the material:</p>
 
 <ul>
-  <li>Shots get framed knowing a vertical crop is coming, with headroom and centring built in.</li>
-  <li>The interview gets three or four extra questions, asked specifically to give the short cuts
-  something to be about.</li>
-  <li>Music is licensed once, for every cut and every platform, rather than renegotiated when the
-  fourth piece appears.</li>
-  <li>Grade and sound are done once across everything instead of being redone each time.</li>
-</ul>
-
-<p>Ordering the social cuts six weeks later means a second edit, often a second licence, and
-sometimes a second shoot day. That's where the money goes.</p>
-
-<h3>What to settle before the shoot</h3>
-
-<p>None of this is my department — but it decides what I can do later, so it is worth putting to
-whoever is shooting, before anyone books a camera:</p>
-
-<ul>
-  <li>Every place this video will end up. Write the list down — the obvious ones get forgotten.</li>
+  <li>Every platform this campaign will run on. Write the list — the obvious ones get
+  forgotten.</li>
   <li>Which pieces, at what lengths, in which aspect ratios.</li>
-  <li>Whether the shoot will be framed so vertical crops are compositions rather than rescues.</li>
+  <li>Whether the material is framed knowing vertical crops are coming.</li>
   <li>Whether the music licence covers every cut on every platform.</li>
-  <li>Subtitles: included or not, and in which languages.</li>
+  <li>Subtitles: included, and in which languages.</li>
 </ul>
 
-<p>That last one matters more than people expect if you're running in more than one market. I
-work in English, Portuguese and Spanish, and the difference between a subtitle that was
-translated and one that was written for the cut is visible.</p>
+<p>That last one matters more than people expect across markets. I work in English, Portuguese and
+Spanish, and the difference between a subtitle that was translated and one written for the cut is
+visible.</p>
 
-<h3>So what should you actually commission?</h3>
+<h3>The short version</h3>
 
-<p>If the video only ever lives on your website, one film is fine. Buy one film.</p>
+<p>If the video only ever lives on your website, buy one film. If it's going to run across
+platforms — and it almost always is — commission the whole campaign at once. Not to save money,
+though it usually does, but because cohesion cannot be retrofitted.</p>
 
-<p>If it's going anywhere near social — and it almost always is — decide that now, not in
-November. The shoot day is the only moment when adding pieces is cheap.</p>
-
-<p>If you're working out what you need, <a href="../../contact/">tell me what you're planning</a>
-and I'll tell you what to ask your production team for, and what I'd need to deliver the whole
-package from it. That part is <a href="../../services/">my department</a>, and the conversation
-costs nothing.</p>
+<p>If you're planning something, <a href="../../contact/">tell me what you have in mind</a> and
+I'll tell you what to ask for, and what I'd need to build the whole campaign from it. That part is <a href="../../services/">my department</a>.</p>
 """
     },
 ]
