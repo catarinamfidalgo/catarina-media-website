@@ -63,7 +63,7 @@
      top of that — true centre reads a touch high for small caps beside
      large ones, so it sits fractionally below. Raise the nudge to drop it
      further; it is the only number to touch. */
-  .brand-tag { --tag-size: .792rem; --tag-lift: .2015em; --tag-rule: 1.100em;
+  .brand-tag { --tag-size: .684rem; --tag-lift: .2884em; --tag-rule: 1.274em;
     --tag-nudge: 0px;
     position: relative; padding-left: 15px; white-space: nowrap;
     font-size: var(--tag-size); font-weight: 600; letter-spacing: .14em;
@@ -74,8 +74,8 @@
        placed by a number measured from the wrong edge. */
     line-height: 1;
     transform: translateY(calc(var(--tag-nudge) - var(--tag-lift))); }
-  html[lang^="pt"] .brand-tag { --tag-size: .789rem; --tag-lift: .2036em; --tag-rule: 1.104em; }
-  html[lang^="es"] .brand-tag { --tag-size: .749rem; --tag-lift: .2331em; --tag-rule: 1.163em; }
+  html[lang^="pt"] .brand-tag { --tag-size: .787rem; --tag-lift: .2050em; --tag-rule: 1.107em; }
+  html[lang^="es"] .brand-tag { --tag-size: .695rem; --tag-lift: .2780em; --tag-rule: 1.254em; }
   /* The rule spans the name's cap height, centred on that shared centre. */
   .brand-tag::before { content: ""; position: absolute; left: 0;
     top: 50%; transform: translateY(-50%);

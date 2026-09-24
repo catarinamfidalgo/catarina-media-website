@@ -137,7 +137,7 @@ PAGE = """<!DOCTYPE html>
 <meta property="og:title" content="{title}">
 <meta property="og:description" content="{excerpt}">
 <meta property="og:url" content="{canonical}">
-<link rel="stylesheet" href="{root}assets/site.css?v=0b79fe0a">
+<link rel="stylesheet" href="{root}assets/site.css?v=822078fc">
 
 <!-- Google Analytics (GA4).
      Paste the measurement ID from analytics.google.com — Admin → Data streams →
@@ -181,7 +181,7 @@ def header(root):
     <header class="site">
       <div class="brand-block">
         <div class="brand"><a href="{root}">Catarina <i>Fidalgo</i></a></div>
-        <span class="brand-tag">Video post-production</span>
+        <span class="brand-tag">Editing &amp; post-production</span>
       </div>
       <button class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="siteNav" onclick="toggleNav(this)"><span></span><span></span><span></span></button>
       <nav class="main" id="siteNav">
