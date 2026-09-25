@@ -20,7 +20,7 @@
 <meta property="og:title" content="Uma campanha, várias plataformas: encomende tudo de uma vez">
 <meta property="og:description" content="Uma campanha que corre em várias plataformas funciona melhor encomendada como um só trabalho. O que é a coerência, onde é que as encomendas separadas se desviam, e o que fica pronto no fim.">
 <meta property="og:url" content="https://catarina.media/pt/blog/brand-video-package/">
-<link rel="stylesheet" href="../../../assets/site.css?v=1137af9a">
+<link rel="stylesheet" href="../../../assets/site.css?v=a2bedbbc">
 
 <!-- Google Analytics (GA4), behind consent.
      Analytics sets a cookie, so under EU law it may not run until the visitor
@@ -101,10 +101,29 @@
     };
   })();
 </script>
+<script>
+  (function () {
+    var bar = null, ticking = false;
+    function paint() {
+      ticking = false;
+      if (!bar) bar = document.getElementById("playhead");
+      if (!bar) return;
+      var h = document.documentElement.scrollHeight - window.innerHeight;
+      var p = h > 0 ? window.scrollY / h : 0;
+      bar.style.transform = "scaleX(" + Math.min(1, Math.max(0, p)) + ")";
+    }
+    window.addEventListener("scroll", function () {
+      if (!ticking) { ticking = true; requestAnimationFrame(paint); }
+    }, { passive: true });
+    window.addEventListener("resize", paint, { passive: true });
+    document.addEventListener("DOMContentLoaded", paint);
+  })();
+</script>
 
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://catarina.media/#catarina","name":"Catarina Fidalgo","url":"https://catarina.media/","image":"https://catarina.media/assets/img/catarina-portrait.jpg","jobTitle":"Video Editor","description":"Video editor and post-production, based in Portugal. Commercials, brand films, YouTube, social and corporate video, in English, Portuguese and Spanish.","address":{"@type":"PostalAddress","addressCountry":"PT"},"knowsLanguage":[{"@type":"Language","name":"English","alternateName":"en"},{"@type":"Language","name":"Portuguese","alternateName":"pt"},{"@type":"Language","name":"Spanish","alternateName":"es"}],"knowsAbout":["Video Editing","Color Grading","Motion Graphics & Animation","Sound Design & Mixing","Subtitling & Localization","Licensed Music & Stock"]},{"@type":"WebSite","@id":"https://catarina.media/#website","url":"https://catarina.media/","name":"Catarina Fidalgo","inLanguage":"pt-PT","publisher":{"@id":"https://catarina.media/#catarina"}}]}</script>
 </head>
 <body>
+  <div class="playhead" id="playhead" aria-hidden="true"></div>
   <div class="lang-bar">
     <div class="container">
       <div class="lang-switch" aria-label="Language"><a href="https://catarina.media/blog/brand-video-package/">EN</a><span class="lang-current" aria-current="true">PT</span></div>

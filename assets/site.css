@@ -264,6 +264,29 @@
   /* a light wash over every cover, so the type and tags sit clear of the image */
   .project-card .thumb::after { content: ''; position: absolute; inset: 0; background: rgba(19,18,23,.20); pointer-events: none; }
   .project-card:hover .thumb img { transform: scale(1.05); }
+  /* The clip sits over the still and fades in on hover. The still stays
+     underneath, so a refused autoplay or a slow network just shows the frame
+     rather than a hole. */
+  .thumb-prev { position: absolute; inset: 0; width: 100%; height: 100%;
+    object-fit: cover; opacity: 0; transition: opacity .28s ease;
+    pointer-events: none; }
+  .project-card:hover .thumb-prev,
+  .project-card:focus-visible .thumb-prev { opacity: 1; }
+  /* No hover on a phone, and nobody who asked for less motion wants
+     thirty looping clips. */
+  @media (hover: none), (prefers-reduced-motion: reduce) {
+    .thumb-prev { display: none; }
+  }
+
+  /* A playhead for the page: the line fills as you scroll, the way a
+     timeline does. Fixed above everything, and thin enough to read as a
+     progress indicator rather than a decoration. */
+  .playhead { position: fixed; top: 0; left: 0; right: 0; height: 2px;
+    z-index: 200; pointer-events: none;
+    background: linear-gradient(90deg, var(--accent), var(--lav-bright));
+    transform: scaleX(0); transform-origin: 0 50%;
+    transition: transform .08s linear; }
+  @media (prefers-reduced-motion: reduce) { .playhead { transition: none; } }
   .project-card .thumb--empty { background: linear-gradient(150deg, #2b2833, #17151d); }
   .project-card .overlay { position: absolute; inset: 0; z-index: 2; display: flex; flex-direction: column; justify-content: flex-end; align-items: flex-start; padding: 22px; background: linear-gradient(to top, rgba(14,12,19,.85) 0%, rgba(14,12,19,.12) 55%, rgba(14,12,19,0) 100%); }
   .cats { display: flex; flex-wrap: wrap; gap: 4px; margin-bottom: 10px; }

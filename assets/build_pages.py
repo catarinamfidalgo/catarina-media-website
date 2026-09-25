@@ -113,9 +113,14 @@ def build():
             head = re.sub(r'(hreflang="%s" href=")[^"]*(")' % code,
                           r"\g<1>%s/%s%s\g<2>" % (SITE, prefix, tail), head)
 
+        # The playhead sits above the language bar in the master, which is
+        # outside every fragment, so it has to be put back here or it only
+        # ever reaches the blog.
+        playhead = '  <div class="playhead" id="playhead" aria-hidden="true"></div>\n'
         body = f["header"].replace(f["header"][f["header"].index('      <nav class="main"'):
                                                f["header"].index("</nav>")],
                                    '      <nav class="main" id="siteNav">\n' + nav_for(slug, depth) + "\n      ")
+        body = playhead + body
         body += "\n".join(chunks) + "\n" + f["footer"] + f["modal"]
         if needs_js:
             body += f["script"]

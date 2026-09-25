@@ -29,7 +29,7 @@
 <meta name="twitter:description" content="Video editor and post-production, based in Portugal. Commercials, brand films, YouTube, social and corporate video for brands and agencies.">
 <meta name="twitter:image" content="https://catarina.media/assets/img/catarina-portrait.jpg">
 
-<link rel="stylesheet" href="../../assets/site.css?v=1137af9a">
+<link rel="stylesheet" href="../../assets/site.css?v=a2bedbbc">
 
 <!-- Google Analytics (GA4), behind consent.
      Analytics sets a cookie, so under EU law it may not run until the visitor
@@ -95,6 +95,28 @@
     // start at the top unless the URL actually asks for a section.
     if ("scrollRestoration" in history) history.scrollRestoration = "manual";
     if (!location.hash) window.scrollTo(0, 0);
+  })();
+</script>
+<script>
+    // The playhead. Updated on a rAF tick rather than on every scroll event,
+    // so a fast scroll does not queue hundreds of layout reads.
+    (function () {
+      var bar = null, ticking = false;
+      function paint() {
+        ticking = false;
+        if (!bar) bar = document.getElementById("playhead");
+        if (!bar) return;
+        var h = document.documentElement.scrollHeight - window.innerHeight;
+        var p = h > 0 ? window.scrollY / h : 0;
+        bar.style.transform = "scaleX(" + Math.min(1, Math.max(0, p)) + ")";
+      }
+      window.addEventListener("scroll", function () {
+        if (!ticking) { ticking = true; requestAnimationFrame(paint); }
+      }, { passive: true });
+      window.addEventListener("resize", paint, { passive: true });
+      document.addEventListener("DOMContentLoaded", paint);
+    })();
+  (function () {
     try {
       var t = localStorage.getItem("cm-theme");
       if (t === "dark" || t === "light") document.documentElement.setAttribute("data-theme", t);
@@ -114,6 +136,7 @@
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://catarina.media/#catarina","name":"Catarina Fidalgo","url":"https://catarina.media/","image":"https://catarina.media/assets/img/catarina-portrait.jpg","jobTitle":"Video Editor","description":"Video editor and post-production, based in Portugal. Commercials, brand films, YouTube, social and corporate video, in English, Portuguese and Spanish.","address":{"@type":"PostalAddress","addressCountry":"PT"},"knowsLanguage":[{"@type":"Language","name":"English","alternateName":"en"},{"@type":"Language","name":"Portuguese","alternateName":"pt"},{"@type":"Language","name":"Spanish","alternateName":"es"}],"knowsAbout":["Video Editing","Color Grading","Motion Graphics & Animation","Sound Design & Mixing","Subtitling & Localization","Licensed Music & Stock"]},{"@type":"WebSite","@id":"https://catarina.media/#website","url":"https://catarina.media/","name":"Catarina Fidalgo","inLanguage":"pt-PT","publisher":{"@id":"https://catarina.media/#catarina"}},{"@type":"ProfessionalService","name":"Catarina Fidalgo — Video Editing and Post-Production","url":"https://catarina.media/services/","provider":{"@id":"https://catarina.media/#catarina"},"areaServed":"Worldwide","availableLanguage":["en","pt","es"],"hasOfferCatalog":{"@type":"OfferCatalog","name":"Post-production services","itemListElement":[{"@type":"Offer","itemOffered":{"@type":"Service","name":"Video Editing"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Color Grading"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Motion Graphics & Animation"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Sound Design & Mixing"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Subtitling & Localization"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Licensed Music & Stock"}}]}}]}</script>
 </head>
 <body>
+  <div class="playhead" id="playhead" aria-hidden="true"></div>
   <div class="lang-bar">
     <div class="container">
       <div class="lang-switch" aria-label="Language">
