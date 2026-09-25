@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-"""Make the tiny looping clips the portfolio plays on hover.
+"""Make the small looping clips the portfolio plays on hover.
 
 A grid of still frames is a strange way for an editor to show work that is
-made of motion. These are three seconds, silent, 480px wide, and around 14KB
-each — the whole set weighs less than the hero image, and nothing downloads
-until someone hovers.
+made of motion. These are three seconds, silent, 960px wide, and around
+270KB each. Nothing downloads until someone hovers, so the page itself costs
+nothing; only the card you point at is fetched.
 
 The masters in assets/video/ are gigabytes and stay out of the repo. These are
 generated from them and committed, because they are small enough to be part of
@@ -36,8 +36,17 @@ def make(src, dst, seek, length):
     cmd = [
         "ffmpeg", "-y", "-ss", str(seek), "-t", str(length), "-i", str(src),
         "-an",                                  # silent: it autoplays on hover
-        "-vf", "scale=480:-2,fps=15",
-        "-c:v", "libx264", "-crf", "32", "-preset", "veryfast",
+        # The grid is full-bleed, so on a wide screen a card is around 460px
+        # across — roughly 920 on a retina display. 480 was half what it needed
+        # and looked it. 24fps because this is showing cutting, and motion that
+        # stutters undersells the work.
+        # Crop to the card's 4:3 before scaling. Without this a vertical reel
+        # becomes 960x1700 — an enormous frame whose top and bottom the card
+        # crops away regardless, which is how one three-second clip reached
+        # 1.1MB. Every preview now lands on the same 960x720.
+        "-vf", ("crop='min(iw,ih*4/3)':'min(ih,iw*3/4)',"
+                "scale=960:720,fps=24"),
+        "-c:v", "libx264", "-crf", "26", "-preset", "slow",
         "-pix_fmt", "yuv420p",                  # Safari refuses anything else
         "-movflags", "+faststart",              # first frame without the whole file
         str(dst),
