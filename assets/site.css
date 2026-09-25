@@ -59,14 +59,16 @@
   }
 
   /* The toggle sits beside the menu button and reads as part of it. */
+  /* Sits in the language bar, beside the languages: both are preferences,
+     and the masthead is better without a control floating in the middle of
+     it. Sized to the bar rather than to the menu button it used to sit
+     next to. */
   .theme-toggle { display: inline-flex; align-items: center; justify-content: center;
-    width: 36px; height: 36px; padding: 0; margin-left: 6px; flex-shrink: 0;
-    background: none; border: 1px solid var(--line); border-radius: var(--r-sm);
-    color: var(--muted); cursor: pointer;
-    transition: color .15s ease, border-color .15s ease, background .15s ease; }
-  .theme-toggle:hover { color: var(--accent); border-color: var(--accent);
-    background: rgba(114,89,196,.07); }
-  .theme-toggle svg { width: 17px; height: 17px; display: block; }
+    width: 20px; height: 20px; padding: 0; flex-shrink: 0;
+    background: none; border: 0; color: var(--muted); cursor: pointer;
+    transition: color .15s ease; }
+  .theme-toggle:hover { color: var(--accent); }
+  .theme-toggle svg { width: 14px; height: 14px; display: block; }
   .theme-toggle .icon-dark { display: none; }
   :root[data-theme="dark"] .theme-toggle .icon-light { display: none; }
   :root[data-theme="dark"] .theme-toggle .icon-dark { display: block; }
@@ -528,7 +530,7 @@
      Its own slim strip above the masthead: a utility control, kept out of
      the way of the navigation rather than competing with it. */
   .lang-bar { border-bottom: 1px solid var(--line); }
-  .lang-bar .container { display: flex; justify-content: flex-end; }
+  .lang-bar .container { display: flex; justify-content: flex-end; align-items: center; gap: 14px; }
   .lang-switch { display: flex; align-items: center; gap: 12px; padding: 9px 0;
     font-size: .64rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
   .lang-switch a { color: var(--muted); transition: color .15s ease; }

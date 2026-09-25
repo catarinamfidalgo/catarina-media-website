@@ -65,8 +65,10 @@ def depth_fix(html, depth, slug=""):
     # Links written from the master as if from the root — the cookie bar's link
     # to the privacy page among them — need the same treatment, or they resolve
     # under whatever directory the page happens to live in.
-    for slug in ("privacy/", "contact/", "services/", "about/", "agencies/"):
-        html = re.sub(r'(href=")(%s)' % slug, r"\g<1>" + up + r"\g<2>", html)
+    # NB: not `slug` — that is the page we are building, and shadowing it here
+    # left every language switcher pointing at whichever name the loop ended on.
+    for page in ("privacy/", "contact/", "services/", "about/", "agencies/"):
+        html = re.sub(r'(href=")(%s)' % page, r"\g<1>" + up + r"\g<2>", html)
     html = html.replace("'assets/", "'" + up + "assets/")
     # the switcher should land on the same page in the other language
     tail = (slug + "/") if slug else ""
