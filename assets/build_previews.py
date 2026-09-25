@@ -2,8 +2,7 @@
 """Make the small looping clips the portfolio plays on hover.
 
 A grid of still frames is a strange way for an editor to show work that is
-made of motion. These are three seconds, silent, 960px wide, and around
-270KB each. Nothing downloads until someone hovers, so the page itself costs
+made of motion. These are three seconds, silent, 960px wide, and a little heavier each. Nothing downloads until someone hovers, so the page itself costs
 nothing; only the card you point at is fetched.
 
 The masters in assets/video/ are gigabytes and stay out of the repo. These are
@@ -32,6 +31,40 @@ def referenced_videos():
     return out
 
 
+def duration(src):
+    out = subprocess.run(
+        ["ffprobe", "-v", "error", "-show_entries", "format=duration",
+         "-of", "csv=p=0", str(src)], capture_output=True, text=True).stdout.strip()
+    try:
+        return float(out)
+    except ValueError:
+        return 0.0
+
+
+def in_point(src, length):
+    """Where to start, so the clip opens on a cut rather than mid-dissolve.
+
+    A fixed offset lands on title cards, logo stings and black just often
+    enough to look careless. This finds the real cuts and takes the first one
+    past the opening, which is where the piece is usually doing something.
+    Scene detection has to run over the whole file — seeking first leaves the
+    filter without a previous frame to compare against, and it reports nothing.
+    """
+    dur = duration(src)
+    if dur < length + 2:
+        return 0.0
+    earliest, latest = dur * 0.15, dur - length - 0.5
+    out = subprocess.run(
+        ["ffmpeg", "-v", "error", "-i", str(src),
+         "-vf", "select='gt(scene,0.25)',metadata=print:file=-", "-an", "-f", "null", "-"],
+        capture_output=True, text=True)
+    cuts = [float(m) for m in re.findall(r"pts_time:([0-9.]+)", out.stdout + out.stderr)]
+    for t in cuts:
+        if earliest <= t <= latest:
+            return round(t, 2)
+    return round(min(max(earliest, dur * 0.20), max(latest, 0.0)), 2)
+
+
 def make(src, dst, seek, length):
     cmd = [
         "ffmpeg", "-y", "-ss", str(seek), "-t", str(length), "-i", str(src),
@@ -46,7 +79,7 @@ def make(src, dst, seek, length):
         # 1.1MB. Every preview now lands on the same 960x720.
         "-vf", ("crop='min(iw,ih*4/3)':'min(ih,iw*3/4)',"
                 "scale=960:720,fps=24"),
-        "-c:v", "libx264", "-crf", "26", "-preset", "slow",
+        "-c:v", "libx264", "-crf", "22", "-preset", "slow",
         "-pix_fmt", "yuv420p",                  # Safari refuses anything else
         "-movflags", "+faststart",              # first frame without the whole file
         str(dst),
@@ -56,8 +89,9 @@ def make(src, dst, seek, length):
 
 def main():
     p = argparse.ArgumentParser(description="Generate hover previews.")
-    p.add_argument("--seek", type=float, default=5, help="seconds in to start")
-    p.add_argument("--len", type=float, default=3, dest="length")
+    p.add_argument("--seek", type=float, default=None,
+                   help="fixed start; omitted, the first cut past the opening is used")
+    p.add_argument("--len", type=float, default=5, dest="length")
     p.add_argument("--force", action="store_true")
     a = p.parse_args()
 
@@ -77,7 +111,8 @@ def main():
             skipped += 1
             total += dst.stat().st_size
             continue
-        if make(src, dst, a.seek, a.length):
+        seek = a.seek if a.seek is not None else in_point(src, a.length)
+        if make(src, dst, seek, a.length):
             made += 1
             total += dst.stat().st_size
         else:
