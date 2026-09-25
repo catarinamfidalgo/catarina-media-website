@@ -29,7 +29,7 @@
 <meta name="twitter:description" content="Video editor and post-production, based in Portugal. Commercials, brand films, YouTube, social and corporate video for brands and agencies.">
 <meta name="twitter:image" content="https://catarina.media/assets/img/catarina-portrait.jpg">
 
-<link rel="stylesheet" href="assets/site.css?v=a39e6c95">
+<link rel="stylesheet" href="assets/site.css?v=c8e8ec06">
 
 <!-- Google Analytics (GA4), behind consent.
      Analytics sets a cookie, so under EU law it may not run until the visitor
@@ -110,6 +110,12 @@
         var p = h > 0 ? window.scrollY / h : 0;
         bar.style.transform = "scaleX(" + Math.min(1, Math.max(0, p)) + ")";
       }
+      var root = document.documentElement;
+      function shrink() {
+        root.classList.toggle("scrolled", window.scrollY > 40);
+      }
+      window.addEventListener("scroll", shrink, { passive: true });
+      shrink();
       window.addEventListener("scroll", function () {
         if (!ticking) { ticking = true; requestAnimationFrame(paint); }
       }, { passive: true });

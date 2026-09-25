@@ -264,7 +264,7 @@ PAGE = """<!DOCTYPE html>
 <meta property="og:title" content="{title}">
 <meta property="og:description" content="{excerpt}">
 <meta property="og:url" content="{canonical}">
-<link rel="stylesheet" href="{root}assets/site.css?v=a39e6c95">
+<link rel="stylesheet" href="{root}assets/site.css?v=c8e8ec06">
 
 <!-- Google Analytics (GA4), behind consent.
      Analytics sets a cookie, so under EU law it may not run until the visitor
@@ -356,6 +356,12 @@ PAGE = """<!DOCTYPE html>
       var p = h > 0 ? window.scrollY / h : 0;
       bar.style.transform = "scaleX(" + Math.min(1, Math.max(0, p)) + ")";
     }}
+      var root = document.documentElement;
+      function shrink() {{
+        root.classList.toggle("scrolled", window.scrollY > 40);
+      }}
+      window.addEventListener("scroll", shrink, {{ passive: true }});
+      shrink();
     window.addEventListener("scroll", function () {{
       if (!ticking) {{ ticking = true; requestAnimationFrame(paint); }}
     }}, {{ passive: true }});
