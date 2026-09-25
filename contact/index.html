@@ -6,7 +6,6 @@
 <title>Catarina Fidalgo — Contact</title>
 <meta name="description" content="Catarina Fidalgo — video editor and post-production, based in Portugal. Commercials, brand films, YouTube, social and corporate video, in English, Portuguese and Spanish.">
 <link rel="icon" href="/favicon.ico" sizes="any">
-<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
 <!-- Raster sizes too: Google's favicon crawler prefers them, and iOS
      uses the touch icon for a home-screen bookmark. -->
 <link rel="icon" href="../assets/favicon-96.png" type="image/png" sizes="96x96">
@@ -29,7 +28,7 @@
 <meta name="twitter:description" content="Video editor and post-production, based in Portugal. Commercials, brand films, YouTube, social and corporate video for brands and agencies.">
 <meta name="twitter:image" content="https://catarina.media/assets/img/catarina-portrait.jpg">
 
-<link rel="stylesheet" href="../assets/site.css?v=e83465c8">
+<link rel="stylesheet" href="../assets/site.css?v=2c535739">
 
 <!-- Google Analytics (GA4), behind consent.
      Analytics sets a cookie, so under EU law it may not run until the visitor
@@ -98,30 +97,6 @@
   })();
 </script>
 <script>
-    // The playhead. Updated on a rAF tick rather than on every scroll event,
-    // so a fast scroll does not queue hundreds of layout reads.
-    (function () {
-      var bar = null, ticking = false;
-      function paint() {
-        ticking = false;
-        if (!bar) bar = document.getElementById("playhead");
-        if (!bar) return;
-        var h = document.documentElement.scrollHeight - window.innerHeight;
-        var p = h > 0 ? window.scrollY / h : 0;
-        bar.style.transform = "scaleX(" + Math.min(1, Math.max(0, p)) + ")";
-      }
-      var root = document.documentElement;
-      function shrink() {
-        root.classList.toggle("scrolled", window.scrollY > 40);
-      }
-      window.addEventListener("scroll", shrink, { passive: true });
-      shrink();
-      window.addEventListener("scroll", function () {
-        if (!ticking) { ticking = true; requestAnimationFrame(paint); }
-      }, { passive: true });
-      window.addEventListener("resize", paint, { passive: true });
-      document.addEventListener("DOMContentLoaded", paint);
-    })();
   (function () {
     try {
       var t = localStorage.getItem("cm-theme");
@@ -142,7 +117,6 @@
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://catarina.media/#catarina","name":"Catarina Fidalgo","url":"https://catarina.media/","image":"https://catarina.media/assets/img/catarina-portrait.jpg","jobTitle":"Video Editor","description":"Video editor and post-production, based in Portugal. Commercials, brand films, YouTube, social and corporate video, in English, Portuguese and Spanish.","address":{"@type":"PostalAddress","addressCountry":"PT"},"knowsLanguage":[{"@type":"Language","name":"English","alternateName":"en"},{"@type":"Language","name":"Portuguese","alternateName":"pt"},{"@type":"Language","name":"Spanish","alternateName":"es"}],"knowsAbout":["Video Editing","Color Grading","Motion Graphics & Animation","Sound Design & Mixing","Subtitling & Localization","Licensed Music & Stock"]},{"@type":"WebSite","@id":"https://catarina.media/#website","url":"https://catarina.media/","name":"Catarina Fidalgo","inLanguage":"en","publisher":{"@id":"https://catarina.media/#catarina"}}]}</script>
 </head>
 <body>
-  <div class="playhead" id="playhead" aria-hidden="true"></div>
   <div class="lang-bar">
     <div class="container">
       <div class="lang-switch" aria-label="Language">

@@ -15,6 +15,14 @@ Skips anything already made, so re-running is cheap. Pass --force to redo.
 """
 import argparse, pathlib, re, subprocess, sys
 
+# Hand-picked start times, in seconds, for clips where the automatic choice
+# lands badly — on a static slide, mid-transition, or on a moment that does not
+# represent the piece. Scene detection finds cuts; it cannot tell which moment
+# is the one worth showing.
+OVERRIDES = {
+    "aischool-lesson-3-3.mp4": 58,     # the prompt comparison building, not a talking head
+}
+
 SRC_DIR = pathlib.Path("assets/video")
 OUT_DIR = pathlib.Path("assets/preview")
 
@@ -111,7 +119,10 @@ def main():
             skipped += 1
             total += dst.stat().st_size
             continue
-        seek = a.seek if a.seek is not None else in_point(src, a.length)
+        seek = (a.seek if a.seek is not None
+                else OVERRIDES.get(name, None))
+        if seek is None:
+            seek = in_point(src, a.length)
         if make(src, dst, seek, a.length):
             made += 1
             total += dst.stat().st_size

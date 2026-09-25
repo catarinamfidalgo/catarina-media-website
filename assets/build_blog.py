@@ -254,7 +254,6 @@ PAGE = """<!DOCTYPE html>
 <link rel="canonical" href="{canonical}">
 {alts}
 <link rel="icon" href="/favicon.ico" sizes="any">
-<link rel="icon" href="{root}assets/favicon.svg" type="image/svg+xml">
 <!-- Raster sizes too: Google's favicon crawler prefers them, and iOS
      uses the touch icon for a home-screen bookmark. -->
 <link rel="icon" href="{root}assets/favicon-96.png" type="image/png" sizes="96x96">
@@ -264,7 +263,7 @@ PAGE = """<!DOCTYPE html>
 <meta property="og:title" content="{title}">
 <meta property="og:description" content="{excerpt}">
 <meta property="og:url" content="{canonical}">
-<link rel="stylesheet" href="{root}assets/site.css?v=e83465c8">
+<link rel="stylesheet" href="{root}assets/site.css?v=2c535739">
 
 <!-- Google Analytics (GA4), behind consent.
      Analytics sets a cookie, so under EU law it may not run until the visitor
@@ -347,31 +346,10 @@ PAGE = """<!DOCTYPE html>
 </script>
 <script>
   (function () {{
-    var bar = null, ticking = false;
-    function paint() {{
-      ticking = false;
-      if (!bar) bar = document.getElementById("playhead");
-      if (!bar) return;
-      var h = document.documentElement.scrollHeight - window.innerHeight;
-      var p = h > 0 ? window.scrollY / h : 0;
-      bar.style.transform = "scaleX(" + Math.min(1, Math.max(0, p)) + ")";
-    }}
-      var root = document.documentElement;
-      function shrink() {{
-        root.classList.toggle("scrolled", window.scrollY > 40);
-      }}
-      window.addEventListener("scroll", shrink, {{ passive: true }});
-      shrink();
-    window.addEventListener("scroll", function () {{
-      if (!ticking) {{ ticking = true; requestAnimationFrame(paint); }}
-    }}, {{ passive: true }});
-    window.addEventListener("resize", paint, {{ passive: true }});
-    document.addEventListener("DOMContentLoaded", paint);
   }})();
 </script>
 </head>
 <body>
-  <div class="playhead" id="playhead" aria-hidden="true"></div>
 {header}
 {main}
 {footer}

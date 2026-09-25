@@ -161,39 +161,27 @@
   /* Wide enough for the names to fit, so show them rather than hiding seven
      links behind a button. Below this the row belongs to the wordmark and the
      menu opens as a panel, as before. */
-  /* A sticky bar takes its height from every screen for the whole visit, so
-     it earns that by being tall only at the top of the page. Once you scroll
-     it tightens: less padding, smaller wordmark, and the tagline steps out of
-     the way. */
-  header.site { transition: padding .22s ease; }
-  .brand, .brand-tag { transition: font-size .22s ease, opacity .18s ease; }
-  html.scrolled header.site { padding-top: 14px; padding-bottom: 12px; }
-  html.scrolled .brand { font-size: 1.05rem; }
-  html.scrolled .brand-tag { opacity: 0; pointer-events: none; }
-  @media (prefers-reduced-motion: reduce) {
-    header.site, .brand, .brand-tag { transition: none; }
-  }
 
-  /* Two rows: the name on its own line, the pages beneath it. The nav gets
-     the full width instead of competing with the wordmark for it, and the
-     links can sit at a readable size with real spacing between them. */
-  @media (min-width: 940px) {
+  /* One sticky row: name on the left, pages pushed to the right, each link a
+     soft pill on hover and for the page you are on. The bar keeps one height
+     the whole way down, so nothing shifts under the cursor as you scroll. */
+  @media (min-width: 720px) {
     .nav-toggle { display: none; }
-    header.site { flex-direction: column; align-items: stretch; gap: 10px; }
-    nav.main { position: static; flex-direction: row; align-items: center;
-      justify-content: flex-start; width: auto; min-width: 0; padding: 0; gap: 0;
-      margin-left: -10px;                 /* first link's padding, so it lines up */
+    header.site { flex-direction: row; align-items: center; gap: 28px; }
+    .brand-block { flex-shrink: 0; }
+    nav.main { position: static; flex: 1; flex-direction: row; align-items: center;
+      justify-content: flex-end; width: auto; min-width: 0; padding: 0; gap: 2px;
       background: none; border: 0; box-shadow: none;
       -webkit-backdrop-filter: none; backdrop-filter: none;
       opacity: 1; visibility: visible; transform: none; }
-    nav.main a { opacity: 1; padding: 6px 10px; margin-right: 12px; text-align: left; }
+    nav.main a { opacity: 1; white-space: nowrap; text-align: center;
+      padding: 8px 13px; border-radius: var(--r-sm);
+      font-size: .7rem; letter-spacing: .14em; }
     nav.main.open a, nav.main a { transition-delay: 0s; }
-    nav.main a:hover { transform: none; color: var(--accent); background: none; }
-    nav.main a.active::after { left: 10px; right: auto; width: calc(100% - 20px);
-      bottom: -1px; height: 1.6px; }
-    /* Scrolled, the rows tighten but stay two — collapsing to one would move
-       the links out from under the cursor mid-scroll. */
-    html.scrolled header.site { gap: 4px; }
+    nav.main a:hover { transform: none; color: var(--accent);
+      background: rgba(114,89,196,.10); }
+    nav.main a.active { color: var(--accent); background: rgba(114,89,196,.10); }
+    nav.main a.active::after { display: none; }
   }
   /* The pages live behind the button rather than all on show. The panel is
      taken out of flow so opening it does not push the page around. */
@@ -336,15 +324,6 @@
     .thumb-prev { display: none; }
   }
 
-  /* A playhead for the page: the line fills as you scroll, the way a
-     timeline does. Fixed above everything, and thin enough to read as a
-     progress indicator rather than a decoration. */
-  .playhead { position: fixed; top: 0; left: 0; right: 0; height: 2px;
-    z-index: 200; pointer-events: none;
-    background: linear-gradient(90deg, var(--accent), var(--lav-bright));
-    transform: scaleX(0); transform-origin: 0 50%;
-    transition: transform .08s linear; }
-  @media (prefers-reduced-motion: reduce) { .playhead { transition: none; } }
   .project-card .thumb--empty { background: linear-gradient(150deg, #2b2833, #17151d); }
   .project-card .overlay { position: absolute; inset: 0; z-index: 2; display: flex; flex-direction: column; justify-content: flex-end; align-items: flex-start; padding: 22px; background: linear-gradient(to top, rgba(14,12,19,.85) 0%, rgba(14,12,19,.12) 55%, rgba(14,12,19,0) 100%); }
   .cats { display: flex; flex-wrap: wrap; gap: 4px; margin-bottom: 10px; }
