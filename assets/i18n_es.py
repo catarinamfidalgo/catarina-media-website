@@ -3,6 +3,26 @@
 montaje for editing, etalonaje for grading, vosotros when addressing agencies."""
 
 UI = {
+    'Who holds this':
+        'Quién trata los datos',
+    'Catarina Fidalgo, working in Portugal. Anything about your own data can go through the contact form.':
+        'Catarina Fidalgo, que trabaja en Portugal. Cualquier cuestión sobre tus datos puede ir por el formulario de contacto.',
+    'On what basis':
+        'Con qué base',
+    'Your consent, and nothing else. Analytics runs only if you say yes, and you can take that back whenever you like.':
+        'Tu consentimiento, y nada más. Analytics solo funciona si dices que sí, y puedes retirarlo cuando quieras.',
+    'What you can ask for':
+        'Qué puedes pedir',
+    'You can ask what is held about you, ask for it to be corrected or deleted, and withdraw your consent at any time. Ask through the contact form and I will answer.':
+        'Puedes pedir saber qué se guarda sobre ti, pedir que se corrija o se borre, y retirar tu consentimiento en cualquier momento. Basta con pedirlo por el formulario de contacto y te respondo.',
+    'How long it is kept':
+        'Cuánto tiempo se guarda',
+    'Google Analytics keeps visit data for 14 months and then deletes it. Nothing else is kept, because nothing else is collected.':
+        'Google Analytics guarda los datos de visita durante 14 meses y después los borra. No se guarda nada más, porque no se recoge nada más.',
+    'If you are not happy about it':
+        'Si no estás conforme',
+    'You can complain to the CNPD, the Portuguese data protection authority, at cnpd.pt.':
+        'Puedes reclamar ante la CNPD, la autoridad portuguesa de protección de datos, en cnpd.pt.',
     'Privacy':
         'Privacidad',
     'What this site <i>collects.</i>':

@@ -3,6 +3,26 @@
 
 # Interface chrome
 UI = {
+    'Who holds this':
+        'Quem trata os dados',
+    'Catarina Fidalgo, working in Portugal. Anything about your own data can go through the contact form.':
+        'Catarina Fidalgo, a trabalhar em Portugal. Qualquer questão sobre os seus dados pode seguir pelo formulário de contacto.',
+    'On what basis':
+        'Com que fundamento',
+    'Your consent, and nothing else. Analytics runs only if you say yes, and you can take that back whenever you like.':
+        'O seu consentimento, e mais nada. O Analytics só funciona se disser que sim, e pode retirar essa autorização quando quiser.',
+    'What you can ask for':
+        'O que pode pedir',
+    'You can ask what is held about you, ask for it to be corrected or deleted, and withdraw your consent at any time. Ask through the contact form and I will answer.':
+        'Pode pedir para saber o que é guardado sobre si, pedir que seja corrigido ou apagado, e retirar o consentimento a qualquer momento. Basta pedir pelo formulário de contacto e eu respondo.',
+    'How long it is kept':
+        'Durante quanto tempo fica guardado',
+    'Google Analytics keeps visit data for 14 months and then deletes it. Nothing else is kept, because nothing else is collected.':
+        'O Google Analytics guarda os dados de visita durante 14 meses e depois apaga-os. Mais nada fica guardado, porque mais nada é recolhido.',
+    'If you are not happy about it':
+        'Se não estiver satisfeito',
+    'You can complain to the CNPD, the Portuguese data protection authority, at cnpd.pt.':
+        'Pode apresentar queixa à CNPD, a autoridade portuguesa de proteção de dados, em cnpd.pt.',
     'Privacy':
         'Privacidade',
     'What this site <i>collects.</i>':
