@@ -174,17 +174,26 @@
     header.site, .brand, .brand-tag { transition: none; }
   }
 
+  /* Two rows: the name on its own line, the pages beneath it. The nav gets
+     the full width instead of competing with the wordmark for it, and the
+     links can sit at a readable size with real spacing between them. */
   @media (min-width: 940px) {
     .nav-toggle { display: none; }
+    header.site { flex-direction: column; align-items: stretch; gap: 10px; }
     nav.main { position: static; flex-direction: row; align-items: center;
-      width: auto; min-width: 0; padding: 0; gap: 2px;
+      justify-content: flex-start; width: auto; min-width: 0; padding: 0; gap: 0;
+      margin-left: -10px;                 /* first link's padding, so it lines up */
       background: none; border: 0; box-shadow: none;
       -webkit-backdrop-filter: none; backdrop-filter: none;
       opacity: 1; visibility: visible; transform: none; }
-    nav.main a { opacity: 1; padding: 8px 11px; text-align: center; }
+    nav.main a { opacity: 1; padding: 6px 10px; margin-right: 12px; text-align: left; }
     nav.main.open a, nav.main a { transition-delay: 0s; }
-    nav.main a:hover { transform: none; background: rgba(114,89,196,.08); }
-    nav.main a.active::after { left: 11px; right: 11px; width: auto; bottom: 1px; }
+    nav.main a:hover { transform: none; color: var(--accent); background: none; }
+    nav.main a.active::after { left: 10px; right: auto; width: calc(100% - 20px);
+      bottom: -1px; height: 1.6px; }
+    /* Scrolled, the rows tighten but stay two — collapsing to one would move
+       the links out from under the cursor mid-scroll. */
+    html.scrolled header.site { gap: 4px; }
   }
   /* The pages live behind the button rather than all on show. The panel is
      taken out of flow so opening it does not push the page around. */
