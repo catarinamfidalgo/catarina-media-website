@@ -20,7 +20,19 @@ import argparse, pathlib, re, subprocess, sys
 # represent the piece. Scene detection finds cuts; it cannot tell which moment
 # is the one worth showing.
 OVERRIDES = {
-    "aischool-lesson-3-3.mp4": 58,     # the prompt comparison building, not a talking head
+    "aischool-lesson-3-3.mp4": 58,              # the prompt comparison building
+    "thinkshop.mp4": 5,                         # the animated title sequence
+    "espanita.mp4": 131,                        # at the bar, bottle and skyline in frame
+    "fiveoaks.mp4": 33,                         # photos animating in, no talking head
+    "thetaray.mp4": 1.5,                        # the kinetic type open
+    "kaust-testimonials.mp4": 51,               # the waterfront b-roll, no cut across it
+    "fatbrands-highlight-reel.mp4": 104,        # beer pour into the food shots
+    "99bitcoins-saudi-arabia.mp4": 29,          # the mBridge diagram assembling
+    "fairmont-3.mp4": 11,                       # the protagonist, continuous through the robe sequence
+    "danone-meet-the-board.mp4": 8,             # talking heads with their name cards
+    "similarweb.mp4": 285,                      # three seconds later than it chose
+    "snowlodge.mp4": 35,                        # later, once the room is full
+    "savage-4-investigative-errors.mp4": 18,    # the host beside the bars building
 }
 
 SRC_DIR = pathlib.Path("assets/video")
