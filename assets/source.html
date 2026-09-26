@@ -31,7 +31,7 @@
 <meta name="twitter:description" content="Video editor and post-production, based in Portugal. Commercials, brand films, YouTube, social and corporate video for brands and agencies.">
 <meta name="twitter:image" content="https://catarina.media/assets/img/catarina-portrait.jpg">
 
-<link rel="stylesheet" href="assets/site.css?v=mobile-gutter2">
+<link rel="stylesheet" href="assets/site.css?v=nav-row">
 
 <!-- Google Analytics (GA4), behind consent.
      Analytics sets a cookie, so under EU law it may not run until the visitor
@@ -140,7 +140,6 @@
       </div>
         <span class="brand-tag">Video Editing &amp; Post-Production</span>
       </div>
-      <button class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="siteNav" onclick="toggleNav(this)"><span></span><span></span><span></span></button>
       <nav class="main" id="siteNav">
         <a href="#home" class="active">Home</a>
         <a href="#portfolio">Portfolio</a>
@@ -677,29 +676,8 @@
   renderFilters();
   renderGrid();
 
-  // --- Mobile nav toggle ---
-  function toggleNav(btn) {
-    const nav = document.getElementById('siteNav');
-    const open = nav.classList.toggle('open');
-    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
-  }
-  // a menu that only closes by pressing the button again is a trap
-  function closeNav() {
-    const nav = document.getElementById('siteNav');
-    const btn = document.querySelector('.nav-toggle');
-    if (nav) nav.classList.remove('open');
-    if (btn) btn.setAttribute('aria-expanded', 'false');
-  }
-  document.addEventListener('click', function (e) {
-    if (!e.target.closest('header.site')) closeNav();
-  });
-  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeNav(); });
-  document.getElementById('siteNav').addEventListener('click', function (e) {
-    if (e.target.tagName === 'A') {
-      this.classList.remove('open');
-      document.querySelector('.nav-toggle').setAttribute('aria-expanded', 'false');
-    }
-  });
+  /* The nav has no open and closed state any more: the pages are on show at
+     every width, so there is nothing to toggle and no button to keep in sync. */
 
   // --- Scroll-spy: highlight the nav link for the section in view ---
   (function () {
