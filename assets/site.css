@@ -341,14 +341,19 @@
   .hero-fairy-figure img { position: absolute; inset: 0; width: 100%; height: 100%;
     object-fit: contain; }
   .hero-fairy-main { animation: fairyInnerGlow 1.15s ease-in-out infinite alternate; }
+  /* Only the trailing fabric moves. The clip used to run from 48% across and
+     39% down, which takes in the extended right arm at 62-78% by 37-45% and
+     both legs at 62-82% by 60-85%. Moving that layer moved copies of them
+     too, which is where the spare arms and legs came from. It is now the
+     streaming tail alone, starting past the arm and above the knees, hinged
+     at its left edge so the far end travels and the join does not.
+
+     The feet layer is gone. A foot cannot be moved independently of the leg
+     it belongs to without tearing at the ankle, and nothing is gained by it. */
   .hero-fairy-dress-motion { z-index: 2;
-    clip-path: polygon(48% 42%,100% 39%,100% 76%,61% 77%);
-    transform-origin: 57% 58%; opacity: .88;
-    animation: fairyDressFloat 1.05s ease-in-out infinite alternate; }
-  .hero-fairy-feet-motion { z-index: 3;
-    clip-path: polygon(62% 63%,100% 61%,100% 100%,72% 100%);
-    transform-origin: 75% 76%; opacity: .94;
-    animation: fairyFeetMove .82s ease-in-out infinite alternate; }
+    clip-path: polygon(76% 45%,100% 42%,100% 74%,76% 77%);
+    transform-origin: 76% 60%; opacity: .9;
+    animation: fairyDressFloat 1.5s ease-in-out infinite alternate; }
   .hero-fairy-twinkle { position: absolute; z-index: 4; inset: 9% 8% 8% 11%;
     opacity: 0; mix-blend-mode: screen;
     background:
@@ -434,12 +439,8 @@
     to   { filter: brightness(1.055) saturate(1.08); }
   }
   @keyframes fairyDressFloat {
-    from { transform: translateY(1.5px) rotate(.6deg) scaleY(.985); }
-    to   { transform: translateY(-2px) rotate(-1deg) scaleY(1.015); }
-  }
-  @keyframes fairyFeetMove {
-    from { transform: translateY(1px) rotate(.8deg); }
-    to   { transform: translateY(-1.5px) rotate(-1.2deg); }
+    from { transform: rotate(-.7deg) translateY(.6px) scaleY(.99); }
+    to   { transform: rotate(1deg) translateY(-1.2px) scaleY(1.012); }
   }
   @keyframes fairyBodyTwinkle {
     0%,100% { opacity: .18; transform: translate(0,0) scale(.96); }
