@@ -32,6 +32,9 @@ NAV = {
 POSTS = [
     {
         "slug": "brand-video-package",
+        "image": "one-campaign",
+        "image_alt": "An editing timeline in purple, with clips laid out along it "
+                     "above an audio waveform",
         "date": "2026-09-24",
         "date_label": "September 2026",
         "title": "One campaign, every platform: commission it all at once",
@@ -491,12 +494,12 @@ def build():
             if img:
                 alt = html.escape(p.get("image_alt", ""), quote=True)
                 hero = (f"""<figure class="post-hero">
-          <img src="{root}assets/img/blog/{img}-1600.webp"
+          <img src="{root}assets/img/blog/{img}-1400.webp"
                srcset="{root}assets/img/blog/{img}-640.webp 640w, """
                         f"""{root}assets/img/blog/{img}-900.webp 900w, """
-                        f"""{root}assets/img/blog/{img}-1600.webp 1600w"
+                        f"""{root}assets/img/blog/{img}-1400.webp 1400w"
                sizes="(max-width: 780px) 100vw, 720px"
-               width="1672" height="941" alt="{alt}" fetchpriority="high">
+               width="1672" height="480" alt="{alt}" fetchpriority="high">
         </figure>""")
                 og_image = (f'<meta property="og:image" content="{SITE}/assets/img/blog/{img}-og.jpg">\n'
                             f'<meta property="og:image:width" content="1200">\n'
