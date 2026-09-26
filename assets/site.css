@@ -187,7 +187,7 @@
   nav.main { position: static; z-index: auto;
     display: flex; flex-direction: row; align-items: center;
     width: auto; gap: 2px;
-    margin-top: 0; padding: 9px 0 10px;
+    margin-top: 0; padding: 9px 30px 10px 0;
     background: none; border-radius: 0; box-shadow: none;
     -webkit-backdrop-filter: none; backdrop-filter: none;
     opacity: 1; visibility: visible; transform: none;
@@ -198,13 +198,18 @@
        works on whichever surface colour the theme is using. */
     -webkit-mask-image: linear-gradient(90deg, #000 0 88%, transparent 100%);
     mask-image: linear-gradient(90deg, #000 0 88%, transparent 100%); }
+  /* Nothing scrolls once every name fits, so the fade and the trailing space
+     it needed both come off. */
+  @media (min-width: 720px) {
+    nav.main { padding-right: 0; overflow-x: visible;
+      -webkit-mask-image: none; mask-image: none; }
+  }
   nav.main::-webkit-scrollbar { display: none; }
   nav.main a { position: relative; flex: 0 0 auto;
     color: var(--muted); white-space: nowrap;
     padding: 7px 11px; border-radius: var(--r-sm);
     font-size: .68rem; letter-spacing: .13em;
     transition: color .18s ease, background .18s ease; }
-  nav.main a:last-child { padding-right: 30px; }
   nav.main a:hover, nav.main a:active,
   nav.main a.active { color: var(--accent); background: var(--tint-2); }
   nav.main a.active::after { display: none; }
