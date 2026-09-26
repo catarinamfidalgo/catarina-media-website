@@ -545,10 +545,24 @@
     .post-thumb { flex: none; width: 100%; }
   }
 
-  /* The hero sits full width of the article column, above the first line. */
-  .post-hero { margin: 0 0 30px; border-radius: var(--r-md); overflow: hidden;
-    background: var(--line); }
+  /* The hero runs wider than the text. Matching the 680px measure made it
+     look like a diagram someone dropped in; breaking out to the full column
+     makes it read as the opening image of an article. It stays flush left
+     with the text rather than centring, so the left edge of the page holds. */
+  .post-hero { position: relative; margin: 4px 0 34px;
+    width: min(1000px, calc(100vw - var(--gutter) * 2));
+    border-radius: var(--r-md); overflow: hidden;
+    background: var(--line);
+    box-shadow: 0 24px 60px rgba(19,18,23,.28); }
   .post-hero img { display: block; width: 100%; height: auto; }
+  /* A hairline in the brand purple, laid over the image rather than around
+     it, so the rounded corner stays exact at any width. */
+  .post-hero::after { content: ""; position: absolute; inset: 0;
+    border: 1px solid rgba(var(--lav-rgb),.45);
+    border-radius: var(--r-md); pointer-events: none; }
+  @media (max-width: 1060px) {
+    .post-hero { width: calc(100vw - var(--gutter) * 2); }
+  }
   .post-item a:hover { opacity: .62; }
   .post-date { font-size: .68rem; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; color: var(--accent); }
   .post-title { font-family: 'Hanken Grotesk', sans-serif; font-weight: 800; text-transform: uppercase; line-height: 1.05; letter-spacing: -.015em; font-size: clamp(1.4rem,3vw,2rem); margin: 8px 0 8px; }

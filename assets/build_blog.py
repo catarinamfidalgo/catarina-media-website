@@ -270,7 +270,7 @@ PAGE = """<!DOCTYPE html>
 <meta property="og:description" content="{excerpt}">
 <meta property="og:url" content="{canonical}">
 {og_image}
-<link rel="stylesheet" href="{root}assets/site.css?v=blog-images">
+<link rel="stylesheet" href="{root}assets/site.css?v=blog-hero">
 
 <!-- Google Analytics (GA4), behind consent.
      Analytics sets a cookie, so under EU law it may not run until the visitor
