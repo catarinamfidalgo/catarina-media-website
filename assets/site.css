@@ -367,33 +367,77 @@
     to   { background-position: -150% 0; }
   }
 
-  /* Dust. Six specks of lavender that come and go out of step with each
-     other, sitting just off the letters rather than on them. */
+  /* Dust, properly. Two layers of specks at different sizes drifting at
+     different rates, which is what gives it depth instead of a row of dots.
+     They sit in a band taller and wider than the word, so the word is inside
+     the dust rather than underlined by it. */
   .hero-edit::before {
-    content: ""; position: absolute; inset: -18% -8%; pointer-events: none;
+    content: ""; position: absolute; inset: -46% -16%; pointer-events: none;
     background:
-      radial-gradient(circle, rgba(var(--lav-rgb),.95) 0 1.4px, transparent 2px) 8% 22%/100% 100% no-repeat,
-      radial-gradient(circle, rgba(var(--lav-rgb),.85) 0 1.1px, transparent 2px) 27% 78%/100% 100% no-repeat,
-      radial-gradient(circle, rgba(var(--lav-rgb),.95) 0 1.6px, transparent 2px) 48% 12%/100% 100% no-repeat,
-      radial-gradient(circle, rgba(var(--lav-rgb),.8) 0 1.2px, transparent 2px) 66% 86%/100% 100% no-repeat,
-      radial-gradient(circle, rgba(var(--lav-rgb),.95) 0 1.5px, transparent 2px) 84% 30%/100% 100% no-repeat,
-      radial-gradient(circle, rgba(var(--lav-rgb),.85) 0 1.2px, transparent 2px) 95% 68%/100% 100% no-repeat;
+      radial-gradient(circle, rgba(var(--lav-rgb),0.74) 0 1.9px, transparent 2.6px) 31.0% 10.9%/100% 100% no-repeat,
+      radial-gradient(circle, rgba(var(--lav-rgb),0.86) 0 1.1px, transparent 1.8px) 53.9% 35.0%/100% 100% no-repeat,
+      radial-gradient(circle, rgba(var(--lav-rgb),0.75) 0 1.1px, transparent 1.8px) 0.0% 42.6%/100% 100% no-repeat,
+      radial-gradient(circle, rgba(var(--lav-rgb),0.78) 0 1.2px, transparent 1.9px) 41.8% 86.6%/100% 100% no-repeat,
+      radial-gradient(circle, rgba(var(--lav-rgb),0.83) 0 1.8px, transparent 2.5px) 63.8% 100.1%/100% 100% no-repeat,
+      radial-gradient(circle, rgba(var(--lav-rgb),0.8) 0 2.2px, transparent 2.9px) 101.4% -0.8%/100% 100% no-repeat,
+      radial-gradient(circle, rgba(var(--lav-rgb),0.95) 0 1.4px, transparent 2.1px) 11.6% 7.2%/100% 100% no-repeat,
+      radial-gradient(circle, rgba(var(--lav-rgb),0.82) 0 1.9px, transparent 2.6px) 15.5% 59.1%/100% 100% no-repeat,
+      radial-gradient(circle, rgba(var(--lav-rgb),0.78) 0 1.1px, transparent 1.8px) 55.2% 1.0%/100% 100% no-repeat,
+      radial-gradient(circle, rgba(var(--lav-rgb),0.88) 0 1.4px, transparent 2.1px) 69.5% 41.9%/100% 100% no-repeat,
+      radial-gradient(circle, rgba(var(--lav-rgb),0.92) 0 2.1px, transparent 2.8px) 44.9% 27.6%/100% 100% no-repeat,
+      radial-gradient(circle, rgba(var(--lav-rgb),0.97) 0 1.7px, transparent 2.4px) 22.4% 58.3%/100% 100% no-repeat,
+      radial-gradient(circle, rgba(var(--lav-rgb),0.75) 0 2.4px, transparent 3.1px) 74.8% 26.2%/100% 100% no-repeat,
+      radial-gradient(circle, rgba(var(--lav-rgb),0.86) 0 1.2px, transparent 1.9px) 41.2% 78.8%/100% 100% no-repeat,
+      radial-gradient(circle, rgba(var(--lav-rgb),0.88) 0 2.1px, transparent 2.8px) 0.2% 68.8%/100% 100% no-repeat,
+      radial-gradient(circle, rgba(var(--lav-rgb),0.89) 0 2.0px, transparent 2.7px) 90.6% 29.1%/100% 100% no-repeat,
+      radial-gradient(circle, rgba(var(--lav-rgb),0.98) 0 2.2px, transparent 2.9px) 58.6% 45.1%/100% 100% no-repeat,
+      radial-gradient(circle, rgba(var(--lav-rgb),0.92) 0 1.1px, transparent 1.8px) 47.2% 68.4%/100% 100% no-repeat;
     opacity: 0;
     animation: editDustIn 10s ease-in-out .7s both,
-               editDustTwinkle 1.7s ease-in-out .7s infinite alternate;
+               editDustDrift 3.4s ease-in-out .7s infinite alternate;
   }
   .hero-edit.replay::before {
     animation: editDustIn 10s ease-in-out 0s both,
-               editDustTwinkle 1.7s ease-in-out 0s infinite alternate;
+               editDustDrift 3.4s ease-in-out 0s infinite alternate;
+  }
+  .edit-dust {
+    position: absolute; inset: -62% -24%; pointer-events: none; display: block;
+    background:
+      radial-gradient(circle, rgba(var(--lav-rgb),0.66) 0 1.3px, transparent 2.0px) 13.8% 71.3%/100% 100% no-repeat,
+      radial-gradient(circle, rgba(var(--lav-rgb),0.67) 0 1.4px, transparent 2.1px) 19.3% 82.8%/100% 100% no-repeat,
+      radial-gradient(circle, rgba(var(--lav-rgb),0.61) 0 0.7px, transparent 1.4px) 50.5% 20.4%/100% 100% no-repeat,
+      radial-gradient(circle, rgba(var(--lav-rgb),0.55) 0 1.4px, transparent 2.1px) 59.2% 1.8%/100% 100% no-repeat,
+      radial-gradient(circle, rgba(var(--lav-rgb),0.77) 0 1.6px, transparent 2.3px) 21.1% -1.3%/100% 100% no-repeat,
+      radial-gradient(circle, rgba(var(--lav-rgb),0.59) 0 0.7px, transparent 1.4px) 90.5% 63.0%/100% 100% no-repeat,
+      radial-gradient(circle, rgba(var(--lav-rgb),0.61) 0 1.6px, transparent 2.3px) 49.7% 7.0%/100% 100% no-repeat,
+      radial-gradient(circle, rgba(var(--lav-rgb),0.85) 0 0.8px, transparent 1.5px) 12.7% 85.6%/100% 100% no-repeat,
+      radial-gradient(circle, rgba(var(--lav-rgb),0.66) 0 1.0px, transparent 1.7px) 44.9% 55.8%/100% 100% no-repeat,
+      radial-gradient(circle, rgba(var(--lav-rgb),0.55) 0 1.5px, transparent 2.2px) 16.2% -1.8%/100% 100% no-repeat,
+      radial-gradient(circle, rgba(var(--lav-rgb),0.83) 0 1.6px, transparent 2.3px) 80.3% 17.4%/100% 100% no-repeat,
+      radial-gradient(circle, rgba(var(--lav-rgb),0.76) 0 1.2px, transparent 1.9px) 77.5% 79.4%/100% 100% no-repeat,
+      radial-gradient(circle, rgba(var(--lav-rgb),0.54) 0 1.4px, transparent 2.1px) 9.2% 47.3%/100% 100% no-repeat,
+      radial-gradient(circle, rgba(var(--lav-rgb),0.61) 0 1.1px, transparent 1.8px) 95.7% 93.4%/100% 100% no-repeat,
+      radial-gradient(circle, rgba(var(--lav-rgb),0.62) 0 1.6px, transparent 2.3px) 44.7% 37.2%/100% 100% no-repeat;
+    opacity: 0;
+    animation: editDustIn 10s ease-in-out .7s both,
+               editDustFloat 2.3s ease-in-out .7s infinite alternate;
+  }
+  .hero-edit.replay .edit-dust {
+    animation: editDustIn 10s ease-in-out 0s both,
+               editDustFloat 2.3s ease-in-out 0s infinite alternate;
   }
   @keyframes editDustIn {
-    0%,44%   { opacity: 0; }
-    54%,88%  { opacity: 1; }
+    0%,42%   { opacity: 0; }
+    52%,88%  { opacity: 1; }
     94%,100% { opacity: 0; }
   }
-  @keyframes editDustTwinkle {
-    from { transform: translateY(2px) scale(.94); filter: brightness(.85); }
-    to   { transform: translateY(-3px) scale(1.06); filter: brightness(1.5); }
+  @keyframes editDustDrift {
+    from { transform: translate(2px,4px) scale(.95); filter: brightness(.8); }
+    to   { transform: translate(-3px,-6px) scale(1.06); filter: brightness(1.75); }
+  }
+  @keyframes editDustFloat {
+    from { transform: translate(-3px,5px) scale(1.04); filter: brightness(1.65); }
+    to   { transform: translate(4px,-7px) scale(.94); filter: brightness(.85); }
   }
   .hero-fairy-figure { position: absolute; inset: 0; opacity: 0;
     transform-origin: 28% 72%;
@@ -884,8 +928,13 @@
      the hero: a band of lavender travelling over it, and a few specks that
      come and go. The class is added on click and taken off when the sweep
      ends, so nothing runs when nothing is being pressed. */
-  .btn { position: relative; overflow: hidden; }
-  .btn.is-sparkling::after {
+  /* The header's page links are buttons too, and on the homepage they are
+     the only ones where this is visible at all: every other button leaves
+     the page before the sweep finishes. */
+  .btn, nav.main a, .filter-chip { position: relative; overflow: hidden; }
+  .btn.is-sparkling::after,
+  nav.main a.is-sparkling::after,
+  .filter-chip.is-sparkling::after {
     content: ""; position: absolute; inset: 0; pointer-events: none;
     background: linear-gradient(104deg,
       rgba(var(--lav-rgb),0) 30%,
@@ -895,7 +944,9 @@
     background-size: 260% 100%;
     animation: btnSweep .62s ease-out forwards;
   }
-  .btn.is-sparkling::before {
+  .btn.is-sparkling::before,
+  nav.main a.is-sparkling::before,
+  .filter-chip.is-sparkling::before {
     content: ""; position: absolute; inset: 0; pointer-events: none;
     background:
       radial-gradient(circle, rgba(var(--lav-rgb),.95) 0 1.5px, transparent 2px) 18% 30%/100% 100% no-repeat,
@@ -915,7 +966,9 @@
     100% { opacity: 0; transform: scale(1.12) translateY(-4px); }
   }
   @media (prefers-reduced-motion: reduce) {
-    .btn.is-sparkling::after, .btn.is-sparkling::before { animation: none; content: none; }
+    .btn.is-sparkling::after, .btn.is-sparkling::before,
+    nav.main a.is-sparkling::after, nav.main a.is-sparkling::before,
+    .filter-chip.is-sparkling::after, .filter-chip.is-sparkling::before { animation: none; content: none; }
   }
   .btn--ghost, .btn--ghost-light, .btn--ghost:hover, .btn--ghost-light:hover { box-shadow: none; transform: none; }
 

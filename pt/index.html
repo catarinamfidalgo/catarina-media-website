@@ -39,7 +39,7 @@
 <meta name="twitter:description" content="Video editor and post-production, based in Portugal. Commercials, brand films, YouTube, social and corporate video for brands and agencies.">
 <meta name="twitter:image" content="https://catarina.media/assets/img/catarina-portrait.jpg">
 
-<link rel="stylesheet" href="../assets/site.css?v=shimmer-dust">
+<link rel="stylesheet" href="../assets/site.css?v=nav-sparkle">
 
 <!-- Google Analytics (GA4), behind consent.
      Analytics sets a cookie, so under EU law it may not run until the visitor
@@ -164,7 +164,7 @@
   </div>  <section class="hero-reed" id="home">
     <div class="hero-reed-media" aria-hidden="true"></div>
     <div class="hero-reed-inner">
-      <h1 class="hero-title">Made<br><span>in the <span class="hero-edit" data-word="edit">edit<!--
+      <h1 class="hero-title">Made<br><span>in the <span class="hero-edit" data-word="edit">edit<span class="edit-dust" aria-hidden="true"></span><!--
           --><span class="hero-fairy" aria-hidden="true">
             <span class="hero-fairy-figure">
               <span class="hero-fairy-wing hero-fairy-wing--upper"></span>
@@ -279,7 +279,7 @@
     (function () {
       if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
       document.addEventListener('click', function (e) {
-        var btn = e.target.closest && e.target.closest('.btn');
+        var btn = e.target.closest && e.target.closest('.btn, nav.main a, .filter-chip');
         if (!btn) return;
         btn.classList.remove('is-sparkling');
         void btn.offsetWidth;
