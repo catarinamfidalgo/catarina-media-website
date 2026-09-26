@@ -9,6 +9,8 @@ file, which reads better and is what search engines index.
 """
 import os, re, html
 
+BANNER = '<!-- GENERATED FILE — DO NOT EDIT.\n     Built from assets/source.html by ./build.sh.\n     Anything written here is deleted the next time the build runs.\n     Edit assets/source.html or assets/site.css, then run ./build.sh. -->\n'
+
 SITE = "https://catarina.media"
 
 
@@ -514,7 +516,7 @@ def build():
       <a class="back-link" href="{root}{'' if lang == 'en' else lang + '/'}blog/">&larr; {nav['back']}</a>
     </article>
   </div>"""
-            open(os.path.join(d, "index.html"), "w", encoding="utf-8").write(PAGE.format(
+            open(os.path.join(d, "index.html"), "w", encoding="utf-8").write(BANNER + PAGE.format(
                 lang="en" if lang == "en" else "pt-PT",
                 alts=hreflang(urls),
                 title=html.escape(c["title"], quote=True),
@@ -546,7 +548,7 @@ def build():
             index_urls["pt"] = f"{SITE}/pt/blog/"
         other = (index_urls.get("pt") if lang == "en" else index_urls.get("en")) \
             if len(index_urls) > 1 else None
-        open(os.path.join(base, "index.html"), "w", encoding="utf-8").write(PAGE.format(
+        open(os.path.join(base, "index.html"), "w", encoding="utf-8").write(BANNER + PAGE.format(
             lang="en" if lang == "en" else "pt-PT",
             alts=hreflang(index_urls),
             title=nav["index_title"], excerpt=nav["index_lede"],

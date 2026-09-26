@@ -11,7 +11,7 @@ Run after build_pages.py and build_i18n.py.
 
     python3 assets/build_sitemap.py
 """
-import os, pathlib, datetime, re
+import os, pathlib, datetime, re, subprocess
 
 SITE = "https://catarina.media"
 ROOT = pathlib.Path(".")
@@ -27,9 +27,21 @@ PRIORITY = {"": "1.0", "contact/": "0.8", "services/": "0.8",
 
 
 def lastmod(path):
+    """The date the page last actually changed, from git rather than the file.
+
+    Modification time is the moment the file was written, so a fresh clone
+    stamps every page with the day it was cloned and a rebuild stamps them all
+    with today. Neither is what lastmod means, and it also made the build
+    non-reproducible: the same source produced a different sitemap depending
+    on when you ran it, which is what a build check has to be able to rely on.
+    """
     f = ROOT / path / "index.html"
     if not f.exists():
         return None
+    out = subprocess.run(["git", "log", "-1", "--format=%cs", "--", str(f)],
+                         capture_output=True, text=True).stdout.strip()
+    if out:
+        return out
     return datetime.date.fromtimestamp(f.stat().st_mtime).isoformat()
 
 

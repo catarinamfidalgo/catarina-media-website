@@ -8,6 +8,8 @@ translated versions follow, rather than three files drifting apart.
 """
 import importlib.util, os, re, sys
 
+BANNER = '<!-- GENERATED FILE — DO NOT EDIT.\n     Built from assets/source.html by ./build.sh.\n     Anything written here is deleted the next time the build runs.\n     Edit assets/source.html or assets/site.css, then run ./build.sh. -->\n'
+
 LANGS = {"pt": "assets/i18n_pt.py", "es": "assets/i18n_es.py"}
 
 
@@ -181,7 +183,7 @@ def build_page(lang, path, slug):
 
     out_dir = os.path.join(lang, slug) if slug else lang
     os.makedirs(out_dir, exist_ok=True)
-    open(os.path.join(out_dir, "index.html"), "w", encoding="utf-8").write(s)
+    open(os.path.join(out_dir, "index.html"), "w", encoding="utf-8").write(BANNER + s)
     print(f"  built {out_dir}/index.html")
 
 

@@ -16,6 +16,8 @@ Run after editing assets/source.html, then build_i18n.py for pt/ and es/.
 """
 import os, re, pathlib, shutil
 
+BANNER = '<!-- GENERATED FILE — DO NOT EDIT.\n     Built from assets/source.html by ./build.sh.\n     Anything written here is deleted the next time the build runs.\n     Edit assets/source.html or assets/site.css, then run ./build.sh. -->\n'
+
 SRC = pathlib.Path("assets/source.html")  # the single-page master; pages are generated from it
 SITE = "https://catarina.media"
 
@@ -158,7 +160,7 @@ def build():
 
         out = pathlib.Path(slug) / "index.html" if slug else pathlib.Path("index.html")
         out.parent.mkdir(parents=True, exist_ok=True)
-        out.write_text(page, encoding="utf-8")
+        out.write_text(BANNER + page, encoding="utf-8")
         print("  built /%s" % (slug + "/" if slug else ""))
 
 
