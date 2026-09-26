@@ -8,7 +8,7 @@ translated versions follow, rather than three files drifting apart.
 """
 import importlib.util, os, re, sys
 
-BANNER = '<!-- GENERATED FILE — DO NOT EDIT.\n     Built from assets/source.html by ./build.sh.\n     Anything written here is deleted the next time the build runs.\n     Edit assets/source.html or assets/site.css, then run ./build.sh. -->\n'
+BANNER = '<!-- GENERATED FILE - DO NOT EDIT.\n     Built from assets/source.html by ./build.sh.\n     Anything written here is deleted the next time the build runs.\n     Edit assets/source.html or assets/site.css, then run ./build.sh. -->\n'
 
 LANGS = {"pt": "assets/i18n_pt.py", "es": "assets/i18n_es.py"}
 

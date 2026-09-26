@@ -2,7 +2,7 @@
 """Split the site into separate pages.
 
 assets/source.html is the single-page master and the only file to edit by
-hand. It holds the fragments — header, hero, each
+hand. It holds the fragments - header, hero, each
 section, the footer and the script. This composes them into:
 
     /            hero, intro, featured work, CTA
@@ -16,7 +16,7 @@ Run after editing assets/source.html, then build_i18n.py for pt/ and es/.
 """
 import os, re, pathlib, shutil
 
-BANNER = '<!-- GENERATED FILE — DO NOT EDIT.\n     Built from assets/source.html by ./build.sh.\n     Anything written here is deleted the next time the build runs.\n     Edit assets/source.html or assets/site.css, then run ./build.sh. -->\n'
+BANNER = '<!-- GENERATED FILE - DO NOT EDIT.\n     Built from assets/source.html by ./build.sh.\n     Anything written here is deleted the next time the build runs.\n     Edit assets/source.html or assets/site.css, then run ./build.sh. -->\n'
 
 SRC = pathlib.Path("assets/source.html")  # the single-page master; pages are generated from it
 SITE = "https://catarina.media"

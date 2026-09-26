@@ -69,12 +69,12 @@
     var body =
       "Name: " + name + "\n" +
       "Email: " + val("email") + "\n" +
-      "Company: " + (val("company") || "—") + "\n" +
-      "Type of video: " + (type || "—") + "\n\n" +
+      "Company: " + (val("company") || "-") + "\n" +
+      "Type of video: " + (type || "-") + "\n\n" +
       val("message") + "\n";
     return window.atob(encoded) +
       "?subject=" + encodeURIComponent(
-        type ? (type + " — " + (name || "enquiry")) : ("Enquiry" + (name ? " — " + name : ""))) +
+        type ? (type + " - " + (name || "enquiry")) : ("Enquiry" + (name ? " - " + name : ""))) +
       "&body=" + encodeURIComponent(body);
   }
 
@@ -84,7 +84,7 @@
       say("Something went wrong sending that. Please try again in a moment.", "error");
       return;
     }
-    say("Opening your email app instead — your message is ready to send.", "warn");
+    say("Opening your email app instead - your message is ready to send.", "warn");
     window.location.href = href;
   }
 

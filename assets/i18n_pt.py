@@ -32,8 +32,8 @@ UI = {
         'Versão curta: quase nada, e nada sem perguntar.',
     'Visitor numbers':
         'Número de visitas',
-    'If you agree to it, this site uses Google Analytics to count visits — which pages get read, roughly where people are, and whether they came from a search. It sets a cookie to tell one visit from another. If you decline, Analytics is never loaded at all, and no cookie is set. You can change your mind at any time using the button below.':
-        'Se concordar, este site usa o Google Analytics para contar visitas — que páginas são lidas, aproximadamente de onde vêm as pessoas, e se chegaram através de uma pesquisa. Define um cookie para distinguir uma visita de outra. Se recusar, o Analytics nunca chega a ser carregado e nenhum cookie é criado. Pode mudar de ideias a qualquer momento no botão abaixo.',
+    'If you agree to it, this site uses Google Analytics to count visits - which pages get read, roughly where people are, and whether they came from a search. It sets a cookie to tell one visit from another. If you decline, Analytics is never loaded at all, and no cookie is set. You can change your mind at any time using the button below.':
+        'Se concordar, este site usa o Google Analytics para contar visitas - que páginas são lidas, aproximadamente de onde vêm as pessoas, e se chegaram através de uma pesquisa. Define um cookie para distinguir uma visita de outra. Se recusar, o Analytics nunca chega a ser carregado e nenhum cookie é criado. Pode mudar de ideias a qualquer momento no botão abaixo.',
     'The contact form':
         'O formulário de contacto',
     'The form does not send anything to this site. It opens your own email app with the details filled in, and nothing is sent until you press send yourself. Nothing you type is stored here, and there is no database.':
@@ -94,7 +94,7 @@ UI = {
 SERVICES = {
     "Video Editing": "Edição de Vídeo",
     "I build the story out of raw footage and find the pace that holds it together.":
-        "Construo a história a partir do material bruto — a montagem e o ritmo que a sustentam.",
+        "Construo a história a partir do material bruto - a montagem e o ritmo que a sustentam.",
     "Color Grading": "Color Grading e Correção de Cor",
     "Grading every shot so the piece feels like one film and fits your brand.":
         "Faço o color grading plano a plano para que a peça pareça um só filme e encaixe na sua marca.",
@@ -123,8 +123,8 @@ COPY = {
     "When there's overflow work, a tight deadline, or a client asking for more video than your team can make on its own, I work behind the scenes as your post-production partner. Everything ships under your brand, not mine.":
         "Quando há trabalho a mais, um prazo apertado ou um cliente a pedir mais vídeo do que a vossa equipa consegue produzir, trabalho nos bastidores como vosso parceiro de pós-produção. Tudo sai com a vossa marca, não com a minha.",
     "NDA-friendly, always": "Sempre sob NDA",
-    "Your client relationships stay yours — I never appear in the credits or the conversation.":
-        "As vossas relações com os clientes continuam vossas — nunca apareço nos créditos nem na conversa.",
+    "Your client relationships stay yours - I never appear in the credits or the conversation.":
+        "As vossas relações com os clientes continuam vossas - nunca apareço nos créditos nem na conversa.",
     "Built for turnaround": "Feito para prazos",
     "Send me a brief and raw footage; get broadcast-ready edits back on your timeline, not mine.":
         "Enviam-me o briefing e o material bruto; recebem montagens prontas a emitir no vosso prazo, não no meu.",
@@ -141,7 +141,7 @@ COPY = {
 
 META = {
     "title": "Catarina Fidalgo - Editora de Vídeo e Pós-Produção",
-    "description": "Catarina Fidalgo — editora de vídeo e pós-produção, em Portugal. "
+    "description": "Catarina Fidalgo - editora de vídeo e pós-produção, em Portugal. "
                    "Anúncios, filmes de marca, YouTube, conteúdo social e vídeo corporativo, "
                    "em inglês, português e espanhol.",
 }
@@ -234,15 +234,15 @@ DESCS = {
  "Moroccanoil": "Vídeos curtos para as redes sociais da Moroccanoil.",
  "Espanita Tequila": "Campanha para a Espanita Tequila, uma tequila feita em colaboração com o Pitbull. Montei também uma versão curta para redes sociais.",
  "Volkswagen": "Anúncio de televisão de 30 segundos para o concessionário Hawk Volkswagen de Monroeville.",
- "99Bitcoins": "Vídeos educativos de formato longo para o 99Bitcoins, um canal de YouTube que explica cripto a principiantes — 710 mil subscritores e mais de 50 milhões de visualizações. Mostram-se aqui duas amostras.",
+ "99Bitcoins": "Vídeos educativos de formato longo para o 99Bitcoins, um canal de YouTube que explica cripto a principiantes - 710 mil subscritores e mais de 50 milhões de visualizações. Mostram-se aqui duas amostras.",
  "Binance": "Vídeo corporativo com imagens de arquivo licenciadas, voz-off e motion graphics para a Binance Charity e o projeto \\'Crypto Against Covid\\'.",
  "Fairmont Hotels": "3 reels curtos para as redes sociais dos hotéis Fairmont.",
- "Danone": "Série de vídeos para redes sociais, em horizontal e vertical, com texto e elementos animados para o Danone Nutricia Campus — uma plataforma educativa sem fins lucrativos para profissionais de saúde.",
+ "Danone": "Série de vídeos para redes sociais, em horizontal e vertical, com texto e elementos animados para o Danone Nutricia Campus - uma plataforma educativa sem fins lucrativos para profissionais de saúde.",
  "The Washington Ballet": "Campanha completa de promoção da temporada 22/23 do Washington Ballet, montada ao ritmo de música clássica.",
  "Capgemini": "Vídeo promocional corporativo de 60\\' com imagens de arquivo e elementos animados para a Capgemini, o grupo de consultoria e serviços tecnológicos.",
  "KAUST": "Entrevistas e um filme de marca sobre o programa SRSI da King Abdullah University of Science and Technology (KAUST).",
  "Litify": "Vídeo promocional corporativo e vídeo de evento com motion graphics para a Litify, uma plataforma jurídica criada por advogados para advogados.",
- "SmallPond": "Campanha social completa para a SmallPond, uma empresa de viagens de grupo — dois anúncios principais (um horizontal de 30 segundos e uma versão quadrada de 60) e cinco reels verticais para Instagram.",
+ "SmallPond": "Campanha social completa para a SmallPond, uma empresa de viagens de grupo - dois anúncios principais (um horizontal de 30 segundos e uma versão quadrada de 60) e cinco reels verticais para Instagram.",
  "Thetaray": "Vídeo sem som, com elementos animados, para um ecrã de stand em feira. A ThetaRay desenvolve software de monitorização de transações com IA para bancos e prestadores de pagamentos.",
  "Peter Jackson": "Vídeos promocionais para as redes sociais da Peter Jackson, uma marca de moda masculina.",
  "SimilarWeb": "Vídeo explicativo com texto e elementos animados para a SimilarWeb, uma empresa de análise de dados web.",
@@ -257,5 +257,5 @@ DESCS = {
  "Southern Pipe & Supply": "Vídeo de testemunho multicâmara de 3 minutos com colaboradores da Southern Pipe. A Southern Pipe & Supply é fornecedora de canalização, AVAC e material industrial no sudeste dos Estados Unidos.",
  "Savage Training Group": "18 vídeos de formação para a Savage Training Group, uma organização de formação de forças de segurança. Mostram-se aqui apenas três lições de amostra, não as 18.",
  "Five Oaks": "Vídeos educativos, vídeos de evento e anúncios para a Five Oaks, um centro de investigação e educação dedicado à conservação de zonas húmidas e às populações de aves aquáticas.",
- "FEAM Aero": "Vídeo corporativo sem som, com elementos animados, para um stand de feira, para a FEAM Aero — manutenção de aeronaves e serviços de linha.",
+ "FEAM Aero": "Vídeo corporativo sem som, com elementos animados, para um stand de feira, para a FEAM Aero - manutenção de aeronaves e serviços de linha.",
 }

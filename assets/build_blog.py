@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Render the blog from POSTS below.
 
-Plain HTML out, no build tools, no dependencies — GitHub Pages serves it as-is.
+Plain HTML out, no build tools, no dependencies - GitHub Pages serves it as-is.
 Each post gets its own directory so the URL is /blog/<slug>/ rather than a .html
 file, which reads better and is what search engines index.
 
@@ -9,7 +9,7 @@ file, which reads better and is what search engines index.
 """
 import os, re, html
 
-BANNER = '<!-- GENERATED FILE — DO NOT EDIT.\n     Built from assets/source.html by ./build.sh.\n     Anything written here is deleted the next time the build runs.\n     Edit assets/source.html or assets/site.css, then run ./build.sh. -->\n'
+BANNER = '<!-- GENERATED FILE - DO NOT EDIT.\n     Built from assets/source.html by ./build.sh.\n     Anything written here is deleted the next time the build runs.\n     Edit assets/source.html or assets/site.css, then run ./build.sh. -->\n'
 
 SITE = "https://catarina.media"
 
@@ -279,7 +279,7 @@ PAGE = """<!DOCTYPE html>
      agrees. Nothing here loads until consent is stored: no script is fetched,
      no cookie is written, no request reaches Google. Declining is remembered
      too, so the bar is not shown again.
-     The choice lives in localStorage, not a cookie — storing a consent record
+     The choice lives in localStorage, not a cookie - storing a consent record
      in a cookie you have not yet been allowed to set is its own problem. -->
 <script>
   (function () {{
@@ -368,7 +368,7 @@ PAGE = """<!DOCTYPE html>
 
 def header(root, lang, other):
     """Blog chrome. `other` is the URL of this page in the other language, or
-    None when it has not been translated — in which case the switcher points
+    None when it has not been translated - in which case the switcher points
     at that language's blog index rather than a page that does not exist."""
     nav = NAV[lang]
     pre = "" if lang == "en" else "pt/"
@@ -433,7 +433,7 @@ def langs_of(post):
 
 def hreflang(paths):
     """paths: {lang: url}. Emitted only where a post exists in more than one
-    language — claiming a translation that is not there is worse than none."""
+    language - claiming a translation that is not there is worse than none."""
     if len(paths) < 2:
         return ""
     codes = {"en": "en", "pt": "pt-PT"}

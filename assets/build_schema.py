@@ -6,7 +6,7 @@ With it, the facts are stated: a person, named, who does this work, from here,
 in these languages, reachable at this address. That is what lets a site be
 understood as an entity rather than a document, and it is invisible to readers.
 
-Everything here is already stated in the page copy — nothing is invented, and
+Everything here is already stated in the page copy - nothing is invented, and
 nothing is claimed that the site does not say in words.
 
 Run after build_pages.py / build_i18n.py / build_blog.py.

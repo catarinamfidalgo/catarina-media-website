@@ -32,8 +32,8 @@ UI = {
         'Versión corta: casi nada, y nada sin preguntar.',
     'Visitor numbers':
         'Número de visitas',
-    'If you agree to it, this site uses Google Analytics to count visits — which pages get read, roughly where people are, and whether they came from a search. It sets a cookie to tell one visit from another. If you decline, Analytics is never loaded at all, and no cookie is set. You can change your mind at any time using the button below.':
-        'Si estás de acuerdo, este sitio usa Google Analytics para contar visitas — qué páginas se leen, aproximadamente desde dónde llega la gente, y si vinieron de una búsqueda. Instala una cookie para distinguir una visita de otra. Si lo rechazas, Analytics no llega a cargarse y no se instala ninguna cookie. Puedes cambiar de opinión cuando quieras con el botón de abajo.',
+    'If you agree to it, this site uses Google Analytics to count visits - which pages get read, roughly where people are, and whether they came from a search. It sets a cookie to tell one visit from another. If you decline, Analytics is never loaded at all, and no cookie is set. You can change your mind at any time using the button below.':
+        'Si estás de acuerdo, este sitio usa Google Analytics para contar visitas - qué páginas se leen, aproximadamente desde dónde llega la gente, y si vinieron de una búsqueda. Instala una cookie para distinguir una visita de otra. Si lo rechazas, Analytics no llega a cargarse y no se instala ninguna cookie. Puedes cambiar de opinión cuando quieras con el botón de abajo.',
     'The contact form':
         'El formulario de contacto',
     'The form does not send anything to this site. It opens your own email app with the details filled in, and nothing is sent until you press send yourself. Nothing you type is stored here, and there is no database.':
@@ -121,7 +121,7 @@ COPY = {
     "When there's overflow work, a tight deadline, or a client asking for more video than your team can make on its own, I work behind the scenes as your post-production partner. Everything ships under your brand, not mine.":
         "Cuando hay exceso de trabajo, un plazo ajustado o un cliente que pide más vídeo del que vuestro equipo puede producir, trabajo entre bastidores como vuestro socio de posproducción. Todo se entrega con vuestra marca, no con la mía.",
     "NDA-friendly, always": "Siempre bajo NDA",
-    "Your client relationships stay yours — I never appear in the credits or the conversation.":
+    "Your client relationships stay yours - I never appear in the credits or the conversation.":
         "Vuestra relación con el cliente sigue siendo vuestra: nunca aparezco en los créditos ni en la conversación.",
     "Built for turnaround": "Pensado para los plazos",
     "Send me a brief and raw footage; get broadcast-ready edits back on your timeline, not mine.":
@@ -139,7 +139,7 @@ COPY = {
 
 META = {
     "title": "Catarina Fidalgo - Montadora de Vídeo y Posproducción",
-    "description": "Catarina Fidalgo — montadora de vídeo y posproducción, afincada en Portugal. "
+    "description": "Catarina Fidalgo - montadora de vídeo y posproducción, afincada en Portugal. "
                    "Anuncios, películas de marca, YouTube, contenido social y vídeo corporativo, "
                    "en inglés, portugués y español.",
 }
