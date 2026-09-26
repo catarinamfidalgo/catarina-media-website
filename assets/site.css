@@ -147,11 +147,12 @@
     width: 1px; height: var(--tag-rule); background: var(--line); }
   /* Below this the name and the menu button need the whole row. */
   @media (max-width: 860px) { .brand-tag { display: none; } }
-  /* The masthead follows you down the page, so changing section never means
-     scrolling back to the top. The background is painted by a pseudo-element
-     stretched past the container, because the header sits inside a 1000px
-     column and a sticky bar has to reach both edges of the window. */
-  header.site { position: sticky; top: 0; z-index: 90; align-items: center; }
+  /* The masthead follows you down the page, so every page remains one click
+     away. Sticky belongs on the container rather than the header itself:
+     the header's old parent was only as tall as the header, which constrained
+     it and allowed the whole navigation to scroll away. */
+  .lang-bar + .container { position: sticky; top: 0; z-index: 90; }
+  header.site { position: relative; align-items: center; }
   header.site::before { content: ""; position: absolute; inset: 0 -50vw; z-index: -1;
     background: var(--panel-solid);
     -webkit-backdrop-filter: blur(16px) saturate(1.5);
