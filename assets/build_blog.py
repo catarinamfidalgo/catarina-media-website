@@ -253,15 +253,15 @@ PAGE = """<!DOCTYPE html>
 <meta name="description" content="{excerpt}">
 <link rel="canonical" href="{canonical}">
 {alts}
-<link rel="icon" href="/favicon.ico?v=2" sizes="any">
+<link rel="icon" href="/favicon.ico?v=3" sizes="any">
 <!-- Exact sizes for every surface that asks, so nothing is scaled: 16 and 32
      are the tab at 1x and 2x, which is where a resized 96 looked soft. -->
-<link rel="icon" href="/assets/favicon-16.v2.png" type="image/png" sizes="16x16">
-<link rel="icon" href="/assets/favicon-32.v2.png" type="image/png" sizes="32x32">
-<link rel="icon" href="/assets/favicon-48.v2.png" type="image/png" sizes="48x48">
-<link rel="icon" href="/assets/favicon-96.v2.png" type="image/png" sizes="96x96">
-<link rel="icon" href="/assets/favicon-192.v2.png" type="image/png" sizes="192x192">
-<link rel="apple-touch-icon" href="/assets/apple-touch-icon.v2.png">
+<link rel="icon" href="/assets/favicon-16.v3.png" type="image/png" sizes="16x16">
+<link rel="icon" href="/assets/favicon-32.v3.png" type="image/png" sizes="32x32">
+<link rel="icon" href="/assets/favicon-48.v3.png" type="image/png" sizes="48x48">
+<link rel="icon" href="/assets/favicon-96.v3.png" type="image/png" sizes="96x96">
+<link rel="icon" href="/assets/favicon-192.v3.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.v3.png">
 <meta property="og:type" content="article">
 <meta property="og:title" content="{title}">
 <meta property="og:description" content="{excerpt}">
