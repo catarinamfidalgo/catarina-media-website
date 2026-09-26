@@ -30,6 +30,9 @@ NAV = {
 POSTS = [
     {
         "slug": "brand-video-package",
+        "image": "one-campaign",
+        "image_alt": "A purple editing timeline with clips, a waveform and a colour wheel, "
+                     "and a fairy touching a wand to the playhead",
         "date": "2026-09-24",
         "date_label": "September 2026",
         "title": "One campaign, every platform: commission it all at once",
@@ -266,7 +269,8 @@ PAGE = """<!DOCTYPE html>
 <meta property="og:title" content="{title}">
 <meta property="og:description" content="{excerpt}">
 <meta property="og:url" content="{canonical}">
-<link rel="stylesheet" href="{root}assets/site.css?v=2c535739">
+{og_image}
+<link rel="stylesheet" href="{root}assets/site.css?v=blog-images">
 
 <!-- Google Analytics (GA4), behind consent.
      Analytics sets a cookie, so under EU law it may not run until the visitor
@@ -446,6 +450,22 @@ def hreflang(paths):
     return "\n".join(out)
 
 
+
+def index_og(posts):
+    """The blog index has no picture of its own, so it borrows the newest
+    post's. Without this, sharing /blog/ falls back to the site-wide portrait,
+    which says nothing about what the page is."""
+    for p in posts:
+        if p.get("image"):
+            img = p["image"]
+            return (f'<meta property="og:image" content="{SITE}/assets/img/blog/{img}-og.jpg">\n'
+                    f'<meta property="og:image:width" content="1200">\n'
+                    f'<meta property="og:image:height" content="630">\n'
+                    f'<meta name="twitter:card" content="summary_large_image">\n'
+                    f'<meta name="twitter:image" content="{SITE}/assets/img/blog/{img}-og.jpg">')
+    return ""
+
+
 def build():
     for lang in ("en", "pt"):
         base = "blog" if lang == "en" else os.path.join("pt", "blog")
@@ -466,10 +486,30 @@ def build():
             other = None
             if len(urls) > 1:
                 other = urls["pt"] if lang == "en" else urls["en"]
+            img = p.get("image")
+            hero = ""
+            og_image = ""
+            if img:
+                alt = html.escape(p.get("image_alt", ""), quote=True)
+                hero = (f"""<figure class="post-hero">
+          <img src="{root}assets/img/blog/{img}-1600.webp"
+               srcset="{root}assets/img/blog/{img}-640.webp 640w, """
+                        f"""{root}assets/img/blog/{img}-900.webp 900w, """
+                        f"""{root}assets/img/blog/{img}-1600.webp 1600w"
+               sizes="(max-width: 780px) 100vw, 720px"
+               width="1672" height="941" alt="{alt}" fetchpriority="high">
+        </figure>""")
+                og_image = (f'<meta property="og:image" content="{SITE}/assets/img/blog/{img}-og.jpg">\n'
+                            f'<meta property="og:image:width" content="1200">\n'
+                            f'<meta property="og:image:height" content="630">\n'
+                            f'<meta name="twitter:card" content="summary_large_image">\n'
+                            f'<meta name="twitter:image" content="{SITE}/assets/img/blog/{img}-og.jpg">')
+
             main = f"""  <div class="container section">
     <article class="article">
       <div class="article-meta">{c['date_label']}</div>
       <h1>{c['title']}</h1>
+      {hero}
       {c['body'].strip()}
       <a class="back-link" href="{root}{'' if lang == 'en' else lang + '/'}blog/">&larr; {nav['back']}</a>
     </article>
@@ -479,7 +519,7 @@ def build():
                 alts=hreflang(urls),
                 title=html.escape(c["title"], quote=True),
                 excerpt=html.escape(c["excerpt"], quote=True),
-                canonical=urls[lang], root=root,
+                canonical=urls[lang], root=root, og_image=og_image,
                 header=header(root, lang, other), main=main, footer=footer(root, lang)))
 
         # index
@@ -487,9 +527,12 @@ def build():
         pre = "" if lang == "en" else "pt/"
         items = "\n".join(
             f"""        <li class="post-item"><a href="{root}{pre}blog/{p['slug']}/">
-          <div class="post-date">{content(p, lang)['date_label']}</div>
-          <h2 class="post-title">{content(p, lang)['title']}</h2>
-          <p class="post-excerpt">{content(p, lang)['excerpt']}</p>
+          {f'<span class="post-thumb"><img src="{root}assets/img/blog/{p["image"]}-640.webp" width="640" height="360" alt="" loading="lazy"></span>' if p.get("image") else ""}
+          <span class="post-text">
+            <span class="post-date">{content(p, lang)['date_label']}</span>
+            <span class="post-title">{content(p, lang)['title']}</span>
+            <span class="post-excerpt">{content(p, lang)['excerpt']}</span>
+          </span>
         </a></li>""" for p in posts)
         main = f"""  <div class="container section">
     <h2 class="eyebrow">{nav['index_title']}</h2>
@@ -507,7 +550,7 @@ def build():
             lang="en" if lang == "en" else "pt-PT",
             alts=hreflang(index_urls),
             title=nav["index_title"], excerpt=nav["index_lede"],
-            canonical=index_urls[lang], root=root,
+            canonical=index_urls[lang], root=root, og_image=index_og(posts),
             header=header(root, lang, other), main=main, footer=footer(root, lang)))
         print(f"  built {base}/index.html and {len(posts)} post page(s)")
 

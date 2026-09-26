@@ -529,7 +529,26 @@
   /* ---------- Blog ---------- */
   .post-list { list-style: none; padding: 0; margin: 0; border-top: 1px solid var(--line); }
   .post-item { border-bottom: 1px solid var(--line); }
-  .post-item a { display: block; padding: 26px 0; transition: opacity .15s ease; }
+  /* Thumbnail beside the words, which is how a list of articles is normally
+     read. The elements inside are spans rather than block tags, because a
+     heading nested in an anchor inside a list item is not something every
+     reader handles well, so they are blocked out here instead. */
+  .post-item a { display: flex; gap: 22px; align-items: flex-start;
+    padding: 26px 0; transition: opacity .15s ease; }
+  .post-thumb { flex: 0 0 240px; display: block; border-radius: var(--r-md);
+    overflow: hidden; background: var(--line); }
+  .post-thumb img { display: block; width: 100%; height: auto; }
+  .post-text { display: block; min-width: 0; }
+  .post-date, .post-title, .post-excerpt { display: block; }
+  @media (max-width: 680px) {
+    .post-item a { flex-direction: column; gap: 14px; }
+    .post-thumb { flex: none; width: 100%; }
+  }
+
+  /* The hero sits full width of the article column, above the first line. */
+  .post-hero { margin: 0 0 30px; border-radius: var(--r-md); overflow: hidden;
+    background: var(--line); }
+  .post-hero img { display: block; width: 100%; height: auto; }
   .post-item a:hover { opacity: .62; }
   .post-date { font-size: .68rem; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; color: var(--accent); }
   .post-title { font-family: 'Hanken Grotesk', sans-serif; font-weight: 800; text-transform: uppercase; line-height: 1.05; letter-spacing: -.015em; font-size: clamp(1.4rem,3vw,2rem); margin: 8px 0 8px; }
