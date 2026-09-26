@@ -412,7 +412,7 @@ def footer(root, lang):
     <div class="container">
       <div class="foot-brand">
         <div class="foot-logo">Catarina <i>Fidalgo</i></div>
-        <div class="foot-tag">Made in the edit</div>
+        <div class="foot-service">Video Editing &amp; Post-Production</div>
         <div class="copy">&copy; 2026 Catarina Fidalgo &middot; {nav['rights']}</div>
       </div>
       <div class="foot-cta">

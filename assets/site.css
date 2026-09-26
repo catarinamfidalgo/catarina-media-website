@@ -437,10 +437,7 @@
   .foot-brand { display: flex; flex-direction: column; align-items: flex-start; }
   .foot-logo { font-size: 1.15rem; font-weight: 800; text-transform: uppercase; letter-spacing: .01em; line-height: 1.1; }
   .foot-logo i { font-style: normal; color: var(--lav-bright); }
-  .foot-tag { text-transform: uppercase; letter-spacing: .18em; font-size: .72rem; margin-top: 3px; color: rgba(255,255,255,.85); }
-  .foot-service { margin-top: 9px; color: rgba(255,255,255,.55);
-    font-size: .62rem; font-weight: 600; letter-spacing: .14em;
-    line-height: 1.35; text-transform: uppercase; }
+  .foot-service { text-transform: uppercase; letter-spacing: .18em; font-size: .72rem; margin-top: 3px; color: rgba(255,255,255,.85); }
   footer.site .copy { color: rgba(255,255,255,.65); margin-top: 22px; font-size: .78rem; }
   .foot-cta { display: flex; flex-direction: column; align-items: flex-end; gap: 16px; }
   footer.site .socials { font-size: .78rem; letter-spacing: .08em; }

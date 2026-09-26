@@ -135,6 +135,12 @@ def build_page(lang, path, slug):
     s = re.sub(r"<title>[^<]*</title>", "<title>%s</title>" % title, s)
     s = re.sub(r'(name="description" content=")[^"]*(")', r"\g<1>%s\g<2>" % t.META["description"], s)
     s = re.sub(r'(og:description" content=")[^"]*(")', r"\g<1>%s\g<2>" % t.META["description"], s)
+    # The share title too. Its description was already being translated, so a
+    # pt/ page shared to social went out with an English headline over
+    # Portuguese body text.
+    for prop in ('og:title', 'twitter:title'):
+        s = re.sub(r'(%s" content=")[^"]*(")' % prop,
+                   lambda m, ti=title: m.group(1) + ti.replace("&", "&amp;") + m.group(2), s)
     # Each language is its own page, not a duplicate of the English one. This
     # has to rewrite every canonical, not just the homepage's: an inner page
     # kept pointing at the English URL, which tells a crawler to index that one

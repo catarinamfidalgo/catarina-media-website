@@ -3,6 +3,7 @@
 montaje for editing, etalonaje for grading, vosotros when addressing agencies."""
 
 UI = {
+    "Video Editing &amp; Post-Production": "Montaje de Vídeo &amp; Postproducción",
     'Who holds this':
         'Quién trata los datos',
     'Catarina Fidalgo, working in Portugal. Anything about your own data can go through the contact form.':
@@ -67,8 +68,6 @@ UI = {
     "Start a project": "Empezar un proyecto",
     "View portfolio": "Ver portafolio",
     "Scroll": "Bajar",
-    # "Made in the edit" stays in English in every language — it is a
-    # tagline, and the play on "made in ..." does not survive translation.
     "Services": "Servicios",
     "Let's work <i>together.</i>": "Trabajemos <i>juntos.</i>",
     "A white-label partner for agencies who need to <i>scale</i>":

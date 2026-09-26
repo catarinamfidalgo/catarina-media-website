@@ -3,6 +3,7 @@
 
 # Interface chrome
 UI = {
+    "Video Editing &amp; Post-Production": "Edição de Vídeo &amp; Pós-Produção",
     'Who holds this':
         'Quem trata os dados',
     'Catarina Fidalgo, working in Portugal. Anything about your own data can go through the contact form.':
@@ -67,9 +68,6 @@ UI = {
     "Start a project": "Começar um projeto",
     "View portfolio": "Ver portfólio",
     "Scroll": "Descer",
-    # "Made in the edit" is deliberately left in English in every
-    # language — it is a tagline, not a sentence, and the play on
-    # "made in ..." does not survive translation.
     "Services": "Serviços",
     "Let's work <i>together.</i>": "Vamos <i>trabalhar juntos.</i>",
     "A white-label partner for agencies who need to <i>scale</i>":

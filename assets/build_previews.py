@@ -29,7 +29,7 @@ OVERRIDES = {
     "fatbrands-highlight-reel.mp4": 104,        # beer pour into the food shots
     "99bitcoins-saudi-arabia.mp4": 29,          # the mBridge diagram assembling
     "fairmont-3.mp4": 11,                       # the third reel, her in the bedroom
-    "feamaero.mp4": 15,                         # the US map, stations dropping in
+    "feamaero.mp4": 14.2,                       # the whole map build; the dots land at 19 and it is still after
     "danone-meet-the-board.mp4": 8,             # talking heads with their name cards
     "similarweb.mp4": 285,                      # three seconds later than it chose
     "snowlodge.mp4": 35,                        # later, once the room is full
