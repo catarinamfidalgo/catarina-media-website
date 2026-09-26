@@ -11,3 +11,5 @@ assets/*_sheet.jpg
 
 # YouTube thumbnails — generated from the covers, not needed by the site
 assets/thumbnails/
+__pycache__/
+*.pyc
