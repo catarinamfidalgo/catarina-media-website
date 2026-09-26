@@ -319,153 +319,22 @@
   .hero-edit { animation: editGlow 10s ease-in-out .7s both; }
   /* The word only lifts a little now. The dust is the effect; a strong halo
      on the text competed with the motes and washed them out. */
+  /* Light purple, no white. White lit the word well but read as a spotlight
+     on it, and the point is that it glows rather than that something shines
+     at it. Peak brightness is 1.42, down from 1.78, so it lifts clearly
+     without blowing out. */
   @keyframes editGlow {
     0%,40%   { filter: brightness(1); text-shadow: none; }
-    52%      { filter: brightness(1.2);
-               text-shadow: 0 0 6px rgba(255,255,255,.28), 0 0 18px rgba(var(--lav-rgb),.55); }
-    70%      { filter: brightness(1.28);
-               text-shadow: 0 0 8px rgba(255,255,255,.36), 0 0 24px rgba(var(--lav-rgb),.66); }
-    86%      { filter: brightness(1.24);
-               text-shadow: 0 0 7px rgba(255,255,255,.3), 0 0 20px rgba(var(--lav-rgb),.58); }
+    52%      { filter: brightness(1.3);
+               text-shadow: 0 0 14px rgba(var(--lav-rgb),.72), 0 0 38px rgba(var(--lav-rgb),.4); }
+    66%      { filter: brightness(1.42);
+               text-shadow: 0 0 19px rgba(var(--lav-rgb),.86), 0 0 54px rgba(var(--lav-rgb),.5); }
+    80%      { filter: brightness(1.36);
+               text-shadow: 0 0 16px rgba(var(--lav-rgb),.76), 0 0 45px rgba(var(--lav-rgb),.44); }
     93%,100% { filter: brightness(1); text-shadow: none; }
   }
 
-  /* A band of light travelling across the letters, clipped to the glyphs so
-     it only ever lights the word itself. Same lavender at both ends of the
-     gradient, so the sweep is a change in brightness rather than in hue. */
-  .hero-edit::after {
-    content: attr(data-word);
-    position: absolute; inset: 0; pointer-events: none;
-    background: linear-gradient(104deg,
-      rgba(var(--lav-rgb),0) 28%,
-      rgba(var(--lav-rgb),1) 44%,
-      rgba(var(--lav-rgb),1) 56%,
-      rgba(var(--lav-rgb),0) 72%);
-    background-size: 280% 100%;
-    -webkit-background-clip: text; background-clip: text;
-    color: transparent;
-    filter: brightness(1.85) saturate(.92);
-    opacity: 0;
-    animation: editShimmerIn 10s ease-in-out .7s both,
-               editSweep 2.6s linear .7s infinite;
-  }
-  .hero-edit.replay::after {
-    animation: editShimmerIn 10s ease-in-out 0s both,
-               editSweep 2.6s linear 0s infinite;
-  }
-  @keyframes editShimmerIn {
-    0%,42%   { opacity: 0; }
-    52%,88%  { opacity: 1; }
-    94%,100% { opacity: 0; }
-  }
-  @keyframes editSweep {
-    from { background-position: 150% 0; }
-    to   { background-position: -150% 0; }
-  }
 
-  /* Fairy dust, not a glow. Specks with a white pinpoint inside a lavender
-     halo, which is what makes a mote read as bright rather than as a dot,
-     falling continuously and drifting sideways as they go.
-
-     Three layers at different tile sizes and speeds give it depth. Each layer
-     is one repeating tile of specks; `circle at X Y` places them inside it,
-     and since every gradient in a layer shares one background-size, animating
-     a single background-position slides the whole tile, so the fall loops
-     without a seam. */
-  .hero-edit::before {
-    content: ""; position: absolute; inset: -70% -24%; pointer-events: none;
-    background-image:
-      radial-gradient(circle at 38.3px 15.3px, rgba(255,255,255,0.66) 0 0.56px, rgba(var(--lav-rgb),0.82) 0.56px 1.97px, rgba(var(--lav-rgb),0.29) 1.97px 2.87px, transparent 3.57px),
-      radial-gradient(circle at 43.0px 7.1px, rgba(255,255,255,0.62) 0 0.53px, rgba(var(--lav-rgb),0.78) 0.53px 1.93px, rgba(var(--lav-rgb),0.27) 1.93px 2.83px, transparent 3.53px),
-      radial-gradient(circle at 9.8px 10.0px, rgba(255,255,255,0.54) 0 0.51px, rgba(var(--lav-rgb),0.67) 0.51px 2.64px, rgba(var(--lav-rgb),0.23) 2.64px 3.54px, transparent 4.24px),
-      radial-gradient(circle at 27.0px 57.2px, rgba(255,255,255,0.62) 0 0.63px, rgba(var(--lav-rgb),0.77) 0.63px 2.42px, rgba(var(--lav-rgb),0.27) 2.42px 3.32px, transparent 4.02px),
-      radial-gradient(circle at 111.3px 6.1px, rgba(255,255,255,0.54) 0 0.61px, rgba(var(--lav-rgb),0.67) 0.61px 2.16px, rgba(var(--lav-rgb),0.23) 2.16px 3.06px, transparent 3.76px),
-      radial-gradient(circle at 15.2px 29.1px, rgba(255,255,255,0.67) 0 0.6px, rgba(var(--lav-rgb),0.84) 0.6px 2.06px, rgba(var(--lav-rgb),0.29) 2.06px 2.96px, transparent 3.66px),
-      radial-gradient(circle at 73.6px 34.8px, rgba(255,255,255,0.51) 0 0.54px, rgba(var(--lav-rgb),0.64) 0.54px 1.96px, rgba(var(--lav-rgb),0.22) 1.96px 2.86px, transparent 3.56px),
-      radial-gradient(circle at 25.1px 61.9px, rgba(255,255,255,0.67) 0 0.51px, rgba(var(--lav-rgb),0.84) 0.51px 2.18px, rgba(var(--lav-rgb),0.29) 2.18px 3.08px, transparent 3.78px),
-      radial-gradient(circle at 52.8px 28.4px, rgba(255,255,255,0.57) 0 0.59px, rgba(var(--lav-rgb),0.71) 0.59px 2.53px, rgba(var(--lav-rgb),0.25) 2.53px 3.43px, transparent 4.13px),
-      radial-gradient(circle at 66.3px 48.2px, rgba(255,255,255,0.58) 0 0.61px, rgba(var(--lav-rgb),0.73) 0.61px 2.56px, rgba(var(--lav-rgb),0.26) 2.56px 3.46px, transparent 4.16px),
-      radial-gradient(circle at 111.8px 12.4px, rgba(255,255,255,0.54) 0 0.51px, rgba(var(--lav-rgb),0.68) 0.51px 2.58px, rgba(var(--lav-rgb),0.24) 2.58px 3.48px, transparent 4.18px),
-      radial-gradient(circle at 56.8px 5.5px, rgba(255,255,255,0.67) 0 0.57px, rgba(var(--lav-rgb),0.84) 0.57px 2.59px, rgba(var(--lav-rgb),0.29) 2.59px 3.49px, transparent 4.19px),
-      radial-gradient(circle at 100.1px 29.6px, rgba(255,255,255,0.67) 0 0.57px, rgba(var(--lav-rgb),0.84) 0.57px 2.43px, rgba(var(--lav-rgb),0.29) 2.43px 3.33px, transparent 4.03px),
-      radial-gradient(circle at 53.1px 75.9px, rgba(255,255,255,0.7) 0 0.63px, rgba(var(--lav-rgb),0.87) 0.63px 2.33px, rgba(var(--lav-rgb),0.3) 2.33px 3.23px, transparent 3.93px),
-      radial-gradient(circle at 8.8px 63.7px, rgba(255,255,255,0.74) 0 0.56px, rgba(var(--lav-rgb),0.93) 0.56px 2.79px, rgba(var(--lav-rgb),0.33) 2.79px 3.69px, transparent 4.39px);
-    background-size: 116px 92px; background-repeat: repeat;
-    opacity: 0;
-    animation: editDustIn 10s ease-in-out .7s both,
-               dustFallA 3.1s linear .7s infinite,
-               dustTwinkle 1.3s ease-in-out .7s infinite alternate;
-  }
-  .edit-dust {
-    position: absolute; inset: -80% -30%; pointer-events: none; display: block;
-    background-image:
-      radial-gradient(circle at 15.2px 47.5px, rgba(255,255,255,0.56) 0 0.5px, rgba(var(--lav-rgb),0.7) 0.5px 1.93px, rgba(var(--lav-rgb),0.24) 1.93px 2.83px, transparent 3.53px),
-      radial-gradient(circle at 65.4px 55.3px, rgba(255,255,255,0.57) 0 0.47px, rgba(var(--lav-rgb),0.71) 0.47px 1.95px, rgba(var(--lav-rgb),0.25) 1.95px 2.85px, transparent 3.55px),
-      radial-gradient(circle at 2.3px 26.5px, rgba(255,255,255,0.74) 0 0.49px, rgba(var(--lav-rgb),0.92) 0.49px 1.56px, rgba(var(--lav-rgb),0.32) 1.56px 2.46px, transparent 3.16px),
-      radial-gradient(circle at 20.6px 17.4px, rgba(255,255,255,0.72) 0 0.37px, rgba(var(--lav-rgb),0.9) 0.37px 2.4px, rgba(var(--lav-rgb),0.32) 2.4px 3.3px, transparent 4.0px),
-      radial-gradient(circle at 72.0px 42.6px, rgba(255,255,255,0.65) 0 0.37px, rgba(var(--lav-rgb),0.81) 0.37px 1.8px, rgba(var(--lav-rgb),0.28) 1.8px 2.7px, transparent 3.4px),
-      radial-gradient(circle at 11.3px 64.8px, rgba(255,255,255,0.74) 0 0.44px, rgba(var(--lav-rgb),0.93) 0.44px 1.64px, rgba(var(--lav-rgb),0.33) 1.64px 2.54px, transparent 3.24px),
-      radial-gradient(circle at 12.0px 63.2px, rgba(255,255,255,0.6) 0 0.46px, rgba(var(--lav-rgb),0.75) 0.46px 2.0px, rgba(var(--lav-rgb),0.26) 2.0px 2.9px, transparent 3.6px),
-      radial-gradient(circle at 40.8px 14.3px, rgba(255,255,255,0.57) 0 0.37px, rgba(var(--lav-rgb),0.71) 0.37px 2.28px, rgba(var(--lav-rgb),0.25) 2.28px 3.18px, transparent 3.88px),
-      radial-gradient(circle at 64.4px 15.8px, rgba(255,255,255,0.73) 0 0.57px, rgba(var(--lav-rgb),0.91) 0.57px 2.3px, rgba(var(--lav-rgb),0.32) 2.3px 3.2px, transparent 3.9px),
-      radial-gradient(circle at 63.0px 40.3px, rgba(255,255,255,0.64) 0 0.52px, rgba(var(--lav-rgb),0.8) 0.52px 1.61px, rgba(var(--lav-rgb),0.28) 1.61px 2.51px, transparent 3.21px),
-      radial-gradient(circle at 68.2px 15.3px, rgba(255,255,255,0.62) 0 0.56px, rgba(var(--lav-rgb),0.78) 0.56px 2.3px, rgba(var(--lav-rgb),0.27) 2.3px 3.2px, transparent 3.9px),
-      radial-gradient(circle at 31.2px 31.8px, rgba(255,255,255,0.62) 0 0.44px, rgba(var(--lav-rgb),0.77) 0.44px 2.4px, rgba(var(--lav-rgb),0.27) 2.4px 3.3px, transparent 4.0px),
-      radial-gradient(circle at 4.1px 8.2px, rgba(255,255,255,0.65) 0 0.52px, rgba(var(--lav-rgb),0.81) 0.52px 2.39px, rgba(var(--lav-rgb),0.28) 2.39px 3.29px, transparent 3.99px);
-    background-size: 84px 70px; background-repeat: repeat;
-    opacity: 0;
-    animation: editDustIn 10s ease-in-out .7s both,
-               dustFallB 2.2s linear .7s infinite,
-               dustTwinkle 1.7s ease-in-out .7s infinite alternate-reverse;
-  }
-  .edit-dust-far {
-    position: absolute; inset: -92% -36%; pointer-events: none; display: block;
-    background-image:
-      radial-gradient(circle at 7.6px 85.5px, rgba(255,255,255,0.7) 0 0.53px, rgba(var(--lav-rgb),0.88) 0.53px 2.82px, rgba(var(--lav-rgb),0.31) 2.82px 3.72px, transparent 4.42px),
-      radial-gradient(circle at 116.2px 56.4px, rgba(255,255,255,0.62) 0 0.61px, rgba(var(--lav-rgb),0.78) 0.61px 2.42px, rgba(var(--lav-rgb),0.27) 2.42px 3.32px, transparent 4.02px),
-      radial-gradient(circle at 55.6px 104.3px, rgba(255,255,255,0.62) 0 0.62px, rgba(var(--lav-rgb),0.78) 0.62px 3.08px, rgba(var(--lav-rgb),0.27) 3.08px 3.98px, transparent 4.68px),
-      radial-gradient(circle at 27.4px 104.1px, rgba(255,255,255,0.53) 0 0.68px, rgba(var(--lav-rgb),0.66) 0.68px 2.74px, rgba(var(--lav-rgb),0.23) 2.74px 3.64px, transparent 4.34px),
-      radial-gradient(circle at 75.8px 61.5px, rgba(255,255,255,0.65) 0 0.67px, rgba(var(--lav-rgb),0.81) 0.67px 2.94px, rgba(var(--lav-rgb),0.28) 2.94px 3.84px, transparent 4.54px),
-      radial-gradient(circle at 84.8px 47.2px, rgba(255,255,255,0.78) 0 0.51px, rgba(var(--lav-rgb),0.98) 0.51px 2.46px, rgba(var(--lav-rgb),0.34) 2.46px 3.36px, transparent 4.06px),
-      radial-gradient(circle at 122.8px 37.5px, rgba(255,255,255,0.53) 0 0.7px, rgba(var(--lav-rgb),0.66) 0.7px 2.87px, rgba(var(--lav-rgb),0.23) 2.87px 3.77px, transparent 4.47px),
-      radial-gradient(circle at 125.2px 72.1px, rgba(255,255,255,0.53) 0 0.71px, rgba(var(--lav-rgb),0.66) 0.71px 3.01px, rgba(var(--lav-rgb),0.23) 3.01px 3.91px, transparent 4.61px),
-      radial-gradient(circle at 91.7px 96.4px, rgba(255,255,255,0.66) 0 0.7px, rgba(var(--lav-rgb),0.82) 0.7px 2.7px, rgba(var(--lav-rgb),0.29) 2.7px 3.6px, transparent 4.3px),
-      radial-gradient(circle at 103.0px 22.0px, rgba(255,255,255,0.51) 0 0.69px, rgba(var(--lav-rgb),0.64) 0.69px 3.1px, rgba(var(--lav-rgb),0.22) 3.1px 4.0px, transparent 4.7px),
-      radial-gradient(circle at 87.2px 46.2px, rgba(255,255,255,0.79) 0 0.54px, rgba(var(--lav-rgb),0.99) 0.54px 2.94px, rgba(var(--lav-rgb),0.35) 2.94px 3.84px, transparent 4.54px);
-    background-size: 148px 124px; background-repeat: repeat;
-    opacity: 0;
-    animation: editDustIn 10s ease-in-out .7s both,
-               dustFallC 4.6s linear .7s infinite,
-               dustTwinkle 2.1s ease-in-out .7s infinite alternate;
-  }
-  .hero-edit.replay::before {
-    animation: editDustIn 10s ease-in-out 0s both,
-               dustFallA 3.1s linear 0s infinite,
-               dustTwinkle 1.3s ease-in-out 0s infinite alternate;
-  }
-  .hero-edit.replay .edit-dust {
-    animation: editDustIn 10s ease-in-out 0s both,
-               dustFallB 2.2s linear 0s infinite,
-               dustTwinkle 1.7s ease-in-out 0s infinite alternate-reverse;
-  }
-  .hero-edit.replay .edit-dust-far {
-    animation: editDustIn 10s ease-in-out 0s both,
-               dustFallC 4.6s linear 0s infinite,
-               dustTwinkle 2.1s ease-in-out 0s infinite alternate;
-  }
-  @keyframes editDustIn {
-    0%,40%   { opacity: 0; }
-    50%,88%  { opacity: 1; }
-    94%,100% { opacity: 0; }
-  }
-  /* A tile height per cycle, plus a little sideways, so it falls at a slant. */
-  @keyframes dustFallA { from { background-position: 0 0; }    to { background-position: -18px 92px; } }
-  @keyframes dustFallB { from { background-position: 0 0; }    to { background-position: 13px 70px; } }
-  @keyframes dustFallC { from { background-position: 0 0; }    to { background-position: -9px 124px; } }
-  @keyframes dustTwinkle {
-    from { filter: brightness(.85) saturate(1.02); }
-    to   { filter: brightness(2.25) saturate(.9); }
-  }
   .hero-fairy-figure { position: absolute; inset: 0; opacity: 0;
     transform-origin: 28% 72%;
     animation: fairyVisit 10s cubic-bezier(.16,.62,.24,1) .7s both; }
@@ -953,9 +822,8 @@
   /* The header's page links are buttons too, and on the homepage they are
      the only ones where this is visible at all: every other button leaves
      the page before the sweep finishes. */
-  .btn, nav.main a, .filter-chip { position: relative; overflow: hidden; }
+  .btn, .filter-chip { position: relative; overflow: hidden; }
   .btn.is-sparkling::after,
-  nav.main a.is-sparkling::after,
   .filter-chip.is-sparkling::after {
     content: ""; position: absolute; inset: 0; pointer-events: none;
     background: linear-gradient(104deg,
@@ -967,7 +835,6 @@
     animation: btnSweep .62s ease-out forwards;
   }
   .btn.is-sparkling::before,
-  nav.main a.is-sparkling::before,
   .filter-chip.is-sparkling::before {
     content: ""; position: absolute; inset: 0; pointer-events: none;
     background:
@@ -989,7 +856,6 @@
   }
   @media (prefers-reduced-motion: reduce) {
     .btn.is-sparkling::after, .btn.is-sparkling::before,
-    nav.main a.is-sparkling::after, nav.main a.is-sparkling::before,
     .filter-chip.is-sparkling::after, .filter-chip.is-sparkling::before { animation: none; content: none; }
   }
   .btn--ghost, .btn--ghost-light, .btn--ghost:hover, .btn--ghost-light:hover { box-shadow: none; transform: none; }

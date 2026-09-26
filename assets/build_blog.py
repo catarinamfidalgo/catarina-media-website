@@ -499,7 +499,7 @@ def build():
                         f"""{root}assets/img/blog/{img}-900.webp 900w, """
                         f"""{root}assets/img/blog/{img}-1400.webp 1400w"
                sizes="(max-width: 780px) 100vw, 720px"
-               width="1672" height="480" alt="{alt}" fetchpriority="high">
+               width="1613" height="390" alt="{alt}" fetchpriority="high">
         </figure>""")
                 og_image = (f'<meta property="og:image" content="{SITE}/assets/img/blog/{img}-og.jpg">\n'
                             f'<meta property="og:image:width" content="1200">\n'

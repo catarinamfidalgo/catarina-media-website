@@ -35,7 +35,7 @@
 <meta name="twitter:description" content="Video editor and post-production, based in Portugal. Commercials, brand films, YouTube, social and corporate video for brands and agencies.">
 <meta name="twitter:image" content="https://catarina.media/assets/img/catarina-portrait.jpg">
 
-<link rel="stylesheet" href="assets/site.css?v=blog-band">
+<link rel="stylesheet" href="assets/site.css?v=glow-back">
 
 <!-- Google Analytics (GA4), behind consent.
      Analytics sets a cookie, so under EU law it may not run until the visitor
@@ -160,7 +160,7 @@
   </div>  <section class="hero-reed" id="home">
     <div class="hero-reed-media" aria-hidden="true"></div>
     <div class="hero-reed-inner">
-      <h1 class="hero-title">Made<br><span>in the <span class="hero-edit" data-word="edit">edit<span class="edit-dust" aria-hidden="true"></span><span class="edit-dust-far" aria-hidden="true"></span><!--
+      <h1 class="hero-title">Made<br><span>in the <span class="hero-edit">edit<!--
           --><span class="hero-fairy" aria-hidden="true">
             <span class="hero-fairy-figure">
               <span class="hero-fairy-wing hero-fairy-wing--upper"></span>
@@ -255,9 +255,6 @@
       word.addEventListener('click', function () {
         if (busy) return;               // let a visit finish before another starts
         busy = true;
-        word.classList.remove('replay');
-        void word.offsetWidth;          // so the removal registers before it is set again
-        word.classList.add('replay');   // restarts the shimmer and dust, which live on ::before/::after
         parts.forEach(function (el) {
           el.style.animation = 'none';
           void el.offsetWidth;
@@ -275,7 +272,7 @@
     (function () {
       if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
       document.addEventListener('click', function (e) {
-        var btn = e.target.closest && e.target.closest('.btn, nav.main a, .filter-chip');
+        var btn = e.target.closest && e.target.closest('.btn, .filter-chip');
         if (!btn) return;
         btn.classList.remove('is-sparkling');
         void btn.offsetWidth;
