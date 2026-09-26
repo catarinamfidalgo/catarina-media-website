@@ -305,12 +305,12 @@
      timeline, then resolves into light. It is decorative and never catches
      clicks, so the hero remains fully usable throughout the entrance. */
   .hero-fairy { position: absolute; z-index: 3;
-    left: auto; right: clamp(42px, 10vw, 180px); bottom: 41%;
+    left: calc(50% - 72px); right: auto; bottom: 31%;
     width: clamp(108px, 10.5vw, 158px); aspect-ratio: 3 / 2;
     pointer-events: none; }
   .hero-fairy-figure { position: absolute; inset: 0; opacity: 0;
     transform-origin: 28% 72%;
-    animation: fairyVisit 6.2s cubic-bezier(.22,.72,.25,1) .7s both; }
+    animation: fairyVisit 8s cubic-bezier(.22,.72,.25,1) .7s both; }
   .hero-fairy-figure img { position: absolute; inset: 0; width: 100%; height: 100%;
     object-fit: contain; }
   .hero-fairy-main { animation: fairyInnerGlow 1.15s ease-in-out infinite alternate; }
@@ -357,7 +357,7 @@
     border-radius: 50%; opacity: 0;
     background: radial-gradient(circle, #fff 0 16%, #f2dcff 26%, #bd8cff 52%, rgba(114,89,196,0) 74%);
     box-shadow: 0 0 13px 4px rgba(242,220,255,.92), 0 0 30px 12px rgba(169,139,239,.58);
-    animation: fairyOrb 6.2s ease-out .7s both; }
+    animation: fairyOrb 8s ease-out .7s both; }
   .hero-fairy-dust { position: absolute; left: 11%; top: 52%; width: 64px; height: 52px;
     opacity: 0; transform-origin: 50% 50%;
     background:
@@ -368,15 +368,15 @@
       radial-gradient(circle at 88% 58%, #fff 0 1.4px, transparent 2.6px),
       radial-gradient(circle at 51% 51%, #b889ff 0 1.4px, transparent 2.5px);
     filter: drop-shadow(0 0 4px rgba(221,194,255,.95));
-    animation: fairyDust 6.2s ease-out .7s both; }
+    animation: fairyDust 8s ease-out .7s both; }
   @keyframes fairyVisit {
-    0%   { opacity: 0; transform: translate(34px,-22px) scale(.78) rotate(4deg); }
-    14%  { opacity: 1; transform: translate(0,0) scale(1) rotate(0); }
-    25%  { opacity: 1; transform: translate(0,-4px) scale(1) rotate(-1deg); }
+    0%   { opacity: 1; transform: translate(360px,-90px) scale(.82) rotate(-6deg); }
+    16%  { opacity: 1; transform: translate(118px,-36px) scale(.92) rotate(-3deg); }
+    30%  { opacity: 1; transform: translate(0,-4px) scale(1) rotate(-1deg); }
     42%  { opacity: 1; transform: translate(-3px,2px) scale(1) rotate(1deg); }
-    57%  { opacity: 1; transform: translate(0,-2px) scale(1) rotate(0); }
-    68%  { opacity: 1; transform: translate(-7px,7px) scale(.94) rotate(-2deg); }
-    77%,100% { opacity: 0; transform: translate(-18px,16px) scale(.04) rotate(-9deg); }
+    67%  { opacity: 1; transform: translate(0,-2px) scale(1) rotate(0); }
+    77%  { opacity: 1; transform: translate(-7px,7px) scale(.94) rotate(-2deg); }
+    88%,100% { opacity: 0; transform: translate(-18px,16px) scale(.04) rotate(-9deg); }
   }
   @keyframes fairyWingUpper {
     from { transform: rotate(-32deg) scaleY(1); opacity: .88; }
@@ -409,20 +409,20 @@
     to   { opacity: 1; transform: scale(1.18); }
   }
   @keyframes fairyOrb {
-    0%,64% { opacity: 0; transform: scale(.15); }
-    75% { opacity: 1; transform: scale(.6); }
-    84% { opacity: .95; transform: scale(1.35); }
+    0%,74% { opacity: 0; transform: scale(.15); }
+    82% { opacity: 1; transform: scale(.6); }
+    90% { opacity: .95; transform: scale(1.35); }
     100% { opacity: 0; transform: scale(2.15); filter: blur(2px); }
   }
   @keyframes fairyDust {
-    0%,67% { opacity: 0; transform: translate(10px,-5px) scale(.45) rotate(0); }
-    78% { opacity: 1; transform: translate(0,0) scale(1) rotate(10deg); }
+    0%,76% { opacity: 0; transform: translate(10px,-5px) scale(.45) rotate(0); }
+    85% { opacity: 1; transform: translate(0,0) scale(1) rotate(10deg); }
     100% { opacity: 0; transform: translate(-26px,18px) scale(1.8) rotate(-18deg); }
   }
   @media (max-width: 640px) {
-    .hero-fairy { left: auto; right: 18px; bottom: 39%; width: 104px; }
+    .hero-fairy { left: calc(50% - 42px); right: auto; bottom: 35%; width: 104px; }
   }
-  @media (prefers-reduced-motion: reduce) { .hero-fairy { display: none; } }
+  @media (prefers-reduced-motion: reduce) { .hero-fairy, .about-fairy { display: none; } }
   .btn--ghost-light { background: transparent; color: #fff; border-color: rgba(255,255,255,.55); }
   .btn--ghost-light:hover { background: #fff; color: var(--ink); border-color: #fff; }
   .scroll-cue { position: absolute; right: 38px; bottom: 9vh; z-index: 3; writing-mode: vertical-rl; text-orientation: mixed; text-transform: uppercase; letter-spacing: .18em; font-size: .68rem; font-weight: 700; color: rgba(255,255,255,.7); display: inline-flex; align-items: center; gap: 16px; }
@@ -430,6 +430,26 @@
   @media (max-width: 720px) { .scroll-cue { display: none; } .hero-reed-inner { padding-bottom: 12vh; } }
 
   .about-wrap { display: flex; gap: 44px; align-items: center; flex-wrap: wrap; }
+  .about-fairy { position: fixed; z-index: 5; left: 0; bottom: clamp(110px, 15vh, 150px);
+    width: clamp(116px, 10vw, 154px); aspect-ratio: 3 / 2;
+    pointer-events: none;
+    animation: aboutFairyCross 11s cubic-bezier(.25,.48,.42,.92) 1.4s both; }
+  .about-fairy-figure { position: absolute; inset: 0; isolation: isolate;
+    animation: aboutFairyBob 1.15s ease-in-out infinite alternate; }
+  .about-fairy-figure img { position: absolute; z-index: 1; inset: 0;
+    width: 100%; height: 100%; object-fit: contain;
+    filter: drop-shadow(0 5px 8px rgba(72,48,105,.18)); }
+  @keyframes aboutFairyCross {
+    0% { opacity: 0; transform: translate3d(-180px,4px,0); }
+    6% { opacity: 1; }
+    92% { opacity: 1; }
+    100% { opacity: 0; transform: translate3d(calc(100vw + 180px),-8px,0); }
+  }
+  @keyframes aboutFairyBob {
+    from { transform: translateY(3px) rotate(.8deg); }
+    to { transform: translateY(-5px) rotate(-1deg); }
+  }
+  @media (max-width: 640px) { .about-fairy { bottom: 90px; width: 112px; } }
   .about-photo { flex: 0 0 210px; width: 210px; height: 210px; border-radius: 50%; overflow: hidden; box-shadow: 0 22px 48px rgba(19,18,23,.34), 0 4px 12px rgba(19,18,23,.18); }
   .about-photo img { width: 100%; height: 100%; object-fit: cover; object-position: center 30%; }
   .about-text { flex: 1; min-width: 260px; }
