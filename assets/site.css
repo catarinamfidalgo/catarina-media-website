@@ -827,15 +827,14 @@
   .btn { box-shadow: var(--sh-sm); transition: background .15s ease, color .15s ease, box-shadow .15s ease, transform .15s ease; }
   .btn:hover { box-shadow: var(--sh-md); transform: translateY(-1px); }
 
-  /* A press sends the same dust across the button. Same idea as the word in
-     the hero: a band of lavender travelling over it, and a few specks that
-     come and go. The class is added on click and taken off when the sweep
-     ends, so nothing runs when nothing is being pressed. */
+  /* Filter chips only. This used to fire on the buttons as well, including
+     "Start a project", which is the one interaction on the site where someone
+     has decided to hire her. That is the worst possible place for a flourish.
+     Chips are a playful control and lose nothing by it. */
   /* The header's page links are buttons too, and on the homepage they are
      the only ones where this is visible at all: every other button leaves
      the page before the sweep finishes. */
-  .btn, .filter-chip { position: relative; overflow: hidden; }
-  .btn.is-sparkling::after,
+  .filter-chip { position: relative; overflow: hidden; }
   .filter-chip.is-sparkling::after {
     content: ""; position: absolute; inset: 0; pointer-events: none;
     background: linear-gradient(104deg,
@@ -846,7 +845,6 @@
     background-size: 260% 100%;
     animation: btnSweep .62s ease-out forwards;
   }
-  .btn.is-sparkling::before,
   .filter-chip.is-sparkling::before {
     content: ""; position: absolute; inset: 0; pointer-events: none;
     background:
@@ -867,7 +865,6 @@
     100% { opacity: 0; transform: scale(1.12) translateY(-4px); }
   }
   @media (prefers-reduced-motion: reduce) {
-    .btn.is-sparkling::after, .btn.is-sparkling::before,
     .filter-chip.is-sparkling::after, .filter-chip.is-sparkling::before { animation: none; content: none; }
   }
   .btn--ghost, .btn--ghost-light, .btn--ghost:hover, .btn--ghost-light:hover { box-shadow: none; transform: none; }

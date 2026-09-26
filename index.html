@@ -35,7 +35,7 @@
 <meta name="twitter:description" content="Video editor and post-production, based in Portugal. Commercials, brand films, YouTube, social and corporate video for brands and agencies.">
 <meta name="twitter:image" content="https://catarina.media/assets/img/catarina-portrait.jpg">
 
-<link rel="stylesheet" href="assets/site.css?v=glow-white">
+<link rel="stylesheet" href="assets/site.css?v=no-btn-spark">
 
 <!-- Google Analytics (GA4), behind consent.
      Analytics sets a cookie, so under EU law it may not run until the visitor
@@ -264,14 +264,14 @@
       });
     })();
 
-    /* The same dust across a button when it is pressed. Delegated from the
-       document, so buttons the portfolio renders later are covered without
-       rebinding. The class comes off when the sweep ends, so a button that is
-       not being pressed is running nothing. */
+    /* The same dust across a portfolio filter chip when it is pressed.
+       Delegated from the document, since the chips are rendered after load.
+       Deliberately not on the buttons: "Start a project" is where someone has
+       decided to hire her, and that is no place for a flourish. */
     (function () {
       if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
       document.addEventListener('click', function (e) {
-        var btn = e.target.closest && e.target.closest('.btn, .filter-chip');
+        var btn = e.target.closest && e.target.closest('.filter-chip');
         if (!btn) return;
         btn.classList.remove('is-sparkling');
         void btn.offsetWidth;
