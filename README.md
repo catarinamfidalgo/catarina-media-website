@@ -4,6 +4,12 @@ Source for [catarina.media](https://catarina.media), the site for Catarina Fidal
 video editor and post-production, based in Portugal. Static HTML, no framework,
 served from GitHub Pages.
 
+## Before you change anything
+
+Read [AGENTS.md](AGENTS.md). It covers which files are the source, which are
+generated, and the handful of decisions here that look like mistakes but are
+not.
+
 ## Building
 
 Every page is generated from one master file, `assets/source.html`:
