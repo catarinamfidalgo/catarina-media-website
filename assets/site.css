@@ -151,7 +151,8 @@
      The masthead is stacked now, so it has a line of its own and the room
      for it. It is the only thing on the page that says what she does. */
   @media (max-width: 719px) {
-    .brand-block { display: flex; flex-direction: column; align-items: flex-start; gap: 3px; }
+    .brand-block { display: flex; flex-direction: column; align-items: flex-start;
+      gap: 3px; padding-bottom: 11px; border-bottom: 1px solid var(--line); }
     .brand-tag { display: block; font-size: .6rem; letter-spacing: .13em; }
   }
   /* The masthead follows you down the page, so every page remains one click
@@ -186,8 +187,7 @@
   nav.main { position: static; z-index: auto;
     display: flex; flex-direction: row; align-items: center;
     width: auto; gap: 2px;
-    margin-top: 12px; padding: 9px 0 10px;
-    border-top: 1px solid var(--line);
+    margin-top: 0; margin-left: -11px; padding: 9px 0 10px;
     background: none; border-radius: 0; box-shadow: none;
     -webkit-backdrop-filter: none; backdrop-filter: none;
     opacity: 1; visibility: visible; transform: none;
@@ -204,7 +204,6 @@
     padding: 7px 11px; border-radius: var(--r-sm);
     font-size: .68rem; letter-spacing: .13em;
     transition: color .18s ease, background .18s ease; }
-  nav.main a:first-child { margin-left: -11px; }
   nav.main a:last-child { padding-right: 30px; }
   nav.main a:hover, nav.main a:active,
   nav.main a.active { color: var(--accent); background: var(--tint-2); }
@@ -224,11 +223,14 @@
   @media (min-width: 720px) {
       header.site { flex-direction: column; align-items: stretch;
       gap: 0; padding: 26px 0 0; }
-    .brand-block { flex-shrink: 0; }
+    /* The divider lives here, on a row that is always the full width of
+       the column, so it stays put when the row of names below is pulled
+       left to align the first word with the wordmark. */
+    .brand-block { flex-shrink: 0; padding-bottom: 17px;
+      border-bottom: 1px solid var(--line); }
     nav.main { position: static; flex-direction: row; align-items: center;
       justify-content: flex-start; width: auto; min-width: 0; gap: 4px;
-      margin-top: 18px; padding: 12px 0 14px;
-      border-top: 1px solid var(--line);
+      margin-top: 0; margin-left: -13px; padding: 12px 0 14px;
       background: none; border-left: 0; border-right: 0; border-bottom: 0;
       border-radius: 0;
       box-shadow: none;
@@ -236,7 +238,6 @@
       opacity: 1; visibility: visible; transform: none; }
     /* Pulled left by its own padding so the first name lines up with the
        C of Catarina rather than sitting 13px inside it. */
-    nav.main a:first-child { margin-left: -13px; }
     nav.main a { opacity: 1; white-space: nowrap; text-align: center;
       padding: 8px 13px; border-radius: var(--r-sm);
       font-size: .7rem; letter-spacing: .13em; }
