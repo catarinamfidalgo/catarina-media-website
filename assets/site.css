@@ -214,11 +214,15 @@
   nav.main a.active { color: var(--accent); background: var(--tint-2); }
   nav.main a.active::after { display: none; }
   .btn { display: inline-block; padding: .95em 1.7em; border-radius: 999px; font-weight: 700; font-size: .78rem; text-transform: uppercase; letter-spacing: .12em; background: var(--accent); color: var(--onaccent); border: 1px solid var(--accent); transition: background .15s ease, color .15s ease; }
-  .btn:hover { background: var(--text); border-color: var(--text); }
-  /* White on hover, but only over the hero. The same class carries the Send
-     message button on the contact page, which sits on a near-white ground,
-     and a white hover there would make it disappear under the cursor. */
-  .hero-reed .btn:hover { background: #fff; color: var(--ink); border-color: #fff; }
+  /* One highlight everywhere: white fill, purple edge, purple letters. Plain
+     white was only usable over the hero video; on a near-white page the button
+     would vanish under the cursor, which is why the rest of the site had a
+     near-black hover instead and why the two looked like different buttons.
+     Keeping the edge and the text solves both at once.
+     --purple-deep rather than --accent: accent lifts to the pale lavender in
+     dark mode, which has no contrast left against white. */
+  .btn:hover { background: #fff; color: var(--purple-deep); border-color: var(--purple-deep); }
+
 
   /* The hero buttons sit on video, so they need their own shadow. The site
      default is tuned for a near-white page and disappears against this, and
@@ -243,7 +247,7 @@
     background:
       radial-gradient(120% 150% at 78% 10%, rgba(var(--lav-rgb),.24), rgba(27,26,31,0) 62%),
       linear-gradient(180deg, rgba(38,35,46,.86) 0%, rgba(19,18,23,.9) 100%); }
-  .hero-reed .btn--ghost-light:hover { background: #fff; color: var(--ink); border-color: #fff; }
+  .hero-reed .btn--ghost-light:hover { background: #fff; color: var(--purple-deep); border-color: var(--purple-deep); }
   .btn--ghost { background: transparent; color: var(--accent); }
   .btn--ghost:hover { background: transparent; color: var(--text); }
   .btn-row { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
@@ -528,7 +532,7 @@
      purple to look. Both go white under the cursor. */
   .btn--ghost-light { background: transparent; color: var(--lav-bright);
     border-color: var(--lav-bright); }
-  .btn--ghost-light:hover { background: #fff; color: var(--ink); border-color: #fff; }
+  .btn--ghost-light:hover { background: #fff; color: var(--purple-deep); border-color: var(--purple-deep); }
   .scroll-cue { position: absolute; right: 38px; bottom: 9vh; z-index: 3; writing-mode: vertical-rl; text-orientation: mixed; text-transform: uppercase; letter-spacing: .18em; font-size: .68rem; font-weight: 700; color: rgba(255,255,255,.7); display: inline-flex; align-items: center; gap: 16px; }
   .scroll-cue::after { content: ''; width: 1px; height: 66px; background: rgba(255,255,255,.55); }
   @media (max-width: 720px) { .scroll-cue { display: none; } .hero-reed-inner { padding-bottom: 12vh; } }
