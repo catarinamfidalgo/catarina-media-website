@@ -276,7 +276,13 @@
     background: url('img/hero-timeline.jpg?v=613d23a0') repeat-x;
     /* a fixed tile width means the loop distance is known exactly, so the
        animation can travel one whole tile and restart with no jump */
-    background-size: 2400px auto; background-position: 0 center;
+    /* The tile renders 1000px tall in a hero around 774px, so roughly 226px
+       is cropped. Centred, that came off the top and sliced the first row of
+       frames through the middle. --reed-y moves the crop down: 50% is
+       centred, 0% would put the tile's top edge at the hero's top. One
+       number, and the keyframes read it so the drift cannot snap it back. */
+    --reed-y: 30%;
+    background-size: 2400px auto; background-position: 0 var(--reed-y);
     animation: timeline-drift 150s linear infinite;
   }
   .hero-reed-media::after {
@@ -286,7 +292,7 @@
       linear-gradient(0deg, rgba(19,18,23,.90) 0%, rgba(19,18,23,.08) 48%, rgba(19,18,23,.26) 100%),
       radial-gradient(120% 90% at 72% 18%, rgba(var(--lav-rgb),.28), rgba(27,26,31,0) 55%);
   }
-  @keyframes timeline-drift { from { background-position: 0 center; } to { background-position: -2400px center; } }
+  @keyframes timeline-drift { from { background-position: 0 var(--reed-y); } to { background-position: -2400px var(--reed-y); } }
   @media (prefers-reduced-motion: reduce) { .hero-reed-media::before { animation: none; } }
 
   .hero-reed-inner { position: relative; z-index: 2; width: 100%; max-width: 1000px; margin: 0 auto;
