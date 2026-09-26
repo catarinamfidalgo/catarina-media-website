@@ -147,15 +147,22 @@
     text-transform: uppercase; color: var(--muted);
     /* line-height:1 is load-bearing. This face has ascent 1.0 and descent
        .303, so at that line-height the cap centre falls at exactly 50% of
-       the box — which lets the rule below centre itself instead of being
-       placed by a number measured from the wrong edge. */
+       the box, which is what lets the rule place itself from the box edge.
+       No lift here: .brand-block aligns on the baseline, so left alone the
+       tagline sits on the same line as the name. --tag-lift used to raise
+       it to the name's cap centre instead, which measured exact to half a
+       pixel but read as floating. */
     line-height: 1;
-    transform: translateY(calc(var(--tag-nudge) - var(--tag-lift))); }
+    transform: translateY(var(--tag-nudge)); }
   html[lang^="pt"] .brand-tag { --tag-size: .787rem; --tag-lift: .2050em; --tag-rule: 1.107em; }
   html[lang^="es"] .brand-tag { --tag-size: .695rem; --tag-lift: .2780em; --tag-rule: 1.254em; }
-  /* The rule spans the name's cap height, centred on that shared centre. */
+  /* The rule spans the name's cap height and stays where it was when the
+     tagline was lifted. --tag-lift is exactly how far the text moved down,
+     so giving the same amount back to the rule alone leaves it at the height
+     it has always been while the text drops to the baseline. Per language
+     without extra numbers, since --tag-lift is already set per language. */
   .brand-tag::before { content: ""; position: absolute; left: 0;
-    top: 50%; transform: translateY(-50%);
+    top: 50%; transform: translateY(calc(-50% - var(--tag-lift)));
     width: 1px; height: var(--tag-rule); background: var(--line); }
   /* Below this the name and the menu button need the whole row. */
   @media (max-width: 719px) { .brand-tag { display: none; } }
