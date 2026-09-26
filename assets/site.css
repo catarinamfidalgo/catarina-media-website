@@ -554,12 +554,13 @@
      the masthead: same 5px, flush left, small tracked caps over a large
      weight. 10px read as two separate things stacked rather than one
      label belonging to one title. */
-  /* Pulled left by the pill's own left padding (.72em of .62rem), so the
-     tag's first letter sits directly above the title's, rather than the
-     pill's edge sitting above it. */
-  .cats { display: flex; flex-wrap: wrap; gap: 4px; margin-bottom: 5px;
-    margin-left: -.4464rem; }
-  .project-card .cat { align-self: flex-start; background: var(--accent); color: #fff; font-size: .62rem; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; padding: .46em .72em; }
+  .cats { display: flex; flex-wrap: wrap; gap: 4px; margin-bottom: 5px; }
+  .project-card .cat { align-self: flex-start; background: var(--accent); color: #fff; font-size: .62rem; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; padding: .46em .8em .46em 0; }
+  /* No left padding, so the block and its first letter start at the same
+     place, and both line up with the title underneath. With padding there the
+     two are always separated by exactly that much: the box can sit above the
+     title or the letters can, never both. The space lost on the left is added
+     to the right so the pill does not read as lopsided. */
   .project-card .title { color: #fff; font-weight: 800; font-size: 1.32rem; letter-spacing: -.01em; line-height: 1.05; margin: 0; }
   .project-card .view { margin-top: 12px; color: #fff; font-size: .62rem; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; opacity: 0; transform: translateY(6px); transition: opacity .2s ease, transform .2s ease; }
   .project-card:hover .view { opacity: .9; transform: translateY(0); }
@@ -797,7 +798,7 @@
 
     .project-card .title { font-size: 1.12rem; }
     .project-card .overlay { padding: 16px; }
-    .cat { font-size: .54rem; padding: .45em .6em; }
+    .cat { font-size: .54rem; padding: .45em .7em .45em 0; }
 
     /* the modal took the container's desktop padding into a 390pt screen */
     .modal-overlay { padding: 0; }
