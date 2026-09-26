@@ -69,7 +69,7 @@ def website(lang):
 def service():
     return {
         "@type": "ProfessionalService",
-        "name": "Catarina Fidalgo — Video Editing and Post-Production",
+        "name": "Catarina Fidalgo - Video Editing and Post-Production",
         "url": SITE + "/services/",
         "provider": {"@id": PERSON_ID},
         "areaServed": "Worldwide",

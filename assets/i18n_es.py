@@ -138,7 +138,7 @@ COPY = {
 }
 
 META = {
-    "title": "Catarina Fidalgo — Montadora de Vídeo y Posproducción",
+    "title": "Catarina Fidalgo - Montadora de Vídeo y Posproducción",
     "description": "Catarina Fidalgo — montadora de vídeo y posproducción, afincada en Portugal. "
                    "Anuncios, películas de marca, YouTube, contenido social y vídeo corporativo, "
                    "en inglés, portugués y español.",

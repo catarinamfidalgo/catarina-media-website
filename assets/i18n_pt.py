@@ -140,7 +140,7 @@ COPY = {
 }
 
 META = {
-    "title": "Catarina Fidalgo — Editora de Vídeo e Pós-Produção",
+    "title": "Catarina Fidalgo - Editora de Vídeo e Pós-Produção",
     "description": "Catarina Fidalgo — editora de vídeo e pós-produção, em Portugal. "
                    "Anúncios, filmes de marca, YouTube, conteúdo social e vídeo corporativo, "
                    "em inglês, português e espanhol.",

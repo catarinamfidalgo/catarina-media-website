@@ -403,17 +403,6 @@
     background: radial-gradient(circle, #fff 0 16%, #f2dcff 26%, #bd8cff 52%, rgba(114,89,196,0) 74%);
     box-shadow: 0 0 13px 4px rgba(242,220,255,.92), 0 0 30px 12px rgba(169,139,239,.58);
     animation: fairyOrb 3.8s ease-out .25s both; }
-  .hero-fairy-dust { position: absolute; left: 11%; top: 52%; width: 64px; height: 52px;
-    opacity: 0; transform-origin: 50% 50%;
-    background:
-      radial-gradient(circle at 18% 66%, #fff 0 2px, transparent 3px),
-      radial-gradient(circle at 39% 31%, #dec4ff 0 1.8px, transparent 3px),
-      radial-gradient(circle at 58% 72%, #fff 0 1.5px, transparent 2.8px),
-      radial-gradient(circle at 77% 28%, #c69cff 0 2px, transparent 3.2px),
-      radial-gradient(circle at 88% 58%, #fff 0 1.4px, transparent 2.6px),
-      radial-gradient(circle at 51% 51%, #b889ff 0 1.4px, transparent 2.5px);
-    filter: drop-shadow(0 0 4px rgba(221,194,255,.95));
-    animation: fairyDust 3.8s ease-out .25s both; }
   /* One continuous glide to the mark. Every intermediate keyframe restarts
      the easing curve, so a path described by six of them accelerates and
      slows six times and reads as bursts however gentle each one is. There is
@@ -486,11 +475,6 @@
     0%,8%    { opacity: 0; transform: translate(324px,-144px) scale(.1); }
     19%      { opacity: 1; transform: translate(324px,-144px) scale(1.5); }
     34%,100% { opacity: 0; transform: translate(324px,-144px) scale(2.1); }
-  }
-  @keyframes fairyDust {
-    0%,14%   { opacity: 0; transform: translate(10px,-5px) scale(.45) rotate(0); }
-    26%      { opacity: .9; transform: translate(0,0) scale(1.05) rotate(10deg); }
-    52%,100% { opacity: 0; transform: translate(-26px,18px) scale(1.9) rotate(-18deg); }
   }
   @media (max-width: 640px) {
     .hero-fairy { width: 84px; bottom: 86%; }

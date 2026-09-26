@@ -50,7 +50,7 @@ def extract(src):
 
 
 PAGES = [
-    ("",          "Video Editor & Post-Production", ["hero", "portfolio"], True),
+    ("",          "Video Editing & Post-Production", ["hero", "portfolio"], True),
     ("services",  "Services",                       ["services"],           False),
     ("about",     "About",                          ["about"],              False),
     ("agencies",  "For Agencies",                   ["agencies"],           False),
@@ -105,7 +105,7 @@ def build():
 
         head = f["head"]
         head = re.sub(r"<title>[^<]*</title>",
-                      "<title>Catarina Fidalgo — %s</title>" % title, head)
+                      "<title>Catarina Fidalgo - %s</title>" % title, head)
         canon = SITE + "/" + (slug + "/" if slug else "")
         head = re.sub(r'(rel="canonical" href=")[^"]*(")', r"\g<1>%s\g<2>" % canon, head)
         head = re.sub(r'(og:url" content=")[^"]*(")', r"\g<1>%s\g<2>" % canon, head)

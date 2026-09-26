@@ -131,7 +131,7 @@ def build_page(lang, path, slug):
                  "privacy": "Privacy"}
     if slug in PAGE_NAME:
         name = t.UI.get(PAGE_NAME[slug], PAGE_NAME[slug])
-        title = "Catarina Fidalgo — %s" % name
+        title = "Catarina Fidalgo - %s" % name
     else:
         title = t.META["title"]
     s = re.sub(r"<title>[^<]*</title>", "<title>%s</title>" % title, s)

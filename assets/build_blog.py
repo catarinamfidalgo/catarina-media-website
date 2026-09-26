@@ -254,7 +254,7 @@ PAGE = """<!DOCTYPE html>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{title} — Catarina Fidalgo</title>
+<title>{title} - Catarina Fidalgo</title>
 <meta name="description" content="{excerpt}">
 <link rel="canonical" href="{canonical}">
 {alts}
