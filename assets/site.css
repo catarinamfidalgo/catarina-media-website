@@ -125,49 +125,15 @@
      hairline. Stacked, the two had to be optically nudged into line because
      every letter carries its own side bearing; side by side that problem
      does not arise, and the masthead stays one object rather than two. */
-  .brand-block { display: flex; align-items: baseline; gap: 14px; min-width: 0; }
-  /* A shared baseline is the wrong alignment for these two: the name is
-     nearly twice the size, so on a common baseline its mass sits 3.4px
-     high and the tagline reads as having slipped. What should line up is
-     the centre of the letters. Cap height is .697em in this face, so the
-     tagline rises by half the difference — .332em of its own size. Both
-     are set in rem at a fixed ratio, so this holds at every width. */
-  /* The tagline is sized so it measures exactly as wide as the name — 190px
-     — which is what makes the pair sit as one object. Each language needs
-     its own size to get there, and the lift and the rule follow from it:
-        lift = capHeight x (nameSize/tagSize - 1) / 2
-        rule = nameCapHeight expressed in em of the tagline
-     Recompute all three together if the wording or the name ever changes. */
-  /* Horizontal: each language is sized so the tagline measures the name's
-     190px exactly. Vertical: --tag-lift raises it from the shared baseline
-     to the shared cap centre, and --tag-nudge is the optical correction on
-     top of that — true centre reads a touch high for small caps beside
-     large ones, so it sits fractionally below. Raise the nudge to drop it
-     further; it is the only number to touch. */
-  .brand-tag { --tag-size: .684rem; --tag-lift: .2884em; --tag-rule: 1.274em;
-    --tag-nudge: 0px;
-    position: relative; padding-left: 15px; white-space: nowrap;
-    font-size: var(--tag-size); font-weight: 600; letter-spacing: .14em;
-    text-transform: uppercase; color: var(--muted);
-    /* line-height:1 is load-bearing. This face has ascent 1.0 and descent
-       .303, so at that line-height the cap centre falls at exactly 50% of
-       the box, which is what lets the rule place itself from the box edge.
-       No lift here: .brand-block aligns on the baseline, so left alone the
-       tagline sits on the same line as the name. --tag-lift used to raise
-       it to the name's cap centre instead, which measured exact to half a
-       pixel but read as floating. */
-    line-height: 1;
-    transform: translateY(var(--tag-nudge)); }
-  html[lang^="pt"] .brand-tag { --tag-size: .787rem; --tag-lift: .2050em; --tag-rule: 1.107em; }
-  html[lang^="es"] .brand-tag { --tag-size: .695rem; --tag-lift: .2780em; --tag-rule: 1.254em; }
-  /* The rule spans the name's cap height and stays where it was when the
-     tagline was lifted. --tag-lift is exactly how far the text moved down,
-     so giving the same amount back to the rule alone leaves it at the height
-     it has always been while the text drops to the baseline. Per language
-     without extra numbers, since --tag-lift is already set per language. */
-  .brand-tag::before { content: ""; position: absolute; left: 0;
-    top: 50%; transform: translateY(calc(-50% - var(--tag-lift)));
-    width: 1px; height: var(--tag-rule); background: var(--line); }
+  /* Stacked, both flush left. Beside the name the tagline had to align
+     against caps more than twice its height: on the baseline it hung low,
+     centred on the caps it floated. On its own line there is nothing to
+     align it to, so the problem stops existing. */
+  .brand-block { display: flex; flex-direction: column; align-items: flex-start;
+    gap: 5px; min-width: 0; }
+  .brand-tag { white-space: nowrap;
+    font-size: .68rem; font-weight: 600; letter-spacing: .14em;
+    text-transform: uppercase; color: var(--muted); line-height: 1; }
   /* Below this the name and the menu button need the whole row. */
   @media (max-width: 719px) { .brand-tag { display: none; } }
   /* The masthead follows you down the page, so every page remains one click
