@@ -214,6 +214,22 @@
      message button on the contact page, which sits on a near-white ground,
      and a white hover there would make it disappear under the cursor. */
   .hero-reed .btn:hover { background: #fff; color: var(--ink); border-color: #fff; }
+
+  /* The hero buttons sit on video, so they need their own shadow. The site
+     default is tuned for a near-white page and disappears against this, and
+     the outlined one had shadows stripped entirely along with the other ghost
+     variants. Two layers: a wide soft one to lift the button off the footage
+     and a tight one under the edge to keep it from floating. Restated on
+     hover because the fill rules here outrank the shared ones. */
+  .hero-reed .btn,
+  .hero-reed .btn--ghost-light {
+    box-shadow: 0 12px 28px rgba(8,6,14,.48), 0 2px 6px rgba(8,6,14,.38); }
+  .hero-reed .btn:hover,
+  .hero-reed .btn--ghost-light:hover {
+    box-shadow: 0 18px 38px rgba(8,6,14,.55), 0 3px 9px rgba(8,6,14,.42); }
+  @media (prefers-reduced-motion: reduce) {
+    .hero-reed .btn, .hero-reed .btn--ghost-light { transition: box-shadow .01ms; }
+  }
   /* The same fill the footer button appears to have. There it is the footer's
      background showing through a transparent button; over the hero video there
      is nothing behind it to show through, so it is painted in: the lavender
