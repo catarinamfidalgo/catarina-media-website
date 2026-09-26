@@ -344,8 +344,12 @@
 
   .project-card .thumb--empty { background: linear-gradient(150deg, #2b2833, #17151d); }
   .project-card .overlay { position: absolute; inset: 0; z-index: 2; display: flex; flex-direction: column; justify-content: flex-end; align-items: flex-start; padding: 22px; background: linear-gradient(to top, rgba(14,12,19,.85) 0%, rgba(14,12,19,.12) 55%, rgba(14,12,19,0) 100%); }
-  .cats { display: flex; flex-wrap: wrap; gap: 4px; margin-bottom: 10px; }
-  .project-card .cat { align-self: flex-start; background: var(--accent); color: #fff; font-size: .62rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; padding: .5em .75em; }
+  /* The label sits to its title the way the tagline sits to the name in
+     the masthead: same 5px, flush left, small tracked caps over a large
+     weight. 10px read as two separate things stacked rather than one
+     label belonging to one title. */
+  .cats { display: flex; flex-wrap: wrap; gap: 4px; margin-bottom: 5px; }
+  .project-card .cat { align-self: flex-start; background: var(--accent); color: #fff; font-size: .62rem; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; padding: .46em .72em; }
   .project-card .title { color: #fff; font-weight: 800; font-size: 1.32rem; letter-spacing: -.01em; line-height: 1.05; margin: 0; }
   .project-card .view { margin-top: 12px; color: #fff; font-size: .62rem; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; opacity: 0; transform: translateY(6px); transition: opacity .2s ease, transform .2s ease; }
   .project-card:hover .view { opacity: .9; transform: translateY(0); }
