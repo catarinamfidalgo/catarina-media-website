@@ -31,7 +31,7 @@
 <meta name="twitter:description" content="Video editor and post-production, based in Portugal. Commercials, brand films, YouTube, social and corporate video for brands and agencies.">
 <meta name="twitter:image" content="https://catarina.media/assets/img/catarina-portrait.jpg">
 
-<link rel="stylesheet" href="assets/site.css?v=fairy-hover">
+<link rel="stylesheet" href="assets/site.css?v=fairy-idle">
 
 <!-- Google Analytics (GA4), behind consent.
      Analytics sets a cookie, so under EU law it may not run until the visitor
@@ -394,6 +394,35 @@
           perch.style.animationDelay = '3.8s';   // the entrance, minus its own delay
         }
         setTimeout(function () { busy = false; }, 4200);
+      });
+    })();
+
+    /* Six loops run on the fairy for as long as the page is open, including
+       while the hero is scrolled far out of sight and while the tab is in the
+       background. Painting frames nobody can see costs battery on a phone for
+       nothing, so she is paused whenever she is not visible.
+
+       animation-play-state holds the frame instead of resetting, so resuming
+       is seamless. Without IntersectionObserver she simply keeps running,
+       which is the behaviour this replaces. */
+    (function () {
+      var fairy = document.querySelector('.hero-fairy');
+      if (!fairy) return;
+
+      var onScreen = true, tabVisible = !document.hidden;
+      function apply() {
+        fairy.classList.toggle('is-idle', !(onScreen && tabVisible));
+      }
+
+      if ('IntersectionObserver' in window) {
+        new IntersectionObserver(function (entries) {
+          onScreen = entries[0].isIntersecting;
+          apply();
+        }, { rootMargin: '120px' }).observe(fairy);
+      }
+      document.addEventListener('visibilitychange', function () {
+        tabVisible = !document.hidden;
+        apply();
       });
     })();
 

@@ -304,6 +304,11 @@
      clicks, so the hero remains fully usable throughout the entrance. */
   /* The word she visits is her positioning context, so she arrives on it at
      any width instead of at a coordinate that only lines up at one. */
+  /* Frozen when nobody can see her. paused holds the current frame rather
+     than resetting, so she picks up mid-wingbeat exactly where she stopped
+     and there is no jump on the way back. */
+  .hero-fairy.is-idle,
+  .hero-fairy.is-idle * { animation-play-state: paused; }
   .hero-edit { position: relative; display: inline-block; cursor: pointer;
     -webkit-tap-highlight-color: transparent; }
   .hero-fairy { position: absolute; display: block; z-index: 3;
