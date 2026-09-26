@@ -135,13 +135,16 @@
      not the target either. C is round: it touches its leftmost point only at
      mid-height and falls away above and below, so it has to overshoot a little
      to look level with a straight-sided letter. The old tagline began with M
-     and sat .255px right of the C, which read as correct, so that offset is
-     the reference: .01386em of the wordmark's size. V lands .588px left of
-     the C on its own, so the indent closes that and adds the overshoot.
+     and sat .255px right of the C, which was close; Catarina wanted a little
+     more, so the overshoot is .028em of the wordmark's size, roughly double
+     that reference. That constant is the only number to change: the indents
+     below are it, minus wherever the leading letter naturally lands.
+       header  V lands -.588px, wants +.560px  ->  .1055em
+       footer  V lands -.459px, wants +.515px  ->  .0846em
      Recompute from the font if the wording changes and a new letter leads. */
   .brand-tag { white-space: nowrap;
     font-size: .68rem; font-weight: 600; letter-spacing: .14em;
-    text-indent: .0795em;
+    text-indent: .1055em;
     text-transform: uppercase; color: var(--muted); line-height: 1; }
   /* Below this the name and the menu button need the whole row. */
   @media (max-width: 719px) { .brand-tag { display: none; } }
@@ -430,7 +433,7 @@
   /* Same correction as the masthead, at the footer's own sizes and at the
      weight 400 it inherits. This is where the .255px reference came from. */
   .foot-service { text-transform: uppercase; letter-spacing: .18em; font-size: .72rem;
-    text-indent: .0620em; margin-top: 3px; color: rgba(255,255,255,.85); }
+    text-indent: .0846em; margin-top: 3px; color: rgba(255,255,255,.85); }
   footer.site .copy { color: rgba(255,255,255,.65); margin-top: 22px; font-size: .78rem; }
   .foot-cta { display: flex; flex-direction: column; align-items: flex-end; gap: 16px; }
   footer.site .socials { font-size: .78rem; letter-spacing: .08em; }
