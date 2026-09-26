@@ -39,7 +39,7 @@
 <meta name="twitter:description" content="Video editor and post-production, based in Portugal. Commercials, brand films, YouTube, social and corporate video for brands and agencies.">
 <meta name="twitter:image" content="https://catarina.media/assets/img/catarina-portrait.jpg">
 
-<link rel="stylesheet" href="../assets/site.css?v=fairy-visit">
+<link rel="stylesheet" href="../assets/site.css?v=fairy-click">
 
 <!-- Google Analytics (GA4), behind consent.
      Analytics sets a cookie, so under EU law it may not run until the visitor
@@ -236,6 +236,39 @@
       </div>
     </div>
   </div>
+  <script>
+    /* Click the word and she comes back. The animations already exist; this
+       only restarts them, by clearing the animation, forcing a reflow so the
+       browser registers the removal, then handing it back with no delay so
+       the replay begins at once rather than after the entrance pause.
+
+       Deliberately not focusable. It is decorative, the whole sequence plays
+       on load without any input, and adding a tab stop for an easter egg puts
+       a stop in front of keyboard users for something that tells them
+       nothing. It also does nothing when reduced motion is asked for, since
+       there is nothing to replay. */
+    (function () {
+      var word = document.querySelector('.hero-edit');
+      if (!word) return;
+      if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+      var parts = [word].concat(Array.prototype.slice.call(
+        word.querySelectorAll('.hero-fairy-figure, .hero-fairy-orb, .hero-fairy-dust')));
+      var busy = false;
+
+      word.addEventListener('click', function () {
+        if (busy) return;               // let a visit finish before another starts
+        busy = true;
+        parts.forEach(function (el) {
+          el.style.animation = 'none';
+          void el.offsetWidth;
+          el.style.animation = '';
+          el.style.animationDelay = '0s';
+        });
+        setTimeout(function () { busy = false; }, 10000);
+      });
+    })();
+  </script>
   <script>
   const PROJECTS = [
     {brand:'Coca-Cola', types:['Vídeo Corporativo / Promocional'], desc:'Vídeo corporativo para uso interno, com materiais da Coca-Cola Europacific e imagens de arquivo licenciadas.', tasks:'Edição, Tratamento de cor, Títulos animados, Motion graphics, Música licenciada, Correção de cor, Imagens de arquivo licenciadas', industries:['Alimentação e bebidas', 'Produção e fornecimento'], poster:'../assets/img/cover/coca-cola-start2.jpg', video:'../assets/video/coca-cola.mp4', yt:'KyVg-T2lDYI'},
