@@ -1,54 +1,58 @@
 # catarina.media
 
-A clean, static mirror of [catarina.media](https://catarina.media) (originally built on
-Carbonmade), rebuilt as plain HTML/CSS/JS for **GitHub Pages** — with a real contact form added.
+Source for [catarina.media](https://catarina.media) — the site for Catarina Fidalgo,
+video editor and post-production, based in Portugal. Static HTML, no framework,
+served from GitHub Pages.
 
-## What's here
+## Building
 
-| File | Purpose |
-|------|---------|
-| `index.html` | Home — hero video, "Trusted by", client testimonials |
-| `portfolio.html` | Portfolio — grid of 20 autoplay/loop/muted video reels |
-| `about.html` | About — bio, showreel, testimonials |
-| `contact.html` | Contact — **new 5-field form** (Name, Email, Company, Budget, Message) |
-| `assets/style.css` | Shared design tokens + layout |
-| `assets/media.js` | Lazy, viewport-aware video autoplay + reduced-motion handling |
-| `assets/contact.js` | Contact form → `mailto:` handler |
-| `assets/img/poster/` | Poster frames (the only self-hosted media) |
+Every page is generated from one master file, `assets/source.html`:
 
-## How the media works
-
-Images and videos are **hotlinked from the original Carbon CDN**
-(`carbon-media.accelerator.net`) to keep this repo lightweight. Videos lazy-autoplay when scrolled
-into view (muted, looping) and fall back to a poster + tap-to-play when the visitor has
-"reduce motion" enabled.
-
-> Note: because media is hotlinked, the site depends on that CDN staying online. If the original
-> Carbonmade site is ever taken down, download the assets and swap the URLs for local paths — the
-> markup stays the same. Poster frames are already generated with `ffmpeg`.
-
-## The contact form
-
-The original site had no form (only Calendly + email). This mirror adds one. It has no backend:
-on submit, `assets/contact.js` encodes the fields into a `mailto:` link and
-opens the visitor's email client. Calendly and a plain `mailto:` link remain as fallbacks.
-
-## Run locally
-
-```bash
-python3 -m http.server 8000
-# open http://localhost:8000
+```sh
+./build.sh
 ```
 
-## Deploy (GitHub Pages)
+That runs five scripts in the order they depend on:
 
-Pushed to GitHub with Pages served from `main` / root. To attach a custom domain later, add a
-`CNAME` file containing the domain and set the DNS records GitHub provides — all internal links are
-relative, so they work both under `/<repo>/` and at a domain root.
+| Script | What it writes |
+|--------|----------------|
+| `build_pages.py` | The English pages, each cut from the master |
+| `build_i18n.py` | The Portuguese and Spanish translations |
+| `build_blog.py` | The blog index and post pages, in both languages |
+| `build_schema.py` | JSON-LD structured data on every page |
+| `build_sitemap.py` | `sitemap.xml` with hreflang pairs, and `robots.txt` |
 
-## Editing
+Edit `assets/source.html` or `assets/site.css`, run `./build.sh`, commit what changes.
+Editing a generated `index.html` directly will not survive the next build.
 
-- Text lives directly in the `.html` files.
-- Colors/fonts are CSS variables at the top of `assets/style.css`.
-- To add/remove a portfolio clip, copy a `.reel-card` block in `portfolio.html` and point
-  `data-src` / `poster` at the new video id.
+## Previews
+
+The portfolio cards play a short clip on hover. `assets/build_previews.py` cuts them
+from the masters, which are gigabytes and stay out of the repo, so this one is run by
+hand rather than from `build.sh`:
+
+```sh
+python3 assets/build_previews.py          # skips what already exists
+python3 assets/build_previews.py --force  # redo everything
+```
+
+Scene detection picks the start point, except where a hand-picked one is listed in
+`OVERRIDES` — it finds cuts, but it cannot tell which moment is worth showing.
+
+## Contact form
+
+No backend and no third-party form service. `assets/contact.js` builds a `mailto:`
+link from the fields and hands it to the visitor's mail client. The address is stored
+base64-encoded and decoded at send time, so it appears nowhere in the markup for a
+scraper to read.
+
+## Running locally
+
+```sh
+python3 -m http.server 8000   # then open http://localhost:8000
+```
+
+## Languages
+
+English, Portuguese and Spanish. The translations live in `assets/build_i18n.py` and
+are generated, not maintained as separate files.
