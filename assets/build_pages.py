@@ -123,15 +123,6 @@ def build():
         body += "\n".join(chunks) + "\n" + f["footer"] + f["modal"]
         if needs_js:
             body += f["script"]
-        else:
-            body += ("  <script>\n"
-                     "  function toggleNav(b){var n=document.getElementById('siteNav');\n"
-                     "    var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o);}\n"
-                     "  function closeNav(){var n=document.getElementById('siteNav'),b=document.querySelector('.nav-toggle');\n"
-                     "    if(n)n.classList.remove('open'); if(b)b.setAttribute('aria-expanded','false');}\n"
-                     "  document.addEventListener('click',function(e){if(!e.target.closest('header.site'))closeNav();});\n"
-                     "  document.addEventListener('keydown',function(e){if(e.key==='Escape')closeNav();});\n"
-                     "  </script>\n")
         # The contact form needs its handler wherever the form appears, not just
         # on the homepage — without this the standalone /contact/ page submits
         # into nothing. depth_fix() rewrites the path for nested pages.

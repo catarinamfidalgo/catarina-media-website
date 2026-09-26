@@ -32,6 +32,9 @@ NAV = {
 POSTS = [
     {
         "slug": "brand-video-package",
+        "image": "one-campaign",
+        "image_alt": "An editing timeline in purple with clips and a waveform, "
+                     "beside film frames and a colour wheel",
         "date": "2026-09-24",
         "date_label": "September 2026",
         "title": "One campaign, every platform: commission it all at once",
@@ -359,14 +362,6 @@ PAGE = """<!DOCTYPE html>
 {header}
 {main}
 {footer}
-  <script>
-  function toggleNav(b){{var n=document.getElementById('siteNav');
-    var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o);}}
-  function closeNav(){{var n=document.getElementById('siteNav'),b=document.querySelector('.nav-toggle');
-    if(n)n.classList.remove('open'); if(b)b.setAttribute('aria-expanded','false');}}
-  document.addEventListener('click',function(e){{if(!e.target.closest('header.site'))closeNav();}});
-  document.addEventListener('keydown',function(e){{if(e.key==='Escape')closeNav();}});
-  </script>
 </body>
 </html>
 """
@@ -398,7 +393,6 @@ def header(root, lang, other):
       </div>
         <span class="brand-tag">{nav['tag']}</span>
       </div>
-      <button class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="siteNav" onclick="toggleNav(this)"><span></span><span></span><span></span></button>
       <nav class="main" id="siteNav">
         <a href="{root}{pre}">{nav['home']}</a>
         <a href="{root}{pre}#portfolio">{nav['portfolio']}</a>
@@ -495,8 +489,8 @@ def build():
                srcset="{root}assets/img/blog/{img}-640.webp 640w, """
                         f"""{root}assets/img/blog/{img}-900.webp 900w, """
                         f"""{root}assets/img/blog/{img}-1400.webp 1400w"
-               sizes="(max-width: 780px) 100vw, 720px"
-               width="1613" height="390" alt="{alt}" fetchpriority="high">
+               sizes="(max-width: 560px) 100vw, 520px"
+               width="1672" height="941" alt="{alt}" fetchpriority="high">
         </figure>""")
                 og_image = (f'<meta property="og:image" content="{SITE}/assets/img/blog/{img}-og.jpg">\n'
                             f'<meta property="og:image:width" content="1200">\n'

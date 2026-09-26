@@ -313,7 +313,7 @@
      --lav-bright, and lifting it reads as lighter without adding a colour
      the palette does not have. Same 8s clock and same delay as the flight,
      so it lights as she arrives and fades as she goes. */
-  .hero-edit { animation: editGlow 10s ease-in-out .7s both; }
+  .hero-edit { animation: editGlow 10s ease-in-out .25s both; }
   /* The word only lifts a little now. The dust is the effect; a strong halo
      on the text competed with the motes and washed them out. */
   /* Light purple, no white. White lit the word well but read as a spotlight
@@ -326,8 +326,8 @@
      being a glow and becomes a lamp pointed at the text, which is what the
      earlier version did. */
   @keyframes editGlow {
-    0%,40%   { filter: brightness(1); text-shadow: none; }
-    52%      { filter: brightness(1.34);
+    0%,33%   { filter: brightness(1); text-shadow: none; }
+    44%      { filter: brightness(1.34);
                text-shadow: 0 0 5px rgba(255,255,255,.3),
                             0 0 14px rgba(var(--lav-rgb),.74),
                             0 0 38px rgba(var(--lav-rgb),.42); }
@@ -345,7 +345,7 @@
 
   .hero-fairy-figure { position: absolute; inset: 0; opacity: 0;
     transform-origin: 28% 72%;
-    animation: fairyVisit 10s cubic-bezier(.16,.62,.24,1) .7s both; }
+    animation: fairyVisit 10s cubic-bezier(.16,.62,.24,1) .25s both; }
   .hero-fairy-figure img { position: absolute; inset: 0; width: 100%; height: 100%;
     object-fit: contain; }
   .hero-fairy-main { animation: fairyInnerGlow 1.15s ease-in-out infinite alternate; }
@@ -397,7 +397,7 @@
     border-radius: 50%; opacity: 0;
     background: radial-gradient(circle, #fff 0 16%, #f2dcff 26%, #bd8cff 52%, rgba(114,89,196,0) 74%);
     box-shadow: 0 0 13px 4px rgba(242,220,255,.92), 0 0 30px 12px rgba(169,139,239,.58);
-    animation: fairyOrb 10s ease-out .7s both; }
+    animation: fairyOrb 10s ease-out .25s both; }
   .hero-fairy-dust { position: absolute; left: 11%; top: 52%; width: 64px; height: 52px;
     opacity: 0; transform-origin: 50% 50%;
     background:
@@ -408,7 +408,7 @@
       radial-gradient(circle at 88% 58%, #fff 0 1.4px, transparent 2.6px),
       radial-gradient(circle at 51% 51%, #b889ff 0 1.4px, transparent 2.5px);
     filter: drop-shadow(0 0 4px rgba(221,194,255,.95));
-    animation: fairyDust 10s ease-out .7s both; }
+    animation: fairyDust 10s ease-out .25s both; }
   /* One continuous glide to the mark. Every intermediate keyframe restarts
      the easing curve, so a path described by six of them accelerates and
      slows six times and reads as bursts however gentle each one is. There is
@@ -425,7 +425,7 @@
     0%,4%   { opacity: 0; transform: translate(330px,-150px) scale(.04) rotate(-7deg); }
     7%      { opacity: 1; transform: translate(326px,-146px) scale(1.12) rotate(-5deg); }
     10%     { opacity: 1; transform: translate(320px,-140px) scale(.92) rotate(-4.5deg); }
-    46%     { opacity: 1; transform: translate(0,0) scale(1) rotate(0deg); }
+    38%     { opacity: 1; transform: translate(0,0) scale(1) rotate(0deg); }
     /* Three seconds of hovering. Small drift only: she is holding station
        over the word, not still, and not going anywhere either. */
     58%     { opacity: 1; transform: translate(-3px,-8px) scale(1) rotate(-.7deg); }
@@ -735,7 +735,7 @@
      shallow band across the top of the article it only needs the measure of
      the words beneath it, and looks better for being quieter. */
   .post-hero { position: relative; margin: 2px 0 30px;
-    width: 100%; max-width: 680px;
+    width: 100%; max-width: 520px;
     border-radius: var(--r-md); overflow: hidden;
     background: var(--line);
     box-shadow: 0 14px 34px rgba(19,18,23,.18); }

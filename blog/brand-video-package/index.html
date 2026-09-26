@@ -26,7 +26,11 @@
 <meta property="og:title" content="One campaign, every platform: commission it all at once">
 <meta property="og:description" content="A campaign that runs across several platforms works better commissioned as one job. What cohesion actually means, where separate commissions drift, and what you end up with.">
 <meta property="og:url" content="https://catarina.media/blog/brand-video-package/">
-
+<meta property="og:image" content="https://catarina.media/assets/img/blog/one-campaign-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://catarina.media/assets/img/blog/one-campaign-og.jpg">
 <link rel="stylesheet" href="../../assets/site.css?v=blog-hero">
 
 <!-- Google Analytics (GA4), behind consent.
@@ -133,7 +137,6 @@
       </div>
         <span class="brand-tag">Editing &amp; post-production</span>
       </div>
-      <button class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="siteNav" onclick="toggleNav(this)"><span></span><span></span><span></span></button>
       <nav class="main" id="siteNav">
         <a href="../../">Home</a>
         <a href="../../#portfolio">Portfolio</a>
@@ -149,7 +152,12 @@
     <article class="article">
       <div class="article-meta">September 2026</div>
       <h1>One campaign, every platform: commission it all at once</h1>
-      
+      <figure class="post-hero">
+          <img src="../../assets/img/blog/one-campaign-1400.webp"
+               srcset="../../assets/img/blog/one-campaign-640.webp 640w, ../../assets/img/blog/one-campaign-900.webp 900w, ../../assets/img/blog/one-campaign-1400.webp 1400w"
+               sizes="(max-width: 560px) 100vw, 520px"
+               width="1672" height="941" alt="An editing timeline in purple with clips and a waveform, beside film frames and a colour wheel" fetchpriority="high">
+        </figure>
       <p class="lede">A campaign doesn't live in one place any more. The same idea has to work on your
 homepage, in a LinkedIn feed, as a vertical reel, and sometimes as six seconds before a YouTube
 video. Those are different films. The mistake is commissioning them as different jobs.</p>
@@ -261,13 +269,5 @@ I'll tell you what to ask for, and what I'd need to build the whole campaign fro
       </div>
     </div>
   </footer>
-  <script>
-  function toggleNav(b){var n=document.getElementById('siteNav');
-    var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o);}
-  function closeNav(){var n=document.getElementById('siteNav'),b=document.querySelector('.nav-toggle');
-    if(n)n.classList.remove('open'); if(b)b.setAttribute('aria-expanded','false');}
-  document.addEventListener('click',function(e){if(!e.target.closest('header.site'))closeNav();});
-  document.addEventListener('keydown',function(e){if(e.key==='Escape')closeNav();});
-  </script>
 </body>
 </html>
