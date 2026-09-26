@@ -305,7 +305,7 @@
      timeline, then resolves into light. It is decorative and never catches
      clicks, so the hero remains fully usable throughout the entrance. */
   .hero-fairy { position: absolute; z-index: 3;
-    left: calc(50% - 72px); bottom: 36%;
+    left: calc(50% - 72px); bottom: 31%;
     width: clamp(108px, 10.5vw, 158px); aspect-ratio: 3 / 2;
     pointer-events: none; }
   .hero-fairy-figure { position: absolute; inset: 0; opacity: 0;
@@ -322,6 +322,16 @@
     clip-path: polygon(62% 63%,100% 61%,100% 100%,72% 100%);
     transform-origin: 75% 76%; opacity: .94;
     animation: fairyFeetMove .82s ease-in-out infinite alternate; }
+  .hero-fairy-twinkle { position: absolute; z-index: 4; inset: 9% 8% 8% 11%;
+    opacity: 0; mix-blend-mode: screen;
+    background:
+      radial-gradient(circle at 35% 19%, #fff 0 1.5px, transparent 3px),
+      radial-gradient(circle at 57% 35%, #f3ddff 0 1.2px, transparent 2.8px),
+      radial-gradient(circle at 42% 55%, #fff 0 1.4px, transparent 3px),
+      radial-gradient(circle at 67% 68%, #d7b5ff 0 1.3px, transparent 2.8px),
+      radial-gradient(circle at 30% 77%, #fff 0 1px, transparent 2.5px);
+    filter: drop-shadow(0 0 4px rgba(239,220,255,.95));
+    animation: fairyBodyTwinkle 1.05s steps(2,end) infinite; }
   /* Independent translucent wings sit behind the wingless body, so their
      upstroke and downstroke are real movement rather than a whole-character
      wobble. The gradients supply a little internal veining as they turn. */
@@ -388,6 +398,12 @@
     from { transform: translateY(1px) rotate(.8deg); }
     to   { transform: translateY(-1.5px) rotate(-1.2deg); }
   }
+  @keyframes fairyBodyTwinkle {
+    0%,100% { opacity: .18; transform: translate(0,0) scale(.96); }
+    28% { opacity: .82; transform: translate(1px,-1px) scale(1.04); }
+    55% { opacity: .3; transform: translate(-1px,1px) scale(.98); }
+    78% { opacity: .68; transform: translate(0,-1px) scale(1.02); }
+  }
   @keyframes fairyWandPulse {
     from { opacity: .58; transform: scale(.72); }
     to   { opacity: 1; transform: scale(1.18); }
@@ -404,7 +420,7 @@
     100% { opacity: 0; transform: translate(-26px,18px) scale(1.8) rotate(-18deg); }
   }
   @media (max-width: 640px) {
-    .hero-fairy { left: calc(50% - 42px); bottom: 40%; width: 104px; }
+    .hero-fairy { left: calc(50% - 42px); bottom: 35%; width: 104px; }
   }
   @media (prefers-reduced-motion: reduce) { .hero-fairy { display: none; } }
   .btn--ghost-light { background: transparent; color: #fff; border-color: rgba(255,255,255,.55); }
