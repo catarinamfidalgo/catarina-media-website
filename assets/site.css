@@ -207,7 +207,11 @@
   nav.main::-webkit-scrollbar { display: none; }
   nav.main a { position: relative; flex: 0 0 auto;
     color: var(--muted); white-space: nowrap;
-    padding: 7px 11px; border-radius: var(--r-sm);
+    /* Tracking puts a gap after the last letter, inside the pill, so the
+       right inset reads as padding plus that gap. Taking it back off the
+       right makes every pill look even. It only shows on the final item,
+       where there is no neighbour to explain the space. */
+    padding: 7px calc(11px - .13em) 7px 11px; border-radius: var(--r-sm);
     font-size: .68rem; letter-spacing: .13em;
     transition: color .18s ease, background .18s ease; }
   nav.main a:hover, nav.main a:active,
@@ -274,10 +278,8 @@
       box-shadow: none;
       -webkit-backdrop-filter: none; backdrop-filter: none;
       opacity: 1; visibility: visible; transform: none; }
-    /* Pulled left by its own padding so the first name lines up with the
-       C of Catarina rather than sitting 13px inside it. */
     nav.main a { opacity: 1; white-space: nowrap; text-align: center;
-      padding: 8px 13px; border-radius: var(--r-sm);
+      padding: 8px calc(13px - .13em) 8px 13px; border-radius: var(--r-sm);
       font-size: .7rem; letter-spacing: .13em; }
     nav.main.open a, nav.main a { transition-delay: 0s; }
     nav.main a:hover { transform: none; color: var(--accent);
@@ -679,7 +681,11 @@
     border: 1px solid var(--line); border-radius: var(--r-sm); background: var(--surface); color: var(--text);
   }
   .contact-form textarea { min-height: 110px; resize: vertical; }
-  .contact-form button.btn { border: none; cursor: pointer; align-self: flex-start; }
+  /* No border: none here. It outranks .btn:hover on specificity, so the
+     button would lose its edge exactly when the hover needs one, leaving a
+     white shape on a near-white page. .btn already sets the border a
+     <button> needs. */
+  .contact-form button.btn { cursor: pointer; align-self: flex-start; }
   .contact-form .form-note { font-size: .78rem; color: var(--muted); margin: 0; }
 
   footer.site { background: radial-gradient(120% 130% at 78% 15%, rgba(var(--lav-rgb),.20), rgba(27,26,31,0) 55%), linear-gradient(180deg, #26232e 0%, #131217 100%); color: #fff; padding: 72px 0 58px; margin-top: 90px; }
