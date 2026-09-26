@@ -1,6 +1,6 @@
 # catarina.media
 
-Source for [catarina.media](https://catarina.media) — the site for Catarina Fidalgo,
+Source for [catarina.media](https://catarina.media), the site for Catarina Fidalgo,
 video editor and post-production, based in Portugal. Static HTML, no framework,
 served from GitHub Pages.
 
@@ -37,7 +37,7 @@ python3 assets/build_previews.py --force  # redo everything
 ```
 
 Scene detection picks the start point, except where a hand-picked one is listed in
-`OVERRIDES` — it finds cuts, but it cannot tell which moment is worth showing.
+`OVERRIDES`. It finds cuts, but it cannot tell which moment is worth showing.
 
 ## Contact form
 
