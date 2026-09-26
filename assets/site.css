@@ -163,27 +163,6 @@
      links behind a button. Below this the row belongs to the wordmark and the
      menu opens as a panel, as before. */
 
-  /* One sticky row: name on the left, pages pushed to the right, each link a
-     soft pill on hover and for the page you are on. The bar keeps one height
-     the whole way down, so nothing shifts under the cursor as you scroll. */
-  @media (min-width: 720px) {
-    .nav-toggle { display: none; }
-    header.site { flex-direction: row; align-items: center; gap: 28px; }
-    .brand-block { flex-shrink: 0; }
-    nav.main { position: static; flex: 1; flex-direction: row; align-items: center;
-      justify-content: flex-end; width: auto; min-width: 0; padding: 0; gap: 2px;
-      background: none; border: 0; box-shadow: none;
-      -webkit-backdrop-filter: none; backdrop-filter: none;
-      opacity: 1; visibility: visible; transform: none; }
-    nav.main a { opacity: 1; white-space: nowrap; text-align: center;
-      padding: 8px 13px; border-radius: var(--r-sm);
-      font-size: .7rem; letter-spacing: .14em; }
-    nav.main.open a, nav.main a { transition-delay: 0s; }
-    nav.main a:hover { transform: none; color: var(--accent);
-      background: rgba(114,89,196,.10); }
-    nav.main a.active { color: var(--accent); background: rgba(114,89,196,.10); }
-    nav.main a.active::after { display: none; }
-  }
   /* The pages live behind the button rather than all on show. The panel is
      taken out of flow so opening it does not push the page around. */
   /* The panel is sized to its longest item rather than to a fixed width —
@@ -240,6 +219,28 @@
   .nav-toggle[aria-expanded="true"] span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
   .nav-toggle[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
   .nav-toggle[aria-expanded="true"] span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+  /* One sticky row at widths where the name and all seven page links really
+     fit. This comes after the mobile panel rules so the desktop presentation
+     wins the cascade; below 1100px the compact menu remains available. */
+  @media (min-width: 1100px) {
+    .nav-toggle { display: none; }
+    header.site { flex-direction: row; align-items: center; gap: 28px; }
+    .brand-block { flex-shrink: 0; }
+    nav.main { position: static; flex: 1; flex-direction: row; align-items: center;
+      justify-content: flex-end; width: auto; min-width: 0; padding: 0; gap: 2px;
+      background: none; border: 0; box-shadow: none;
+      -webkit-backdrop-filter: none; backdrop-filter: none;
+      opacity: 1; visibility: visible; transform: none; }
+    nav.main a { opacity: 1; white-space: nowrap; text-align: center;
+      padding: 8px 13px; border-radius: var(--r-sm);
+      font-size: .7rem; letter-spacing: .14em; }
+    nav.main.open a, nav.main a { transition-delay: 0s; }
+    nav.main a:hover { transform: none; color: var(--accent);
+      background: rgba(114,89,196,.10); }
+    nav.main a.active { color: var(--accent); background: rgba(114,89,196,.10); }
+    nav.main a.active::after { display: none; }
+  }
 
   .section { padding: 96px 0; }
   .eyebrow { font-family: 'Hanken Grotesk', sans-serif; font-size: .72rem; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; color: var(--accent); margin-bottom: 16px; }
