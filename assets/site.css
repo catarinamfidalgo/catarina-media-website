@@ -369,12 +369,22 @@
       radial-gradient(circle at 51% 51%, #b889ff 0 1.4px, transparent 2.5px);
     filter: drop-shadow(0 0 4px rgba(221,194,255,.95));
     animation: fairyDust 8s ease-out .7s both; }
+  /* A long, gentle glide in, the same character as the crossing on the About
+     page. An earlier pass gave her 78px dives and sharp per-segment easing,
+     which made her look like she was swooping rather than flying calmly. The
+     undulation is now about 12px, the amount the About fairy uses, and the
+     whole path runs on one soft curve so nothing snaps between segments.
+     She keeps drifting once she arrives, because nothing that hovers holds
+     still, but only barely. The last two stops are unchanged: the dissolve is
+     timed against the orb and the dust, which start at 74%. */
   @keyframes fairyVisit {
-    0%   { opacity: 1; transform: translate(360px,-90px) scale(.82) rotate(-6deg); }
-    16%  { opacity: 1; transform: translate(118px,-36px) scale(.92) rotate(-3deg); }
-    30%  { opacity: 1; transform: translate(0,-4px) scale(1) rotate(-1deg); }
-    42%  { opacity: 1; transform: translate(-3px,2px) scale(1) rotate(1deg); }
-    67%  { opacity: 1; transform: translate(0,-2px) scale(1) rotate(0); }
+    0%   { opacity: 1; transform: translate(420px,-70px) scale(.80) rotate(-3.5deg); }
+    14%  { transform: translate(332px,-56px) scale(.85) rotate(-2.4deg); }
+    30%  { transform: translate(226px,-62px) scale(.90) rotate(-1.2deg); }
+    46%  { transform: translate(132px,-40px) scale(.95) rotate(-2deg); }
+    60%  { transform: translate(56px,-30px) scale(.985) rotate(-.6deg); }
+    70%  { transform: translate(6px,-10px) scale(1) rotate(.5deg); }
+    74%  { transform: translate(-2px,-3px) scale(1) rotate(-.4deg); }
     77%  { opacity: 1; transform: translate(-7px,7px) scale(.94) rotate(-2deg); }
     88%,100% { opacity: 0; transform: translate(-18px,16px) scale(.04) rotate(-9deg); }
   }
@@ -433,21 +443,32 @@
   .about-fairy { position: fixed; z-index: 5; left: 0; bottom: clamp(110px, 15vh, 150px);
     width: clamp(116px, 10vw, 154px); aspect-ratio: 3 / 2;
     pointer-events: none;
-    animation: aboutFairyCross 11s cubic-bezier(.25,.48,.42,.92) 1.4s both; }
+    animation: aboutFairyCross 12s linear 1.4s both; }
   .about-fairy-figure { position: absolute; inset: 0; isolation: isolate;
     animation: aboutFairyBob 1.15s ease-in-out infinite alternate; }
   .about-fairy-figure img { position: absolute; z-index: 1; inset: 0;
     width: 100%; height: 100%; object-fit: contain;
     filter: drop-shadow(0 5px 8px rgba(72,48,105,.18)); }
+  /* Right to left, which is the way she is drawn facing. Crossing the other
+     way had her flying backwards. The path undulates rather than sliding
+     flat: a glide loses height, a wingbeat regains it. Each segment carries
+     its own easing so she is quick through the dips and slower over the
+     crests, which is what makes it read as flight rather than a slide. */
   @keyframes aboutFairyCross {
-    0% { opacity: 0; transform: translate3d(-180px,4px,0); }
-    6% { opacity: 1; }
-    92% { opacity: 1; }
-    100% { opacity: 0; transform: translate3d(calc(100vw + 180px),-8px,0); }
+    0%   { opacity: 0; transform: translate3d(calc(100vw + 200px),-6px,0); }
+    5%   { opacity: 1; }
+    22%  { transform: translate3d(74vw,14px,0); animation-timing-function: ease-out; }
+    40%  { transform: translate3d(56vw,-12px,0); animation-timing-function: ease-in; }
+    58%  { transform: translate3d(38vw,11px,0); animation-timing-function: ease-out; }
+    76%  { transform: translate3d(20vw,-9px,0); animation-timing-function: ease-in; }
+    93%  { opacity: 1; }
+    100% { opacity: 0; transform: translate3d(-200px,6px,0); }
   }
+  /* Banks as well as rises, so the wingbeat tilts her rather than lifting
+     her straight up like a lift. */
   @keyframes aboutFairyBob {
-    from { transform: translateY(3px) rotate(.8deg); }
-    to { transform: translateY(-5px) rotate(-1deg); }
+    from { transform: translateY(4px) rotate(1.4deg); }
+    to   { transform: translateY(-6px) rotate(-1.8deg); }
   }
   @media (max-width: 640px) { .about-fairy { bottom: 90px; width: 112px; } }
   .about-photo { flex: 0 0 210px; width: 210px; height: 210px; border-radius: 50%; overflow: hidden; box-shadow: 0 22px 48px rgba(19,18,23,.34), 0 4px 12px rgba(19,18,23,.18); }
