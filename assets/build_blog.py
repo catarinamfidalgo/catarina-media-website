@@ -32,9 +32,6 @@ NAV = {
 POSTS = [
     {
         "slug": "brand-video-package",
-        "image": "one-campaign",
-        "image_alt": "A purple editing timeline with clips, a waveform and a colour wheel, "
-                     "and a fairy touching a wand to the playhead",
         "date": "2026-09-24",
         "date_label": "September 2026",
         "title": "One campaign, every platform: commission it all at once",
