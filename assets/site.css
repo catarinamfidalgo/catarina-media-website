@@ -555,12 +555,11 @@
      weight. 10px read as two separate things stacked rather than one
      label belonging to one title. */
   .cats { display: flex; flex-wrap: wrap; gap: 4px; margin-bottom: 5px; }
-  .project-card .cat { align-self: flex-start; background: var(--accent); color: #fff; font-size: .62rem; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; padding: .46em .8em .46em 0; }
-  /* No left padding, so the block and its first letter start at the same
-     place, and both line up with the title underneath. With padding there the
-     two are always separated by exactly that much: the box can sit above the
-     title or the letters can, never both. The space lost on the left is added
-     to the right so the pill does not read as lopsided. */
+  .project-card .cat { align-self: flex-start; background: var(--accent); color: #fff; font-size: .62rem; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; padding: .52em .9em; }
+  /* Even padding, and the box edge is what lines up with the title. Zeroing
+     the left inset did make the letters line up too, but it put them hard
+     against the purple edge, which looks like a bug rather than a decision.
+     The box is the thing the eye tracks down the column anyway. */
   .project-card .title { color: #fff; font-weight: 800; font-size: 1.32rem; letter-spacing: -.01em; line-height: 1.05; margin: 0; }
   .project-card .view { margin-top: 12px; color: #fff; font-size: .62rem; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; opacity: 0; transform: translateY(6px); transition: opacity .2s ease, transform .2s ease; }
   .project-card:hover .view { opacity: .9; transform: translateY(0); }
@@ -798,7 +797,7 @@
 
     .project-card .title { font-size: 1.12rem; }
     .project-card .overlay { padding: 16px; }
-    .cat { font-size: .54rem; padding: .45em .7em .45em 0; }
+    .cat { font-size: .54rem; padding: .5em .78em; }
 
     /* the modal took the container's desktop padding into a 390pt screen */
     .modal-overlay { padding: 0; }
