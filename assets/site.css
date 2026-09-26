@@ -147,7 +147,13 @@
     text-indent: .1055em;
     text-transform: uppercase; color: var(--muted); line-height: 1; }
   /* Below this the name and the menu button need the whole row. */
-  @media (max-width: 719px) { .brand-tag { display: none; } }
+  /* It was hidden on a phone when it had to share a line with the name.
+     The masthead is stacked now, so it has a line of its own and the room
+     for it. It is the only thing on the page that says what she does. */
+  @media (max-width: 719px) {
+    .brand-block { display: flex; flex-direction: column; align-items: flex-start; gap: 3px; }
+    .brand-tag { display: block; font-size: .6rem; letter-spacing: .13em; }
+  }
   /* The masthead follows you down the page, so every page remains one click
      away. Sticky belongs on the container rather than the header itself:
      the header's old parent was only as tall as the header, which constrained
@@ -688,7 +694,7 @@
 
   /* ---------- Phone ---------- */
   @media (max-width: 640px) {
-    :root { --gutter: 20px; }
+    :root { --gutter: 26px; }
     .section { padding-top: 56px; padding-bottom: 56px; }
     .services { padding-top: 52px; padding-bottom: 52px; }
     /* svh accounts for the browser's collapsing address bar; vh does not */
@@ -811,7 +817,7 @@
   }
 
   @media (max-width: 400px) {
-    :root { --gutter: 16px; }
+    :root { --gutter: 22px; }
     .hero-title { font-size: clamp(2.3rem, 11.5vw, 7.4rem); }
     .brand { font-size: 1.1rem; }
     .lang-switch { font-size: .62rem; gap: 8px; }
