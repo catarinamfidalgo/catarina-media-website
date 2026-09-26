@@ -314,7 +314,7 @@
      --lav-bright, and lifting it reads as lighter without adding a colour
      the palette does not have. Same 8s clock and same delay as the flight,
      so it lights as she arrives and fades as she goes. */
-  .hero-edit { animation: editGlow 10s ease-in-out .25s both; }
+  .hero-edit { animation: editGlow 4.4s ease-in-out .25s forwards; }
   /* The word only lifts a little now. The dust is the effect; a strong halo
      on the text competed with the motes and washed them out. */
   /* Light purple, no white. White lit the word well but read as a spotlight
@@ -326,27 +326,25 @@
      fairy hovering above picks the light up off. Spread it wider and it stops
      being a glow and becomes a lamp pointed at the text, which is what the
      earlier version did. */
+  /* Rises as she arrives and holds. It used to fade out with her; she does
+     not leave now, so neither does her light. It settles a little below the
+     peak so it reads as steady rather than as something still happening. */
   @keyframes editGlow {
-    0%,33%   { filter: brightness(1); text-shadow: none; }
-    44%      { filter: brightness(1.34);
-               text-shadow: 0 0 5px rgba(255,255,255,.3),
-                            0 0 14px rgba(var(--lav-rgb),.74),
-                            0 0 38px rgba(var(--lav-rgb),.42); }
-    66%      { filter: brightness(1.48);
+    0%,30%   { filter: brightness(1); text-shadow: none; }
+    62%      { filter: brightness(1.48);
                text-shadow: 0 0 7px rgba(255,255,255,.44),
                             0 0 19px rgba(var(--lav-rgb),.88),
                             0 0 54px rgba(var(--lav-rgb),.52); }
-    80%      { filter: brightness(1.4);
-               text-shadow: 0 0 6px rgba(255,255,255,.34),
-                            0 0 16px rgba(var(--lav-rgb),.78),
-                            0 0 45px rgba(var(--lav-rgb),.46); }
-    93%,100% { filter: brightness(1); text-shadow: none; }
+    100%     { filter: brightness(1.34);
+               text-shadow: 0 0 5px rgba(255,255,255,.3),
+                            0 0 15px rgba(var(--lav-rgb),.76),
+                            0 0 42px rgba(var(--lav-rgb),.44); }
   }
 
 
   .hero-fairy-figure { position: absolute; inset: 0; opacity: 0;
     transform-origin: 28% 72%;
-    animation: fairyVisit 10s cubic-bezier(.16,.62,.24,1) .25s both; }
+    animation: fairyVisit 3.8s cubic-bezier(.16,.62,.24,1) .25s both; }
   .hero-fairy-figure img { position: absolute; inset: 0; width: 100%; height: 100%;
     object-fit: contain; }
   .hero-fairy-main { animation: fairyInnerGlow 1.15s ease-in-out infinite alternate; }
@@ -398,7 +396,7 @@
     border-radius: 50%; opacity: 0;
     background: radial-gradient(circle, #fff 0 16%, #f2dcff 26%, #bd8cff 52%, rgba(114,89,196,0) 74%);
     box-shadow: 0 0 13px 4px rgba(242,220,255,.92), 0 0 30px 12px rgba(169,139,239,.58);
-    animation: fairyOrb 10s ease-out .25s both; }
+    animation: fairyOrb 3.8s ease-out .25s both; }
   .hero-fairy-dust { position: absolute; left: 11%; top: 52%; width: 64px; height: 52px;
     opacity: 0; transform-origin: 50% 50%;
     background:
@@ -409,7 +407,7 @@
       radial-gradient(circle at 88% 58%, #fff 0 1.4px, transparent 2.6px),
       radial-gradient(circle at 51% 51%, #b889ff 0 1.4px, transparent 2.5px);
     filter: drop-shadow(0 0 4px rgba(221,194,255,.95));
-    animation: fairyDust 10s ease-out .25s both; }
+    animation: fairyDust 3.8s ease-out .25s both; }
   /* One continuous glide to the mark. Every intermediate keyframe restarts
      the easing curve, so a path described by six of them accelerates and
      slows six times and reads as bursts however gentle each one is. There is
@@ -422,18 +420,16 @@
      they read as a pop rather than a fade. The long middle is a single stop:
      every extra keyframe restarts the easing, which is what made an earlier
      version travel in bursts. */
+  /* The arrival, and nothing after it. She used to shrink away at 90%; now
+     the entrance simply ends where she lands and holds, and the breathing is
+     handled by a separate loop on the container. Two elements, because two
+     transform animations on one element do not compose: the later one wins
+     and the entrance would be thrown away the moment the drift started. */
   @keyframes fairyVisit {
-    0%,4%   { opacity: 0; transform: translate(330px,-150px) scale(.04) rotate(-7deg); }
-    7%      { opacity: 1; transform: translate(326px,-146px) scale(1.12) rotate(-5deg); }
-    10%     { opacity: 1; transform: translate(320px,-140px) scale(.92) rotate(-4.5deg); }
-    38%     { opacity: 1; transform: translate(0,0) scale(1) rotate(0deg); }
-    /* Three seconds of hovering. Small drift only: she is holding station
-       over the word, not still, and not going anywhere either. */
-    58%     { opacity: 1; transform: translate(-3px,-8px) scale(1) rotate(-.7deg); }
-    70%     { opacity: 1; transform: translate(2px,-2px) scale(1) rotate(.5deg); }
-    82%     { opacity: 1; transform: translate(-2px,-7px) scale(1) rotate(-.5deg); }
-    87%     { opacity: 1; transform: translate(-3px,-11px) scale(1.09) rotate(-1deg); }
-    90%,100% { opacity: 0; transform: translate(-5px,-4px) scale(.04) rotate(-4deg); }
+    0%,11%  { opacity: 0; transform: translate(330px,-150px) scale(.04) rotate(-7deg); }
+    19%     { opacity: 1; transform: translate(326px,-146px) scale(1.12) rotate(-5deg); }
+    27%     { opacity: 1; transform: translate(320px,-140px) scale(.92) rotate(-4.5deg); }
+    100%    { opacity: 1; transform: translate(0,0) scale(1) rotate(0deg); }
   }
   @keyframes fairyWingUpper {
     from { transform: rotate(-32deg) scaleY(1); opacity: .88; }
@@ -466,19 +462,17 @@
      most of why the vanish felt like a fade. */
   /* Fires at both ends: the burst she arrives out of and the one she leaves
      in. It is the flash that sells a pop; the figure alone just shrinks. */
+  /* The flash she arrives out of, and nothing else. The second burst marked
+     a departure that no longer happens. */
   @keyframes fairyOrb {
-    0%,3%   { opacity: 0; transform: translate(324px,-144px) scale(.1); }
-    7%      { opacity: 1; transform: translate(324px,-144px) scale(1.5); }
-    13%,84% { opacity: 0; transform: translate(324px,-144px) scale(2.1); }
-    85%     { opacity: 0; transform: translate(0,0) scale(.15); }
-    88%     { opacity: 1; transform: translate(0,0) scale(.85); }
-    92%     { opacity: .9; transform: translate(0,0) scale(1.8); }
-    96%,100% { opacity: 0; transform: translate(0,0) scale(2.5); filter: blur(3px); }
+    0%,8%    { opacity: 0; transform: translate(324px,-144px) scale(.1); }
+    19%      { opacity: 1; transform: translate(324px,-144px) scale(1.5); }
+    34%,100% { opacity: 0; transform: translate(324px,-144px) scale(2.1); }
   }
   @keyframes fairyDust {
-    0%,85% { opacity: 0; transform: translate(10px,-5px) scale(.45) rotate(0); }
-    89% { opacity: 1; transform: translate(0,0) scale(1.05) rotate(10deg); }
-    97%,100% { opacity: 0; transform: translate(-26px,18px) scale(1.9) rotate(-18deg); }
+    0%,14%   { opacity: 0; transform: translate(10px,-5px) scale(.45) rotate(0); }
+    26%      { opacity: .9; transform: translate(0,0) scale(1.05) rotate(10deg); }
+    52%,100% { opacity: 0; transform: translate(-26px,18px) scale(1.9) rotate(-18deg); }
   }
   @media (max-width: 640px) {
     .hero-fairy { width: 84px; bottom: 86%; }
