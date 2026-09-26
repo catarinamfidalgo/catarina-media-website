@@ -146,12 +146,13 @@
     top: 50%; transform: translateY(-50%);
     width: 1px; height: var(--tag-rule); background: var(--line); }
   /* Below this the name and the menu button need the whole row. */
-  @media (max-width: 860px) { .brand-tag { display: none; } }
-  /* The masthead follows you down the page, so changing section never means
-     scrolling back to the top. The background is painted by a pseudo-element
-     stretched past the container, because the header sits inside a 1000px
-     column and a sticky bar has to reach both edges of the window. */
-  header.site { position: sticky; top: 0; z-index: 90; }
+  @media (max-width: 719px) { .brand-tag { display: none; } }
+  /* The masthead follows you down the page, so every page remains one click
+     away. Sticky belongs on the container rather than the header itself:
+     the header's old parent was only as tall as the header, which constrained
+     it and allowed the whole navigation to scroll away. */
+  .lang-bar + .container { position: sticky; top: 0; z-index: 90; }
+  header.site { position: relative; }
   header.site::before { content: ""; position: absolute; inset: 0 -50vw; z-index: -1;
     background: var(--panel-solid);
     -webkit-backdrop-filter: blur(16px) saturate(1.5);
@@ -162,38 +163,6 @@
      links behind a button. Below this the row belongs to the wordmark and the
      menu opens as a panel, as before. */
 
-  /* Two rows: the name on its own line, the pages on a second beneath it,
-     divided by a hairline. Pushed to one row the wordmark and six links fight
-     for the same 1000px and the names end up small and crowded against the
-     right edge. Given a line each, the name reads as a masthead and the pages
-     as navigation, which is the arrangement editorial sites settle on.
-     Both rows are inside the sticky element, so the whole block follows you
-     down and the pages stay reachable from anywhere on the page. */
-  @media (min-width: 720px) {
-    .nav-toggle { display: none; }
-    header.site { flex-direction: column; align-items: stretch;
-      gap: 0; padding: 26px 0 0; }
-    .brand-block { flex-shrink: 0; }
-    nav.main { position: static; flex-direction: row; align-items: center;
-      justify-content: flex-start; width: auto; min-width: 0; gap: 4px;
-      margin-top: 17px; padding: 11px 0 13px;
-      border-top: 1px solid var(--line);
-      background: none; border-left: 0; border-right: 0; border-bottom: 0;
-      box-shadow: none;
-      -webkit-backdrop-filter: none; backdrop-filter: none;
-      opacity: 1; visibility: visible; transform: none; }
-    /* Pulled left by its own padding so the first name lines up with the
-       C of Catarina rather than sitting 13px inside it. */
-    nav.main a:first-child { margin-left: -13px; }
-    nav.main a { opacity: 1; white-space: nowrap; text-align: center;
-      padding: 8px 13px; border-radius: var(--r-sm);
-      font-size: .715rem; letter-spacing: .15em; }
-    nav.main.open a, nav.main a { transition-delay: 0s; }
-    nav.main a:hover { transform: none; color: var(--accent);
-      background: rgba(114,89,196,.10); }
-    nav.main a.active { color: var(--accent); background: rgba(114,89,196,.10); }
-    nav.main a.active::after { display: none; }
-  }
   /* The pages live behind the button rather than all on show. The panel is
      taken out of flow so opening it does not push the page around. */
   /* The panel is sized to its longest item rather than to a fixed width —
@@ -250,6 +219,38 @@
   .nav-toggle[aria-expanded="true"] span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
   .nav-toggle[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
   .nav-toggle[aria-expanded="true"] span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+  /* Two rows: the name on its own line, the pages on a second beneath it,
+     divided by a hairline. On one row the wordmark, the descriptor and six
+     links fight for the same 1000px, which is what forced the descriptor to
+     be hidden. Given a line each they all fit at every desktop width, and
+     the masthead reads the way an editorial one does: identity, then index.
+     Both rows sit inside the sticky container, so the whole block travels. */
+  @media (min-width: 720px) {
+    .nav-toggle { display: none; }
+    header.site { flex-direction: column; align-items: stretch;
+      gap: 0; padding: 26px 0 0; }
+    .brand-block { flex-shrink: 0; }
+    nav.main { position: static; flex-direction: row; align-items: center;
+      justify-content: flex-start; width: auto; min-width: 0; gap: 4px;
+      margin-top: 17px; padding: 11px 0 13px;
+      border-top: 1px solid var(--line);
+      background: none; border-left: 0; border-right: 0; border-bottom: 0;
+      box-shadow: none;
+      -webkit-backdrop-filter: none; backdrop-filter: none;
+      opacity: 1; visibility: visible; transform: none; }
+    /* Pulled left by its own padding so the first name lines up with the
+       C of Catarina rather than sitting 13px inside it. */
+    nav.main a:first-child { margin-left: -13px; }
+    nav.main a { opacity: 1; white-space: nowrap; text-align: center;
+      padding: 8px 13px; border-radius: var(--r-sm);
+      font-size: .715rem; letter-spacing: .15em; }
+    nav.main.open a, nav.main a { transition-delay: 0s; }
+    nav.main a:hover { transform: none; color: var(--accent);
+      background: rgba(114,89,196,.10); }
+    nav.main a.active { color: var(--accent); background: rgba(114,89,196,.10); }
+    nav.main a.active::after { display: none; }
+  }
 
   .section { padding: 96px 0; }
   .eyebrow { font-family: 'Hanken Grotesk', sans-serif; font-size: .72rem; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; color: var(--accent); margin-bottom: 16px; }
@@ -420,9 +421,13 @@
 
   footer.site { background: radial-gradient(120% 130% at 78% 15%, rgba(169,139,239,.20), rgba(27,26,31,0) 55%), linear-gradient(180deg, #26232e 0%, #131217 100%); color: #fff; padding: 72px 0 58px; margin-top: 90px; }
   footer.site .container { display: flex; justify-content: space-between; align-items: flex-start; gap: 30px; flex-wrap: wrap; font-size: .86rem; color: #fff; }
+  .foot-brand { display: flex; flex-direction: column; align-items: flex-start; }
   .foot-logo { font-size: 1.15rem; font-weight: 800; text-transform: uppercase; letter-spacing: .01em; line-height: 1.1; }
   .foot-logo i { font-style: normal; color: var(--lav-bright); }
   .foot-tag { text-transform: uppercase; letter-spacing: .18em; font-size: .72rem; margin-top: 3px; color: rgba(255,255,255,.85); }
+  .foot-service { margin-top: 9px; color: rgba(255,255,255,.55);
+    font-size: .62rem; font-weight: 600; letter-spacing: .14em;
+    line-height: 1.35; text-transform: uppercase; }
   footer.site .copy { color: rgba(255,255,255,.65); margin-top: 22px; font-size: .78rem; }
   .foot-cta { display: flex; flex-direction: column; align-items: flex-end; gap: 16px; }
   footer.site .socials { font-size: .78rem; letter-spacing: .08em; }
@@ -514,7 +519,10 @@
 
 
   /* ---------- Phone: nothing clipped, nothing overflowing ---------- */
-  html, body { overflow-x: hidden; }            /* last-resort guard */
+  /* `hidden` creates a scroll container and silently disables sticky
+     descendants. `clip` provides the same horizontal guard without changing
+     which element owns vertical scrolling. */
+  html, body { overflow-x: clip; }
   img, video, iframe { max-width: 100%; }
 
   /* long client names, tags and industry labels must wrap rather than
