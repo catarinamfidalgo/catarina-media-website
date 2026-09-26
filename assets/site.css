@@ -309,7 +309,8 @@
   .hero-fairy { position: absolute; display: block; z-index: 3;
     left: 0; right: 0; margin: 0 auto; bottom: 82%;
     width: clamp(96px, 9vw, 132px); aspect-ratio: 3 / 2;
-    pointer-events: none; }
+    pointer-events: none;
+    animation: fairyHover 7.5s ease-in-out 4.05s infinite; }
   /* Brightness and a bloom rather than a third purple: the word is already
      --lav-bright, and lifting it reads as lighter without adding a colour
      the palette does not have. Same 8s clock and same delay as the flight,
@@ -425,6 +426,18 @@
      handled by a separate loop on the container. Two elements, because two
      transform animations on one element do not compose: the later one wins
      and the entrance would be thrown away the moment the drift started. */
+  /* Holding station once she lands: a slow rise and fall with a little roll,
+     beginning and ending at nothing so the loop closes on itself. It runs on
+     the container, not the figure, so it adds to the landing rather than
+     replacing it. Seven and a half seconds against a quarter-second wingbeat,
+     which is what stops the two reading as one motion. */
+  @keyframes fairyHover {
+    0%   { transform: translate(0,0) rotate(0deg); }
+    24%  { transform: translate(-3px,-8px) rotate(-.9deg); }
+    50%  { transform: translate(2px,-2px) rotate(.7deg); }
+    76%  { transform: translate(-2px,-7px) rotate(-.6deg); }
+    100% { transform: translate(0,0) rotate(0deg); }
+  }
   @keyframes fairyVisit {
     0%,11%  { opacity: 0; transform: translate(330px,-150px) scale(.04) rotate(-7deg); }
     19%     { opacity: 1; transform: translate(326px,-146px) scale(1.12) rotate(-5deg); }
