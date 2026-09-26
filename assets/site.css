@@ -300,6 +300,57 @@
   .hero-title { font-size: clamp(3rem,9.5vw,7.4rem); font-weight: 900; line-height: .9; letter-spacing: -.025em; text-transform: uppercase; margin: 0 0 30px; color: #fff; }
   .hero-title span { color: var(--lav-bright); }
   .hero-reed .btn-row { justify-content: flex-start; }
+
+  /* A small guide appears once above the hero title, points into the editing
+     timeline, then resolves into light. It is decorative and never catches
+     clicks, so the hero remains fully usable throughout the entrance. */
+  .hero-fairy { position: absolute; z-index: 3;
+    left: max(var(--gutter), calc(50% - 500px + 155px)); bottom: 43%;
+    width: clamp(108px, 10.5vw, 158px); aspect-ratio: 3 / 2;
+    pointer-events: none; }
+  .hero-fairy img { position: absolute; inset: 0; width: 100%; height: 100%;
+    object-fit: contain; opacity: 0; transform-origin: 28% 72%;
+    animation: fairyVisit 6.2s cubic-bezier(.22,.72,.25,1) .7s both; }
+  .hero-fairy-orb { position: absolute; left: 23%; top: 67%; width: 18px; height: 18px;
+    border-radius: 50%; opacity: 0;
+    background: radial-gradient(circle, #fff 0 16%, #f2dcff 26%, #bd8cff 52%, rgba(114,89,196,0) 74%);
+    box-shadow: 0 0 13px 4px rgba(242,220,255,.92), 0 0 30px 12px rgba(169,139,239,.58);
+    animation: fairyOrb 6.2s ease-out .7s both; }
+  .hero-fairy-dust { position: absolute; left: 11%; top: 52%; width: 64px; height: 52px;
+    opacity: 0; transform-origin: 50% 50%;
+    background:
+      radial-gradient(circle at 18% 66%, #fff 0 2px, transparent 3px),
+      radial-gradient(circle at 39% 31%, #dec4ff 0 1.8px, transparent 3px),
+      radial-gradient(circle at 58% 72%, #fff 0 1.5px, transparent 2.8px),
+      radial-gradient(circle at 77% 28%, #c69cff 0 2px, transparent 3.2px),
+      radial-gradient(circle at 88% 58%, #fff 0 1.4px, transparent 2.6px),
+      radial-gradient(circle at 51% 51%, #b889ff 0 1.4px, transparent 2.5px);
+    filter: drop-shadow(0 0 4px rgba(221,194,255,.95));
+    animation: fairyDust 6.2s ease-out .7s both; }
+  @keyframes fairyVisit {
+    0%   { opacity: 0; transform: translate(34px,-22px) scale(.78) rotate(4deg); }
+    14%  { opacity: 1; transform: translate(0,0) scale(1) rotate(0); }
+    25%  { opacity: 1; transform: translate(0,-4px) scale(1) rotate(-1deg); }
+    42%  { opacity: 1; transform: translate(-3px,2px) scale(1) rotate(1deg); }
+    57%  { opacity: 1; transform: translate(0,-2px) scale(1) rotate(0); }
+    68%  { opacity: 1; transform: translate(-7px,7px) scale(.94) rotate(-2deg); }
+    77%,100% { opacity: 0; transform: translate(-18px,16px) scale(.04) rotate(-9deg); }
+  }
+  @keyframes fairyOrb {
+    0%,64% { opacity: 0; transform: scale(.15); }
+    75% { opacity: 1; transform: scale(.6); }
+    84% { opacity: .95; transform: scale(1.35); }
+    100% { opacity: 0; transform: scale(2.15); filter: blur(2px); }
+  }
+  @keyframes fairyDust {
+    0%,67% { opacity: 0; transform: translate(10px,-5px) scale(.45) rotate(0); }
+    78% { opacity: 1; transform: translate(0,0) scale(1) rotate(10deg); }
+    100% { opacity: 0; transform: translate(-26px,18px) scale(1.8) rotate(-18deg); }
+  }
+  @media (max-width: 640px) {
+    .hero-fairy { left: calc(var(--gutter) + 78px); bottom: 48%; width: 104px; }
+  }
+  @media (prefers-reduced-motion: reduce) { .hero-fairy { display: none; } }
   .btn--ghost-light { background: transparent; color: #fff; border-color: rgba(255,255,255,.55); }
   .btn--ghost-light:hover { background: #fff; color: var(--ink); border-color: #fff; }
   .scroll-cue { position: absolute; right: 38px; bottom: 9vh; z-index: 3; writing-mode: vertical-rl; text-orientation: mixed; text-transform: uppercase; letter-spacing: .18em; font-size: .68rem; font-weight: 700; color: rgba(255,255,255,.7); display: inline-flex; align-items: center; gap: 16px; }
