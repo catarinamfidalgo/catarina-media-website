@@ -31,7 +31,7 @@
 <meta name="twitter:description" content="Video editor and post-production, based in Portugal. Commercials, brand films, YouTube, social and corporate video for brands and agencies.">
 <meta name="twitter:image" content="https://catarina.media/assets/img/catarina-portrait.jpg">
 
-<link rel="stylesheet" href="assets/site.css?v=card-labels">
+<link rel="stylesheet" href="assets/site.css?v=media-aspect">
 
 <!-- Google Analytics (GA4), behind consent.
      Analytics sets a cookie, so under EU law it may not run until the visitor
@@ -506,6 +506,23 @@
     const v = document.getElementById('modalVideo');
     const yt = document.getElementById('modalEmbed');
     const empty = document.getElementById('modalMediaEmpty');
+
+    // Shape the box to the clip rather than the clip to the box. Fetched once,
+    // on the first project opened, since most visitors never open one and the
+    // file is only needed the moment a video is about to play.
+    const box = document.querySelector('.modal-media');
+    const key = (m.video || '').split('/').pop();
+    const setAR = function (r) { box.style.setProperty('--media-ar', r || 1.6); };
+    if (window.__aspects) {
+      setAR(window.__aspects[key]);
+    } else {
+      setAR(null);
+      fetch('/assets/aspect.json')
+        .then(function (r) { return r.json(); })
+        .then(function (j) { window.__aspects = j; setAR(j[key]); })
+        .catch(function () { /* leave the default */ });
+    }
+
     // A YouTube id wins over a local file; either wins over the placeholder.
     if (m.yt) {
       v.pause();
