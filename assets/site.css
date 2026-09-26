@@ -170,29 +170,39 @@
      at 230px half of it was empty, which is what made it read as a plain
      box. Frosted rather than opaque so the portfolio grid behind stays
      present instead of being stamped over. */
-  nav.main { position: absolute; top: calc(100% + 8px); right: 0; z-index: 60;
-    display: flex; flex-direction: column; align-items: stretch; gap: 1px;
-    width: max-content; min-width: 168px; padding: 8px; line-height: 1.5;
-    font-size: .72rem; font-weight: 700; letter-spacing: .16em; text-transform: uppercase;
-    background: var(--panel);
-    -webkit-backdrop-filter: blur(16px) saturate(1.5);
-    backdrop-filter: blur(16px) saturate(1.5);
-    border: 1px solid rgba(27,26,31,.08); border-radius: 12px;
-    box-shadow: 0 20px 48px rgba(19,18,23,.18), 0 2px 8px rgba(19,18,23,.07);
-    opacity: 0; visibility: hidden; transform: translateY(-8px) scale(.985);
-    transform-origin: top right;
+  /* A sheet across the width of the screen, not a card floating in the
+     corner. Everything else on this site is set flush left in a single
+     column, and a right-aligned box hanging off the menu button was the one
+     element arguing with that. It also gives each page a full-width target
+     instead of a short one at the far edge, which matters more on a phone
+     than anywhere else. */
+  nav.main { position: absolute; top: 100%; left: 0; right: 0; z-index: 60;
+    display: flex; flex-direction: column; align-items: stretch; gap: 2px;
+    width: auto; padding: 10px max(var(--gutter), env(safe-area-inset-left)) 16px;
+    line-height: 1.5;
+    font-size: .8rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase;
+    background: var(--panel-solid);
+    -webkit-backdrop-filter: blur(18px) saturate(1.5);
+    backdrop-filter: blur(18px) saturate(1.5);
+    border: 0; border-bottom: 1px solid var(--line); border-radius: 0;
+    box-shadow: 0 22px 44px rgba(19,18,23,.16);
+    opacity: 0; visibility: hidden; transform: translateY(-10px);
+    transform-origin: top center;
     transition: opacity .2s cubic-bezier(.2,.7,.3,1), transform .2s cubic-bezier(.2,.7,.3,1), visibility .2s; }
-  nav.main.open { opacity: 1; visibility: visible; transform: translateY(0) scale(1); }
+  nav.main.open { opacity: 1; visibility: visible; transform: translateY(0); }
 
-  nav.main a { position: relative; color: var(--muted); padding: 10px 14px; text-align: right;
-    border-radius: 7px; white-space: nowrap;
-    transition: color .18s ease, background .18s ease, transform .22s cubic-bezier(.2,.7,.3,1); }
-  nav.main a:hover { color: var(--text); background: var(--tint-2); transform: translateX(-3px); }
-  nav.main a.active { color: var(--accent); }
-  /* The current page carries a short accent rule rather than a filled block —
-     it marks position without competing with the item you are hovering. */
-  nav.main a.active::after { content: ""; position: absolute; right: 14px; bottom: 5px;
-    width: 14px; height: 1.5px; background: var(--accent); border-radius: 2px; }
+  /* 48px tall, which is the smallest target a thumb hits reliably, and left
+     aligned with the wordmark above it. */
+  nav.main a { position: relative; color: var(--text); padding: 14px 12px; text-align: left;
+    min-height: 48px; display: flex; align-items: center;
+    border-radius: var(--r-sm); white-space: nowrap;
+    transition: color .18s ease, background .18s ease; }
+  nav.main a:hover, nav.main a:active { color: var(--accent); background: var(--tint-2); }
+  nav.main a.active { color: var(--accent); background: var(--tint-2); }
+  /* The current page carries a short accent rule rather than a filled block,
+     so it marks position without competing with whatever is being touched. */
+  nav.main a.active::after { content: ""; position: absolute; left: 12px; bottom: 9px;
+    width: 16px; height: 2px; background: var(--accent); border-radius: 2px; }
 
   /* The items settle in just behind the panel, which reads as one movement
      rather than a box appearing all at once. */
@@ -208,8 +218,7 @@
   nav.main.open a:nth-child(7) { transition-delay: .22s; }
   @media (prefers-reduced-motion: reduce) {
     nav.main, nav.main a, nav.main.open a { transition-duration: .01ms; transition-delay: 0s; }
-    nav.main a:hover { transform: none; }
-  }
+    }
   .btn { display: inline-block; padding: .95em 1.7em; border-radius: 999px; font-weight: 700; font-size: .78rem; text-transform: uppercase; letter-spacing: .12em; background: var(--accent); color: var(--onaccent); border: 1px solid var(--accent); transition: background .15s ease, color .15s ease; }
   .btn:hover { background: var(--text); border-color: var(--text); }
   .btn--ghost { background: transparent; color: var(--accent); }
@@ -254,7 +263,11 @@
     nav.main a.active::after { display: none; }
   }
 
-  .section { padding: 96px 0; }
+  /* Vertical only. The shorthand also sets left and right, and because this
+     sits on the same element as .container and comes later in the file, it
+     was resetting the gutter to zero. Above 1000px the max-width hid that;
+     below it, every heading and paragraph sat hard against the screen edge. */
+  .section { padding-top: 96px; padding-bottom: 96px; }
   .eyebrow { font-family: 'Hanken Grotesk', sans-serif; font-size: .72rem; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; color: var(--accent); margin-bottom: 16px; }
   h1 { font-family: 'Hanken Grotesk', sans-serif; font-style: normal; font-weight: 800; text-transform: uppercase; line-height: .98; margin: 0 0 18px; font-size: clamp(2.4rem,5.5vw,4rem); letter-spacing: -.02em; }
   h2 { font-family: 'Hanken Grotesk', sans-serif; font-weight: 800; text-transform: uppercase; line-height: 1; margin: 0 0 18px; font-size: clamp(1.8rem,4vw,2.7rem); letter-spacing: -.015em; }
@@ -561,7 +574,7 @@
   .agency-card .t { font-weight:700;margin-bottom:6px; }
   .agency-card .d { font-size: .86rem;color:var(--muted); }
 
-  .services { padding: 90px 0; }
+  .services { padding-top: 90px; padding-bottom: 90px; }
   /* Boxed, matching the agency cards: the same three-up grid, the same
      border and radius. Services kept their numbering, which reads better
      inside a card than floating above bare text. */
@@ -653,8 +666,7 @@
 
   @media (max-width: 720px) {
     header.site { flex-wrap: wrap; }
-    nav.main { right: 0; min-width: 160px; padding: 7px; }
-    nav.main a { font-size: .76rem; padding: 11px 14px; }
+    nav.main a { font-size: .78rem; }
   }
 
   .filter-bar { display: flex; flex-wrap: wrap; gap: 8px; margin: 8px 0 4px; }
@@ -669,16 +681,16 @@
 
   /* ---------- Tablet ---------- */
   @media (max-width: 1024px) {
-    .section { padding: 72px 0; }
-    .services { padding: 68px 0; }
+    .section { padding-top: 72px; padding-bottom: 72px; }
+    .services { padding-top: 68px; padding-bottom: 68px; }
     .hero-reed { min-height: 72vh; }
   }
 
   /* ---------- Phone ---------- */
   @media (max-width: 640px) {
     :root { --gutter: 20px; }
-    .section { padding: 56px 0; }
-    .services { padding: 52px 0; }
+    .section { padding-top: 56px; padding-bottom: 56px; }
+    .services { padding-top: 52px; padding-bottom: 52px; }
     /* svh accounts for the browser's collapsing address bar; vh does not */
     .hero-reed { min-height: 78svh; }
     .hero-reed-inner { padding-bottom: 10vh; }
