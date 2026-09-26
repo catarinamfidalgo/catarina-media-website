@@ -38,6 +38,14 @@ def person():
                         "Commercials, brand films, YouTube, social and corporate "
                         "video, in English, Portuguese and Spanish."),
         "address": {"@type": "PostalAddress", "addressCountry": "PT"},
+        # There is another Catarina Fidalgo working in design in Portugal.
+        # sameAs is how the two are told apart: it states which accounts
+        # belong to this person, so the profiles and the site resolve to one
+        # entity rather than to a name that several people share.
+        "sameAs": [
+            "https://www.youtube.com/@catarinamedia",
+            "https://www.instagram.com/catarina.media/",
+        ],
         "knowsLanguage": [
             {"@type": "Language", "name": "English", "alternateName": "en"},
             {"@type": "Language", "name": "Portuguese", "alternateName": "pt"},
