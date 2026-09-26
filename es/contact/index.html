@@ -28,7 +28,7 @@
 <meta name="twitter:description" content="Video editor and post-production, based in Portugal. Commercials, brand films, YouTube, social and corporate video for brands and agencies.">
 <meta name="twitter:image" content="https://catarina.media/assets/img/catarina-portrait.jpg">
 
-<link rel="stylesheet" href="../../assets/site.css?v=optical-align-2">
+<link rel="stylesheet" href="../../assets/site.css?v=contact-endpoint">
 
 <!-- Google Analytics (GA4), behind consent.
      Analytics sets a cookie, so under EU law it may not run until the visitor
@@ -155,6 +155,7 @@
     <h2>Trabajemos <i>juntos.</i></h2>
     <p class="copy">Cuéntame un poco sobre tu proyecto y te respondo personalmente.</p>
     <form class="contact-form" id="contact-form" novalidate
+            data-endpoint=""
             data-eml="bWFpbHRvOmNhdGFyaW5hbWVzcXVpdGFmaWRhbGdvQGdtYWlsLmNvbQ==">
       <div class="field">
         <label for="name">Nombre <span class="req">*</span></label>
@@ -192,7 +193,7 @@
         <textarea id="message" name="message" placeholder="What are you looking to create?" required></textarea>
       </div>
       <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px">
-      <button type="submit" class="btn">Enviar mensaje</button>
+      <button type="submit" class="btn" data-sending="Sending…">Enviar mensaje</button>
       <p class="form-note" id="form-status">Esto abre tu aplicación de correo con todo rellenado — solo tienes que enviarlo.</p>
     </form>
   </div>
