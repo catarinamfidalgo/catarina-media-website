@@ -505,7 +505,10 @@
 
 
   /* ---------- Phone: nothing clipped, nothing overflowing ---------- */
-  html, body { overflow-x: hidden; }            /* last-resort guard */
+  /* `hidden` creates a scroll container and silently disables sticky
+     descendants. `clip` provides the same horizontal guard without changing
+     which element owns vertical scrolling. */
+  html, body { overflow-x: clip; }
   img, video, iframe { max-width: 100%; }
 
   /* long client names, tags and industry labels must wrap rather than
