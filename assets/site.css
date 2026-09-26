@@ -323,14 +323,25 @@
      on it, and the point is that it glows rather than that something shines
      at it. Peak brightness is 1.42, down from 1.78, so it lifts clearly
      without blowing out. */
+  /* A tight white core inside the lavender. Narrow on purpose: at this
+     radius it reads as the word being lit from within, and it is what the
+     fairy hovering above picks the light up off. Spread it wider and it stops
+     being a glow and becomes a lamp pointed at the text, which is what the
+     earlier version did. */
   @keyframes editGlow {
     0%,40%   { filter: brightness(1); text-shadow: none; }
-    52%      { filter: brightness(1.3);
-               text-shadow: 0 0 14px rgba(var(--lav-rgb),.72), 0 0 38px rgba(var(--lav-rgb),.4); }
-    66%      { filter: brightness(1.42);
-               text-shadow: 0 0 19px rgba(var(--lav-rgb),.86), 0 0 54px rgba(var(--lav-rgb),.5); }
-    80%      { filter: brightness(1.36);
-               text-shadow: 0 0 16px rgba(var(--lav-rgb),.76), 0 0 45px rgba(var(--lav-rgb),.44); }
+    52%      { filter: brightness(1.34);
+               text-shadow: 0 0 5px rgba(255,255,255,.3),
+                            0 0 14px rgba(var(--lav-rgb),.74),
+                            0 0 38px rgba(var(--lav-rgb),.42); }
+    66%      { filter: brightness(1.48);
+               text-shadow: 0 0 7px rgba(255,255,255,.44),
+                            0 0 19px rgba(var(--lav-rgb),.88),
+                            0 0 54px rgba(var(--lav-rgb),.52); }
+    80%      { filter: brightness(1.4);
+               text-shadow: 0 0 6px rgba(255,255,255,.34),
+                            0 0 16px rgba(var(--lav-rgb),.78),
+                            0 0 45px rgba(var(--lav-rgb),.46); }
     93%,100% { filter: brightness(1); text-shadow: none; }
   }
 
