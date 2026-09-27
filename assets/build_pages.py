@@ -35,8 +35,7 @@ def extract(src):
     # starts at the language bar, which sits above the masthead
     frag["header"] = between(body, r'  <div class="lang-bar">', r'\n  <section class="hero-reed"')
     frag["hero"] = between(body, r'  <section class="hero-reed"', r'\n  <div class="container section" id="portfolio"')
-    frag["portfolio"] = between(body, r'  <div class="container section" id="portfolio"', r'\n  <!-- A short About on the homepage only')
-    frag["about_short"] = between(body, r'  <!-- A short About on the homepage only', r'\n  <div class="container section" id="about"')
+    frag["portfolio"] = between(body, r'  <div class="container section" id="portfolio"', r'\n  <div class="container section" id="about"')
     frag["about"] = between(body, r'  <div class="container section" id="about"', r'\n  <div class="container services section"')
     frag["services"] = between(body, r'  <div class="container services section"', r'\n  <div class="container section" id="for-agencies"')
     frag["agencies"] = between(body, r'  <div class="container section" id="for-agencies"', r'\n  <div class="container section" id="contact"')
@@ -51,7 +50,7 @@ def extract(src):
 
 
 PAGES = [
-    ("",          "Video Editing & Post-Production", ["hero", "portfolio", "about_short"], True),
+    ("",          "Video Editing & Post-Production", ["hero", "portfolio"], True),
     ("about",     "About",                          ["about"],              False),
     ("services",  "Services",                       ["services"],           False),
     ("agencies",  "For Agencies",                   ["agencies"],           False),

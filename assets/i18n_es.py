@@ -134,10 +134,6 @@ SERVICES = {
 }
 
 COPY = {
-    'I grew up glued to film and television, started editing at twelve, and never quite stopped. One person, no team, no account managers: you deal directly with whoever is editing your video.':
-        'Crecí pegada al cine y la televisión, empecé a montar a los doce años y nunca lo dejé del todo. Una persona, sin equipo, sin gestores de cuenta: hablas directamente con quien está montando tu vídeo.',
-    'More about me':
-        'Más sobre mí',
     'I grew up glued to film and television, started editing at twelve, and never quite stopped. It was a hobby first, then a business of my own, and now it is the whole job. I am also a licensed psychologist and worked as one before this, then followed the thing I cared about more.':
         'Crecí pegada al cine y la televisión, empecé a montar a los doce años y nunca lo dejé del todo. Primero fue una afición, luego un negocio propio, y ahora es el trabajo entero. También soy psicóloga y trabajé como tal antes de esto, y después seguí lo que más me gustaba.',
     'Social media content, YouTube videos and corporate work, for household-name consumer brands, international organisations and global tech companies, sometimes direct and sometimes through their agencies. Footage arrives, and everything after that is mine: the cut, the colour, the sound, the subtitles, and the part where I watch it forty times and still find something to move.':
