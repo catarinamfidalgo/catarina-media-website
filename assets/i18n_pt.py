@@ -136,10 +136,12 @@ SERVICES = {
 
 # Body copy
 COPY = {
-    'I started editing at twelve and never stopped. I set up on my own while I was still at university and have run it as a business since. Mostly commercials, brand films, YouTube and corporate work.':
-        'Comecei a montar aos doze anos e nunca mais parei. Abri o meu próprio negócio ainda na universidade e é assim que trabalho desde então. Sobretudo anúncios, filmes de marca, YouTube e vídeo corporativo.',
-    "What keeps me here is the cut that makes a scene mean something it didn't a second earlier. I still cut things nobody asked for at weekends, and the best part of the job is still when something I made gets a reaction.":
-        'O que me prende é o corte que faz uma cena significar uma coisa que não significava um segundo antes. Continuo a montar coisas que ninguém pediu ao fim de semana, e o melhor do trabalho continua a ser quando alguma coisa que fiz provoca uma reação.',
+    "I'm Catarina, a video editor based in Portugal. I started editing at twelve, set up on my own while I was still at university, and have run it as a business ever since.":
+        'Sou a Catarina, editora de vídeo em Portugal. Comecei a montar aos doze anos, abri o meu próprio negócio ainda na universidade e é assim que trabalho desde então.',
+    'Social media content, YouTube videos and corporate work, mostly for brands and the agencies behind them. Thirty projects are on this site, among them Coca-Cola, UNESCO, Volkswagen, Danone and KAUST. All of it post-production: the footage arrives, and everything after that is mine to get right.':
+        'Conteúdo para redes sociais, vídeos de YouTube e vídeo corporativo, sobretudo para marcas e para as agências que as servem. Há trinta projetos neste site, entre eles Coca-Cola, UNESCO, Volkswagen, Danone e KAUST. É tudo pós-produção: o material chega e tudo o que vem depois é comigo.',
+    'One person, no team, no account managers. I still cut things nobody asked for at weekends, which is probably the honest test of whether you like this job.':
+        'Uma pessoa, sem equipa, sem gestores de conta. Continuo a montar coisas que ninguém pediu ao fim de semana, que deve ser o teste honesto de se gostamos disto.',
     "I'm a video editor based in Portugal. For about ten years I've worked with brands, agencies, and creative teams around the world.":
         "Sou editora de vídeo, em Portugal. Há cerca de dez anos que trabalho com marcas, agências e equipas criativas em todo o mundo.",
     "Most of what I do is commercials, brand films, YouTube, social content, and corporate video. I care most about the story underneath the footage, since that's usually what decides whether an edit lands.":

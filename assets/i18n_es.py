@@ -134,10 +134,12 @@ SERVICES = {
 }
 
 COPY = {
-    'I started editing at twelve and never stopped. I set up on my own while I was still at university and have run it as a business since. Mostly commercials, brand films, YouTube and corporate work.':
-        'Empecé a montar a los doce años y nunca lo dejé. Monté mi propio negocio siendo todavía estudiante y así trabajo desde entonces. Sobre todo anuncios, películas de marca, YouTube y vídeo corporativo.',
-    "What keeps me here is the cut that makes a scene mean something it didn't a second earlier. I still cut things nobody asked for at weekends, and the best part of the job is still when something I made gets a reaction.":
-        'Lo que me mantiene aquí es el corte que hace que una escena signifique algo que no significaba un segundo antes. Sigo montando cosas que nadie me ha pedido los fines de semana, y lo mejor del trabajo sigue siendo cuando algo que he hecho provoca una reacción.',
+    "I'm Catarina, a video editor based in Portugal. I started editing at twelve, set up on my own while I was still at university, and have run it as a business ever since.":
+        'Soy Catarina, montadora de vídeo en Portugal. Empecé a montar a los doce años, monté mi propio negocio siendo todavía estudiante y así trabajo desde entonces.',
+    'Social media content, YouTube videos and corporate work, mostly for brands and the agencies behind them. Thirty projects are on this site, among them Coca-Cola, UNESCO, Volkswagen, Danone and KAUST. All of it post-production: the footage arrives, and everything after that is mine to get right.':
+        'Contenido para redes sociales, vídeos de YouTube y vídeo corporativo, sobre todo para marcas y para las agencias que las llevan. Hay treinta proyectos en esta web, entre ellos Coca-Cola, UNESCO, Volkswagen, Danone y KAUST. Todo es postproducción: el material llega y todo lo que viene después es cosa mía.',
+    'One person, no team, no account managers. I still cut things nobody asked for at weekends, which is probably the honest test of whether you like this job.':
+        'Una persona, sin equipo, sin gestores de cuenta. Sigo montando cosas que nadie me ha pedido los fines de semana, que debe de ser la prueba honesta de si esto te gusta.',
     "I'm a video editor based in Portugal. For about ten years I've worked with brands, agencies, and creative teams around the world.":
         "Soy montadora de vídeo, afincada en Portugal. Desde hace unos diez años trabajo con marcas, agencias y equipos creativos de todo el mundo.",
     "Most of what I do is commercials, brand films, YouTube, social content, and corporate video. I care most about the story underneath the footage, since that's usually what decides whether an edit lands.":
