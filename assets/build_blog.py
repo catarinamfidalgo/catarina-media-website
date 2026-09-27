@@ -34,7 +34,7 @@ POSTS = [
         "slug": "brand-video-package",
         "image": "one-campaign",
         "image_alt": "An editing timeline in purple with clips and a waveform, "
-                     "beside film frames and a colour wheel",
+                     "beside film frames and a color wheel",
         "date": "2026-09-24",
         "date_label": "September 2026",
         "title": "One campaign, every platform: commission it all at once",
@@ -164,12 +164,12 @@ usually exactly what they are.</p>
 <p>The grade is slightly warmer in the second batch, because it was done six months later on a
 different monitor. The lower-thirds use a typeface that isn't quite the brand one, because
 whoever made them didn't have the file. The music is a different track, because the original
-licence covered one film and not a campaign, so the reels feel like they belong to another
+license covered one film and not a campaign, so the reels feel like they belong to another
 company.</p>
 
 <p>Nobody watching could tell you what's wrong. They just don't connect the pieces to each other,
 which means every piece has to do the work of introducing you from scratch. Repetition is what
-makes a campaign stick, and repetition only happens if people recognise the second thing as
+makes a campaign stick, and repetition only happens if people recognize the second thing as
 belonging to the first.</p>
 
 <h3>Cohesive, but not identical</h3>
@@ -195,7 +195,7 @@ each of them is cheap once and expensive twice:</p>
 <ul>
   <li><strong>One grade, one set of references.</strong> Matching a grade you did six months ago
   from a different project file is guesswork.</li>
-  <li><strong>One music licence</strong> covering every cut on every platform, rather than a new
+  <li><strong>One music license</strong> covering every cut on every platform, rather than a new
   track each time because the old one wasn't cleared for this.</li>
   <li><strong>One set of motion assets</strong> (titles, lower-thirds, logo animation), built
   once and reused, instead of rebuilt slightly differently each round.</li>
@@ -233,7 +233,7 @@ whoever is making the material:</p>
   forgotten.</li>
   <li>Which pieces, at what lengths, in which aspect ratios.</li>
   <li>Whether the material is framed knowing vertical crops are coming.</li>
-  <li>Whether the music licence covers every cut on every platform.</li>
+  <li>Whether the music license covers every cut on every platform.</li>
   <li>Subtitles: included, and in which languages.</li>
 </ul>
 
