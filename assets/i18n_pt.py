@@ -136,6 +136,10 @@ SERVICES = {
 
 # Body copy
 COPY = {
+    'I grew up glued to film and television, started editing at twelve, and never quite stopped. One person, no team, no account managers: you deal directly with whoever is editing your video.':
+        'Cresci agarrada a cinema e televisão, comecei a montar aos doze anos e nunca mais parei bem. Uma pessoa, sem equipa, sem gestores de conta: fala diretamente com quem está a montar o seu vídeo.',
+    'More about me':
+        'Mais sobre mim',
     'I grew up glued to film and television, started editing at twelve, and never quite stopped. It was a hobby first, then a business of my own, and now it is the whole job. I am also a licensed psychologist and worked as one before this, then followed the thing I cared about more.':
         'Cresci agarrada a cinema e televisão, comecei a montar aos doze anos e nunca mais parei bem. Primeiro foi um passatempo, depois um negócio meu, e agora é o trabalho todo. Sou também psicóloga e trabalhei como tal antes disto, e depois segui aquilo de que gostava mais.',
     'Social media content, YouTube videos and corporate work, for household-name consumer brands, international organisations and global tech companies, sometimes direct and sometimes through their agencies. Footage arrives, and everything after that is mine: the cut, the colour, the sound, the subtitles, and the part where I watch it forty times and still find something to move.':
