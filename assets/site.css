@@ -478,12 +478,30 @@
     76%  { transform: translate(-2px,-7px) rotate(-.6deg); }
     100% { transform: translate(0,0) rotate(0deg); }
   }
+  /* The arrival is the departure run backwards: a speck, a swell past full
+     size, then settle. It used to pop large and shrink back into itself,
+     which is a different gesture from the one she leaves with. */
   @keyframes fairyVisit {
-    0%,11%  { opacity: 0; transform: translate(330px,-150px) scale(.04) rotate(-7deg); }
-    19%     { opacity: 1; transform: translate(326px,-146px) scale(1.12) rotate(-5deg); }
-    27%     { opacity: 1; transform: translate(320px,-140px) scale(.92) rotate(-4.5deg); }
+    0%,11%  { opacity: 0; transform: translate(330px,-150px) scale(.04) rotate(-4deg); }
+    16%     { opacity: 1; transform: translate(328px,-148px) scale(1.09) rotate(-3deg); }
+    22%     { opacity: 1; transform: translate(324px,-144px) scale(1) rotate(-4deg); }
     100%    { opacity: 1; transform: translate(0,0) scale(1) rotate(0deg); }
   }
+
+  /* Leaving, for the click: gather, then gone. The same shape as the arrival,
+     the other way round, so the two read as one gesture reversed. */
+  @keyframes fairyPoofOut {
+    0%   { opacity: 1; transform: translate(0,0) scale(1) rotate(0deg); }
+    38%  { opacity: 1; transform: translate(-1px,-5px) scale(1.09) rotate(-1deg); }
+    100% { opacity: 0; transform: translate(-3px,-2px) scale(.04) rotate(-4deg); }
+  }
+  @keyframes fairyOrbOut {
+    0%   { opacity: 0; transform: translate(0,0) scale(.15); }
+    45%  { opacity: 1; transform: translate(0,0) scale(1.4); }
+    100% { opacity: 0; transform: translate(0,0) scale(2.2); filter: blur(3px); }
+  }
+  .hero-fairy-figure.is-leaving { animation: fairyPoofOut .36s ease-in forwards; }
+  .hero-fairy-orb.is-leaving { animation: fairyOrbOut .36s ease-out forwards; }
   @keyframes fairyWingUpper {
     from { transform: rotate(-32deg) scaleY(1); opacity: .88; }
     to   { transform: rotate(9deg) scaleY(.58); opacity: .62; }

@@ -39,7 +39,7 @@
 <meta name="twitter:description" content="Video editor and post-production, based in Portugal. Commercials, brand films, YouTube, social and corporate video for brands and agencies.">
 <meta name="twitter:image" content="https://catarina.media/assets/img/catarina-portrait.jpg">
 
-<link rel="stylesheet" href="../assets/site.css?v=about-first">
+<link rel="stylesheet" href="../assets/site.css?v=fairy-poof2">
 
 <!-- Google Analytics (GA4), behind consent.
      Analytics sets a cookie, so under EU law it may not run until the visitor
@@ -257,22 +257,36 @@
       var perch = word.querySelector('.hero-fairy');
       var busy = false;
 
+      var figure = word.querySelector('.hero-fairy-figure');
+      var orb = word.querySelector('.hero-fairy-orb');
+      var OUT = 360;                    // must match fairyPoofOut's duration
+
+      function restart(el, delay) {
+        if (!el) return;
+        el.style.animation = 'none';
+        void el.offsetWidth;            // so the browser registers the removal
+        el.style.animation = '';
+        el.style.animationDelay = delay;
+      }
+
       word.addEventListener('click', function () {
         if (busy) return;               // let a visit finish before another starts
         busy = true;
-        parts.forEach(function (el) {
-          el.style.animation = 'none';
-          void el.offsetWidth;
-          el.style.animation = '';
-          el.style.animationDelay = '0s';
-        });
-        if (perch) {
-          perch.style.animation = 'none';
-          void perch.offsetWidth;
-          perch.style.animation = '';
-          perch.style.animationDelay = '3.8s';   // the entrance, minus its own delay
-        }
-        setTimeout(function () { busy = false; }, 4200);
+
+        // She goes the way she came: poof out where she is, then poof back in
+        // at the far right and fly across again. The hover is stopped first,
+        // or it would keep drifting her while she is leaving.
+        if (perch) perch.style.animation = 'none';
+        if (figure) figure.classList.add('is-leaving');
+        if (orb) orb.classList.add('is-leaving');
+
+        setTimeout(function () {
+          if (figure) figure.classList.remove('is-leaving');
+          if (orb) orb.classList.remove('is-leaving');
+          parts.forEach(function (el) { restart(el, '0s'); });
+          restart(perch, '3.8s');       // the hover waits for the landing
+          setTimeout(function () { busy = false; }, 4200);
+        }, OUT);
       });
     })();
 
