@@ -136,14 +136,10 @@ SERVICES = {
 
 # Body copy
 COPY = {
-    'I was twelve the first time I dragged two clips together and saw that the join changed what they meant. Nothing since has quite matched that.':
-        'Tinha doze anos na primeira vez que juntei dois planos e vi que o corte mudava o que eles queriam dizer. Nada desde então igualou bem aquilo.',
-    'I have been cutting ever since, and running my own business doing it since university, which means I learned to price a job and chase an invoice at the same age I learned to cut on action. Most of what comes to me now is commercials, brand films, YouTube, social and corporate video.':
-        'Nunca mais parei de montar, e tenho o meu próprio negócio desde a universidade, o que quer dizer que aprendi a orçamentar um trabalho e a correr atrás de uma fatura na mesma idade em que aprendi a cortar no movimento. A maior parte do que me chega hoje são anúncios, filmes de marca, YouTube, conteúdo social e vídeo corporativo.',
-    'What I am after is the story under the footage. Where the cut lands, how long a silence is allowed to hold, which frame you leave on. Small decisions, and they are the ones that decide whether a piece lands or slides past.':
-        'O que procuro é a história por baixo das imagens. Onde cai o corte, quanto tempo se deixa respirar um silêncio, em que fotograma se fica. São decisões pequenas e são elas que decidem se uma peça fica ou passa ao lado.',
-    'I still cut things nobody asked for, on evenings when I could be doing anything else. The best part of this has not changed since I was twelve: somebody watches, and feels something, before they could tell you why.':
-        'Continuo a montar coisas que ninguém pediu, em noites em que podia estar a fazer outra coisa qualquer. A melhor parte disto não mudou desde os doze anos: alguém vê, e sente alguma coisa, antes de conseguir explicar porquê.',
+    'I started editing at twelve and never stopped. I set up on my own while I was still at university and have run it as a business since. Mostly commercials, brand films, YouTube and corporate work.':
+        'Comecei a montar aos doze anos e nunca mais parei. Abri o meu próprio negócio ainda na universidade e é assim que trabalho desde então. Sobretudo anúncios, filmes de marca, YouTube e vídeo corporativo.',
+    "What keeps me here is the cut that makes a scene mean something it didn't a second earlier. I still cut things nobody asked for at weekends, and the best part of the job is still when something I made gets a reaction.":
+        'O que me prende é o corte que faz uma cena significar uma coisa que não significava um segundo antes. Continuo a montar coisas que ninguém pediu ao fim de semana, e o melhor do trabalho continua a ser quando alguma coisa que fiz provoca uma reação.',
     "I'm a video editor based in Portugal. For about ten years I've worked with brands, agencies, and creative teams around the world.":
         "Sou editora de vídeo, em Portugal. Há cerca de dez anos que trabalho com marcas, agências e equipas criativas em todo o mundo.",
     "Most of what I do is commercials, brand films, YouTube, social content, and corporate video. I care most about the story underneath the footage, since that's usually what decides whether an edit lands.":
