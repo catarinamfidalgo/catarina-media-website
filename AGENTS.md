@@ -80,6 +80,41 @@ Some things here look like defects and are decisions:
 - **Portfolio cards are square-cornered.** The grid is meant to read as frames on a timeline.
 - **Preview in-points are hand-picked** in `build_previews.py`. Scene detection chose them once and put half of them on talking heads.
 
+## The fairy
+
+Four of these were real bugs. They are cheap to reintroduce.
+
+**The hover runs on `.hero-fairy`, the flight on `.hero-fairy-figure`.**
+Two transform animations on one element do not compose: the later one wins
+outright. Put the drift on the figure and the landing is discarded the moment
+it starts.
+
+**The dress layer is a second copy of the whole drawing, clipped.** It was
+once clipped from 48% across and 39% down, which takes in the extended right
+arm and both legs, so moving it moved copies of them and she grew spare limbs.
+Clip to the streaming tail only, past the arm and above the knees.
+
+**There is no feet layer, on purpose.** A foot cannot move independently of
+the leg it belongs to without tearing at the ankle.
+
+**There is no dust layer, on purpose.** It sat at the destination with no
+offset and fired while she was still flying in, so specks glowed over the word
+a second before she arrived.
+
+**Every loop pauses when she is off-screen** via `.is-idle` and an
+IntersectionObserver, and again when the tab is hidden.
+`animation-play-state` holds the frame rather than resetting.
+
+**Clicking the word is a round trip**: poof out where she is, then poof in at
+the far right and fly across. The hover is stopped before she leaves and
+restarted with a 3.8s delay so it waits for the landing.
+
+**`prefers-reduced-motion` hides her entirely** and disables the click.
+
+**The word is not focusable, deliberately.** The sequence plays on load
+without input, so a keyboard user misses nothing, and a tab stop for an easter
+egg is an obstacle in front of people for something that tells them nothing.
+
 ## Previews and shapes
 
 `assets/build_previews.py` and `assets/build_aspects.py` need the video masters
