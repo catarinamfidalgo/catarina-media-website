@@ -136,12 +136,12 @@ SERVICES = {
 
 # Body copy
 COPY = {
-    "I'm Catarina, a video editor based in Portugal. I started editing at twelve, set up on my own while I was still at university, and have run it as a business ever since.":
-        'Sou a Catarina, editora de vídeo em Portugal. Comecei a montar aos doze anos, abri o meu próprio negócio ainda na universidade e é assim que trabalho desde então.',
-    'Social media content, YouTube videos and corporate work, mostly for brands and the agencies behind them. Thirty projects are on this site, among them Coca-Cola, UNESCO, Volkswagen, Danone and KAUST. All of it post-production: the footage arrives, and everything after that is mine to get right.':
-        'Conteúdo para redes sociais, vídeos de YouTube e vídeo corporativo, sobretudo para marcas e para as agências que as servem. Há trinta projetos neste site, entre eles Coca-Cola, UNESCO, Volkswagen, Danone e KAUST. É tudo pós-produção: o material chega e tudo o que vem depois é comigo.',
-    'One person, no team, no account managers. I still cut things nobody asked for at weekends, which is probably the honest test of whether you like this job.':
-        'Uma pessoa, sem equipa, sem gestores de conta. Continuo a montar coisas que ninguém pediu ao fim de semana, que deve ser o teste honesto de se gostamos disto.',
+    "I'm Catarina. I started editing at twelve, on a laptop that really could not handle it, and never quite stopped. I set up on my own at university and have spent over ten years in post-production since.":
+        'Sou a Catarina. Comecei a montar aos doze anos, num portátil que não aguentava mesmo aquilo, e nunca mais parei bem. Abri o meu próprio negócio na universidade e levo mais de dez anos de pós-produção desde então.',
+    'Social media content, YouTube videos and corporate work, for brands and the agencies behind them. Thirty projects are on this site, among them Coca-Cola, UNESCO, Volkswagen, Binance and Danone. Footage arrives, and everything after that is mine: the cut, the colour, the sound, the subtitles, and the part where I watch it forty times and still find something to move.':
+        'Conteúdo para redes sociais, vídeos de YouTube e vídeo corporativo, para marcas e para as agências que as servem. Há trinta projetos neste site, entre eles Coca-Cola, UNESCO, Volkswagen, Binance e Danone. O material chega, e tudo o que vem depois é comigo: a montagem, a cor, o som, as legendas, e a parte em que vejo aquilo quarenta vezes e ainda encontro coisa para mexer.',
+    'One person, no team, no account managers. You talk to whoever is doing the work, which is always me. I still cut things nobody asked for at weekends, and there is a fairy on the homepage that I am not going to justify.':
+        'Uma pessoa, sem equipa, sem gestores de conta. Fala com quem faz o trabalho, que sou sempre eu. Continuo a montar coisas que ninguém pediu ao fim de semana, e há uma fada na homepage que não vou justificar.',
     "I'm a video editor based in Portugal. For about ten years I've worked with brands, agencies, and creative teams around the world.":
         "Sou editora de vídeo, em Portugal. Há cerca de dez anos que trabalho com marcas, agências e equipas criativas em todo o mundo.",
     "Most of what I do is commercials, brand films, YouTube, social content, and corporate video. I care most about the story underneath the footage, since that's usually what decides whether an edit lands.":
