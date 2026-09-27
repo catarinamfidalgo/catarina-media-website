@@ -91,24 +91,46 @@ UI = {
 }
 
 SERVICES = {
-    "Video Editing": "Montaje de Vídeo",
-    "I build the story out of raw footage and find the pace that holds it together.":
-        "Construyo la historia a partir del material bruto y encuentro el ritmo que la sostiene.",
-    "Color Grading": "Color Grading y Etalonaje",
-    "Grading every shot so the piece feels like one film and fits your brand.":
-        "Etalono cada plano para que la pieza parezca una sola película y encaje con tu marca.",
-    "Motion Graphics &amp; Animation": "Motion Graphics y Animación",
-    "Titles, lower-thirds, logo animation, and light 2D work when a scene needs it.":
-        "Rótulos, faldones, animación de logotipo y trabajo 2D ligero cuando la escena lo pide.",
-    "Sound Design &amp; Mixing": "Diseño de Sonido y Mezcla",
-    "Cleaning up dialogue, balancing the music, and mixing for broadcast and streaming.":
-        "Limpiar diálogos, equilibrar la música y mezclar para televisión y streaming.",
-    "Subtitling &amp; Localization": "Subtitulado y Localización",
-    "Subtitles and full language versions in English, Portuguese, and Spanish.":
-        "Subtítulos y versiones completas en inglés, portugués y español.",
-    "Licensed Music &amp; Stock": "Música e Imágenes con Licencia",
-    "Finding and licensing the right music and stock, cleared and ready to publish.":
-        "Buscar y licenciar la música y el stock footage adecuado, ya liberadas para publicar.",
+    'Consultation calls':
+        'Llamadas de consultoría',
+    'A call before anything is shot, about what the video has to do and what that will take. Usually the cheapest hour in a project, because planning costs less than rescuing an edit that is missing a shot.':
+        'Una llamada antes de rodar nada, sobre qué tiene que conseguir el vídeo y qué hace falta para ello. Suele ser la hora más barata del proyecto, porque planificar cuesta menos que rescatar un montaje al que le falta un plano.',
+    'Script writing':
+        'Escritura de guion',
+    'A script written to a length and a purpose rather than a word count. You get something a crew can shoot from, or a presenter can read to camera.':
+        'Un guion escrito para una duración y un objetivo, no para un número de palabras. Queda listo para que un equipo ruede o alguien lo lea a cámara.',
+    'Video editing':
+        'Montaje de Vídeo',
+    'I build the story out of the raw footage and find the pace that holds it together. Rough cut first, so the shape is agreed before anyone spends time on polish.':
+        'Construyo la historia a partir del material bruto y encuentro el ritmo que la sostiene. Primero un rough cut, para acordar la forma antes de invertir tiempo en pulir.',
+    'Voiceover actors &amp; spokespeople':
+        'Locutores y presentadores',
+    'Casting the voice or the face, directing the session, and cutting the takes. You hear or see the options before anyone is booked.':
+        'Elijo la voz o la cara, dirijo la sesión y monto las tomas. Escuchas o ves las opciones antes de contratar a nadie.',
+    'Visual effects':
+        'Efectos visuales',
+    'Taking out what should not be in the shot, adding what should, and the quiet fixes nobody is meant to notice. Screen replacements, clean-up, tracking.':
+        'Quitar lo que no debería estar en el plano, añadir lo que sí, y los arreglos discretos que nadie debe notar. Sustitución de pantallas, limpieza, tracking.',
+    'Animated elements &amp; motion graphics':
+        'Elementos animados y motion graphics',
+    'Titles, lower-thirds, logo animation, charts, and light 2D work when a scene needs it. Built to your brand rather than out of a template.':
+        'Títulos, rótulos, animación de logotipo, gráficos y trabajo 2D ligero cuando la escena lo pide. Hecho a medida de tu marca, no a partir de una plantilla.',
+    'Color grading &amp; correction':
+        'Etalonaje y corrección de color',
+    'Matching every shot so the piece reads as one film, then grading it to sit with your brand. Different cameras or different days is the normal case, not a problem.':
+        'Igualo todos los planos para que la pieza se lea como una sola película y después la etalono para que encaje con tu marca. Cámaras distintas o días distintos son lo normal, no un problema.',
+    'Sound design &amp; mixing':
+        'Diseño de sonido y mezcla',
+    'Cleaning up dialogue, placing effects, balancing music, and mixing to broadcast and streaming levels. Poor sound is what makes a video feel cheap.':
+        'Limpio los diálogos, coloco los efectos, equilibro la música y mezclo a niveles de broadcast y streaming. El mal sonido es lo que hace que un vídeo parezca barato.',
+    'Licensed music &amp; stock footage':
+        'Música e imágenes de archivo con licencia',
+    'Finding the track and the shots, and clearing the licence so it is safe to publish anywhere. The paperwork comes with the files.':
+        'Encuentro la pista y los planos, y gestiono la licencia para poder publicar en cualquier sitio. La documentación va con los archivos.',
+    'Subtitling':
+        'Subtitulado',
+    'Subtitles timed to be read rather than merely transcribed, and full language versions in English, Portuguese and Spanish.':
+        'Subtítulos cronometrados para leerse, no solo transcritos, y versiones completas en inglés, portugués y español.',
 }
 
 COPY = {

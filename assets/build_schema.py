@@ -19,9 +19,18 @@ SITE = "https://catarina.media"
 PERSON_ID = SITE + "/#catarina"
 SITE_ID = SITE + "/#website"
 
-SERVICES = ["Video Editing", "Color Grading", "Motion Graphics & Animation",
-            "Sound Design & Mixing", "Subtitling & Localization",
-            "Licensed Music & Stock"]
+SERVICES = [
+    'Consultation calls',
+    'Script writing',
+    'Video editing',
+    'Voiceover actors & spokespeople',
+    'Visual effects',
+    'Animated elements & motion graphics',
+    'Color grading & correction',
+    'Sound design & mixing',
+    'Licensed music & stock footage',
+    'Subtitling',
+]
 
 LANGS = {"en": "en", "pt": "pt-PT", "es": "es-ES"}
 
