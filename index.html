@@ -35,7 +35,7 @@
 <meta name="twitter:description" content="Video editor and post-production, based in Portugal. Commercials, brand films, YouTube, social and corporate video for brands and agencies.">
 <meta name="twitter:image" content="https://catarina.media/assets/img/catarina-portrait.jpg">
 
-<link rel="stylesheet" href="assets/site.css?v=home-about">
+<link rel="stylesheet" href="assets/site.css?v=fairy-poof3">
 
 <!-- Google Analytics (GA4), behind consent.
      Analytics sets a cookie, so under EU law it may not run until the visitor
@@ -164,12 +164,15 @@
             <span class="hero-fairy-figure">
               <span class="hero-fairy-wing hero-fairy-wing--upper"></span>
               <span class="hero-fairy-wing hero-fairy-wing--lower"></span>
-              <img class="hero-fairy-main" src="assets/img/fairy-body.webp" alt="">
-              <img class="hero-fairy-dress-motion" src="assets/img/fairy-body.webp" alt="">
+              <img class="hero-fairy-main" src="assets/img/fairy-body.webp" width="600" height="400" alt="">
+              <img class="hero-fairy-dress-motion" src="assets/img/fairy-body.webp" width="600" height="400" alt="">
+              <img class="hero-fairy-foot-motion" src="assets/img/fairy-body.webp" width="600" height="400" alt="">
               <span class="hero-fairy-twinkle"></span>
             </span>
             <span class="hero-fairy-orb"></span>
-          </span></span></span></h1>
+            <span class="hero-fairy-poof"></span>
+          </span><!--
+          --><span class="hero-edit-dust" aria-hidden="true"><i></i><i></i><i></i><i></i></span></span></span></h1>
       <div class="btn-row">
         <a class="btn" href="contact/">Start a project</a>
         <a class="btn btn--ghost-light" href="#portfolio">View portfolio</a>
@@ -261,23 +264,27 @@
       if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
 
       var parts = [word].concat(Array.prototype.slice.call(
-        word.querySelectorAll('.hero-fairy-figure, .hero-fairy-orb')));
+        word.querySelectorAll('.hero-fairy-figure, .hero-fairy-orb, .hero-fairy-poof, .hero-edit-dust')));
       // The container carries the hover loop, which waits for the landing.
       // It restarts with the rest but keeps a delay, or she would drift while
       // still flying in.
       var perch = word.querySelector('.hero-fairy');
-      var busy = false;
+      var busy = true;
+      setTimeout(function () { busy = false; }, 4050);
 
       var figure = word.querySelector('.hero-fairy-figure');
       var orb = word.querySelector('.hero-fairy-orb');
-      var OUT = 360;                    // must match fairyPoofOut's duration
+      var poof = word.querySelector('.hero-fairy-poof');
+      var editDust = word.querySelector('.hero-edit-dust');
+      var OUT = 680;                    // must match the departure animations
 
       function restart(el, delay) {
         if (!el) return;
         el.style.animation = 'none';
         void el.offsetWidth;            // so the browser registers the removal
         el.style.animation = '';
-        el.style.animationDelay = delay;
+        if (delay == null) el.style.removeProperty('animation-delay');
+        else el.style.animationDelay = delay;
       }
 
       word.addEventListener('click', function () {
@@ -290,13 +297,17 @@
         if (perch) perch.style.animation = 'none';
         if (figure) figure.classList.add('is-leaving');
         if (orb) orb.classList.add('is-leaving');
+        if (poof) poof.classList.add('is-leaving');
+        if (editDust) editDust.classList.add('is-leaving');
 
         setTimeout(function () {
           if (figure) figure.classList.remove('is-leaving');
           if (orb) orb.classList.remove('is-leaving');
-          parts.forEach(function (el) { restart(el, '0s'); });
-          restart(perch, '3.8s');       // the hover waits for the landing
-          setTimeout(function () { busy = false; }, 4200);
+          if (poof) poof.classList.remove('is-leaving');
+          if (editDust) editDust.classList.remove('is-leaving');
+          parts.forEach(function (el) { restart(el, null); });
+          restart(perch, '4.05s');      // the hover waits for the landing
+          setTimeout(function () { busy = false; }, 4300);
         }, OUT);
       });
     })();
@@ -312,10 +323,12 @@
     (function () {
       var fairy = document.querySelector('.hero-fairy');
       if (!fairy) return;
+      var word = fairy.closest('.hero-edit');
 
       var onScreen = true, tabVisible = !document.hidden;
       function apply() {
         fairy.classList.toggle('is-idle', !(onScreen && tabVisible));
+        if (word) word.classList.toggle('is-idle', !(onScreen && tabVisible));
       }
 
       if ('IntersectionObserver' in window) {
