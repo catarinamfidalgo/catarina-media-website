@@ -134,14 +134,12 @@ SERVICES = {
 }
 
 COPY = {
-    'I started editing at twelve and never quite stopped. I set up on my own at university and have spent over ten years in post-production since.':
-        'Empecé a montar a los doce años y nunca lo dejé del todo. Monté mi propio negocio en la universidad y llevo más de diez años de postproducción desde entonces.',
+    'I started editing at twelve and never quite stopped. It was a hobby first, then a business I set up while I was still at university, and since 2020 it has been the whole job.':
+        'Empecé a montar a los doce años y nunca lo dejé del todo. Primero fue una afición, luego un negocio que monté siendo todavía estudiante, y desde 2020 es el trabajo a tiempo completo.',
     'Social media content, YouTube videos and corporate work, for household-name consumer brands, international organisations and global tech companies, usually through the agencies that handle them. Footage arrives, and everything after that is mine: the cut, the colour, the sound, the subtitles, and the part where I watch it forty times and still find something to move.':
         'Contenido para redes sociales, vídeos de YouTube y vídeo corporativo, para marcas de gran consumo que todo el mundo conoce, organizaciones internacionales y empresas tecnológicas globales, normalmente a través de las agencias que las llevan. El material llega, y todo lo que viene después es cosa mía: el montaje, el color, el sonido, los subtítulos, y la parte en la que lo veo cuarenta veces y sigo encontrando algo que mover.',
     'One person, no team, no account managers. You deal directly with whoever is editing your video. I still cut things nobody asked for at weekends, which is why my drives are full of work no client will ever see.':
         'Una persona, sin equipo, sin gestores de cuenta. Hablas directamente con quien está montando tu vídeo. Sigo montando cosas que nadie me ha pedido los fines de semana, y por eso tengo los discos llenos de trabajo que ningún cliente verá.',
-    "I'm a video editor based in Portugal. For about ten years I've worked with brands, agencies, and creative teams around the world.":
-        "Soy montadora de vídeo, afincada en Portugal. Desde hace unos diez años trabajo con marcas, agencias y equipos creativos de todo el mundo.",
     "Most of what I do is commercials, brand films, YouTube, social content, and corporate video. I care most about the story underneath the footage, since that's usually what decides whether an edit lands.":
         "La mayor parte de lo que hago son anuncios, películas de marca, YouTube, contenido para redes sociales y vídeo corporativo. Lo que más me importa es la historia que hay debajo del material, porque suele ser lo que decide si un montaje funciona.",
     "I work in English, Portuguese, and Spanish, which helps when a brand is making the same thing for more than one market.":

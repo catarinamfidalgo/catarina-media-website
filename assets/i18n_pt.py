@@ -136,14 +136,12 @@ SERVICES = {
 
 # Body copy
 COPY = {
-    'I started editing at twelve and never quite stopped. I set up on my own at university and have spent over ten years in post-production since.':
-        'Comecei a montar aos doze anos e nunca mais parei bem. Abri o meu próprio negócio na universidade e levo mais de dez anos de pós-produção desde então.',
+    'I started editing at twelve and never quite stopped. It was a hobby first, then a business I set up while I was still at university, and since 2020 it has been the whole job.':
+        'Comecei a montar aos doze anos e nunca mais parei bem. Primeiro foi um passatempo, depois um negócio que abri ainda na universidade, e desde 2020 é o trabalho a tempo inteiro.',
     'Social media content, YouTube videos and corporate work, for household-name consumer brands, international organisations and global tech companies, usually through the agencies that handle them. Footage arrives, and everything after that is mine: the cut, the colour, the sound, the subtitles, and the part where I watch it forty times and still find something to move.':
         'Conteúdo para redes sociais, vídeos de YouTube e vídeo corporativo, para marcas de grande consumo que toda a gente conhece, organizações internacionais e empresas de tecnologia globais, normalmente através das agências que tratam delas. O material chega, e tudo o que vem depois é comigo: a montagem, a cor, o som, as legendas, e a parte em que vejo aquilo quarenta vezes e ainda encontro coisa para mexer.',
     'One person, no team, no account managers. You deal directly with whoever is editing your video. I still cut things nobody asked for at weekends, which is why my drives are full of work no client will ever see.':
         'Uma pessoa, sem equipa, sem gestores de conta. Fala diretamente com quem está a montar o seu vídeo. Continuo a montar coisas que ninguém pediu ao fim de semana, e é por isso que tenho os discos cheios de trabalho que nenhum cliente vai ver.',
-    "I'm a video editor based in Portugal. For about ten years I've worked with brands, agencies, and creative teams around the world.":
-        "Sou editora de vídeo, em Portugal. Há cerca de dez anos que trabalho com marcas, agências e equipas criativas em todo o mundo.",
     "Most of what I do is commercials, brand films, YouTube, social content, and corporate video. I care most about the story underneath the footage, since that's usually what decides whether an edit lands.":
         "A maior parte do que faço são anúncios, filmes de marca, YouTube, conteúdo para redes sociais e vídeo corporativo. O que me importa mais é a história por baixo das imagens, porque é normalmente isso que decide se uma montagem resulta.",
     "I work in English, Portuguese, and Spanish, which helps when a brand is making the same thing for more than one market.":
