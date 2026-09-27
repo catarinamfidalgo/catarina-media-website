@@ -35,9 +35,9 @@ def extract(src):
     # starts at the language bar, which sits above the masthead
     frag["header"] = between(body, r'  <div class="lang-bar">', r'\n  <section class="hero-reed"')
     frag["hero"] = between(body, r'  <section class="hero-reed"', r'\n  <div class="container section" id="portfolio"')
-    frag["portfolio"] = between(body, r'  <div class="container section" id="portfolio"', r'\n  <div class="container services section"')
-    frag["services"] = between(body, r'  <div class="container services section"', r'\n  <div class="container section" id="about"')
-    frag["about"] = between(body, r'  <div class="container section" id="about"', r'\n  <div class="container section" id="for-agencies"')
+    frag["portfolio"] = between(body, r'  <div class="container section" id="portfolio"', r'\n  <div class="container section" id="about"')
+    frag["about"] = between(body, r'  <div class="container section" id="about"', r'\n  <div class="container services section"')
+    frag["services"] = between(body, r'  <div class="container services section"', r'\n  <div class="container section" id="for-agencies"')
     frag["agencies"] = between(body, r'  <div class="container section" id="for-agencies"', r'\n  <div class="container section" id="contact"')
     frag["contact"] = between(body, r'  <div class="container section" id="contact"', r'\n  <div class="container section" id="privacy"')
     frag["privacy"] = between(body, r'  <div class="container section" id="privacy"', r'\n  <footer class="site"')
@@ -51,8 +51,8 @@ def extract(src):
 
 PAGES = [
     ("",          "Video Editing & Post-Production", ["hero", "portfolio"], True),
-    ("services",  "Services",                       ["services"],           False),
     ("about",     "About",                          ["about"],              False),
+    ("services",  "Services",                       ["services"],           False),
     ("agencies",  "For Agencies",                   ["agencies"],           False),
     ("contact",   "Contact",                        ["contact"],            False),
     ("privacy",   "Privacy",                        ["privacy"],            False),
@@ -81,8 +81,8 @@ def depth_fix(html, depth, slug=""):
 
 def nav_for(slug, depth):
     up = "../" * depth if depth else ""
-    items = [("", "Home"), ("#portfolio", "Portfolio"), ("services/", "Services"),
-             ("about/", "About"), ("agencies/", "For Agencies"),
+    items = [("", "Home"), ("#portfolio", "Portfolio"), ("about/", "About"),
+             ("services/", "Services"), ("agencies/", "For Agencies"),
              ("blog/", "Blog"), ("contact/", "Contact")]
     out = []
     for href, label in items:

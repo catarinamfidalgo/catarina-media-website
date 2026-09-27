@@ -23,7 +23,7 @@ SERVICES = [
     'Consultation calls',
     'Script writing',
     'Video editing',
-    'Voiceover actors & spokespeople',
+    'Casting & directing voiceover actors',
     'Visual effects',
     'Animated elements & motion graphics',
     'Color grading & correction',

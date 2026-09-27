@@ -94,23 +94,23 @@ UI = {
 SERVICES = {
     'Consultation calls':
         'Chamadas de consultoria',
-    'A call before anything is shot, about what the video has to do and what that will take. Usually the cheapest hour in a project, because planning costs less than rescuing an edit that is missing a shot.':
-        'Uma chamada antes de se filmar seja o que for, sobre o que o vídeo tem de fazer e o que isso implica. Costuma ser a hora mais barata do projeto, porque planear custa menos do que salvar uma montagem onde falta um plano.',
+    'A call to talk through what you already have and what it needs to become. Bring the footage, the brief, or just the problem, and you leave knowing what is possible and what it will take.':
+        'Uma chamada para falar do que já tem e daquilo em que isso precisa de se tornar. Traga o material, o briefing, ou só o problema, e sai a saber o que é possível e o que isso implica.',
     'Script writing':
         'Escrita de guião',
-    'A script written to a length and a purpose rather than a word count. You get something a crew can shoot from, or a presenter can read to camera.':
-        'Um guião escrito para uma duração e um objetivo, não para um número de palavras. Fica pronto para uma equipa filmar ou para alguém ler à câmara.',
+    'Writing the through-line: the voiceover, the on-screen text, the order the story gets told in. Written against the material you have rather than the material you wish you had.':
+        'Escrever o fio condutor: a locução, os textos no ecrã, a ordem por que a história é contada. Escrito a partir do material que tem, não do material que gostaria de ter.',
     'Video editing':
         'Edição de Vídeo',
-    'I build the story out of the raw footage and find the pace that holds it together. Rough cut first, so the shape is agreed before anyone spends time on polish.':
-        'Construo a história a partir do material bruto e encontro o ritmo que a sustenta. Primeiro um rough cut, para a forma ficar acordada antes de se gastar tempo a apurar.',
-    'Voiceover actors &amp; spokespeople':
-        'Locutores e apresentadores',
-    'Casting the voice or the face, directing the session, and cutting the takes. You hear or see the options before anyone is booked.':
-        'Escolho a voz ou a cara, dirijo a sessão e monto as takes. Ouve ou vê as opções antes de se contratar alguém.',
+    'I build the story out of the material and find the pace that holds it together. Rough cut first, so the shape is agreed before anyone spends time on polish.':
+        'Construo a história a partir do material e encontro o ritmo que a sustenta. Primeiro um rough cut, para a forma ficar acordada antes de se gastar tempo a apurar.',
+    'Casting &amp; directing voiceover actors':
+        'Casting e direção de locutores',
+    'Casting the voice or the spokesperson, briefing and directing them through the session, then cutting the read into the edit. You hear the options before anyone is booked.':
+        'Faço o casting da voz ou do apresentador, preparo-os e dirijo-os durante a sessão, e monto a leitura dentro da edição. Ouve as opções antes de se contratar alguém.',
     'Visual effects':
         'Efeitos visuais',
-    'Taking out what should not be in the shot, adding what should, and the quiet fixes nobody is meant to notice. Screen replacements, clean-up, tracking.':
+    'Taking out what should not be in frame, adding what should, and the quiet fixes nobody is meant to notice. Screen replacements, clean-up, tracking.':
         'Tirar o que não devia estar no plano, acrescentar o que devia, e as correções discretas que ninguém deve notar. Substituição de ecrãs, limpeza, tracking.',
     'Animated elements &amp; motion graphics':
         'Elementos animados e motion graphics',
@@ -118,16 +118,16 @@ SERVICES = {
         'Títulos, oráculos, animação de logótipo, gráficos e trabalho 2D leve quando a cena pede. Feito à medida da sua marca, não a partir de um template.',
     'Color grading &amp; correction':
         'Color grading e correção de cor',
-    'Matching every shot so the piece reads as one film, then grading it to sit with your brand. Different cameras or different days is the normal case, not a problem.':
-        'Igualo todos os planos para a peça ler como um só filme e depois faço o grading para assentar na sua marca. Câmaras diferentes ou dias diferentes são o caso normal, não um problema.',
+    'Matching every shot so the piece reads as one film, then grading it to sit with your brand. Material from different cameras or different days is the normal case, not a problem.':
+        'Igualo todos os planos para a peça ler como um só filme e depois faço o grading para assentar na sua marca. Material de câmaras diferentes ou de dias diferentes é o caso normal, não um problema.',
     'Sound design &amp; mixing':
         'Sound design e mistura',
     'Cleaning up dialogue, placing effects, balancing music, and mixing to broadcast and streaming levels. Poor sound is what makes a video feel cheap.':
         'Limpo os diálogos, coloco os efeitos, equilibro a música e faço a mistura para níveis de broadcast e streaming. É o som mau que faz um vídeo parecer barato.',
     'Licensed music &amp; stock footage':
         'Música e imagens de stock licenciadas',
-    'Finding the track and the shots, and clearing the licence so it is safe to publish anywhere. The paperwork comes with the files.':
-        'Encontro a faixa e os planos, e trato da licença para poder publicar em qualquer lado. A documentação vai com os ficheiros.',
+    'Finding the track, and the shots that fill the gaps, then clearing the licence so it is safe to publish anywhere. I work from paid premium libraries, so the choice is not limited to whatever happens to be free, and the paperwork comes with the files.':
+        'Encontro a faixa, e os planos que preenchem as falhas, e trato da licença para poder publicar em qualquer lado. Trabalho a partir de bibliotecas premium pagas, por isso a escolha não se limita ao que é gratuito, e a documentação vai com os ficheiros.',
     'Subtitling':
         'Legendagem',
     'Subtitles timed to be read rather than merely transcribed, and full language versions in English, Portuguese and Spanish.':
@@ -136,6 +136,14 @@ SERVICES = {
 
 # Body copy
 COPY = {
+    'I was twelve the first time I dragged two clips together and saw that the join changed what they meant. Nothing since has quite matched that.':
+        'Tinha doze anos na primeira vez que juntei dois planos e vi que o corte mudava o que eles queriam dizer. Nada desde então igualou bem aquilo.',
+    'I have been cutting ever since, and running my own business doing it since university, which means I learned to price a job and chase an invoice at the same age I learned to cut on action. Most of what comes to me now is commercials, brand films, YouTube, social and corporate video.':
+        'Nunca mais parei de montar, e tenho o meu próprio negócio desde a universidade, o que quer dizer que aprendi a orçamentar um trabalho e a correr atrás de uma fatura na mesma idade em que aprendi a cortar no movimento. A maior parte do que me chega hoje são anúncios, filmes de marca, YouTube, conteúdo social e vídeo corporativo.',
+    'What I am after is the story under the footage. Where the cut lands, how long a silence is allowed to hold, which frame you leave on. Small decisions, and they are the ones that decide whether a piece lands or slides past.':
+        'O que procuro é a história por baixo das imagens. Onde cai o corte, quanto tempo se deixa respirar um silêncio, em que fotograma se fica. São decisões pequenas e são elas que decidem se uma peça fica ou passa ao lado.',
+    'I still cut things nobody asked for, on evenings when I could be doing anything else. The best part of this has not changed since I was twelve: somebody watches, and feels something, before they could tell you why.':
+        'Continuo a montar coisas que ninguém pediu, em noites em que podia estar a fazer outra coisa qualquer. A melhor parte disto não mudou desde os doze anos: alguém vê, e sente alguma coisa, antes de conseguir explicar porquê.',
     "I'm a video editor based in Portugal. For about ten years I've worked with brands, agencies, and creative teams around the world.":
         "Sou editora de vídeo, em Portugal. Há cerca de dez anos que trabalho com marcas, agências e equipas criativas em todo o mundo.",
     "Most of what I do is commercials, brand films, YouTube, social content, and corporate video. I care most about the story underneath the footage, since that's usually what decides whether an edit lands.":
