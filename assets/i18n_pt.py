@@ -136,8 +136,8 @@ SERVICES = {
 
 # Body copy
 COPY = {
-    'I started editing at twelve and never quite stopped. It was a hobby first, then a business of my own, and now it is the whole job. I am also a licensed psychologist and worked as one before this, which is less of a leap than it sounds.':
-        'Comecei a montar aos doze anos e nunca mais parei bem. Primeiro foi um passatempo, depois um negócio meu, e agora é o trabalho todo. Sou também psicóloga e trabalhei como tal antes disto, o que é um salto menor do que parece.',
+    'I started editing at twelve and never quite stopped. It was a hobby first, then a business of my own, and now it is the whole job. I am also a licensed psychologist and worked as one before this, then followed the thing I cared about more.':
+        'Comecei a montar aos doze anos e nunca mais parei bem. Primeiro foi um passatempo, depois um negócio meu, e agora é o trabalho todo. Sou também psicóloga e trabalhei como tal antes disto, e depois segui aquilo de que gostava mais.',
     'Social media content, YouTube videos and corporate work, for household-name consumer brands, international organisations and global tech companies, sometimes direct and sometimes through their agencies. Footage arrives, and everything after that is mine: the cut, the colour, the sound, the subtitles, and the part where I watch it forty times and still find something to move.':
         'Conteúdo para redes sociais, vídeos de YouTube e vídeo corporativo, para marcas de grande consumo que toda a gente conhece, organizações internacionais e empresas de tecnologia globais, umas vezes diretamente, outras através das suas agências. O material chega, e tudo o que vem depois é comigo: a montagem, a cor, o som, as legendas, e a parte em que vejo aquilo quarenta vezes e ainda encontro coisa para mexer.',
     'One person, no team, no account managers. You deal directly with whoever is editing your video. I still cut things nobody asked for at weekends, which is why my drives are full of work no client will ever see.':
