@@ -136,8 +136,8 @@ SERVICES = {
 
 # Body copy
 COPY = {
-    'I started editing at twelve, on a laptop that really could not handle it, and never quite stopped. I set up on my own at university and have spent over ten years in post-production since.':
-        'Comecei a montar aos doze anos, num portátil que não aguentava mesmo aquilo, e nunca mais parei bem. Abri o meu próprio negócio na universidade e levo mais de dez anos de pós-produção desde então.',
+    'I started editing at twelve and never quite stopped. I set up on my own at university and have spent over ten years in post-production since.':
+        'Comecei a montar aos doze anos e nunca mais parei bem. Abri o meu próprio negócio na universidade e levo mais de dez anos de pós-produção desde então.',
     'Social media content, YouTube videos and corporate work, for household-name consumer brands, international organisations and global tech companies, usually through the agencies that handle them. Footage arrives, and everything after that is mine: the cut, the colour, the sound, the subtitles, and the part where I watch it forty times and still find something to move.':
         'Conteúdo para redes sociais, vídeos de YouTube e vídeo corporativo, para marcas de grande consumo que toda a gente conhece, organizações internacionais e empresas de tecnologia globais, normalmente através das agências que tratam delas. O material chega, e tudo o que vem depois é comigo: a montagem, a cor, o som, as legendas, e a parte em que vejo aquilo quarenta vezes e ainda encontro coisa para mexer.',
     'One person, no team, no account managers. You deal directly with whoever is editing your video. I still cut things nobody asked for at weekends, which is why my drives are full of work no client will ever see.':
