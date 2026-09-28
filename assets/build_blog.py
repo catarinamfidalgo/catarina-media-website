@@ -31,6 +31,158 @@ NAV = {
 
 POSTS = [
     {
+        "slug": "what-to-send-your-editor",
+        "image": "what-to-send",
+        "image_alt": "A purple set of drawers holding film strips, a waveform, music, "
+                     "stills and color swatches",
+        "date": "2026-09-28",
+        "date_label": "September 2026",
+        "title": "What to send me so the first cut is close",
+        "excerpt": "Most of what slows an edit down is decided before the files are opened. What "
+                   "actually helps: everything rather than a selection, originals rather than "
+                   "exports, and the handful of things that take five minutes to send.",
+        "pt": {
+            "date_label": "Setembro de 2026",
+            "title": "O que me mandar para o primeiro corte ficar perto",
+            "excerpt": "A maior parte do que atrasa uma montagem decide-se antes de os ficheiros "
+                       "serem abertos. O que ajuda mesmo: tudo em vez de uma seleção, originais em "
+                       "vez de exportações, e as poucas coisas que levam cinco minutos a mandar.",
+            "body": """
+<p class="lede">A maior parte do que atrasa uma montagem decide-se antes de eu abrir os ficheiros.
+Depende do que chegou.</p>
+<p>Isto não tem que ver com o material ser bom. Tem que ver com virem as coisas certas com ele.</p>
+
+<h3>Para que serve, antes do que lá está</h3>
+<p>Onde vai passar e que duração tem de ter moldam a montagem mais do que o próprio material.</p>
+<p>Um filme de noventa segundos para o site e um corte de quinze segundos para redes sociais pagas
+são peças diferentes. Começam de maneira diferente. Nas redes tem cerca de um segundo e meio antes
+de alguém fazer scroll. No seu site as pessoas dão-lhe mais tempo. Se precisa dos dois, diga-o
+logo. Montar um e adaptá-lo depois demora mais e funciona pior.</p>
+<p>Se ainda não sabe a duração, diga isso. Muda a forma como eu monto e não é um problema.</p>
+
+<h3>Mande tudo, não só as partes boas</h3>
+<p>É isto que custa mais tempo.</p>
+<p>É tentador passar os brutos e mandar só as takes de que gostou. As partes de que preciso são
+muitas vezes as que cortaria. O segundo antes de alguém começar a falar. A pausa em que baixa os
+olhos. Os doze segundos enquanto a câmara assenta.</p>
+<p>O mesmo para o b-roll que lhe parece aborrecido. Um corredor vazio não é interessante por si e é
+capaz de salvar uma transição.</p>
+<p>Mande o cartão todo. O volume não me incomoda.</p>
+
+<h3>Originais, não exportações</h3>
+<p>Mande os ficheiros tal como saíram da câmara. Não uma cópia comprimida, não uma coisa que passou
+pelo WhatsApp e, de preferência, não uma reexportação de outra montagem.</p>
+<p>Cada exportação deita informação fora. Não se vê a olhar para o ficheiro. Vê-se assim que o plano
+leva grading, é abrandado ou ampliado para um corte vertical.</p>
+<p>Se só existe uma cópia comprimida, dá para trabalhar. Só é preciso dizê-lo cedo.</p>
+
+<h3>O som está provavelmente num ficheiro à parte</h3>
+<p>Se alguém levava lapela, ou havia boom, essas gravações costumam viver em ficheiros separados.
+Mande-os. O som da câmara é um recurso de emergência. O diálogo é aquilo que se perdoa menos.</p>
+<p>Se não tem a certeza de que existe som à parte, pergunte a quem filmou.</p>
+
+<h3>Coisas de marca, e uma palavra sobre música</h3>
+<p>Cada uma destas leva cinco minutos a mandar e muito mais a reconstruir:</p>
+<ul>
+  <li><strong>Um logótipo vetorial.</strong> SVG, AI ou EPS. Não um PNG tirado do site.</li>
+  <li><strong>As suas fontes</strong>, se a licença permitir partilhá-las, e os códigos de cor ou o
+  manual de marca.</li>
+  <li><strong>Alguma indicação sobre música</strong>, mesmo vaga. "Calma, sem vozes, nada
+  corporativo" chega perfeitamente. Licencio a partir de bibliotecas pagas, por isso a procura é
+  comigo.</li>
+  <li><strong>A licença de música que já tenha</strong>, se existir. Uma licença para um filme
+  muitas vezes não cobre as versões para redes, e isso costuma aparecer na semana em que era para
+  publicar.</li>
+  <li><strong>Duas ou três referências</strong>, com uma frase sobre o que gosta nelas. Um link
+  sozinho só me diz que gostou.</li>
+</ul>
+<p>Se houver um estilo que não quer mesmo, diga também. É igualmente útil.</p>
+
+<h3>Quem aprova</h3>
+<p>Uma pessoa com a palavra final, ou um grupo que mande as notas em conjunto. Cinco pessoas a
+responder em separado, cada uma a uma versão diferente, é o que acrescenta dias a um projeto.</p>
+
+<h3>Em resumo</h3>
+<ul>
+  <li><strong>Tudo</strong>, não uma seleção</li>
+  <li><strong>Sem exportar</strong>, direto do cartão</li>
+  <li><strong>Som à parte</strong>, se existir</li>
+  <li><strong>Logótipo vetorial</strong>, fontes, cores</li>
+  <li><strong>Duração e plataforma</strong>, mesmo por alto</li>
+  <li><strong>Duas ou três referências</strong>, com uma frase cada</li>
+  <li><strong>Um nome</strong> para as aprovações</li>
+</ul>
+<p>Faça isso e o primeiro corte fica perto o suficiente para se falar dele a sério.</p>
+""",
+        },
+        "body": """
+<p class="lede">Most of what slows an edit down is decided before I open the files. It comes down to
+what arrived.</p>
+<p>None of this is about the footage being good. It's about the right things coming with it.</p>
+
+<h3>What it's for, before what's in it</h3>
+<p>Where it runs and how long it has to be shape the edit more than the material does.</p>
+<p>A ninety-second film for your homepage and a fifteen-second cut for paid social are different
+pieces. They open differently. On social you have about a second and a half before someone
+scrolls. On your own site people will give you longer. If you need both, say so at the start.
+Cutting one and adapting it afterwards takes longer and works less well.</p>
+<p>If you don't know the length yet, say that. It changes how I assemble and it isn't a problem.</p>
+
+<h3>Send everything, not the good bits</h3>
+<p>This is the one that costs the most time.</p>
+<p>It's tempting to go through the rushes and send only the takes you liked. The parts I need are
+often the ones you'd cut. The second before someone starts speaking. The pause where they look
+down. The twelve seconds while the camera settles.</p>
+<p>Same with b-roll you think is boring. An empty corridor isn't interesting on its own and it will
+probably save a transition.</p>
+<p>Send the whole card. I don't mind the volume.</p>
+
+<h3>Originals, not exports</h3>
+<p>Send the files as they came off the camera. Not a compressed copy, not something that's been
+through WhatsApp, and ideally not a re-export from another edit.</p>
+<p>Every export throws away data. You won't see it watching the file. You will see it once the shot
+is graded, slowed down, or scaled up for a vertical crop.</p>
+<p>If a compressed copy is all that exists, that's workable. Just say so early.</p>
+
+<h3>The audio is probably a separate file</h3>
+<p>If anyone wore a lav mic, or there was a boom, those recordings usually live as separate files.
+Send them. Camera audio is a backup. Dialogue is what viewers forgive least.</p>
+<p>If you're not sure whether separate audio exists, ask whoever shot it.</p>
+
+<h3>Brand things, and a word about music</h3>
+<p>Each of these takes five minutes to send and much longer to reconstruct:</p>
+<ul>
+  <li><strong>A vector logo.</strong> SVG, AI or EPS. Not a PNG pulled off the website.</li>
+  <li><strong>Your fonts</strong>, if the license covers sharing them, and your color codes or the
+  brand guide.</li>
+  <li><strong>Something about music</strong>, even vague. "Calm, no vocals, nothing corporate" is
+  enough to work from. I license from paid libraries, so the searching is mine.</li>
+  <li><strong>The existing music license</strong>, if there is one. A license for one film often
+  doesn't cover the social versions of it, and that tends to surface the week you're meant to
+  publish.</li>
+  <li><strong>Two or three references</strong>, with a sentence about what you like in them. A link
+  on its own only tells me you liked it.</li>
+</ul>
+<p>If there's a style you actively don't want, say that too. It's just as useful.</p>
+
+<h3>Who signs it off</h3>
+<p>One person with final say, or a group who send their notes together. Five people replying
+separately, each to a different version, is what adds days to a project.</p>
+
+<h3>The short version</h3>
+<ul>
+  <li><strong>Everything</strong>, not a selection</li>
+  <li><strong>Unexported</strong>, straight off the card</li>
+  <li><strong>Separate audio</strong>, if it exists</li>
+  <li><strong>A vector logo</strong>, fonts, colors</li>
+  <li><strong>Length and platform</strong>, even roughly</li>
+  <li><strong>A couple of references</strong>, with a sentence each</li>
+  <li><strong>One name</strong> for approvals</li>
+</ul>
+<p>Do that and the first cut will be close enough to talk about properly.</p>
+""",
+    },
+    {
         "slug": "brand-video-package",
         "image": "one-campaign",
         "image_alt": "An editing timeline in purple with clips and a waveform, "
@@ -176,7 +328,7 @@ belonging to the first.</p>
 
 <p>Here's the tension, and it's the whole job.</p>
 
-<p>The pieces have to be recognisably the same campaign: same grade, same typography, same world
+<p>The pieces have to be recognizably the same campaign: same grade, same typography, same world
 of music, same rhythm in the cutting. Someone should know it's you before the logo appears.</p>
 
 <p>But they can't be the same film at different lengths. That's the other failure, and it's just

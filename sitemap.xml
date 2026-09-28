@@ -174,6 +174,11 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://catarina.media/blog/what-to-send-your-editor/</loc>
+    <lastmod>2026-09-28</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://catarina.media/pt/blog/brand-video-package/</loc>
     <lastmod>2026-09-27</lastmod>
     <priority>0.5</priority>
@@ -181,6 +186,11 @@
   <url>
     <loc>https://catarina.media/pt/blog/</loc>
     <lastmod>2026-09-27</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://catarina.media/pt/blog/what-to-send-your-editor/</loc>
+    <lastmod>2026-09-28</lastmod>
     <priority>0.5</priority>
   </url>
 </urlset>
