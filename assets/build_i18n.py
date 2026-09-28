@@ -157,11 +157,16 @@ def build_page(lang, path, slug):
     # 4. paths — the page now lives one directory down
     if not slug:
         s = re.sub(r'((?:href|src)=")(assets/)', r"\g<1>../\g<2>", s)
-        s = re.sub(r'((?:href|src)=")(blog/)', r"\g<1>../\g<2>", s)
+        # NOT the blog: assets live at the site root, but the blog has its own
+        # translation under this language. From /pt/ the link is already
+        # "blog/", which is /pt/blog/. Adding ../ sent every translated page's
+        # Blog link to the English index.
         s = s.replace("'assets/video/", "'../assets/video/").replace("'assets/img/", "'../assets/img/")
     else:
         # already ../ for the English subpage; one more level inside the language
-        s = s.replace('="../assets/', '="../../assets/').replace('="../blog/', '="../../blog/')
+        # Same for the blog here: from /pt/about/ the English page already says
+        # "../blog/", which resolves to /pt/blog/. It is correct untouched.
+        s = s.replace('="../assets/', '="../../assets/')
         s = s.replace("'../assets/", "'../../assets/")
         s = s.replace('href="../"', 'href="../../"').replace('href="../work/', 'href="../work/')
 
