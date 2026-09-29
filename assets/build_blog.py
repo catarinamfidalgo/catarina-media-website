@@ -872,7 +872,7 @@ PAGE = """<!DOCTYPE html>
 <meta property="og:description" content="{excerpt}">
 <meta property="og:url" content="{canonical}">
 {og_image}
-<link rel="stylesheet" href="{root}assets/site.css?v=sig2">
+<link rel="stylesheet" href="{root}assets/site.css?v=sig3">
 
 <!-- Google Analytics (GA4), behind consent.
      Analytics sets a cookie, so under EU law it may not run until the visitor
