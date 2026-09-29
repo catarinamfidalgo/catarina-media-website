@@ -69,6 +69,20 @@ use `--purple-deep` and `--purple-light`, which do not swap.
 - `header.site` sticks via `.lang-bar + .container`, not the header itself. Its old parent was only as tall as it was, so it had nowhere to travel
 - `overflow-x` is `clip`, never `hidden`. `hidden` creates a scroll container and silently disables sticky descendants
 - The contact form posts to an Apps Script and falls back to `mailto:`. The address is never in the markup
+- **Bump the `site.css?v=` token whenever site.css changes.** It lives in two
+  places, `assets/source.html` and `assets/build_blog.py`, and they must match.
+  Forgetting it means the browser keeps the old stylesheet, so a new rule
+  simply does not exist: a freshly added element renders unstyled and it looks
+  like the CSS is wrong rather than stale. This has already cost one round trip
+  over a signature that appeared black and full-size because its rule was in a
+  stylesheet nobody had re-fetched.
+- **Bump the `site.css?v=` token whenever site.css changes.** It lives in two
+  places, `assets/source.html` and `assets/build_blog.py`, and they must match.
+  Forgetting it means the browser keeps the old stylesheet, so a new rule
+  simply does not exist: a freshly added element renders unstyled and it looks
+  like the CSS is wrong rather than stale. This has already cost one round trip
+  over a signature that appeared black and full-size because its rule was in a
+  stylesheet nobody had re-fetched.
 - `generate_lead` fires only on a confirmed send, not on click. It used to fire on click, which would have reported conversions for enquiries that never arrived
 
 ## Ask before changing these

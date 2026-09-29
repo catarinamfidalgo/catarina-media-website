@@ -307,9 +307,9 @@
      Catarina asked for it: this is the one mark on the site that is hers
      rather than chrome. No fill on the path, so it inherits from the svg
      and --accent can lift to the lavender on a dark ground. */
-  .signature { display: block; width: 148px; height: auto; margin-top: 24px;
+  .signature { display: block; width: 122px; height: auto; margin-top: 22px;
     fill: var(--accent); }
-  @media (max-width: 719px) { .signature { width: 126px; margin-top: 20px; } }
+  @media (max-width: 719px) { .signature { width: 104px; margin-top: 18px; } }
 
   .eyebrow { text-indent: .12em; font-family: 'Hanken Grotesk', sans-serif; font-size: .72rem; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; color: var(--accent); margin-bottom: 16px; }
   h1 { font-family: 'Hanken Grotesk', sans-serif; font-style: normal; font-weight: 800; text-transform: uppercase; line-height: .98; margin: 0 0 18px; font-size: clamp(2.4rem,5.5vw,4rem); letter-spacing: -.02em; }
