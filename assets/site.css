@@ -299,6 +299,16 @@
      starting early, because small light-weight letterspaced caps against a
      hard card border or a heavy headline always do. This is the same
      correction the masthead tagline needed, and for the same reason. */
+  /* The sign-off at the end of the About. Drawn rather than typeset, and
+     deliberately not her real signature: a vector of a genuine one is
+     trivially lifted onto a document. Inline SVG rather than an image so it
+     takes currentColor and inverts with the theme; a PNG would sit in a white
+     box on the dark ground. No flourish, because the first one read as
+     decoration and this brand does not decorate. */
+  .signature { display: block; width: 190px; height: auto; margin-top: 26px;
+    fill: currentColor; opacity: .88; }
+  @media (max-width: 719px) { .signature { width: 158px; margin-top: 22px; } }
+
   .eyebrow { text-indent: .12em; font-family: 'Hanken Grotesk', sans-serif; font-size: .72rem; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; color: var(--accent); margin-bottom: 16px; }
   h1 { font-family: 'Hanken Grotesk', sans-serif; font-style: normal; font-weight: 800; text-transform: uppercase; line-height: .98; margin: 0 0 18px; font-size: clamp(2.4rem,5.5vw,4rem); letter-spacing: -.02em; }
   h2 { font-family: 'Hanken Grotesk', sans-serif; font-weight: 800; text-transform: uppercase; line-height: 1; margin: 0 0 18px; font-size: clamp(1.8rem,4vw,2.7rem); letter-spacing: -.015em; }
