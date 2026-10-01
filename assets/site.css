@@ -704,6 +704,28 @@
   .agency-card .d { font-size: .86rem;color:var(--muted); }
 
   .services { padding-top: 90px; padding-bottom: 90px; }
+  /* The capacity block sits directly beneath the ten numbered service cards.
+     Given an identical bordered box with no number it reads as services
+     eleven to thirteen with the counter broken, so these are hairline-topped
+     columns instead: same grid, same type, visibly a different component.
+
+     The lede runs to 620px rather than the site's 480px reading measure.
+     That is not arbitrary: the container is 944px inside its gutters, three
+     columns with two 28px gaps makes each column 296px, so 620px ends the
+     paragraph exactly where the second column ends. The text and the grid
+     share a right edge instead of the paragraph stopping halfway across.
+
+     No top padding, because the services section above already ends with 90px
+     and this is a continuation of that page rather than a new subject. */
+  #capacity { padding-top: 0; }
+  #capacity p.copy { max-width: 620px; }
+  #capacity .agency-card { border: 0; border-top: 1px solid var(--line);
+    border-radius: 0; padding: 18px 0 0; }
+  #capacity .agency-card .t { font-size: 1.12rem; letter-spacing: -.01em;
+    margin: 0 0 8px; }
+  #capacity .agency-card .d { line-height: 1.6; }
+
+
   /* Boxed, matching the agency cards: the same three-up grid, the same
      border and radius. Services kept their numbering, which reads better
      inside a card than floating above bare text. */
