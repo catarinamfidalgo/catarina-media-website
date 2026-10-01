@@ -70,6 +70,24 @@ UI = {
     "Scroll": "Bajar",
     "Services": "Servicios",
     "Let's work <i>together.</i>": "Trabajemos <i>juntos.</i>",
+    'Capacity':
+        'Capacidad',
+    'One person, and what that means for your <i>deadline</i>':
+        'Una persona, y lo que eso significa para tu <i>plazo</i>',
+    'One person, no team, no account managers. That is the arrangement, and these are the parts of it that affect a deadline.':
+        'Una persona, sin equipo, sin gestores de cuenta. Ese es el arreglo, y estas son las partes que afectan a un plazo.',
+    'Series work is normal':
+        'Trabajar en serie es lo normal',
+    'Eighteen training videos for one client. A nine-lesson course. A campaign that went out as a thirty-second spot, a sixty-second square cut and five vertical reels, all from one set of material.':
+        'Dieciocho vídeos de formación para un solo cliente. Un curso de nueve lecciones. Una campaña que salió como un spot de treinta segundos, una versión cuadrada de sesenta segundos y cinco reels verticales, todo del mismo material.',
+    'Nothing is relayed twice':
+        'Nada se transmite dos veces',
+    'Your notes go to the person making the change. There is no account manager translating a brief, and no version of the conversation you are not part of.':
+        'Tus notas van a quien hace el cambio. No hay gestor de cuenta traduciendo un briefing, ni una versión de la conversación de la que no formas parte.',
+    'You hear about a clash early':
+        'Te enteras pronto de un choque de fechas',
+    'I take on a limited number of projects at a time. If your date does not fit, you hear it on the first call rather than three weeks in.':
+        'Acepto un número limitado de proyectos a la vez. Si tu fecha no encaja, te enteras en la primera llamada y no tres semanas después.',
     "A white-label partner for agencies who need to <i>scale</i>":
         "Un socio de marca blanca para agencias que necesitan <i>escalar</i>",
     "Send message": "Enviar mensaje",
