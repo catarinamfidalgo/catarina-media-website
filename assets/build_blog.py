@@ -17,17 +17,17 @@ SITE = "https://catarina.media"
 # Blog chrome, per language. The main site's strings live in assets/i18n_pt.py;
 # these are the handful the blog needs, kept here so the blog builds on its own.
 NAV = {
-    "en": {"tag": "Editing &amp; post-production", "home": "Home", "portfolio": "Portfolio",
+    "en": {"tag": "Video Editing &amp; Post-Production", "home": "Home", "portfolio": "Portfolio",
            "services": "Services", "about": "About", "agencies": "For Agencies",
            "blog": "Blog", "contact": "Contact", "cta": "Start a project",
            "rights": "All rights reserved", "back": "All posts",
            "index_title": "Blog", "index_lede": "Notes on editing, post-production, and working with video."},
-    "pt": {"tag": "Edição e pós-produção", "home": "Início", "portfolio": "Portfólio",
+    "pt": {"tag": "Edição de Vídeo &amp; Pós-Produção", "home": "Início", "portfolio": "Portfólio",
            "services": "Serviços", "about": "Sobre", "agencies": "Para Agências",
            "blog": "Blog", "contact": "Contacto", "cta": "Começar um projeto",
            "rights": "Todos os direitos reservados", "back": "Todos os artigos",
            "index_title": "Blog", "index_lede": "Notas sobre edição, pós-produção e trabalhar com vídeo."},
-    "es": {"tag": "Montaje y postproducción", "home": "Inicio", "portfolio": "Portafolio",
+    "es": {"tag": "Montaje de Vídeo &amp; Postproducción", "home": "Inicio", "portfolio": "Portafolio",
            "services": "Servicios", "about": "Sobre mí", "agencies": "Para Agencias",
            "blog": "Blog", "contact": "Contacto", "cta": "Empezar un proyecto",
            "rights": "Todos los derechos reservados", "back": "Todos los artículos",
@@ -1150,15 +1150,15 @@ def header(root, lang, other):
   <div class="container">
     <header class="site">
       <div class="brand-block">
-        <div class="brand"><a href="{root}{pre}">Catarina <i>Fidalgo</i></a>
+        <div class="brand">Catarina <i>Fidalgo</i>
       </div>
         <span class="brand-tag">{nav['tag']}</span>
       </div>
       <nav class="main" id="siteNav">
         <a href="{root}{pre}">{nav['home']}</a>
         <a href="{root}{pre}#portfolio">{nav['portfolio']}</a>
-        <a href="{root}{pre}services/">{nav['services']}</a>
         <a href="{root}{pre}about/">{nav['about']}</a>
+        <a href="{root}{pre}services/">{nav['services']}</a>
         <a href="{root}{pre}agencies/">{nav['agencies']}</a>
         <a href="{root}{pre}blog/" class="active">{nav['blog']}</a>
         <a href="{root}{pre}contact/">{nav['contact']}</a>
@@ -1173,7 +1173,7 @@ def footer(root, lang):
     <div class="container">
       <div class="foot-brand">
         <div class="foot-logo">Catarina <i>Fidalgo</i></div>
-        <div class="foot-service">Video Editing &amp; Post-Production</div>
+        <div class="foot-service">{nav['tag']}</div>
         <div class="copy">&copy; 2026 Catarina Fidalgo &middot; {nav['rights']}</div>
       </div>
       <div class="foot-cta">
