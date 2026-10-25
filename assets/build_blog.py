@@ -893,7 +893,6 @@ def build():
 
             main = f"""  <div class="container section">
     <article class="article">
-      <div class="article-meta">{c['date_label']}</div>
       <h1>{c['title']}</h1>
       {hero}
       {c['body'].strip()}
@@ -915,7 +914,6 @@ def build():
             f"""        <li class="post-item"><a href="{root}{pre}blog/{p['slug']}/">
           {f'<span class="post-thumb"><img src="{root}assets/img/blog/{p["image"]}-640.webp" width="640" height="360" alt="" loading="lazy"></span>' if p.get("image") else ""}
           <span class="post-text">
-            <span class="post-date">{content(p, lang)['date_label']}</span>
             <span class="post-title">{content(p, lang)['title']}</span>
             <span class="post-excerpt">{content(p, lang)['excerpt']}</span>
           </span>
