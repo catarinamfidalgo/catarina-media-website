@@ -36,6 +36,178 @@ NAV = {
 
 POSTS = [
     {
+        "slug": "ai-video-needs-an-editor",
+        "image": "ai-edit",
+        "image_alt": "Scattered purple film frames of landscapes flowing into an editing timeline "
+                     "with a playhead",
+        "date": "2026-10-25",
+        "date_label": "October 2026",
+        "title": "AI can make the shots. It can't make the video.",
+        "excerpt": "Almost every day someone gets in touch after trying to make their video with AI. "
+                   "Where it stalls, where it helps, and why a good ad is more than footage that "
+                   "looks real.",
+        "pt": {
+            "date_label": "Outubro de 2026",
+            "title": "A IA faz os planos. Não faz o vídeo.",
+            "excerpt": "Quase todos os dias alguém me contacta depois de tentar fazer o vídeo com "
+                       "IA. Onde emperra, onde ajuda, e porque é que um bom anúncio é mais do que "
+                       "imagens com ar real.",
+        "body": """
+<p class="lede">Quase todos os dias recebo uma mensagem de alguém que tentou primeiro fazer o vídeo
+com IA. Uns passaram um fim de semana a escrever prompts e nunca chegaram a um vídeo acabado.
+Outros chegaram, e não gostaram do resultado.</p>
+<p>Não acho que tenham feito mal em tentar. As ferramentas impressionam, e eu também as uso. Mas as
+mensagens descrevem quase sempre o mesmo problema, e não é o que as pessoas esperam.</p>
+
+<h3>Mesmo quando parece real, não funciona</h3>
+<p>A maior parte do que me mandam é lixo gerado por IA: caras que mudam de plano para plano, mãos
+com dedos a mais, texto que se desfaz em rabiscos, tudo com o mesmo brilho de plástico. É esse o
+ponto de partida habitual.</p>
+<p>No melhor dos casos, as imagens parecem realistas plano a plano. A luz é boa, as caras aguentam,
+o produto está lá. Mas veja-se do princípio ao fim e continua a não acontecer nada. Não há razão para continuar
+a ver depois dos primeiros três segundos, a mensagem chega tarde ou não chega, e o fim limita-se a
+parar.</p>
+<p>Parecer realista nunca foi o que fez um vídeo bom. Um anúncio funciona pelo que fica de fora, pelo
+que vem primeiro, pelo tempo que se segura um plano e pelo sítio onde a música muda. São decisões
+de montagem. Um gerador dá-lhe um plano bonito. Não faz ideia se esse plano pertence ao seu vídeo,
+nem onde.</p>
+
+<h3>Porque é que horas de prompts não chegam lá</h3>
+<p>Escrever prompts é uma forma lenta de montar. Cada tentativa sai um pouco diferente, por isso não
+dá para ajustar uma coisa e manter o resto. Uma mão muda, um logótipo derrete, alguém que estava
+de casaco azul aparece de verde. Corrige um plano e perde outro.</p>
+<p>Numa timeline consigo mudar um corte em quatro frames, trocar uma take, mover a música meio
+tempo. Esse controlo é o trabalho todo, e é para isso que serve um programa de edição como o
+Premiere, o DaVinci Resolve ou o After Effects. Uma caixa de texto não o dá.</p>
+
+<h3>Como eu uso a IA</h3>
+<p>Uso-a onde poupa tempo sem decidir nada: limpar áudio, transcrever entrevistas, prolongar um
+fundo, gerar um plano que nunca foi filmado quando o stock não o tem.</p>
+<p>A diferença é que a uso dentro de uma montagem. Sei do que o vídeo precisa antes de gerar o que
+quer que seja, por isso peço um plano concreto em vez de um filme inteiro, e quando sai mal corrijo
+na timeline em vez de recomeçar. É saber montar que torna a ferramenta útil.</p>
+
+<h3>Se já tentou</h3>
+<p>Mande-me o que tem. Os planos gerados, os prompts que ficaram perto, a versão de que não gosta.
+Muitas vezes há bom material ali dentro que só ainda não foi montado, e é mais rápido partir dele
+do que começar de novo.</p>
+<p>Se ainda não começou, diga-me para que é o vídeo e onde vai passar. Isso decide mais do que
+qualquer ferramenta. <a href="../../contact/">Fale comigo</a> e eu digo-lhe o que vale a pena gerar
+e o que não vale.</p>
+""",
+        },
+        "es": {
+            "date_label": "Octubre de 2026",
+            "title": "La IA hace los planos. No hace el vídeo.",
+            "excerpt": "Casi todos los días alguien me escribe después de intentar hacer su vídeo "
+                       "con IA. Dónde se atasca, dónde ayuda, y por qué un buen anuncio es más que "
+                       "imágenes que parecen reales.",
+        "body": """
+<p class="lede">Casi todos los días me llega un mensaje de alguien que intentó primero hacer su
+vídeo con IA. Algunos pasaron un fin de semana escribiendo prompts y nunca llegaron a un vídeo
+terminado. Otros llegaron, y no les gustó el resultado.</p>
+<p>No creo que se equivocaran al intentarlo. Las herramientas impresionan, y yo también las uso.
+Pero los mensajes describen casi siempre el mismo problema, y no es el que la gente espera.</p>
+
+<h3>Aunque parezca real, no funciona</h3>
+<p>Casi todo lo que me mandan es basura generada por IA: caras que cambian de un plano a otro,
+manos con dedos de más, textos que se deshacen en garabatos, todo con el mismo brillo de plástico.
+Ese es el punto de partida habitual.</p>
+<p>En el mejor de los casos, las imágenes parecen realistas plano a plano. La luz es buena, las
+caras aguantan, el producto está ahí. Pero míralo de principio a fin y sigue sin pasar nada. No hay motivo para seguir mirando
+después de los tres primeros segundos, el mensaje llega tarde o no llega, y el final simplemente
+se para.</p>
+<p>Parecer realista nunca fue lo que hizo bueno a un vídeo. Un anuncio funciona por lo que se deja
+fuera, por lo que va primero, por cuánto se sostiene un plano y por dónde cambia la música. Son
+decisiones de montaje. Un generador te da un plano bonito. No tiene ni idea de si ese plano
+pertenece a tu vídeo, ni de dónde.</p>
+
+<h3>Por qué horas de prompts no llegan</h3>
+<p>Escribir prompts es una forma lenta de montar. Cada intento sale un poco distinto, así que no
+puedes ajustar una cosa y mantener el resto. Una mano cambia, un logotipo se derrite, alguien que
+llevaba chaqueta azul aparece de verde. Arreglas un plano y pierdes otro.</p>
+<p>En una línea de tiempo puedo mover un corte cuatro fotogramas, cambiar una toma, desplazar la
+música medio tiempo. Ese control es todo el trabajo, y es para lo que sirve un programa de edición
+como Premiere, DaVinci Resolve o After Effects. Una caja de texto no te lo da.</p>
+
+<h3>Cómo uso yo la IA</h3>
+<p>La uso donde ahorra tiempo sin decidir nada: limpiar audio, transcribir entrevistas, alargar un
+fondo, generar un plano que nunca se rodó cuando el stock no lo tiene.</p>
+<p>La diferencia es que la uso dentro de un montaje. Sé lo que necesita el vídeo antes de generar
+nada, así que pido un plano concreto en lugar de una película entera, y cuando sale mal lo arreglo
+en la línea de tiempo en vez de empezar de cero. Saber montar es lo que hace útil la
+herramienta.</p>
+
+<h3>Si ya lo has intentado</h3>
+<p>Mándame lo que tengas. Los planos generados, los prompts que se acercaron, la versión que no te
+gusta. Muchas veces hay buen material ahí dentro que simplemente no se ha montado aún, y es más
+rápido partir de él que empezar de nuevo.</p>
+<p>Si aún no has empezado, cuéntame para qué es el vídeo y dónde se va a ver. Eso decide más que
+cualquier herramienta. <a href="../../contact/">Escríbeme</a> y te digo qué merece la pena generar
+y qué no.</p>
+""",
+        },
+        "body": """
+<p class="lede">Almost every day I get a message from someone who tried to make their video with AI
+first. Some spent a weekend writing prompts and never got to a finished video. Others got one, and
+didn't like it.</p>
+
+<p>I don't think they were wrong to try. The tools are impressive, and I use them myself. But the
+messages nearly always describe the same problem, and it isn't the one people expect.</p>
+
+
+<h3>Even when it looks real, it doesn't work</h3>
+
+<p>Most of what people send me is AI slop: faces that drift between shots, hands with too many
+fingers, text that melts into nonsense, everything with the same plastic sheen. That's the usual
+starting point.</p>
+
+<p>The best case is footage that looks realistic shot by shot. The light is good, the faces hold,
+the product is there. Watch it from start to finish and still nothing happens. There's no reason to keep
+watching after the first three seconds, the message arrives late or not at all, and the ending
+just stops.</p>
+
+<p>Looking realistic was never what made a video good. An ad works because of what's left out, what
+comes first, how long a shot is held and where the music turns. Those are editing decisions. A
+generator can give you a beautiful shot. It has no idea whether that shot belongs in your video,
+or where.</p>
+
+
+<h3>Why hours of prompts don't get there</h3>
+
+<p>Prompting is a slow way to edit. Every attempt comes back slightly different, so you can't adjust
+one thing and keep the rest. A hand changes, a logo melts, someone who was wearing a blue jacket is
+now in green. You fix one shot and lose another.</p>
+
+<p>In a timeline I can move a cut by four frames, swap one take, shift the music half a beat. That
+control is the whole job, and it's what editing software like Premiere, DaVinci Resolve or After
+Effects is for. A text box doesn't give you it.</p>
+
+
+<h3>How I use AI</h3>
+
+<p>I use it where it saves time without deciding anything: cleaning up audio, transcribing
+interviews, extending a background, generating a shot that was never filmed when stock doesn't
+have it.</p>
+
+<p>The difference is that I'm using it inside an edit. I know what the video needs before I
+generate anything, so I ask for one specific shot rather than a whole film, and when it comes back
+wrong I fix it in the timeline instead of starting over. Knowing how to cut is what makes the tool
+useful.</p>
+
+
+<h3>If you've already tried</h3>
+
+<p>Send me what you have. The generated clips, the prompts that got close, the version you're
+unhappy with. There's often good material in there that just hasn't been cut yet, and it's quicker
+to build from it than to start again.</p>
+
+<p>If you haven't started, tell me what the video is for and where it will run. That decides more
+than any tool will. <a href="../../contact/">Get in touch</a> and I'll tell you what's worth
+generating and what isn't.</p>
+""",
+    },
+    {
         "slug": "what-to-send-your-editor",
         "image": "what-to-send",
         "image_alt": "A purple set of drawers holding film strips, a waveform, music, "
@@ -44,378 +216,187 @@ POSTS = [
         "date_label": "September 2026",
         "title": "What to send me so the first cut is close",
         "excerpt": "Most of what slows an edit down is decided before the files are opened. What "
-                   "actually helps, what to send originals of, and why music and stock footage "
-                   "are not on the list of things you need to find.",
+                   "to send, what to send originals of, and what you don't need to find at all.",
         "pt": {
             "date_label": "Setembro de 2026",
             "title": "O que me mandar para o primeiro corte ficar perto",
             "excerpt": "A maior parte do que atrasa uma montagem decide-se antes de os ficheiros "
-                       "serem abertos. O que ajuda mesmo, de que é preciso mandar originais, e "
-                       "porque é que a música e o stock não são coisas que tenha de procurar.",
+                       "serem abertos. O que mandar, de que é preciso mandar originais, e o que "
+                       "não precisa de procurar.",
         "body": """
 <p class="lede">A maior parte do que atrasa uma montagem decide-se antes de eu abrir os ficheiros.
 Depende do que chegou.</p>
-<p>Isto não tem que ver com o material ser bom. Tem que ver com virem as coisas certas com ele, e
-com algumas que não precisa de mandar de todo.</p>
 
-<h3>Para que serve, antes do que lá está</h3>
-<p>Onde vai passar e que duração tem de ter moldam a montagem mais do que o próprio material.</p>
-<p>Um filme de noventa segundos para o site e um corte de quinze segundos para redes sociais pagas
-são peças diferentes. Começam de maneira diferente. Nas redes tem cerca de um segundo e meio antes
-de alguém fazer scroll. No seu site as pessoas dão-lhe mais tempo. Se precisa dos dois, diga-o
-logo. Montar um e adaptá-lo depois demora mais e funciona pior.</p>
-<p>Se ainda não sabe a duração, diga isso. Muda a forma como eu monto e não é um problema.</p>
-<p>Há duas coisas que ficam sempre de fora dos briefings e as duas são baratas no início:</p>
-<ul>
-  <li><strong>Se tem de funcionar sem som.</strong> Os stands de feiras e os ecrãs de eventos
-  passam em loop e sem áudio, e grande parte das redes sociais também. Um vídeo feito para o
-  silêncio leva a informação no ecrã em vez de na voz off, e isso muda a montagem, não só os
-  títulos. Já fiz peças que nunca iam chegar a ser ouvidas.</li>
-  <li><strong>Em que línguas precisa dele.</strong> Legendas ou versões completas em português,
-  inglês e espanhol são simples enquanto o projeto está aberto e incómodas depois de estar fechado
-  e entregue.</li>
-</ul>
+<h3>Para que serve</h3>
+<p>Onde vai passar e que duração tem de ter moldam a montagem mais do que o material. Um filme de
+noventa segundos para o site e um corte de quinze para redes sociais começam de maneira diferente,
+por isso, se precisa dos dois, diga-o logo. Se ainda não sabe a duração, diga isso também.</p>
+<p>Há duas coisas que costumam ficar de fora: se tem de funcionar sem som, como a maior parte dos
+feeds e dos ecrãs de feiras, e em que línguas precisa dele. São baratas de planear e incómodas de
+acrescentar depois.</p>
 
-<h3>Mande tudo, não só as partes boas</h3>
-<p>É isto que custa mais tempo.</p>
-<p>É tentador passar os brutos e mandar só as takes de que gostou. As partes de que preciso são
-muitas vezes as que cortaria. O segundo antes de alguém começar a falar. A pausa em que baixa os
-olhos. Os doze segundos enquanto a câmara assenta.</p>
-<p>O mesmo para o b-roll que lhe parece aborrecido. Um corredor vazio não é interessante por si e é
-capaz de salvar uma transição.</p>
-<p>Mande o cartão todo. O volume não me incomoda.</p>
+<h3>Mande tudo</h3>
+<p>É tentador mandar só as takes de que gostou. As partes de que preciso são muitas vezes as que
+cortaria: o segundo antes de alguém falar, a pausa em que baixa os olhos, o b-roll aborrecido que
+salva uma transição. Mande o cartão todo. O volume não me incomoda.</p>
 
 <h3>Originais, não exportações</h3>
-<p>Mande os ficheiros como saíram da câmara. Não uma cópia comprimida, nada que tenha passado pelo
-WhatsApp, e de preferência não uma reexportação de outra montagem.</p>
-<p>Cada exportação deita dados fora. Não vai notar a ver o ficheiro. Vai notar assim que o plano for
-tratado na cor, abrandado ou ampliado para um corte vertical.</p>
-<p>Se só existir uma cópia comprimida, dá para trabalhar. Basta dizer-mo cedo.</p>
+<p>Mande os ficheiros como saíram da câmara, não uma cópia comprimida nem algo que tenha passado
+pelo WhatsApp. Cada exportação deita dados fora, e isso nota-se quando o plano é tratado na cor,
+abrandado ou cortado na vertical. Se só existir uma cópia comprimida, dá para trabalhar. Basta
+dizer-mo cedo.</p>
 
-<h3>O áudio é provavelmente um ficheiro à parte</h3>
-<p>Se alguém usou um microfone de lapela, ou se houve boom, essas gravações costumam viver em
-ficheiros separados. Mande-os. O áudio da câmara é um backup. O diálogo é o que o público perdoa
-menos.</p>
-<p>Se não tiver a certeza de que existe áudio separado, pergunte a quem filmou.</p>
-<p>Se esteve mais do que uma câmara a gravar, mande todas sem cortes, incluindo as partes em que não
-acontece nada. É pelo áudio sobreposto das câmaras que as sincronizo, e os clips já aparados são o
-que transforma isso num trabalho manual em vez de automático.</p>
+<h3>Áudio e câmaras</h3>
+<p>Se alguém usou microfone de lapela ou houve boom, esse áudio costuma estar num ficheiro à parte.
+Mande-o, porque o diálogo é o que o público perdoa menos. Se esteve mais do que uma câmara a gravar,
+mande todas sem cortes. Sincronizo-as pelo som que se sobrepõe, e os clips aparados tornam isso um
+trabalho manual.</p>
 
 <h3>Coisas da marca</h3>
-<p>Cada uma destas leva cinco minutos a mandar e muito mais tempo a reconstruir:</p>
 <ul>
-  <li><strong>Um logótipo vetorial.</strong> SVG, AI ou EPS. Não um PNG tirado do site.</li>
-  <li><strong>As suas fontes</strong>, se a licença permitir partilhá-las, e os códigos de cor ou o
-  manual de marca.</li>
-  <li><strong>Duas ou três referências</strong>, com uma frase sobre o que gosta nelas. Um link
-  sozinho só me diz que gostou.</li>
-</ul>
-<p>Se houver um estilo que não quer mesmo, diga também. É igualmente útil.</p>
-<p>Se forem precisos títulos, oráculos ou uma animação de logótipo, é do manual de marca que saem,
-por isso vale a pena mandá-lo mesmo quando parece exagero para um vídeo só.</p>
-
-<h3>A música é comigo</h3>
-<p>Não precisa de encontrar uma faixa nem de comprar nenhuma.</p>
-<p>Trabalho com bibliotecas premium pagas, por isso a procura é minha e a licença vai junto com a
-entrega, válida para as plataformas onde o vídeo vai passar. Só preciso de uma direção, e vaga
-chega. "Calma, sem voz, nada corporativo" já dá para trabalhar.</p>
-<p>Duas exceções que vale a pena assinalar cedo:</p>
-<ul>
-  <li><strong>Se já tem uma faixa de que gosta muito</strong>, mande a licença em vez do ficheiro.
-  Uma licença comprada para um filme muitas vezes não cobre as versões dele para redes sociais, e
-  isso costuma aparecer na semana em que era para publicar.</li>
-  <li><strong>Se for música comercial</strong>, daquelas com um nome que reconheceria, parta do
-  princípio de que não é licenciável a um preço sensato e diga-me antes o que lhe agrada nela.
-  Normalmente consigo chegar perto.</li>
+  <li><strong>Um logótipo vetorial</strong>: SVG, AI ou EPS, não um PNG tirado do site.</li>
+  <li><strong>Fontes e cores</strong>, ou o manual de marca, se existir.</li>
+  <li><strong>Duas ou três referências</strong>, com uma frase sobre o que gosta em cada uma. Um
+  estilo que não quer é igualmente útil.</li>
 </ul>
 
-<h3>Faltarem planos não é problema</h3>
-<p>Há quem adie o envio do material porque falta um plano. Não precisa de segurar nada.</p>
-<p>Licencio imagens de stock nas mesmas bibliotecas premium, por isso um plano de estabelecimento
-que falta, um aéreo que ninguém tinha orçamento para filmar ou uma cena que nunca chegou a existir
-costumam resolver-se. Boa parte do trabalho corporativo que faço é construído sobretudo a partir de
-material licenciado e dos materiais que o cliente já tem, sem filmagem nenhuma.</p>
-<p>Diga-me o que falta em vez de esperar que passe a existir.</p>
+<h3>A música e o stock são comigo</h3>
+<p>Não precisa de encontrar nem de comprar uma faixa. Trabalho com bibliotecas premium pagas, por
+isso a procura e a licença são do meu lado. Uma direção chega: "calma, sem voz, nada corporativo"
+já serve. Se já comprou uma faixa de que gosta, mande a licença, porque pode não cobrir as versões
+para redes sociais.</p>
+<p>Faltarem planos também não tem de atrasar nada. Licencio stock nas mesmas bibliotecas, por isso
+diga-me o que falta em vez de esperar que passe a existir.</p>
 
-<h3>Quem aprova</h3>
-<p>Uma pessoa com a palavra final, ou um grupo que manda as notas em conjunto. Cinco pessoas a
-responder à parte, cada uma sobre uma versão diferente, é o que acrescenta dias a um projeto.</p>
-
-<h3>Versão curta</h3>
-<ul>
-  <li><strong>Tudo</strong>, não uma seleção</li>
-  <li><strong>Sem exportar</strong>,direto do cartão</li>
-  <li><strong>Áudio separado</strong>, e todas as câmaras, sem cortes</li>
-  <li><strong>Um logótipo vetorial</strong>, fontes, cores</li>
-  <li><strong>Duração e plataforma</strong>, nem que seja por alto</li>
-  <li><strong>Se passa sem som</strong>, e em que línguas</li>
-  <li><strong>Duas referências</strong>, com uma frase cada</li>
-  <li><strong>Um nome</strong> para as aprovações</li>
-</ul>
-<p>A música, o stock e o licenciamento de ambos são comigo. Mande o resto e o primeiro corte fica
-perto o suficiente para se falar dele a sério.</p>
+<h3>Uma pessoa aprova</h3>
+<p>Um nome com a palavra final, ou um grupo que manda as notas em conjunto. Cinco pessoas a
+responder em separado, cada uma a uma versão diferente, é o que acrescenta dias.</p>
+<p>Mande o resto e o primeiro corte vai ficar perto o suficiente para falarmos a sério.</p>
 """,
         },
         "es": {
             "date_label": "Septiembre de 2026",
-            "title": 'Qué mandarme para que el primer corte quede cerca',
-            "excerpt": 'La mayor parte de lo que ralentiza un montaje se decide antes de abrir los archivos. Lo que de verdad ayuda, de qué hay que mandar originales, y por qué la música y el stock no son cosas que tengas que buscar.',
-            "body": """
-<p class="lede">La mayor parte de lo que ralentiza un montaje se decide antes de que abra los
-archivos. Depende de lo que llegó.</p>
-<p>Esto no va de que el material sea bueno. Va de que vengan con él las cosas correctas, y de
-algunas que no hace falta que mandes.</p>
+            "title": "Qué enviarme para que el primer corte se acerque",
+            "excerpt": "Casi todo lo que retrasa un montaje se decide antes de abrir los archivos. "
+                       "Qué enviar, de qué hacen falta originales, y qué no necesitas buscar.",
+        "body": """
+<p class="lede">Casi todo lo que retrasa un montaje se decide antes de que abra los archivos.
+Depende de lo que haya llegado.</p>
 
-<h3>Para qué es, antes de qué hay dentro</h3>
-<p>Dónde se publica y cuánto tiene que durar moldean el montaje más que el propio material.</p>
-<p>Una película de noventa segundos para tu web y un corte de quince segundos para redes de pago son
-piezas distintas. Empiezan de otra manera. En redes tienes alrededor de un segundo y medio antes de
-que alguien siga bajando. En tu web la gente te da más tiempo. Si necesitas las dos, dilo al
-principio. Montar una y adaptarla después lleva más tiempo y funciona peor.</p>
-<p>Si todavía no sabes la duración, dilo. Cambia cómo lo monto y no es un problema.</p>
-<p>Hay dos cosas que siempre se quedan fuera de los briefings y las dos son baratas al principio:</p>
-<ul>
-  <li><strong>Si tiene que funcionar sin sonido.</strong> Los stands de ferias y las pantallas de
-  eventos van en bucle y sin audio, y buena parte de las redes también. Un vídeo hecho para el
-  silencio lleva la información en pantalla en vez de en la voz en off, y eso cambia el montaje, no
-  solo los rótulos. He hecho piezas que nunca iban a escucharse.</li>
-  <li><strong>En qué idiomas lo necesitas.</strong> Subtítulos o versiones completas en español,
-  inglés y portugués son sencillos mientras el proyecto está abierto e incómodos una vez cerrado y
-  entregado.</li>
-</ul>
+<h3>Para qué es</h3>
+<p>Dónde se va a ver y cuánto tiene que durar dan forma al montaje más que el material. Una pieza de
+noventa segundos para tu web y un corte de quince para redes empiezan de forma distinta, así que, si
+necesitas las dos, dilo desde el principio. Si aún no sabes la duración, dilo también.</p>
+<p>Hay dos cosas que suelen quedar fuera: si tiene que funcionar sin sonido, como casi todos los
+feeds y las pantallas de ferias, y en qué idiomas lo necesitas. Son baratas de planificar e
+incómodas de añadir después.</p>
 
-<h3>Manda todo, no solo lo bueno</h3>
-<p>Esto es lo que más tiempo cuesta.</p>
-<p>Es tentador revisar el bruto y mandar solo las tomas que te gustaron. Las partes que necesito son
-muchas veces las que tú cortarías. El segundo antes de que alguien empiece a hablar. La pausa en la
-que baja la mirada. Los doce segundos mientras la cámara se asienta.</p>
-<p>Lo mismo con el b-roll que te parece aburrido. Un pasillo vacío no es interesante por sí solo y
-probablemente salve una transición.</p>
-<p>Manda la tarjeta entera. El volumen no me molesta.</p>
+<h3>Mándalo todo</h3>
+<p>Es tentador mandar solo las tomas que te gustaron. Las partes que necesito suelen ser las que
+cortarías: el segundo antes de que alguien hable, la pausa en la que baja la mirada, el b-roll
+aburrido que salva una transición. Manda la tarjeta entera. El volumen no me molesta.</p>
 
 <h3>Originales, no exportaciones</h3>
-<p>Manda los archivos tal y como salieron de la cámara. No una copia comprimida, nada que haya
-pasado por WhatsApp, y a ser posible no una reexportación de otro montaje.</p>
-<p>Cada exportación tira datos. No lo vas a notar viendo el archivo. Lo vas a notar en cuanto el
-plano se etalone, se ralentice o se amplíe para un recorte vertical.</p>
-<p>Si lo único que existe es una copia comprimida, se puede trabajar. Basta con decírmelo pronto.</p>
+<p>Manda los archivos tal como salieron de la cámara, no una copia comprimida ni algo que haya
+pasado por WhatsApp. Cada exportación tira datos, y se nota cuando el plano se etalona, se ralentiza
+o se recorta en vertical. Si solo existe una copia comprimida, se puede trabajar. Solo dímelo
+pronto.</p>
 
-<h3>El audio es probablemente un archivo aparte</h3>
-<p>Si alguien llevaba micrófono de corbata, o hubo pértiga, esas grabaciones suelen vivir en
-archivos separados. Mándalos. El audio de cámara es un respaldo. El diálogo es lo que menos perdona
-quien mira.</p>
-<p>Si no sabes si existe audio separado, pregúntale a quien lo grabó.</p>
-<p>Si había más de una cámara, mándalas todas sin recortar, incluidas las partes en las que no pasa
-nada. El audio solapado de las cámaras es por donde las sincronizo, y los clips ya recortados son lo
-que convierte eso en un trabajo manual en vez de automático.</p>
+<h3>Audio y cámaras</h3>
+<p>Si alguien llevó micrófono de solapa o hubo pértiga, ese audio suele estar en un archivo aparte.
+Mándalo, porque el diálogo es lo que menos perdona el público. Si grababa más de una cámara, mándalas
+todas sin recortar. Las sincronizo por el sonido que se solapa, y los clips recortados lo convierten
+en un trabajo manual.</p>
 
 <h3>Cosas de marca</h3>
-<p>Cada una de estas lleva cinco minutos mandar y mucho más tiempo reconstruir:</p>
 <ul>
-  <li><strong>Un logotipo vectorial.</strong> SVG, AI o EPS. No un PNG sacado de la web.</li>
-  <li><strong>Tus tipografías</strong>, si la licencia permite compartirlas, y tus códigos de color
-  o el manual de marca.</li>
-  <li><strong>Dos o tres referencias</strong>, con una frase sobre qué te gusta de ellas. Un enlace
-  solo me dice que te gustó.</li>
-</ul>
-<p>Si hay un estilo que no quieres, dilo también. Es igual de útil.</p>
-<p>Si van a hacer falta rótulos, chyrons o una animación de logotipo, salen del manual de marca, así
-que vale la pena mandarlo aunque parezca excesivo para un solo vídeo.</p>
-
-<h3>La música es cosa mía</h3>
-<p>No necesitas encontrar una pista ni comprar ninguna.</p>
-<p>Trabajo con bibliotecas premium de pago, así que la búsqueda es mía y la licencia va con la
-entrega, válida para las plataformas donde vaya a correr el vídeo. Solo necesito una dirección, y
-vaga vale. "Tranquila, sin voces, nada corporativo" ya me sirve.</p>
-<p>Dos excepciones que conviene avisar pronto:</p>
-<ul>
-  <li><strong>Si ya tienes una pista a la que le tienes cariño</strong>, manda la licencia en vez
-  del archivo. Una licencia comprada para una película muchas veces no cubre sus versiones para
-  redes, y eso suele aparecer la semana en la que tocaba publicar.</li>
-  <li><strong>Si es música comercial</strong>, de esas con un nombre que reconocerías, da por hecho
-  que no se licencia a un precio sensato y cuéntame mejor qué te gusta de ella. Normalmente consigo
-  acercarme.</li>
+  <li><strong>Un logotipo vectorial</strong>: SVG, AI o EPS, no un PNG sacado de la web.</li>
+  <li><strong>Tipografías y colores</strong>, o el manual de marca si existe.</li>
+  <li><strong>Dos o tres referencias</strong>, con una frase sobre qué te gusta de cada una. Un
+  estilo que no quieres es igual de útil.</li>
 </ul>
 
-<h3>Que falten planos no es un problema</h3>
-<p>Hay quien retrasa el envío del material porque falta un plano. No hace falta que frene nada.</p>
-<p>Licencio imágenes de stock en las mismas bibliotecas premium, así que un plano de situación que
-falta, un aéreo que nadie tenía presupuesto para volar o una escena que nunca se rodó se suelen
-resolver. Buena parte del trabajo corporativo que hago está construido sobre todo con material
-licenciado y con los materiales que el cliente ya tiene, sin rodaje ninguno.</p>
-<p>Dime qué falta en vez de esperar a que exista.</p>
+<h3>La música y el stock son cosa mía</h3>
+<p>No necesitas buscar ni comprar una pista. Trabajo con bibliotecas premium de pago, así que la
+búsqueda y la licencia corren de mi parte. Basta con una dirección: "tranquila, sin voz, nada
+corporativo" ya sirve. Si ya compraste una pista que te gusta, manda la licencia, porque puede no
+cubrir las versiones para redes.</p>
+<p>Que falten planos tampoco tiene por qué retrasar nada. Licencio stock en las mismas bibliotecas,
+así que dime qué falta en lugar de esperar a que exista.</p>
 
-<h3>Quién lo aprueba</h3>
-<p>Una persona con la última palabra, o un grupo que manda sus notas juntas. Cinco personas
-respondiendo por separado, cada una sobre una versión distinta, es lo que añade días a un
-proyecto.</p>
-
-<h3>La versión corta</h3>
-<ul>
-  <li><strong>Todo</strong>, no una selección</li>
-  <li><strong>Sin exportar</strong>, directo de la tarjeta</li>
-  <li><strong>Audio separado</strong>, y todas las cámaras, sin recortar</li>
-  <li><strong>Un logotipo vectorial</strong>, tipografías, colores</li>
-  <li><strong>Duración y plataforma</strong>, aunque sea por encima</li>
-  <li><strong>Si va sin sonido</strong>, y en qué idiomas</li>
-  <li><strong>Dos referencias</strong>, con una frase cada una</li>
-  <li><strong>Un nombre</strong> para las aprobaciones</li>
-</ul>
-<p>La música, el stock y el licenciamiento de los dos son cosa mía. Manda el resto y el primer corte
-quedará lo bastante cerca como para hablar de él en serio.</p>
+<h3>Una persona aprueba</h3>
+<p>Un nombre con la última palabra, o un grupo que manda las notas juntas. Cinco personas
+respondiendo por separado, cada una a una versión distinta, es lo que añade días.</p>
+<p>Manda el resto y el primer corte estará lo bastante cerca como para hablar de él en serio.</p>
 """,
         },
         "body": """
 <p class="lede">Most of what slows an edit down is decided before I open the files. It comes down to
 what arrived.</p>
 
-<p>None of this is about the footage being good. It's about the right things coming with it, and
-about a few things you don't need to send at all.</p>
+
+<h3>What it's for</h3>
+
+<p>Where it runs and how long it has to be shape the edit more than the footage does. A
+ninety-second homepage film and a fifteen-second social cut open differently, so if you need both,
+say so at the start. If you don't know the length yet, say that too.</p>
+
+<p>Two things usually get left out of briefs: whether it has to work with no sound, as most feeds and
+trade show screens do, and which languages you need. Both are cheap to plan and awkward to add
+later.</p>
 
 
-<h3>What it's for, before what's in it</h3>
+<h3>Send everything</h3>
 
-<p>Where it runs and how long it has to be shape the edit more than the material does.</p>
-
-<p>A ninety-second film for your homepage and a fifteen-second cut for paid social are different
-pieces. They open differently. On social you have about a second and a half before someone
-scrolls. On your own site people will give you longer. If you need both, say so at the start.
-Cutting one and adapting it afterwards takes longer and works less well.</p>
-
-<p>If you don't know the length yet, say that. It changes how I assemble and it isn't a problem.</p>
-
-<p>Two things get left out of briefs and both are cheap at the start:</p>
-
-<ul>
-  <li><strong>Whether it has to work with no sound.</strong> Trade show booths and event screens
-  usually play silent on a loop, and so does most of a social feed. A video built for silence
-  carries the information on screen instead of in the voiceover, and that changes the cut, not
-  just the titles. I've made pieces that were never going to be heard at all.</li>
-
-  <li><strong>Which languages you need.</strong> Subtitles and full language versions in English,
-  Portuguese and Spanish are straightforward while the project is open and awkward once it's
-  closed and delivered.</li>
-
-</ul>
-
-<h3>Send everything, not the good bits</h3>
-
-<p>This is the one that costs the most time.</p>
-
-<p>It's tempting to go through the rushes and send only the takes you liked. The parts I need are
-often the ones you'd cut. The second before someone starts speaking. The pause where they look
-down. The twelve seconds while the camera settles.</p>
-
-<p>Same with b-roll you think is boring. An empty corridor isn't interesting on its own and it will
-probably save a transition.</p>
-
-<p>Send the whole card. I don't mind the volume.</p>
+<p>It's tempting to send only the takes you liked. The parts I need are often the ones you'd cut:
+the second before someone speaks, the pause where they look down, the boring b-roll that saves a
+transition. Send the whole card. I don't mind the volume.</p>
 
 
 <h3>Originals, not exports</h3>
 
-<p>Send the files as they came off the camera. Not a compressed copy, not something that's been
-through WhatsApp, and ideally not a re-export from another edit.</p>
-
-<p>Every export throws away data. You won't see it watching the file. You will see it once the shot
-is graded, slowed down, or scaled up for a vertical crop.</p>
-
-<p>If a compressed copy is all that exists, that's workable. Just say so early.</p>
+<p>Send the files as they came off the camera, not a compressed copy or something that's been
+through WhatsApp. Every export throws away data, and it shows once a shot is graded, slowed down or
+cropped vertical. If a compressed copy is all there is, that's workable. Just tell me early.</p>
 
 
-<h3>The audio is probably a separate file</h3>
+<h3>Audio and cameras</h3>
 
-<p>If anyone wore a lav mic, or there was a boom, those recordings usually live as separate files.
-Send them. Camera audio is a backup. Dialogue is what viewers forgive least.</p>
-
-<p>If you're not sure whether separate audio exists, ask whoever shot it.</p>
-
-<p>If more than one camera was running, send all of them untrimmed, including the parts where
-nothing is happening. Overlapping camera audio is what I sync them by, and trimmed clips are what
-make that a manual job instead of an automatic one.</p>
+<p>If anyone wore a lav mic or there was a boom, that audio is usually a separate file. Send it,
+because dialogue is what viewers forgive least. If more than one camera was running, send all of
+them untrimmed. I sync them by their overlapping sound, and trimmed clips turn that into a manual
+job.</p>
 
 
 <h3>Brand things</h3>
 
-<p>Each of these takes five minutes to send and much longer to reconstruct:</p>
-
 <ul>
-  <li><strong>A vector logo.</strong> SVG, AI or EPS. Not a PNG pulled off the website.</li>
+  <li><strong>A vector logo</strong>: SVG, AI or EPS, not a PNG pulled off the website.</li>
 
-  <li><strong>Your fonts</strong>, if the license covers sharing them, and your color codes or the
-  brand guide.</li>
+  <li><strong>Fonts and colors</strong>, or the brand guide if there is one.</li>
 
-  <li><strong>Two or three references</strong>, with a sentence about what you like in them. A link
-  on its own only tells me you liked it.</li>
-
-</ul>
-<p>If there's a style you actively don't want, say that too. It's just as useful.</p>
-
-<p>If titles, lower-thirds or a logo animation are going to be needed, the brand guide is what they
-get built from, so it's worth sending even when it feels like overkill for one video.</p>
-
-
-<h3>Music is my side of it</h3>
-
-<p>You don't need to find a track, and you don't need to buy one.</p>
-
-<p>I work from paid premium libraries, so the searching is mine and the license comes with the
-delivery, cleared for the platforms the video is going to run on. All I need is a direction, and
-vague is fine. "Calm, no vocals, nothing corporate" is enough to work from.</p>
-
-<p>Two exceptions worth flagging early:</p>
-
-<ul>
-  <li><strong>If you already have a track you're attached to</strong>, send the license rather than
-  the file. A license bought for one film often doesn't cover the social versions of it, and that
-  tends to surface the week you're meant to publish.</li>
-
-  <li><strong>If it's a commercial piece of music</strong>, something with a name you'd recognize,
-  assume it isn't clearable at a sensible price and tell me what you like about it instead. I can
-  usually get close.</li>
+  <li><strong>Two or three references</strong>, with a sentence on what you like in each. A style
+  you don't want is just as useful.</li>
 
 </ul>
 
-<h3>Gaps in the footage are not a problem</h3>
+<h3>Music and stock are mine</h3>
 
-<p>People delay sending material because a shot is missing. It doesn't need to hold anything up.</p>
+<p>You don't need to find or buy a track. I work from paid premium libraries, so the searching and
+the license are on my side. A direction is enough: "calm, no vocals, nothing corporate" works. If
+you've already bought a track you love, send the license, because it may not cover the social
+versions.</p>
 
-<p>I license stock footage from the same premium libraries, so a missing establishing shot, an
-aerial nobody had the budget to fly, or a scene that was never filmed can usually be covered.
-Plenty of the corporate work I do is built mostly from licensed material and the client's own
-existing assets, with no shoot at all.</p>
-
-<p>Tell me what's missing rather than waiting until it exists.</p>
-
-
-<h3>Who signs it off</h3>
-
-<p>One person with final say, or a group who send their notes together. Five people replying
-separately, each to a different version, is what adds days to a project.</p>
+<p>Missing shots don't need to hold anything up either. I license stock from the same libraries, so
+tell me what's missing rather than waiting until it exists.</p>
 
 
-<h3>The short version</h3>
+<h3>One person signs off</h3>
 
-<ul>
-  <li><strong>Everything</strong>, not a selection</li>
+<p>One name with final say, or a group that sends its notes together. Five people replying
+separately, each to a different version, is what adds days.</p>
 
-  <li><strong>Unexported</strong>, straight off the card</li>
-
-  <li><strong>Separate audio</strong>, and every camera, untrimmed</li>
-
-  <li><strong>A vector logo</strong>, fonts, colors</li>
-
-  <li><strong>Length and platform</strong>, even roughly</li>
-
-  <li><strong>Whether it plays silent</strong>, and in which languages</li>
-
-  <li><strong>A couple of references</strong>, with a sentence each</li>
-
-  <li><strong>One name</strong> for approvals</li>
-
-</ul>
-<p>Music, stock and the licensing behind both are mine to deal with. Send the rest and the first
-cut will be close enough to talk about properly.</p>
+<p>Send the rest and the first cut will be close enough to talk about properly.</p>
 """,
     },
     {
@@ -426,426 +407,201 @@ cut will be close enough to talk about properly.</p>
         "date": "2026-09-24",
         "date_label": "September 2026",
         "title": "One campaign, every platform: commission it all at once",
-        "excerpt": "A campaign that runs across several platforms works better commissioned as one "
-                   "job. What cohesion actually means, where separate commissions drift, and the "
-                   "formats that get forgotten at the briefing stage.",
+        "excerpt": "A campaign that runs on several platforms works better commissioned as one job. "
+                   "Why separate commissions drift, and the formats that get forgotten in the "
+                   "brief.",
         "pt": {
             "date_label": "Setembro de 2026",
             "title": "Uma campanha, várias plataformas: encomende tudo de uma vez",
-            "excerpt": "Uma campanha que corre em várias plataformas funciona melhor encomendada como "
-                       "um só trabalho. O que é a coerência, onde é que as encomendas separadas "
-                       "se desviam, e os formatos que ficam esquecidos no briefing.",
+            "excerpt": "Uma campanha que corre em várias plataformas funciona melhor encomendada "
+                       "como um só trabalho. Porque é que as encomendas separadas se desviam, e os "
+                       "formatos que ficam esquecidos no briefing.",
         "body": """
-<p class="lede">Uma campanha já não vive num sítio só. A mesma ideia tem de funcionar no seu site,
-num feed do LinkedIn, como reel vertical e, às vezes, num ecrã sem som numa feira. São filmes
-diferentes. O erro é encomendá-los como trabalhos diferentes.</p>
+<p class="lede">A mesma campanha tem agora de funcionar no seu site, num feed do LinkedIn, como reel
+vertical e, às vezes, num ecrã sem som numa feira. São filmes diferentes. O erro é encomendá-los
+como trabalhos diferentes.</p>
 
-<p>Encomendados um de cada vez, deixam de parecer a mesma campanha. Primeiro o filme, os reels uns
-meses depois, alguma coisa para o stand mais tarde. Três campanhas de três pessoas, que é
-normalmente exatamente o que são.</p>
+<h3>Como as encomendas separadas se desviam</h3>
+<p>Encomendadas uma de cada vez, as peças deixam de parecer a mesma campanha. A cor está um pouco
+mais quente no segundo lote, porque foi feita meses depois noutro monitor. Os títulos usam um tipo
+de letra que não é bem o da marca. Os reels têm outra música, porque a primeira licença cobria um
+filme só.</p>
+<p>Ninguém sabe dizer o que está mal. Só não se ligam as peças umas às outras, e cada uma tem de o
+apresentar do zero. Uma campanha pega pela repetição, e isso só funciona se as pessoas reconhecerem
+a segunda peça como parte da primeira.</p>
 
-<h3>Como é a incoerência, na prática</h3>
+<h3>O mesmo aspeto, filmes diferentes</h3>
+<p>O outro erro comum é cortar as versões curtas a partir da longa. A peça de quinze segundos passa
+a ser a de noventa sem o meio, e quem viu uma viu todas.</p>
+<p>As peças devem partilhar a cor, a tipografia, a música e o ritmo, para que se perceba que é sua
+antes de aparecer o logótipo. O que mostram deve mudar. Uma abre com a fundadora, outra é o produto
+a ser usado, sem palavras, outra são trinta segundos de processo.</p>
 
-<p>Raramente é dramática. É um desvio.</p>
-
-<p>A cor está um pouco mais quente no segundo lote, porque foi feita seis meses depois noutro
-monitor. Os oráculos usam um tipo de letra que não é bem o da marca, porque quem os fez não tinha o
-ficheiro. A música é outra faixa, porque a primeira licença cobria um filme e não uma campanha, por
-isso os reels parecem de outra empresa.</p>
-
-<p>Ninguém que veja lhe sabe dizer o que está mal. Só não liga as peças umas às outras, o que
-significa que cada peça tem de o apresentar do zero. É a repetição que faz uma campanha pegar, e só
-há repetição se as pessoas reconhecerem a segunda coisa como pertencendo à primeira.</p>
-
-<h3>Coerente, mas não igual</h3>
-
-<p>É aqui que está a tensão, e é o trabalho todo.</p>
-
-<p>As peças têm de ser reconhecivelmente a mesma campanha: a mesma cor, a mesma tipografia, o mesmo
-mundo de música, o mesmo ritmo de montagem. Alguém deve perceber que é sua antes de aparecer o
-logótipo.</p>
-
-<p>Mas não podem ser o mesmo filme em durações diferentes. Essa é a outra falha, e é igualmente
-comum. Quando as versões curtas são cortadas a partir da longa, a peça de quinze segundos é a de
-noventa sem o meio. Quem viu uma viu todas. Pagou quatro peças e publicou uma ideia.</p>
-
-<p>O mesmo aspeto, conteúdos diferentes. Uma abre no CEO. Outra é o produto a ser usado, sem uma
-palavra. Outra são trinta segundos de processo. Mesma família, funções diferentes.</p>
-
-<h3>Onde é que as encomendas separadas se desviam</h3>
-
-<p>A coerência é difícil de acrescentar no fim. Decide-se sobretudo em coisas que acontecem antes, e
-cada uma delas é barata uma vez e cara duas:</p>
-
+<h3>O que tem de ficar decidido no início</h3>
 <ul>
-  <li><strong>Uma cor, um conjunto de referências.</strong> Igualar uma cor que fez há seis meses a
-  partir de outro projeto é adivinhar.</li>
-  <li><strong>Uma licença de música</strong> que cubra todos os cortes em todas as plataformas.
-  Licencio em bibliotecas premium pagas, por isso isto é comigo e não consigo, mas só resulta se eu
-  souber a lista completa de peças no momento em que escolho a faixa. Licenciada a posteriori, um
-  corte de cada vez, acaba com uma faixa diferente em cada um sem ninguém ter escolhido isso.</li>
-  <li><strong>Um conjunto de elementos animados</strong> (títulos, oráculos, animação de logótipo),
-  feito uma vez e reutilizado, em vez de refeito um pouco diferente a cada ronda.</li>
-  <li><strong>Material filmado a saber que todos os formatos vinham a caminho.</strong> Uma
-  composição 16:9 perde cerca de 60% do enquadramento num corte 9:16, e o que se perde são os
-  lados, que é onde a composição costuma estar.</li>
+  <li><strong>Uma cor</strong> e um conjunto de referências.</li>
+  <li><strong>Uma licença de música</strong> que cubra todos os cortes. Trato eu disso, mas preciso
+  da lista completa de peças quando escolho a faixa.</li>
+  <li><strong>Um conjunto de títulos</strong> e animação de logótipo, feitos uma vez e
+  reaproveitados.</li>
+  <li><strong>Material filmado a saber que vem aí a vertical.</strong> Um corte 9:16 perde cerca de
+  60% de um enquadramento 16:9, sobretudo dos lados. Consigo reenquadrar plano a plano, mas custa um
+  dia e continua a parecer salvo à última hora.</li>
 </ul>
 
-<p>É esta última que me chega às mãos. Às vezes consigo reenquadrar plano a plano, aproximando e
-acompanhando para manter o sujeito em campo. Funciona quando há resolução a sobrar, custa um dia, e
-continua a ler-se como um plano aberto a ser salvo.</p>
-
-<h3>O que fica pronto no fim</h3>
-
-<p>Encomendado como um só trabalho, o mesmo material dá:</p>
-
+<h3>O que sai de um só trabalho</h3>
 <ul>
-  <li><strong>O filme de marca</strong>: 60 a 120 segundos, 16:9. O argumento completo.</li>
-  <li><strong>O trailer</strong>: 30 a 45 segundos. Condensa o argumento em algo que se aguenta
-  sozinho, em vez de um filme encurtado.</li>
-  <li><strong>O teaser</strong>: 10 a 15 segundos. Um gancho, feito para fazer alguém olhar.</li>
-  <li><strong>Os reels</strong>: três a seis peças verticais, 9:16 ou 4:5, legendadas, feitas para
-  funcionar sem som.</li>
-  <li><strong>O corte quadrado</strong>: 1:1, para os feeds que ainda o favorecem.</li>
+  <li><strong>O filme de marca</strong>, de 60 a 120 segundos</li>
+  <li><strong>Um trailer</strong>, de 30 a 45 segundos, que se aguenta sozinho</li>
+  <li><strong>Um teaser</strong>, de 10 a 15 segundos</li>
+  <li><strong>Três a seis reels</strong>, verticais e legendados para ver sem som</li>
+  <li><strong>Um corte quadrado</strong> para os feeds que ainda o preferem</li>
 </ul>
+<p>Há mais dois que saem quase de graça e costumam ser esquecidos: um corte sem som para ecrãs de
+eventos, e versões em português, inglês e espanhol. Feitos junto com o original são pouca coisa.
+Feitos um ano depois obrigam a reabrir um projeto de que já ninguém se lembra.</p>
 
-<p>Uma campanha de viagens recente saiu como um spot de 30 segundos em horizontal, uma versão
-quadrada de 60 segundos e cinco reels verticais, tudo do mesmo material, e a questão toda era
-parecerem-se uns com os outros.</p>
-
-<p>Há mais duas que saem quase de graça assim que o material existe, e as duas ficam esquecidas na
-fase do briefing:</p>
-
-<ul>
-  <li><strong>Um corte sem som para ecrãs.</strong> Os stands de feiras e os monitores de eventos
-  passam em loop sem áudio, por isso a informação tem de passar para o ecrã. É uma montagem a sério
-  e não carregar em mute, e já construí peças inteiras que só iam passar assim.</li>
-  <li><strong>Versões noutras línguas.</strong> Legendas, ou um corte totalmente localizado, em
-  português, inglês e espanhol. Feito ao lado do original é um acréscimo pequeno. Feito um ano
-  depois obriga a reabrir um projeto de que ninguém se lembra.</li>
-</ul>
-
-<p>Fotografias e um bumper de 6 segundos para pré-roll costumam também estar ali à mão.</p>
-
-<h3>O que é comigo e o que não é</h3>
-
-<p>Assim que o material existe, tudo o que vem a seguir é do meu lado: a montagem, a cor, os
-grafismos animados, o som, o licenciamento da música e do stock, as legendas, as versões. Se
-faltar um plano, normalmente consigo licenciá-lo em vez de o mandar filmar outra vez, que é como
-muito do trabalho corporativo se faz.</p>
-
-<p>O que não consigo mudar depois é a forma como as coisas foram filmadas. Vale a pena acertar com
-quem faz o material:</p>
-
-<ul>
-  <li>Todas as plataformas onde a campanha vai passar. Escreva a lista, porque as óbvias são as que
-  ficam esquecidas.</li>
-  <li>Que peças, com que durações, em que formatos.</li>
-  <li>Se o material é enquadrado a saber que vêm cortes verticais.</li>
-  <li>Se alguma coisa tem de se aguentar sem som nenhum.</li>
-  <li>Em que línguas tem de existir.</li>
-</ul>
-
-<h3>Versão curta</h3>
-
-<p>Se o vídeo só vai viver no seu site, compre um filme. Se vai correr em várias plataformas, e
-quase sempre vai, encomende a campanha toda de uma vez. Não para poupar dinheiro, embora costume
-poupar, mas porque as coisas que seguram uma campanha escolhem-se no início e não se acrescentam no
-fim.</p>
-
-<p>Se está a planear alguma coisa, <a href="../../contact/">diga-me o que tem em mente</a> e eu digo
-o que deve pedir, e o que precisaria de ter para construir a campanha toda a partir disso. Essa
-parte é <a href="../../services/">comigo</a>.</p>
+<h3>A versão curta</h3>
+<p>Se o vídeo só vai viver no seu site, encomende um filme. Se vai correr em várias plataformas,
+encomende a campanha inteira de uma vez. O que a mantém coesa escolhe-se no início e não se
+acrescenta no fim.</p>
+<p>Se está a planear alguma coisa, <a href="../../contact/">diga-me o que tem em mente</a> e eu
+digo-lhe o que pedir. O resto é <a href="../../services/">comigo</a>.</p>
 """,
         },
         "es": {
             "date_label": "Septiembre de 2026",
-            "title": 'Una campaña, todas las plataformas: encárgalo todo de una vez',
-            "excerpt": 'Una campaña que corre en varias plataformas funciona mejor encargada como un solo trabajo. Qué es la coherencia, dónde se desvían los encargos separados, y los formatos que se olvidan en el briefing.',
-            "body": """
-<p class="lede">Una campaña ya no vive en un solo sitio. La misma idea tiene que funcionar en tu
-web, en un feed de LinkedIn, como reel vertical y, a veces, en una pantalla sin sonido de una
-feria. Son películas distintas. El error es encargarlas como trabajos distintos.</p>
+            "title": "Una campaña, todas las plataformas: encárgalo todo de una vez",
+            "excerpt": "Una campaña que corre en varias plataformas funciona mejor encargada como "
+                       "un solo trabajo. Por qué se desvían los encargos separados, y los formatos "
+                       "que se olvidan en el briefing.",
+        "body": """
+<p class="lede">La misma campaña tiene que funcionar ahora en tu web, en un feed de LinkedIn, como
+reel vertical y, a veces, en una pantalla sin sonido de una feria. Son películas distintas. El error
+es encargarlas como trabajos distintos.</p>
 
-<p>Pedidas de una en una, dejan de parecer una sola campaña. Primero la película, los reels unos
-meses después, algo para el stand más tarde. Tres campañas de tres personas, que suele ser
-exactamente lo que son.</p>
+<h3>Cómo se desvían los encargos separados</h3>
+<p>Pedidas de una en una, las piezas dejan de parecer una sola campaña. El etalonaje está algo más
+cálido en el segundo lote, porque se hizo meses después en otro monitor. Los títulos usan una
+tipografía que no es del todo la de la marca. Los reels llevan otra música, porque la primera
+licencia cubría una sola película.</p>
+<p>Nadie sabe decir qué falla. Simplemente no se conectan las piezas entre sí, y cada una tiene que
+presentarte desde cero. Una campaña cala por repetición, y eso solo funciona si la gente reconoce
+la segunda pieza como parte de la primera.</p>
 
-<h3>Cómo es la incoherencia en la práctica</h3>
+<h3>El mismo aspecto, películas distintas</h3>
+<p>El otro error habitual es recortar las versiones cortas a partir de la larga. La pieza de quince
+segundos acaba siendo la de noventa sin la parte de en medio, y quien ha visto una las ha visto
+todas.</p>
+<p>Las piezas deben compartir etalonaje, tipografía, música y ritmo, para que se sepa que eres tú
+antes de que aparezca el logotipo. Lo que muestran debe cambiar. Una abre con la fundadora, otra es
+el producto en uso, sin palabras, otra son treinta segundos de proceso.</p>
 
-<p>Rara vez es dramática. Es una deriva.</p>
-
-<p>El etalonaje está algo más cálido en el segundo lote, porque se hizo seis meses después en otro
-monitor. Los chyrons usan una tipografía que no es del todo la de la marca, porque quien los hizo
-no tenía el archivo. La música es otra pista, porque la primera licencia cubría una película y no
-una campaña, así que los reels parecen de otra empresa.</p>
-
-<p>Nadie que lo vea sabría decirte qué está mal. Simplemente no conecta las piezas entre sí, lo que
-significa que cada pieza tiene que presentarte desde cero. Es la repetición lo que hace que una
-campaña cale, y solo hay repetición si la gente reconoce la segunda cosa como parte de la
-primera.</p>
-
-<h3>Coherente, pero no idéntico</h3>
-
-<p>Aquí está la tensión, y es todo el trabajo.</p>
-
-<p>Las piezas tienen que ser reconociblemente la misma campaña: el mismo etalonaje, la misma
-tipografía, el mismo mundo musical, el mismo ritmo de montaje. Alguien debería saber que eres tú
-antes de que aparezca el logotipo.</p>
-
-<p>Pero no pueden ser la misma película en duraciones distintas. Ese es el otro fallo, y es igual de
-común. Cuando las versiones cortas se recortan de la larga, la pieza de quince segundos es la de
-noventa sin la parte de en medio. Quien ha visto una las ha visto todas. Pagaste cuatro piezas y
-publicaste una idea.</p>
-
-<p>El mismo aspecto, contenidos distintos. Una abre con el CEO. Otra es el producto en uso, sin una
-palabra. Otra son treinta segundos de proceso. Misma familia, funciones distintas.</p>
-
-<h3>Dónde se desvían los encargos separados</h3>
-
-<p>La coherencia es difícil de añadir al final. Se decide sobre todo en cosas que pasan antes, y
-cada una de ellas es barata una vez y cara dos:</p>
-
+<h3>Lo que hay que decidir al principio</h3>
 <ul>
-  <li><strong>Un etalonaje, un conjunto de referencias.</strong> Igualar un etalonaje que hiciste
-  hace seis meses desde otro proyecto es adivinar.</li>
-  <li><strong>Una licencia de música</strong> que cubra todos los cortes en todas las plataformas.
-  Licencio en bibliotecas premium de pago, así que esto es cosa mía y no tuya, pero solo funciona si
-  sé la lista completa de piezas en el momento en que elijo la pista. Licenciada a posteriori, un
-  corte cada vez, acabas con una pista distinta en cada uno sin que nadie lo haya elegido.</li>
-  <li><strong>Un conjunto de elementos animados</strong> (rótulos, chyrons, animación de logotipo),
-  hecho una vez y reutilizado, en vez de rehecho un poco distinto en cada ronda.</li>
-  <li><strong>Material rodado sabiendo que venían todos los formatos.</strong> Una composición 16:9
-  pierde cerca del 60% del encuadre en un recorte 9:16, y lo que se va son los lados, que es donde
-  suele estar la composición.</li>
+  <li><strong>Un etalonaje</strong> y un conjunto de referencias.</li>
+  <li><strong>Una licencia de música</strong> que cubra todos los cortes. Me encargo yo, pero
+  necesito la lista completa de piezas cuando elijo la pista.</li>
+  <li><strong>Un conjunto de títulos</strong> y animación de logotipo, hechos una vez y
+  reutilizados.</li>
+  <li><strong>Material rodado sabiendo que viene el vertical.</strong> Un recorte 9:16 pierde cerca
+  del 60% de un encuadre 16:9, sobre todo por los lados. Puedo reencuadrar plano a plano, pero cuesta
+  un día y sigue pareciendo un rescate.</li>
 </ul>
 
-<p>Esta última es la que me llega a mí. A veces puedo reencuadrar plano a plano, acercando y
-siguiendo al sujeto para mantenerlo en campo. Funciona cuando sobra resolución, cuesta un día, y
-sigue leyéndose como un plano abierto rescatado.</p>
-
-<h3>Con qué te quedas al final</h3>
-
-<p>Encargado como un solo trabajo, el mismo material da:</p>
-
+<h3>Lo que sale de un solo trabajo</h3>
 <ul>
-  <li><strong>La película de marca</strong>: 60 a 120 segundos, 16:9. El argumento completo.</li>
-  <li><strong>El tráiler</strong>: 30 a 45 segundos. Condensa el argumento en algo que se sostiene
-  solo, en vez de una película acortada.</li>
-  <li><strong>El teaser</strong>: 10 a 15 segundos. Un gancho, hecho para que alguien mire.</li>
-  <li><strong>Los reels</strong>: de tres a seis piezas verticales, 9:16 o 4:5, subtituladas, hechas
-  para funcionar sin sonido.</li>
-  <li><strong>El corte cuadrado</strong>: 1:1, para los feeds que todavía lo favorecen.</li>
+  <li><strong>La película de marca</strong>, de 60 a 120 segundos</li>
+  <li><strong>Un tráiler</strong>, de 30 a 45 segundos, que se sostiene solo</li>
+  <li><strong>Un teaser</strong>, de 10 a 15 segundos</li>
+  <li><strong>De tres a seis reels</strong>, verticales y subtitulados para verse sin sonido</li>
+  <li><strong>Un corte cuadrado</strong> para los feeds que aún lo prefieren</li>
 </ul>
-
-<p>Una campaña de viajes reciente salió como un spot de 30 segundos en horizontal, una versión
-cuadrada de 60 segundos y cinco reels verticales, todo del mismo material, y la gracia era
-precisamente que se parecieran entre sí.</p>
-
-<p>Hay dos más que salen casi gratis en cuanto el material existe, y las dos se olvidan en la fase
-de briefing:</p>
-
-<ul>
-  <li><strong>Un corte sin sonido para pantallas.</strong> Los stands de ferias y los monitores de
-  eventos van en bucle sin audio, así que la información tiene que pasar a la pantalla. Es un
-  montaje de verdad y no darle a silenciar, y he construido piezas enteras que solo iban a verse
-  así.</li>
-  <li><strong>Versiones en otros idiomas.</strong> Subtítulos, o un corte totalmente localizado, en
-  español, inglés y portugués. Hecho junto al original es un añadido pequeño. Hecho un año después
-  obliga a reabrir un proyecto que ya nadie recuerda.</li>
-</ul>
-
-<p>Fotografías y un bumper de 6 segundos para pre-roll suelen estar también ahí al alcance.</p>
-
-<h3>Qué es cosa mía y qué no</h3>
-
-<p>En cuanto el material existe, todo lo que viene después es de mi lado: el montaje, el etalonaje,
-los gráficos animados, el sonido, el licenciamiento de la música y del stock, los subtítulos, las
-versiones. Si falta un plano, normalmente puedo licenciarlo en vez de mandarte a rodar otra vez,
-que es como se hace buena parte del trabajo corporativo.</p>
-
-<p>Lo que no puedo cambiar después es cómo se rodó algo. Vale la pena acordarlo con quien hace el
-material:</p>
-
-<ul>
-  <li>Todas las plataformas en las que va a correr la campaña. Escribe la lista, porque las obvias
-  son las que se olvidan.</li>
-  <li>Qué piezas, con qué duraciones, en qué formatos.</li>
-  <li>Si el material se encuadra sabiendo que vienen recortes verticales.</li>
-  <li>Si algo tiene que sostenerse sin sonido ninguno.</li>
-  <li>En qué idiomas tiene que existir.</li>
-</ul>
+<p>Hay dos más que salen casi gratis y suelen olvidarse: un corte sin sonido para pantallas de
+eventos, y versiones en español, inglés y portugués. Hechas junto al original son poca cosa. Hechas
+un año después obligan a reabrir un proyecto que ya nadie recuerda.</p>
 
 <h3>La versión corta</h3>
-
-<p>Si el vídeo solo va a vivir en tu web, compra una película. Si va a correr en varias plataformas,
-y casi siempre va a hacerlo, encarga la campaña entera de una vez. No para ahorrar dinero, aunque
-suele ahorrarlo, sino porque las cosas que sostienen una campaña se eligen al principio y no se
-añaden al final.</p>
-
+<p>Si el vídeo solo va a vivir en tu web, encarga una película. Si va a correr en varias
+plataformas, encarga la campaña entera de una vez. Lo que la mantiene unida se elige al principio y
+no se puede añadir al final.</p>
 <p>Si estás planeando algo, <a href="../../contact/">cuéntame qué tienes en mente</a> y te digo qué
-pedir, y qué necesitaría para construir la campaña entera a partir de ello. Esa parte es <a href="../../services/">cosa mía</a>.</p>
+pedir. El resto es <a href="../../services/">cosa mía</a>.</p>
 """,
         },
         "body": """
-<p class="lede">A campaign doesn't live in one place any more. The same idea has to work on your
-homepage, in a LinkedIn feed, as a vertical reel, and sometimes on a silent screen at a trade
-show. Those are different films. The mistake is commissioning them as different jobs.</p>
+<p class="lede">The same campaign now has to work on your homepage, in a LinkedIn feed, as a vertical
+reel and sometimes on a silent screen at a trade show. Those are different films. The mistake is
+commissioning them as different jobs.</p>
 
 
-<p>Ordered one at a time, they stop looking like one campaign. The film first, the reels a few
-months later, something for the booth after that. Three campaigns by three people, which is
-usually exactly what they are.</p>
+<h3>How separate commissions drift</h3>
+
+<p>Ordered one at a time, the pieces stop looking like one campaign. The grade is a little warmer in
+the second batch, because it was done months later on another monitor. The titles use a typeface
+that isn't quite the brand's. The reels have different music, because the first license only
+covered one film.</p>
+
+<p>Nobody can say what's wrong. They just don't connect the pieces, so each one has to introduce you
+from scratch. A campaign sticks through repetition, and that only works if people recognize the
+second piece as part of the first.</p>
 
 
-<h3>What incoherence actually looks like</h3>
+<h3>The same look, different films</h3>
+
+<p>The other common mistake is cutting the short versions down from the long one. The
+fifteen-second piece becomes the ninety-second one without its middle, and anyone who has seen one
+has seen them all.</p>
+
+<p>The pieces should share a grade, typography, music and rhythm, so people know it's you before the
+logo appears. What they show should change. One opens on the founder, one is the product in use
+with no words, one is thirty seconds of process.</p>
 
 
-<p>It's rarely dramatic. It's drift.</p>
-
-
-<p>The grade is slightly warmer in the second batch, because it was done six months later on a
-different monitor. The lower-thirds use a typeface that isn't quite the brand one, because
-whoever made them didn't have the file. The music is a different track, because the first license
-covered one film and not a campaign, so the reels feel like they belong to another company.</p>
-
-
-<p>Nobody watching could tell you what's wrong. They just don't connect the pieces to each other,
-which means every piece has to do the work of introducing you from scratch. Repetition is what
-makes a campaign stick, and repetition only happens if people recognize the second thing as
-belonging to the first.</p>
-
-
-<h3>Cohesive, but not identical</h3>
-
-
-<p>Here's the tension, and it's the whole job.</p>
-
-
-<p>The pieces have to be recognizably the same campaign: same grade, same typography, same world
-of music, same rhythm in the cutting. Someone should know it's you before the logo appears.</p>
-
-
-<p>But they can't be the same film at different lengths. That's the other failure, and it's just
-as common. When the short versions are cut down from the long one, the fifteen-second piece is
-the ninety-second piece with the middle removed. Anyone who has seen one has seen them all. You
-paid for four pieces and published one idea.</p>
-
-
-<p>Same look, different content. One opens on the CEO. One is the product being used, no words at
-all. One is thirty seconds of process. Same family, different jobs.</p>
-
-
-<h3>Where separate commissions drift</h3>
-
-
-<p>Cohesion is hard to add at the end. It is mostly decided by things that happen before, and
-each of them is cheap once and expensive twice:</p>
-
+<h3>What has to be decided at the start</h3>
 
 <ul>
-  <li><strong>One grade, one set of references.</strong> Matching a grade you did six months ago
-  from a different project file is guesswork.</li>
+  <li><strong>One grade</strong> and one set of references.</li>
 
-  <li><strong>One music license</strong> covering every cut on every platform. I license from paid
-  premium libraries, so this is mine to handle rather than yours, but it only works if I know the
-  full list of pieces at the point I choose the track. Licensed after the fact, one cut at a time,
-  you end up with a different track on each one for no reason anybody chose.</li>
+  <li><strong>One music license</strong> covering every cut. I handle it, but I need the full list
+  of pieces when I choose the track.</li>
 
-  <li><strong>One set of motion assets</strong> (titles, lower-thirds, logo animation), built
-  once and reused, instead of rebuilt slightly differently each round.</li>
+  <li><strong>One set of titles</strong> and logo animation, built once and reused.</li>
 
-  <li><strong>Material made knowing every format was coming.</strong> A wide 16:9 composition
-  loses about 60% of the frame in a 9:16 crop, and it's the sides that go, which is where the
-  composition usually lives.</li>
+  <li><strong>Footage shot knowing vertical is coming.</strong> A 9:16 crop loses about 60% of a
+  16:9 frame, mostly from the sides. I can reframe shot by shot, but it costs a day and still looks
+  rescued.</li>
 
 </ul>
 
-<p>That last one is the one that reaches me. Sometimes I can reframe shot by shot, pushing in
-and tracking to keep the subject in frame. It works when there's resolution to spare, it costs a
-day, and it still reads as a wide shot being rescued.</p>
-
-
-<h3>What you end up with</h3>
-
-
-<p>Commissioned as one job, the same material gives:</p>
-
+<h3>What you get from one job</h3>
 
 <ul>
-  <li><strong>The brand film</strong>: 60 to 120 seconds, 16:9. The full argument.</li>
+  <li><strong>The brand film</strong>, 60 to 120 seconds</li>
 
-  <li><strong>The trailer</strong>: 30 to 45 seconds. Condenses the argument into something that
-  stands on its own rather than a shortened film.</li>
+  <li><strong>A trailer</strong>, 30 to 45 seconds, that stands on its own</li>
 
-  <li><strong>The teaser</strong>: 10 to 15 seconds. One hook, built to make someone look.</li>
+  <li><strong>A teaser</strong>, 10 to 15 seconds</li>
 
-  <li><strong>The reels</strong>: three to six vertical pieces, 9:16 or 4:5, subtitled, built to
-  work with the sound off.</li>
+  <li><strong>Three to six reels</strong>, vertical and subtitled for sound off</li>
 
-  <li><strong>The square cut</strong>: 1:1, for feeds that still favor it.</li>
+  <li><strong>A square cut</strong> for feeds that still prefer it</li>
 
 </ul>
+<p>Two more come almost free and usually get forgotten: a silent cut for event screens, and versions
+in English, Portuguese and Spanish. Done alongside the original they're small. Done a year later
+they mean reopening a project nobody remembers.</p>
 
-<p>A recent travel campaign came out as a 30-second landscape spot, a 60-second square version and
-five vertical reels, all from one set of material, and the whole point was that they looked like
-each other.</p>
-
-<p>Two more come nearly free once the material is there, and both get forgotten at the briefing
-stage:</p>
-
-<ul>
-  <li><strong>A silent cut for screens.</strong> Trade show booths and event monitors play on a
-  loop with no sound, so the information has to move onto the screen. It's a real edit rather than
-  a mute button, and I've built whole pieces that were only ever going to run that way.</li>
-
-  <li><strong>Language versions.</strong> Subtitles, or a fully localized cut, in English,
-  Portuguese and Spanish. Done alongside the original it's a small addition. Done a year later it
-  means reopening a project nobody remembers.</li>
-
-</ul>
-
-<p>Stills and a 6-second pre-roll bumper are usually there for the taking too.</p>
-
-
-<h3>What's mine and what isn't</h3>
-
-
-<p>Once the material exists, everything after it is my side: the cut, the grade, the motion
-graphics, the sound, the music and stock licensing, the subtitles, the versions. If a shot is
-missing I can usually license it rather than send you back out to film it, which is how a lot of
-corporate work gets made in the first place.</p>
-
-<p>What I can't do afterwards is change how something was shot. Worth settling with whoever is
-making the material:</p>
-
-
-<ul>
-  <li>Every platform this campaign will run on. Write the list, because the obvious ones get
-  forgotten.</li>
-
-  <li>Which pieces, at what lengths, in which aspect ratios.</li>
-
-  <li>Whether the material is framed knowing vertical crops are coming.</li>
-
-  <li>Whether anything needs to hold up with no sound at all.</li>
-
-  <li>Which languages it has to exist in.</li>
-
-</ul>
 
 <h3>The short version</h3>
 
+<p>If the video only lives on your website, buy one film. If it will run across platforms,
+commission the whole campaign at once. The things that hold it together are chosen at the start
+and can't be added at the end.</p>
 
-<p>If the video only ever lives on your website, buy one film. If it's going to run across
-platforms, and it almost always is, commission the whole campaign at once. Not to save money,
-though it usually does, but because the things that hold a campaign together are chosen at the
-start and can't be added at the end.</p>
-
-
-<p>If you're planning something, <a href="../../contact/">tell me what you have in mind</a> and
-I'll tell you what to ask for, and what I'd need to build the whole campaign from it. That part is <a href="../../services/">my department</a>.</p>
-"""
+<p>If you're planning something, <a href="../../contact/">tell me what you have in mind</a> and I'll
+tell you what to ask for. The rest is <a href="../../services/">my department</a>.</p>
+""",
     },
 ]
 

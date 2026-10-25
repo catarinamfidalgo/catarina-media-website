@@ -164,6 +164,11 @@
     <priority>0.1</priority>
   </url>
   <url>
+    <loc>https://catarina.media/blog/ai-video-needs-an-editor/</loc>
+    <lastmod>2026-10-25</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://catarina.media/blog/brand-video-package/</loc>
     <lastmod>2026-10-25</lastmod>
     <priority>0.5</priority>
@@ -179,6 +184,11 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://catarina.media/es/blog/ai-video-needs-an-editor/</loc>
+    <lastmod>2026-10-25</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://catarina.media/es/blog/brand-video-package/</loc>
     <lastmod>2026-10-25</lastmod>
     <priority>0.5</priority>
@@ -190,6 +200,11 @@
   </url>
   <url>
     <loc>https://catarina.media/es/blog/what-to-send-your-editor/</loc>
+    <lastmod>2026-10-25</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://catarina.media/pt/blog/ai-video-needs-an-editor/</loc>
     <lastmod>2026-10-25</lastmod>
     <priority>0.5</priority>
   </url>
