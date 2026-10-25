@@ -36,19 +36,400 @@ NAV = {
 
 POSTS = [
     {
+        "slug": "video-editing-cost",
+        "image": "video-cost",
+        "image_alt": "Purple scales balancing a clock, a gem, and a brush, pen and film strip",
+        "title": "How much does video editing cost?",
+        "excerpt": "It's almost always the first question. What actually moves the price, why the "
+                   "length of the video tells you little, and how to get a quote that matches what "
+                   "you'll receive.",
+        "pt": {
+            "title": "Quanto custa editar um vídeo?",
+            "excerpt": "É quase sempre a primeira pergunta. O que faz o preço subir ou descer, "
+                       "porque é que a duração do vídeo diz pouco, e como pedir um orçamento que "
+                       "corresponda ao que vai receber.",
+        "body": """
+<p class="lede">É quase sempre a primeira pergunta. A resposta depende muito menos da duração do vídeo
+final do que a maioria das pessoas espera.</p>
+
+<h3>O que muda mesmo o preço</h3>
+<ul>
+  <li><strong>A quantidade de material.</strong> Tirar um filme de dois minutos de duas horas de
+  entrevistas demora mais do que tirá-lo de vinte minutos de b-roll.</li>
+  <li><strong>O que é preciso construir.</strong> Títulos, motion graphics, animação de logótipo,
+  legendas.</li>
+  <li><strong>Som e cor.</strong> Limpar o diálogo e acertar a cor de câmaras diferentes para que
+  pareçam a mesma filmagem.</li>
+  <li><strong>Música e stock.</strong> As licenças de bibliotecas premium entram no custo, e são parte
+  do que paga para não ter de se preocupar com isso.</li>
+  <li><strong>Quantas versões.</strong> Um filme 16:9, ou esse filme mais cortes verticais, um teaser e
+  três línguas.</li>
+  <li><strong>Rondas de alterações.</strong> Duas rondas de notas são normais. Dez já são outro
+  projeto.</li>
+</ul>
+
+<h3>Porque é que a duração engana</h3>
+<p>Um anúncio de trinta segundos pode dar mais trabalho do que uma entrevista de cinco minutos. Numa
+peça curta não há espaço para momentos fracos, por isso cada plano é escolhido e cronometrado ao
+frame. O trabalho está nas decisões, não nos minutos.</p>
+
+<h3>À hora ou por projeto</h3>
+<p>Um preço à hora parece simples e torna o valor final difícil de prever. Prefiro orçamentar por
+projeto quando já conheço os detalhes. Assim sabe o custo antes de começar, e qualquer mudança de
+âmbito é combinada antes, não descoberta na fatura.</p>
+
+<h3>O que o torna mais barato</h3>
+<p>A maior parte da poupança acontece antes da montagem: saber onde o vídeo vai passar, mandar
+<a href="../what-to-send-your-editor/">o material todo de uma vez</a> e ter uma só pessoa a dar
+notas. Encomendar <a href="../brand-video-package/">todos os formatos ao mesmo tempo</a> também sai
+mais barato do que voltar por cada um mais tarde.</p>
+
+<h3>Quanto tempo demora</h3>
+<p>Tempo e preço andam juntos. Uma peça curta para redes sociais pode levar dias. Um filme de marca
+com grafismos e várias versões leva mais, e a maior parte desse tempo são as rondas de notas pelo
+meio, não a montagem em si. Se tem uma data fixa, diga-o logo, para o calendário ser feito à volta
+dela.</p>
+
+<h3>O que deve ter um bom orçamento</h3>
+<p>Um orçamento deve dizer o que vai receber, não só quanto custa: as peças e os formatos, quantas
+rondas de alterações, se as licenças de música e stock estão incluídas e para que plataformas,
+legendas e línguas, e a data de entrega. Se faltar algo de que precisa, pergunte antes de aceitar,
+porque acrescentar depois custa sempre mais do que incluir no início.</p>
+
+<h3>Como ter um número a sério</h3>
+<p>Diga-me para que é o vídeo, mais ou menos quanto material tem, onde vai passar e para quando
+precisa dele. Chega para um orçamento. <a href="../../contact/">Fale comigo</a> e respondo com o
+que custaria.</p>
+""",
+        },
+        "es": {
+            "title": "¿Cuánto cuesta editar un vídeo?",
+            "excerpt": "Casi siempre es la primera pregunta. Qué hace subir o bajar el precio, por "
+                       "qué la duración del vídeo dice poco, y cómo pedir un presupuesto que se "
+                       "ajuste a lo que vas a recibir.",
+        "body": """
+<p class="lede">Casi siempre es la primera pregunta. La respuesta depende mucho menos de la duración
+del vídeo final de lo que la mayoría espera.</p>
+
+<h3>Qué cambia de verdad el precio</h3>
+<ul>
+  <li><strong>La cantidad de material.</strong> Sacar una pieza de dos minutos de dos horas de
+  entrevistas lleva más tiempo que sacarla de veinte minutos de b-roll.</li>
+  <li><strong>Lo que hay que construir.</strong> Títulos, motion graphics, animación de logotipo,
+  subtítulos.</li>
+  <li><strong>Sonido y color.</strong> Limpiar el diálogo e igualar el color de cámaras distintas para
+  que parezca el mismo rodaje.</li>
+  <li><strong>Música y stock.</strong> Las licencias de bibliotecas premium forman parte del coste, y
+  de lo que pagas para no tener que preocuparte por ello.</li>
+  <li><strong>Cuántas versiones.</strong> Una pieza 16:9, o esa pieza más cortes verticales, un teaser
+  y tres idiomas.</li>
+  <li><strong>Rondas de cambios.</strong> Dos rondas de notas son normales. Diez ya son otro
+  proyecto.</li>
+</ul>
+
+<h3>Por qué la duración engaña</h3>
+<p>Un anuncio de treinta segundos puede dar más trabajo que una entrevista de cinco minutos. En una
+pieza corta no hay sitio para momentos flojos, así que cada plano se elige y se ajusta al
+fotograma. El trabajo está en las decisiones, no en los minutos.</p>
+
+<h3>Por horas o por proyecto</h3>
+<p>Un precio por horas parece sencillo y hace que la cifra final sea difícil de prever. Prefiero
+presupuestar por proyecto cuando ya conozco los detalles. Así sabes el coste antes de empezar, y
+cualquier cambio de alcance se acuerda antes, no se descubre en la factura.</p>
+
+<h3>Qué lo abarata</h3>
+<p>Casi todo el ahorro ocurre antes del montaje: saber dónde se va a ver el vídeo, mandar
+<a href="../what-to-send-your-editor/">todo el material de una vez</a> y que una sola persona dé
+las notas. Encargar <a href="../brand-video-package/">todos los formatos a la vez</a> también sale
+más barato que volver a por cada uno más tarde.</p>
+
+<h3>Cuánto tarda</h3>
+<p>Tiempo y precio van juntos. Una pieza corta para redes puede llevar días. Una película de marca
+con grafismos y varias versiones lleva más, y casi todo ese tiempo son las rondas de notas, no el
+montaje en sí. Si tienes una fecha fija, dilo desde el principio, para que el calendario se haga a
+su alrededor.</p>
+
+<h3>Qué debe incluir un buen presupuesto</h3>
+<p>Un presupuesto debe decir qué vas a recibir, no solo cuánto cuesta: las piezas y sus formatos,
+cuántas rondas de cambios, si las licencias de música y stock están incluidas y para qué
+plataformas, subtítulos e idiomas, y la fecha de entrega. Si falta algo que necesitas, pregunta
+antes de aceptar, porque añadirlo después siempre cuesta más que incluirlo desde el principio.</p>
+
+<h3>Cómo tener una cifra real</h3>
+<p>Cuéntame para qué es el vídeo, más o menos cuánto material tienes, dónde se va a ver y para
+cuándo lo necesitas. Con eso basta para un presupuesto. <a href="../../contact/">Escríbeme</a> y te
+digo cuánto costaría.</p>
+""",
+        },
+        "body": """
+<p class="lede">It's almost always the first question. The answer depends far less on how long the
+finished video is than most people expect.</p>
+
+
+<h3>What actually changes the price</h3>
+
+<ul>
+  <li><strong>How much footage there is.</strong> Cutting a two-minute film from two hours of
+  interviews takes longer than cutting it from twenty minutes of b-roll.</li>
+
+  <li><strong>What has to be built.</strong> Titles, motion graphics, a logo animation,
+  subtitles.</li>
+
+  <li><strong>Sound and color.</strong> Cleaning up dialogue and matching footage from different
+  cameras so it looks like one shoot.</li>
+
+  <li><strong>Music and stock.</strong> Licenses from premium libraries are part of the cost, and
+  part of what you're paying not to worry about.</li>
+
+  <li><strong>How many versions.</strong> One 16:9 film, or that film plus vertical cuts, a teaser
+  and three languages.</li>
+
+  <li><strong>Rounds of changes.</strong> Two rounds of notes are normal. Ten are a different
+  project.</li>
+
+</ul>
+
+<h3>Why length is a poor guide</h3>
+
+<p>A thirty-second ad can take more work than a five-minute interview. A short piece has no room
+for weak moments, so every shot is chosen and timed to the frame. The work is in the decisions, not
+the minutes.</p>
+
+
+<h3>Hourly or per project</h3>
+
+<p>An hourly rate looks simple and makes the final number hard to predict. I prefer to quote per
+project once I know the details. That way you know the cost before anything starts, and any change
+in scope is agreed up front rather than discovered on the invoice.</p>
+
+
+<h3>What makes it cheaper</h3>
+
+<p>Most of the savings happen before the edit: knowing where the video will run, sending
+<a href="../what-to-send-your-editor/">all the footage in one go</a>, and having one person give
+notes. Commissioning <a href="../brand-video-package/">every format at once</a> also costs less
+than coming back for each one later.</p>
+
+
+<h3>How long it takes</h3>
+
+<p>Time and price move together. A short social piece can take days. A brand film with graphics and
+several versions takes longer, and most of that time is the rounds of notes in between rather than
+the editing itself. If you have a fixed date, say so at the start, so the schedule is built around
+it.</p>
+
+
+<h3>What a good quote includes</h3>
+
+<p>A quote should say what you'll get, not only what it costs: the pieces and their formats, how
+many rounds of changes, whether music and stock licenses are included and for which platforms,
+subtitles and languages, and the delivery date. If something you need isn't on it, ask before you
+agree, because adding it later always costs more than including it at the start.</p>
+
+
+<h3>Getting a real number</h3>
+
+<p>Tell me what the video is for, roughly how much footage you have, where it will run and when you
+need it. That's enough for a quote. <a href="../../contact/">Get in touch</a> and I'll come back
+with what it would cost.</p>
+""",
+    },
+    {
+        "slug": "freelance-video-editor-portugal",
+        "image": "freelance-portugal",
+        "image_alt": "Two people at laptops on floating purple islands, passing video frames "
+                     "between them",
+        "title": "Hiring a freelance video editor in Portugal",
+        "excerpt": "How working with a freelance editor in Portugal works, what to check before you "
+                   "hire one, and when a freelancer makes more sense than a production company.",
+        "pt": {
+            "title": "Contratar um editor de vídeo freelancer em Portugal",
+            "excerpt": "Como funciona trabalhar com um editor de vídeo freelancer em Portugal, o "
+                       "que verificar antes de contratar, e quando faz mais sentido do que uma "
+                       "produtora.",
+        "body": """
+<p class="lede">Cada vez mais empresas em Portugal contratam um editor de vídeo freelancer em vez de
+montarem uma equipa de vídeo ou passarem por uma produtora. Se está à procura de um, eis o que
+envolve e o que convém verificar.</p>
+
+<h3>Trabalhar à distância é o normal</h3>
+<p>A edição não precisa de ninguém na mesma sala. O material chega por link de transferência ou
+pasta partilhada, os cortes voltam como links privados de revisão, e as notas chegam com
+timecodes. Estar no Porto, em Madrid, em Londres ou em Nova Iorque faz muito
+pouca diferença. Portugal tem o mesmo fuso horário do Reino Unido, está uma hora atrás de Espanha,
+e as manhãs na costa leste dos Estados Unidos coincidem com as tardes cá, por isso há sempre parte
+do dia de trabalho em comum.</p>
+
+<h3>Línguas</h3>
+<p>Muitas empresas portuguesas precisam do mesmo vídeo em português e inglês, e muitas vezes em
+espanhol para o mercado vizinho. Trabalho nas três, o que significa que as legendas e as versões
+completas são feitas por quem montou o filme, e não enviadas para outro lado depois.</p>
+
+<h3>O que verificar antes de contratar</h3>
+<ul>
+  <li><strong>Um <a href="../../#portfolio">portfólio</a> com trabalho parecido com o seu.</strong>
+  Vídeo corporativo, redes sociais, documentário e publicidade são competências diferentes.</li>
+  <li><strong>Um orçamento claro</strong>, com o que está incluído: rondas de alterações, versões,
+  música.</li>
+  <li><strong>Música e stock licenciados.</strong> Pergunte de onde vêm, porque a música sem
+  licença é o que faz vídeos serem retirados.</li>
+  <li><strong>Os formatos que vai receber.</strong> 16:9 para o site, vertical para Reels, quadrado
+  para feeds, legendas gravadas na imagem ou em ficheiro.</li>
+  <li><strong>Como funcionam as notas.</strong> Um link de revisão e um conjunto de notas por ronda
+  mantêm tudo rápido.</li>
+</ul>
+
+<h3>Freelancer ou produtora</h3>
+<p>Uma produtora faz sentido quando há uma filmagem para organizar, com equipa, locais e
+equipamento. Se o material já existe, ou se o vídeo pode ser feito com stock e com o que a empresa
+já tem, um editor freelancer costuma ser mais rápido e mais barato, porque paga a edição e não a
+estrutura à volta dela. Muitas agências trabalham com editores freelancers exatamente por isso.</p>
+
+<h3>Custo e prazos</h3>
+<p>O preço depende do material, do que é preciso construir e de quantas versões precisa, não de
+onde vive o editor. Escrevi à parte sobre <a href="../video-editing-cost/">o que faz variar o custo
+de editar um vídeo</a>. Quanto a prazos, a montagem raramente é a parte lenta. As notas é que são,
+por isso combinar antes de começar quem dá as notas, e em quanto tempo, faz mais diferença do que
+qualquer outra coisa.</p>
+
+<h3>Próximo passo</h3>
+<p>Se está em Portugal, ou noutro país à procura de um editor cá, <a href="../../contact/">fale-me
+do projeto</a> e respondo com o que seria preciso. Se trabalha numa agência,
+<a href="../../agencies/">esta página</a> explica como trabalho com equipas.</p>
+""",
+        },
+        "es": {
+            "title": "Contratar un editor de vídeo freelance en Portugal",
+            "excerpt": "Cómo funciona trabajar con un editor de vídeo freelance en Portugal, qué "
+                       "comprobar antes de contratarlo, y cuándo tiene más sentido que una "
+                       "productora.",
+        "body": """
+<p class="lede">Cada vez más empresas contratan a un editor de vídeo freelance en vez de montar un
+equipo de vídeo o pasar por una productora, y Portugal es un buen sitio donde buscarlo. Esto es lo
+que implica y lo que conviene comprobar.</p>
+
+<h3>Trabajar a distancia es lo normal</h3>
+<p>La edición no necesita a nadie en la misma sala. El material llega por un enlace de
+transferencia o una carpeta compartida, los cortes vuelven como enlaces privados de revisión, y las
+notas llegan con timecodes. Estar en Madrid, Barcelona, Londres o Nueva York cambia muy poco.
+Portugal va una hora por detrás de España, y las mañanas en la costa este de Estados Unidos
+coinciden con las tardes aquí, así que siempre hay parte de la jornada en común.</p>
+
+<h3>Idiomas</h3>
+<p>Muchas empresas necesitan el mismo vídeo en español e inglés, y a veces en portugués. Trabajo en
+los tres, así que los subtítulos y las versiones completas los hace quien montó la pieza, en lugar
+de mandarlos a otro sitio después.</p>
+
+<h3>Qué comprobar antes de contratar</h3>
+<ul>
+  <li><strong>Un <a href="../../#portfolio">portafolio</a> con trabajos parecidos al tuyo.</strong>
+  Vídeo corporativo, redes sociales, documental y publicidad son habilidades distintas.</li>
+  <li><strong>Un presupuesto claro</strong>, con lo que incluye: rondas de cambios, versiones,
+  música.</li>
+  <li><strong>Música y stock con licencia.</strong> Pregunta de dónde salen, porque la música sin
+  licencia es lo que hace que retiren los vídeos.</li>
+  <li><strong>Los formatos que vas a recibir.</strong> 16:9 para la web, vertical para Reels,
+  cuadrado para feeds, subtítulos incrustados o en archivo.</li>
+  <li><strong>Cómo funcionan las notas.</strong> Un enlace de revisión y un solo conjunto de notas
+  por ronda lo mantienen todo ágil.</li>
+</ul>
+
+<h3>Freelance o productora</h3>
+<p>Una productora tiene sentido cuando hay un rodaje que organizar, con equipo, localizaciones y
+material. Si el material ya existe, o si el vídeo se puede hacer con stock y con lo que la empresa
+ya tiene, un editor freelance suele ser más rápido y más barato, porque pagas la edición y no la
+estructura que la rodea. Muchas agencias trabajan con editores freelance justo por eso.</p>
+
+<h3>Coste y plazos</h3>
+<p>El precio depende del material, de lo que hay que construir y de cuántas versiones necesitas, no
+de dónde vive el editor. He escrito aparte sobre <a href="../video-editing-cost/">qué hace variar
+el coste de editar un vídeo</a>. En cuanto a plazos, el montaje rara vez es lo lento. Las notas sí,
+así que acordar antes de empezar quién da las notas, y en cuánto tiempo, marca más diferencia que
+cualquier otra cosa.</p>
+
+<h3>Siguiente paso</h3>
+<p>Estés en Portugal, en España o en otro país, <a href="../../contact/">cuéntame el proyecto</a> y
+te digo qué haría falta. Si trabajas en una agencia, <a href="../../agencies/">esta página</a>
+explica cómo trabajo con equipos.</p>
+""",
+        },
+        "body": """
+<p class="lede">More companies in Portugal now hire a freelance video editor instead of building a
+video team or going through a production company. If you're looking for one, here's what it
+involves and what to check.</p>
+
+
+<h3>Working remotely is the normal way</h3>
+
+<p>Editing doesn't need anyone in the same room. Footage arrives through a transfer link or a
+shared drive, cuts go back as private review links, and notes come in with timecodes. Whether you're in Porto, Madrid, London or New York makes very little
+difference. Portugal shares the UK's time zone and is an hour behind Spain, and mornings on the US
+East Coast overlap with afternoons here, so there's always part of the working day in common.</p>
+
+
+<h3>Languages</h3>
+
+<p>Many companies in Portugal need the same video in Portuguese and English, and often in Spanish
+for the neighboring market. I work in all three, so subtitles and full language versions are made
+by the person who cut the film rather than sent somewhere else afterwards.</p>
+
+
+<h3>What to check before you hire</h3>
+
+<ul>
+  <li><strong>A <a href="../../#portfolio">portfolio</a> with work like yours.</strong> Corporate,
+  social, documentary and advertising are different skills.</li>
+
+  <li><strong>A clear quote</strong>, with what's included: rounds of changes, versions,
+  music.</li>
+
+  <li><strong>Licensed music and stock.</strong> Ask where it comes from, because unlicensed music
+  is what gets videos taken down.</li>
+
+  <li><strong>The formats you'll get.</strong> 16:9 for your website, vertical for Reels, square for
+  feeds, subtitles burned in or as files.</li>
+
+  <li><strong>How feedback works.</strong> One review link and one set of notes per round keeps
+  things moving.</li>
+
+</ul>
+
+<h3>Freelancer or production company</h3>
+
+<p>A production company makes sense when there's a shoot to organize, with crew, locations and
+equipment. If the footage already exists, or the video can be built from stock and material the
+company already has, a freelance editor is usually faster and costs less, because you're paying for
+the edit rather than the structure around it. Plenty of agencies work with freelance editors for
+exactly that reason.</p>
+
+
+<h3>Cost and timing</h3>
+
+<p>The price depends on the footage, what has to be built and how many versions you need, not on
+where the editor lives. I've written separately about <a href="../video-editing-cost/">what moves
+the cost of a video edit</a>. On timing, the edit itself is rarely the slow part. Feedback is, so
+agreeing before you start on who gives notes, and how quickly, makes more difference than anything
+else.</p>
+
+
+<h3>Next step</h3>
+
+<p>Whether you're in Portugal or abroad and looking for an editor here, <a href="../../contact/">tell
+me about the project</a> and I'll come back with what it would take. If you're at an agency,
+<a href="../../agencies/">this page</a> explains how I work with teams.</p>
+""",
+    },
+    {
         "slug": "ai-video-needs-an-editor",
         "image": "ai-edit",
         "image_alt": "Scattered purple film frames of landscapes flowing into an editing timeline "
                      "with a playhead",
-        "date": "2026-10-25",
-        "date_label": "October 2026",
-        "title": "AI can make the shots. It can't make the video.",
+        "title": "AI can make the shots. It can't make the video",
         "excerpt": "Almost every day someone gets in touch after trying to make their video with AI. "
                    "Where it stalls, where it helps, and why a good ad is more than footage that "
                    "looks real.",
         "pt": {
-            "date_label": "Outubro de 2026",
-            "title": "A IA faz os planos. Não faz o vídeo.",
+            "title": "A IA faz os planos. Não faz o vídeo",
             "excerpt": "Quase todos os dias alguém me contacta depois de tentar fazer o vídeo com "
                        "IA. Onde emperra, onde ajuda, e porque é que um bom anúncio é mais do que "
                        "imagens com ar real.",
@@ -97,8 +478,7 @@ e o que não vale.</p>
 """,
         },
         "es": {
-            "date_label": "Octubre de 2026",
-            "title": "La IA hace los planos. No hace el vídeo.",
+            "title": "La IA hace los planos. No hace el vídeo",
             "excerpt": "Casi todos los días alguien me escribe después de intentar hacer su vídeo "
                        "con IA. Dónde se atasca, dónde ayuda, y por qué un buen anuncio es más que "
                        "imágenes que parecen reales.",
@@ -212,13 +592,10 @@ generating and what isn't.</p>
         "image": "what-to-send",
         "image_alt": "A purple set of drawers holding film strips, a waveform, music, "
                      "stills and color swatches",
-        "date": "2026-09-28",
-        "date_label": "September 2026",
         "title": "What to send me so the first cut is close",
         "excerpt": "Most of what slows an edit down is decided before the files are opened. What "
                    "to send, what to send originals of, and what you don't need to find at all.",
         "pt": {
-            "date_label": "Setembro de 2026",
             "title": "O que me mandar para o primeiro corte ficar perto",
             "excerpt": "A maior parte do que atrasa uma montagem decide-se antes de os ficheiros "
                        "serem abertos. O que mandar, de que é preciso mandar originais, e o que "
@@ -275,7 +652,6 @@ responder em separado, cada uma a uma versão diferente, é o que acrescenta dia
 """,
         },
         "es": {
-            "date_label": "Septiembre de 2026",
             "title": "Qué enviarme para que el primer corte se acerque",
             "excerpt": "Casi todo lo que retrasa un montaje se decide antes de abrir los archivos. "
                        "Qué enviar, de qué hacen falta originales, y qué no necesitas buscar.",
@@ -404,14 +780,11 @@ separately, each to a different version, is what adds days.</p>
         "image": "one-campaign",
         "image_alt": "An editing timeline in purple with clips and a waveform, "
                      "beside film frames and a color wheel",
-        "date": "2026-09-24",
-        "date_label": "September 2026",
         "title": "One campaign, every platform: commission it all at once",
         "excerpt": "A campaign that runs on several platforms works better commissioned as one job. "
                    "Why separate commissions drift, and the formats that get forgotten in the "
                    "brief.",
         "pt": {
-            "date_label": "Setembro de 2026",
             "title": "Uma campanha, várias plataformas: encomende tudo de uma vez",
             "excerpt": "Uma campanha que corre em várias plataformas funciona melhor encomendada "
                        "como um só trabalho. Porque é que as encomendas separadas se desviam, e os "
@@ -470,7 +843,6 @@ digo-lhe o que pedir. O resto é <a href="../../services/">comigo</a>.</p>
 """,
         },
         "es": {
-            "date_label": "Septiembre de 2026",
             "title": "Una campaña, todas las plataformas: encárgalo todo de una vez",
             "excerpt": "Una campaña que corre en varias plataformas funciona mejor encargada como "
                        "un solo trabajo. Por qué se desvían los encargos separados, y los formatos "
