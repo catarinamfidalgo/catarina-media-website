@@ -34,9 +34,9 @@
 <meta name="twitter:image" content="https://catarina.media/assets/img/blog/one-campaign-og.jpg">
 <link rel="stylesheet" href="../../assets/site.css?v=sig5">
 
-<!-- Google Analytics (GA4), behind consent.
-     Analytics sets a cookie, so under EU law it may not run until the visitor
-     agrees. Nothing here loads until consent is stored: no script is fetched,
+<!-- Google Analytics (GA4), behind consent. It also measures Google Ads
+     conversions (generate_lead, imported into Ads). Analytics sets a cookie,
+     so under EU law it may not run until the visitor agrees. Nothing here loads until consent is stored: no script is fetched,
      no cookie is written, no request reaches Google. Declining is remembered
      too, so the bar is not shown again.
      The choice lives in localStorage, not a cookie - storing a consent record
@@ -55,6 +55,17 @@
       document.head.appendChild(s);
       window.dataLayer = window.dataLayer || [];
       window.gtag = function () { window.dataLayer.push(arguments); };
+      // Consent Mode v2. This only runs after the visitor said yes, so
+      // the state is "granted" from the first call. Google Ads in the EU
+      // needs ad_user_data and ad_personalization stated explicitly, or it
+      // will not count conversions. Personalisation stays denied: ads are
+      // measured, never used to follow anyone around the web.
+      window.gtag("consent", "default", {
+        analytics_storage: "granted",
+        ad_storage: "granted",
+        ad_user_data: "granted",
+        ad_personalization: "denied"
+      });
       window.gtag("js", new Date());
       window.gtag("config", GA_ID, { anonymize_ip: true });
     }
@@ -69,6 +80,15 @@
       var bar = document.getElementById("cookieBar");
       if (bar) bar.hidden = true;
       if (yes) load();
+      else if (window.__gaLoaded && window.gtag) {
+        // Withdrawn after it had loaded: stop it for the rest of this page.
+        window.gtag("consent", "update", {
+          analytics_storage: "denied",
+          ad_storage: "denied",
+          ad_user_data: "denied",
+          ad_personalization: "denied"
+        });
+      }
     };
 
     window.resetConsent = function () {

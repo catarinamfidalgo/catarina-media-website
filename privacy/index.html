@@ -37,9 +37,9 @@
 
 <link rel="stylesheet" href="../assets/site.css?v=sig5">
 
-<!-- Google Analytics (GA4), behind consent.
-     Analytics sets a cookie, so under EU law it may not run until the visitor
-     agrees. Nothing here loads until consent is stored: no script is fetched,
+<!-- Google Analytics (GA4), behind consent. It also measures Google Ads
+     conversions (generate_lead, imported into Ads). Analytics sets a cookie,
+     so under EU law it may not run until the visitor agrees. Nothing here loads until consent is stored: no script is fetched,
      no cookie is written, no request reaches Google. Declining is remembered
      too, so the bar is not shown again.
      The choice lives in localStorage, not a cookie — storing a consent record
@@ -58,6 +58,17 @@
       document.head.appendChild(s);
       window.dataLayer = window.dataLayer || [];
       window.gtag = function () { window.dataLayer.push(arguments); };
+      // Consent Mode v2. This only runs after the visitor said yes, so
+      // the state is "granted" from the first call. Google Ads in the EU
+      // needs ad_user_data and ad_personalization stated explicitly, or it
+      // will not count conversions. Personalisation stays denied: ads are
+      // measured, never used to follow anyone around the web.
+      window.gtag("consent", "default", {
+        analytics_storage: "granted",
+        ad_storage: "granted",
+        ad_user_data: "granted",
+        ad_personalization: "denied"
+      });
       window.gtag("js", new Date());
       window.gtag("config", GA_ID, { anonymize_ip: true });
     }
@@ -72,6 +83,15 @@
       var bar = document.getElementById("cookieBar");
       if (bar) bar.hidden = true;
       if (yes) load();
+      else if (window.__gaLoaded && window.gtag) {
+        // Withdrawn after it had loaded: stop it for the rest of this page.
+        window.gtag("consent", "update", {
+          analytics_storage: "denied",
+          ad_storage: "denied",
+          ad_user_data: "denied",
+          ad_personalization: "denied"
+        });
+      }
     };
 
     window.resetConsent = function () {
@@ -162,16 +182,18 @@
     <p class="copy">Short version: almost nothing, and nothing without asking.</p>
     <h3 class="priv-h">Visitor numbers</h3>
     <p class="copy">If you agree to it, this site uses Google Analytics to count visits - which pages get read, roughly where people are, and whether they came from a search. It sets a cookie to tell one visit from another. If you decline, Analytics is never loaded at all, and no cookie is set. You can change your mind at any time using the button below.</p>
+    <h3 class="priv-h">Advertising</h3>
+    <p class="copy">This site advertises on Google. If you agree to cookies, Google Analytics also tells Google Ads whether a visit that began with one of those ads ended in an enquiry, so I can see which ads are worth paying for. It is not used to show you ads elsewhere or to build a profile of you. If you decline, none of this happens.</p>
     <h3 class="priv-h">The contact form</h3>
-    <p class="copy">The form does not send anything to this site. It opens your own email app with the details filled in, and nothing is sent until you press send yourself. Nothing you type is stored here, and there is no database.</p>
+    <p class="copy">When you press send, your message goes to a small script in my own Google account, which emails it to me. Apart from that email, nothing is kept, and there is no database. If that ever fails, your own email app opens instead, with the details filled in.</p>
     <h3 class="priv-h">Nothing else</h3>
-    <p class="copy">No advertising trackers, no social media pixels, no mailing list, no profiling. Fonts are served from this site rather than from Google, so no third party sees your visit.</p>
+    <p class="copy">No social media pixels, no mailing list, no profiling, and no ads that follow you to other sites. Fonts are served from this site rather than from Google, so no third party sees your visit.</p>
     <h3 class="priv-h">Your choice</h3>
-    <p class="copy">Analytics is off unless you turn it on, and you can withdraw that at any time.</p>
+    <p class="copy">Analytics and ad measurement are off unless you turn them on, and you can withdraw that at any time.</p>
     <h3 class="priv-h">Who holds this</h3>
     <p class="copy">Catarina Fidalgo, working in Portugal. Anything about your own data can go through the contact form.</p>
     <h3 class="priv-h">On what basis</h3>
-    <p class="copy">Your consent, and nothing else. Analytics runs only if you say yes, and you can take that back whenever you like.</p>
+    <p class="copy">Your consent, and nothing else. Analytics and ad measurement run only if you say yes, and you can take that back whenever you like.</p>
     <h3 class="priv-h">What you can ask for</h3>
     <p class="copy">You can ask what is held about you, ask for it to be corrected or deleted, and withdraw your consent at any time. Ask through the contact form and I will answer.</p>
     <h3 class="priv-h">How long it is kept</h3>
@@ -201,7 +223,7 @@
   <div class="cookie-bar" id="cookieBar" role="dialog" aria-live="polite"
        aria-label="Cookie choice" hidden>
     <div class="cookie-inner">
-      <p class="cookie-text">This site can use Google Analytics to count visits. It sets a cookie, so it only runs if you agree. <a href="../privacy/">What that means</a>.</p>
+      <p class="cookie-text">This site can use Google Analytics to count visits and to see whether its Google ads lead to enquiries. It sets a cookie, so it only runs if you agree. <a href="../privacy/">What that means</a>.</p>
       <div class="cookie-actions">
         <button type="button" class="btn btn--ghost cookie-no" onclick="setConsent(false)">Decline</button>
         <button type="button" class="btn cookie-yes" onclick="setConsent(true)">Accept</button>

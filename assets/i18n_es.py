@@ -10,8 +10,8 @@ UI = {
         'Catarina Fidalgo, que trabaja en Portugal. Cualquier cuestión sobre tus datos puede ir por el formulario de contacto.',
     'On what basis':
         'Con qué base',
-    'Your consent, and nothing else. Analytics runs only if you say yes, and you can take that back whenever you like.':
-        'Tu consentimiento, y nada más. Analytics solo funciona si dices que sí, y puedes retirarlo cuando quieras.',
+    'Your consent, and nothing else. Analytics and ad measurement run only if you say yes, and you can take that back whenever you like.':
+        'Tu consentimiento, y nada más. Analytics y la medición de anuncios solo funcionan si dices que sí, y puedes retirarlo cuando quieras.',
     'What you can ask for':
         'Qué puedes pedir',
     'You can ask what is held about you, ask for it to be corrected or deleted, and withdraw your consent at any time. Ask through the contact form and I will answer.':
@@ -34,24 +34,28 @@ UI = {
         'Número de visitas',
     'If you agree to it, this site uses Google Analytics to count visits - which pages get read, roughly where people are, and whether they came from a search. It sets a cookie to tell one visit from another. If you decline, Analytics is never loaded at all, and no cookie is set. You can change your mind at any time using the button below.':
         'Si estás de acuerdo, este sitio usa Google Analytics para contar visitas - qué páginas se leen, aproximadamente desde dónde llega la gente, y si vinieron de una búsqueda. Instala una cookie para distinguir una visita de otra. Si lo rechazas, Analytics no llega a cargarse y no se instala ninguna cookie. Puedes cambiar de opinión cuando quieras con el botón de abajo.',
+    'Advertising':
+        'Publicidad',
+    'This site advertises on Google. If you agree to cookies, Google Analytics also tells Google Ads whether a visit that began with one of those ads ended in an enquiry, so I can see which ads are worth paying for. It is not used to show you ads elsewhere or to build a profile of you. If you decline, none of this happens.':
+        'Este sitio se anuncia en Google. Si aceptas las cookies, Google Analytics también le indica a Google Ads si una visita que empezó en uno de esos anuncios terminó en una consulta, para que yo sepa qué anuncios merecen la pena. No se usa para mostrarte anuncios en otros sitios ni para crear un perfil tuyo. Si lo rechazas, nada de esto ocurre.',
     'The contact form':
         'El formulario de contacto',
-    'The form does not send anything to this site. It opens your own email app with the details filled in, and nothing is sent until you press send yourself. Nothing you type is stored here, and there is no database.':
-        'El formulario no envía nada a este sitio. Abre tu propia aplicación de correo con los datos rellenados, y no se envía nada hasta que pulses enviar. Nada de lo que escribes se guarda aquí, y no hay ninguna base de datos.',
+    'When you press send, your message goes to a small script in my own Google account, which emails it to me. Apart from that email, nothing is kept, and there is no database. If that ever fails, your own email app opens instead, with the details filled in.':
+        'Cuando pulsas enviar, tu mensaje va a un pequeño script en mi propia cuenta de Google, que me lo envía por correo. Aparte de ese correo, no se guarda nada, y no hay ninguna base de datos. Si alguna vez falla, se abre tu propia aplicación de correo con los datos ya rellenados.',
     'Nothing else':
         'Nada más',
-    'No advertising trackers, no social media pixels, no mailing list, no profiling. Fonts are served from this site rather than from Google, so no third party sees your visit.':
-        'Sin rastreadores publicitarios, sin píxeles de redes sociales, sin newsletter, sin perfilado. Las tipografías se sirven desde este sitio y no desde Google, así que ningún tercero ve tu visita.',
+    'No social media pixels, no mailing list, no profiling, and no ads that follow you to other sites. Fonts are served from this site rather than from Google, so no third party sees your visit.':
+        'Sin píxeles de redes sociales, sin newsletter, sin perfilado y sin anuncios que te sigan a otros sitios. Las tipografías se sirven desde este sitio y no desde Google, así que ningún tercero ve tu visita.',
     'Your choice':
         'Tu elección',
-    'Analytics is off unless you turn it on, and you can withdraw that at any time.':
-        'Analytics está desactivado a menos que lo actives, y puedes retirar ese permiso cuando quieras.',
+    'Analytics and ad measurement are off unless you turn them on, and you can withdraw that at any time.':
+        'Analytics y la medición de anuncios están desactivados a menos que los actives, y puedes retirar ese permiso cuando quieras.',
     'Change my cookie choice':
         'Cambiar mi elección de cookies',
     'Questions about any of this can go through the contact form.':
         'Cualquier duda sobre esto puede ir por el formulario de contacto.',
-    'This site can use Google Analytics to count visits. It sets a cookie, so it only runs if you agree.':
-        'Este sitio puede usar Google Analytics para contar visitas. Instala una cookie, así que solo funciona si estás de acuerdo.',
+    'This site can use Google Analytics to count visits and to see whether its Google ads lead to enquiries. It sets a cookie, so it only runs if you agree.':
+        'Este sitio puede usar Google Analytics para contar visitas y para saber si sus anuncios en Google generan consultas. Instala una cookie, así que solo funciona si estás de acuerdo.',
     'What that means':
         'Qué significa eso',
     'Decline':
