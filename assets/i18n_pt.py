@@ -148,7 +148,7 @@ SERVICES = {
         'Limpo os diálogos, coloco os efeitos, equilibro a música e faço a mistura para níveis de broadcast e streaming. É o som mau que faz um vídeo parecer barato.',
     'Licensed music &amp; stock footage':
         'Música e imagens de stock licenciadas',
-    'Finding the track, and the shots that fill the gaps, then clearing the licence so it is safe to publish anywhere. I work from paid premium libraries, so the choice is not limited to whatever happens to be free, and the paperwork comes with the files.':
+    'Finding the track, and the shots that fill the gaps, then clearing the license so it is safe to publish anywhere. I work from paid premium libraries, so the choice is not limited to whatever happens to be free, and the paperwork comes with the files.':
         'Encontro a faixa, e os planos que preenchem as falhas, e trato da licença para poder publicar em qualquer lado. Trabalho a partir de bibliotecas premium pagas, por isso a escolha não se limita ao que é gratuito, e a documentação vai com os ficheiros.',
     'Subtitling':
         'Legendagem',
@@ -162,14 +162,14 @@ COPY = {
         'Cresci agarrada a cinema e televisão, comecei a montar aos doze anos e nunca mais parei bem. Primeiro foi um passatempo, depois um negócio meu, e agora é o trabalho todo. Sou também psicóloga e trabalhei como tal antes disto, e depois segui aquilo de que gostava mais.',
     'Social media content, YouTube videos and corporate work, for household-name consumer brands, international organisations and global tech companies, sometimes direct and sometimes through their agencies. Footage arrives, and everything after that is mine: the cut, the colour, the sound, the subtitles, and the part where I watch it forty times and still find something to move.':
         'Conteúdo para redes sociais, vídeos de YouTube e vídeo corporativo, para marcas de grande consumo que toda a gente conhece, organizações internacionais e empresas de tecnologia globais, umas vezes diretamente, outras através das suas agências. O material chega, e tudo o que vem depois é comigo: a montagem, a cor, o som, as legendas, e a parte em que vejo aquilo quarenta vezes e ainda encontro coisa para mexer.',
-    'One person, no team, no account managers. You deal directly with whoever is editing your video. I still cut things nobody asked for at weekends, which is why my drives are full of work no client will ever see.':
-        'Uma pessoa, sem equipa, sem gestores de conta. Fala diretamente com quem está a montar o seu vídeo. Continuo a montar coisas que ninguém pediu ao fim de semana, e é por isso que tenho os discos cheios de trabalho que nenhum cliente vai ver.',
+    'One person, no team, no account managers. You deal directly with whoever is making your video. I still cut things nobody asked for at weekends, which is why my drives are full of work no client will ever see.':
+        'Uma pessoa, sem equipa, sem gestores de conta. Fala diretamente com quem está a fazer o seu vídeo. Continuo a montar coisas que ninguém pediu ao fim de semana, e é por isso que tenho os discos cheios de trabalho que nenhum cliente vai ver.',
     "Most of what I do is commercials, brand films, YouTube, social content, and corporate video. I care most about the story underneath the footage, since that's usually what decides whether an edit lands.":
         "A maior parte do que faço são anúncios, filmes de marca, YouTube, conteúdo para redes sociais e vídeo corporativo. O que me importa mais é a história por baixo das imagens, porque é normalmente isso que decide se uma montagem resulta.",
     "I work in English, Portuguese, and Spanish, which helps when a brand is making the same thing for more than one market.":
         "Trabalho em inglês, português e espanhol, o que ajuda quando uma marca faz a mesma peça para mais do que um mercado.",
-    "When there's overflow work, a tight deadline, or a client asking for more video than your team can make on its own, I work behind the scenes as your post-production partner. Everything ships under your brand, not mine.":
-        "Quando há trabalho a mais, um prazo apertado ou um cliente a pedir mais vídeo do que a vossa equipa consegue produzir, trabalho nos bastidores como vosso parceiro de pós-produção. Tudo sai com a vossa marca, não com a minha.",
+    "When there's overflow work, a tight deadline, or a client asking for more video than your team can make on its own, I work behind the scenes as your creative and post-production partner. Everything ships under your brand, not mine.":
+        "Quando há trabalho a mais, um prazo apertado ou um cliente a pedir mais vídeo do que a vossa equipa consegue produzir, trabalho nos bastidores como vosso parceiro criativo e de pós-produção. Tudo sai com a vossa marca, não com a minha.",
     "NDA-friendly, always": "Sempre sob NDA",
     "Your client relationships stay yours - I never appear in the credits or the conversation.":
         "As vossas relações com os clientes continuam vossas - nunca apareço nos créditos nem na conversa.",
@@ -307,3 +307,116 @@ DESCS = {
  "Five Oaks": "Vídeos educativos, vídeos de evento e anúncios para a Five Oaks, um centro de investigação e educação dedicado à conservação de zonas húmidas e às populações de aves aquáticas.",
  "FEAM Aero": "Vídeo corporativo sem som, com elementos animados, para um stand de feira, para a FEAM Aero - manutenção de aeronaves e serviços de linha.",
 }
+
+
+# Creative-direction rework (October 2026)
+UI.update({
+    'Creative Direction &amp; Video Editing':
+        'Direção Criativa &amp; Edição de Vídeo',
+    'Creative direction, scripting and post-production for brands, agencies and creators, built around the results the video has to bring in.':
+        'Direção criativa, guião e pós-produção para marcas, agências e criadores, pensadas para os resultados que o vídeo tem de trazer.',
+    'Work for teams at Coca-Cola, UNESCO, Volkswagen, Danone, Capgemini and Fairmont':
+        'Trabalho para equipas da Coca-Cola, UNESCO, Volkswagen, Danone, Capgemini e Fairmont',
+    'From the brief to the <i>results</i>':
+        'Do briefing aos <i>resultados</i>',
+    'Most projects need more than a cut. These are the three stages I take on, one at a time or from start to finish.':
+        'A maior parte dos projetos precisa de mais do que uma montagem. Estas são as três fases de que me ocupo, uma de cada vez ou do início ao fim.',
+    'Strategy &amp; creative direction':
+        'Estratégia &amp; direção criativa',
+    'Production &amp; post':
+        'Produção &amp; pós-produção',
+    'Distribution &amp; growth':
+        'Distribuição &amp; crescimento',
+    'Creative direction':
+        'Direção criativa',
+    "Setting the look, tone and pace a brand's video should have, then holding every piece to it. Agreed with you before anything is cut, so the first draft is already heading the right way.":
+        'Definir o visual, o tom e o ritmo que os vídeos de uma marca devem ter, e manter cada peça fiel a isso. Fica acordado consigo antes de começar a montagem, para que a primeira versão já siga no caminho certo.',
+    'Audience &amp; message':
+        'Público &amp; mensagem',
+    'Who the video is for, what they need to believe by the end, and what should make them act. This is where the psychology training earns its keep.':
+        'Para quem é o vídeo, em que é que essa pessoa precisa de acreditar no fim e o que a vai levar a agir. É aqui que a formação em psicologia faz toda a diferença.',
+    'Case study &amp; results videos':
+        'Vídeos de casos de estudo &amp; resultados',
+    'Turning what you did for a client into a story: the problem, the work, and the numbers in clear graphics. The video that helps win the next client.':
+        'Transformar o que fez por um cliente numa história: o problema, o trabalho e os números em gráficos claros. O vídeo que ajuda a conquistar o próximo cliente.',
+    'Campaign cut-downs':
+        'Versões para campanhas',
+    'One set of material turned into everything a campaign needs: the main spot, square and vertical cuts, short hooks for paid social, each edited for where it runs rather than resized.':
+        'Um único conjunto de material transformado em tudo o que uma campanha precisa: o spot principal, versões quadradas e verticais, ganchos curtos para publicidade paga nas redes, cada um montado para o sítio onde vai passar e não apenas redimensionado.',
+    'Ad versions for testing':
+        'Versões de anúncios para testar',
+    'Several versions of an ad with different openings, lengths or calls to action, so you can see which one performs instead of guessing.':
+        'Várias versões de um anúncio, com inícios, durações ou apelos à ação diferentes, para ver qual funciona melhor em vez de adivinhar.',
+    'For Creators':
+        'Para Criadores',
+    'YouTube editing built for <i>retention</i>':
+        'Edição de YouTube pensada para a <i>retenção</i>',
+    'I run a video essay channel of my own, <a href="https://www.youtube.com/@catarinamedia" target="_blank" rel="noopener">The Cat&#39;s Pajamas</a>, so I edit YouTube from the inside: what keeps people watching past the first thirty seconds, and what makes them click in the first place.':
+        'Tenho o meu próprio canal de ensaios em vídeo, <a href="https://www.youtube.com/@catarinamedia" target="_blank" rel="noopener">The Cat&#39;s Pajamas</a>, por isso edito YouTube por dentro: o que faz as pessoas continuarem a ver depois dos primeiros trinta segundos, e o que as faz clicar logo à partida.',
+    'Hooks and pacing':
+        'Ganchos e ritmo',
+    'The first seconds decide whether anyone stays. The opening and the rhythm are cut around where viewers drop off, not the order things were filmed in.':
+        'Os primeiros segundos decidem se alguém fica. O início e o ritmo são montados em função do momento em que os espectadores desistem, e não da ordem em que as coisas foram filmadas.',
+    'Packaging':
+        'Título e miniatura',
+    'Title and thumbnail ideas that fit the video, worked out while editing it rather than afterwards.':
+        'Ideias de título e de miniatura que encaixam no vídeo, pensadas durante a edição e não depois.',
+    'A steady schedule':
+        'Um calendário regular',
+    'Weekly or monthly uploads on a retainer, so the channel keeps moving without you editing at midnight.':
+        'Publicações semanais ou mensais em regime de avença, para que o canal continue a avançar sem ter de editar à meia-noite.',
+    'I grew up glued to film and television, started editing at twelve, and never quite stopped. I am also a licensed psychologist, and it turned out to be the most useful training an editor can have: whether a video works comes down to how people pay attention, what they feel, and the moment they decide to act.':
+        'Cresci agarrada a cinema e televisão, comecei a montar aos doze anos e nunca mais parei bem. Sou também psicóloga, e essa acabou por ser a formação mais útil que uma editora pode ter: se um vídeo funciona ou não depende da forma como as pessoas prestam atenção, do que sentem e do momento em que decidem agir.',
+    'Social media content, YouTube videos, campaigns and corporate work, for household-name consumer brands, international organizations and global tech companies, sometimes direct and sometimes through their agencies. More and more of it starts before the footage, with the creative direction and the script, and ends after it, with every version a campaign needs. In between is the part where I watch it forty times and still find something to move.':
+        'Conteúdo para redes sociais, vídeos de YouTube, campanhas e vídeo corporativo, para marcas de grande consumo que toda a gente conhece, organizações internacionais e empresas de tecnologia globais, às vezes diretamente e às vezes através das suas agências. Cada vez mais, o trabalho começa antes das imagens, com a direção criativa e o guião, e acaba depois delas, com todas as versões de que uma campanha precisa. Pelo meio fica a parte em que vejo tudo quarenta vezes e ainda encontro alguma coisa para mudar.',
+    'What do you need?':
+        'Do que precisa?',
+    'Creative Direction':
+        'Direção Criativa',
+    'Ad Campaign / Cut-downs':
+        'Campanha Publicitária / Versões',
+    'Case Study Video':
+        'Vídeo de Caso de Estudo',
+    'YouTube Channel (ongoing)':
+        'Canal de YouTube (contínuo)',
+})
+META = {
+    "title": "Catarina Fidalgo - Direção Criativa e Edição de Vídeo",
+    "description": "Catarina Fidalgo - direção criativa, guião e edição de vídeo para marcas, agências e criadores, em Portugal. Anúncios, filmes de marca, campanhas, YouTube e conteúdo social, em inglês, português e espanhol.",
+}
+
+# Creative-director positioning (October 2026)
+UI.update({
+    'Creative Director &amp; Video Editor':
+        'Diretora Criativa &amp; Editora de Vídeo',
+    'Creative direction for brands, agencies and creators: the concept, the look and the story, carried through to every final cut, and built around the results the video has to bring in.':
+        'Direção criativa para marcas, agências e criadores: o conceito, o visual e a história, levados até ao último corte e pensados para os resultados que o vídeo tem de trazer.',
+    'I work as a creative director who also makes the work: the concept, the look and the script, then the edit and every version a campaign needs. One person from the first idea to the final file.':
+        'Trabalho como diretora criativa que também faz o trabalho: o conceito, o visual e o guião, depois a montagem e todas as versões de que uma campanha precisa. Uma só pessoa, da primeira ideia ao ficheiro final.',
+    'Who the video is for, what they need to believe by the end, and what should make them act. Settled before the script, so every scene has a job.':
+        'Para quem é o vídeo, em que é que essa pessoa precisa de acreditar no fim e o que a vai levar a agir. Fica decidido antes do guião, para que cada cena tenha uma função.',
+    'Concept &amp; direction':
+        'Conceito &amp; direção',
+    'Campaigns &amp; growth':
+        'Campanhas &amp; crescimento',
+    'Concepts &amp; campaign ideas':
+        'Conceitos &amp; ideias de campanha',
+    'The idea a video or a whole campaign is built on, pitched as a few clear routes with references, so you choose a direction before anything is made.':
+        'A ideia em que assenta um vídeo ou uma campanha inteira, apresentada em poucas propostas claras com referências, para escolher uma direção antes de se fazer seja o que for.',
+    'Brand video guidelines':
+        'Guia de vídeo da marca',
+    "A short reference for how the brand's videos look, sound and move, so every future piece stays consistent, whoever makes it.":
+        'Uma referência curta de como os vídeos da marca se veem, soam e se movem, para que cada peça futura seja coerente, seja quem for a fazê-la.',
+    'Social content plans':
+        'Planos de conteúdo para redes',
+    'What a brand posts and when, planned from the material you already have, so one shoot keeps feeding your channels for weeks.':
+        'O que a marca publica e quando, planeado a partir do material que já tem, para que uma só gravação alimente os seus canais durante semanas.',
+    'Social media content, YouTube videos, campaigns and corporate work, for household-name consumer brands, international organizations and global tech companies, sometimes direct and sometimes through their agencies. More and more I come in before the footage, as the creative director, setting the concept, the look and the script, and stay until every version a campaign needs is out. In between is the part where I watch it forty times and still find something to move.':
+        'Conteúdo para redes sociais, vídeos de YouTube, campanhas e vídeo corporativo, para marcas de grande consumo que toda a gente conhece, organizações internacionais e empresas de tecnologia globais, às vezes diretamente e às vezes através das suas agências. Cada vez mais entro antes das imagens, como diretora criativa, a definir o conceito, o visual e o guião, e fico até sair a última versão de que a campanha precisa. Pelo meio fica a parte em que vejo tudo quarenta vezes e ainda encontro alguma coisa para mudar.',
+})
+META = {
+    "title": "Catarina Fidalgo - Diretora Criativa e Editora de Vídeo",
+    "description": "Catarina Fidalgo - diretora criativa e editora de vídeo para marcas, agências e criadores, em Portugal. Conceitos, guiões, filmes de marca, campanhas, YouTube e conteúdo social, em inglês, português e espanhol.",
+}
+UI.update({'Video essays on YouTube →': 'Ensaios em vídeo no YouTube →'})
+UI.update({'Creative Direction &amp; Post-Production': 'Direção Criativa &amp; Pós-Produção'})

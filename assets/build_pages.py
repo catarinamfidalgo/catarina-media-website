@@ -50,7 +50,7 @@ def extract(src):
 
 
 PAGES = [
-    ("",          "Video Editing & Post-Production", ["hero", "portfolio"], True),
+    ("",          "Creative Director & Video Editor", ["hero", "portfolio"], True),
     ("about",     "About",                          ["about"],              False),
     ("services",  "Services",                       ["services"],           False),
     ("agencies",  "For Agencies",                   ["agencies"],           False),

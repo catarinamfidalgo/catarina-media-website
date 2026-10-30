@@ -21,6 +21,9 @@ SITE_ID = SITE + "/#website"
 
 SERVICES = [
     'Consultation calls',
+    'Creative direction',
+    'Concepts & campaign ideas',
+    'Audience & message',
     'Script writing',
     'Video editing',
     'Casting & directing voiceover actors',
@@ -29,6 +32,11 @@ SERVICES = [
     'Color grading & correction',
     'Sound design & mixing',
     'Licensed music & stock footage',
+    'Case study & results videos',
+    'Campaign cut-downs',
+    'Ad versions for testing',
+    'Social content plans',
+    'Brand video guidelines',
     'Subtitling',
 ]
 
@@ -42,9 +50,9 @@ def person():
         "name": "Catarina Fidalgo",
         "url": SITE + "/",
         "image": SITE + "/assets/img/catarina-portrait.jpg",
-        "jobTitle": "Video Editor",
-        "description": ("Video editor and post-production, based in Portugal. "
-                        "Commercials, brand films, YouTube, social and corporate "
+        "jobTitle": "Creative Director and Video Editor",
+        "description": ("Creative director and video editor, based in Portugal. "
+                        "Commercials, brand films, campaigns, YouTube and social "
                         "video, in English, Portuguese and Spanish."),
         "address": {"@type": "PostalAddress", "addressCountry": "PT"},
         # There is another Catarina Fidalgo working in design in Portugal.
@@ -78,14 +86,14 @@ def website(lang):
 def service():
     return {
         "@type": "ProfessionalService",
-        "name": "Catarina Fidalgo - Video Editing and Post-Production",
+        "name": "Catarina Fidalgo - Creative Director and Video Editor",
         "url": SITE + "/services/",
         "provider": {"@id": PERSON_ID},
         "areaServed": "Worldwide",
         "availableLanguage": ["en", "pt", "es"],
         "hasOfferCatalog": {
             "@type": "OfferCatalog",
-            "name": "Post-production services",
+            "name": "Creative direction and post-production services",
             "itemListElement": [
                 {"@type": "Offer",
                  "itemOffered": {"@type": "Service", "name": s}}

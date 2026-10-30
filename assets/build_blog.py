@@ -17,17 +17,17 @@ SITE = "https://catarina.media"
 # Blog chrome, per language. The main site's strings live in assets/i18n_pt.py;
 # these are the handful the blog needs, kept here so the blog builds on its own.
 NAV = {
-    "en": {"tag": "Video Editing &amp; Post-Production", "home": "Home", "portfolio": "Portfolio",
+    "en": {"tag": "Creative Direction &amp; Post-Production", "essays": "Video essays on YouTube →", "home": "Home", "portfolio": "Portfolio",
            "services": "Services", "about": "About", "agencies": "For Agencies",
            "blog": "Blog", "contact": "Contact", "cta": "Start a project",
            "rights": "All rights reserved", "back": "All posts",
            "index_title": "Blog", "index_lede": "Notes on editing, post-production, and working with video."},
-    "pt": {"tag": "Edição de Vídeo &amp; Pós-Produção", "home": "Início", "portfolio": "Portfólio",
+    "pt": {"tag": "Direção Criativa &amp; Pós-Produção", "essays": "Ensaios em vídeo no YouTube →", "home": "Início", "portfolio": "Portfólio",
            "services": "Serviços", "about": "Sobre", "agencies": "Para Agências",
            "blog": "Blog", "contact": "Contacto", "cta": "Começar um projeto",
            "rights": "Todos os direitos reservados", "back": "Todos os artigos",
            "index_title": "Blog", "index_lede": "Notas sobre edição, pós-produção e trabalhar com vídeo."},
-    "es": {"tag": "Montaje de Vídeo &amp; Postproducción", "home": "Inicio", "portfolio": "Portafolio",
+    "es": {"tag": "Dirección Creativa &amp; Posproducción", "essays": "Ensayos en vídeo en YouTube →", "home": "Inicio", "portfolio": "Portafolio",
            "services": "Servicios", "about": "Sobre mí", "agencies": "Para Agencias",
            "blog": "Blog", "contact": "Contacto", "cta": "Empezar un proyecto",
            "rights": "Todos los derechos reservados", "back": "Todos los artículos",
@@ -1000,7 +1000,7 @@ PAGE = """<!DOCTYPE html>
 <meta property="og:description" content="{excerpt}">
 <meta property="og:url" content="{canonical}">
 {og_image}
-<link rel="stylesheet" href="{root}assets/site.css?v=sig5">
+<link rel="stylesheet" href="{root}assets/site.css?v=cd2">
 
 <!-- Google Analytics (GA4), behind consent. It also measures Google Ads
      conversions (generate_lead, imported into Ads). Analytics sets a cookie,
@@ -1174,6 +1174,7 @@ def footer(root, lang):
       <div class="foot-brand">
         <div class="foot-logo">Catarina <i>Fidalgo</i></div>
         <div class="foot-service">{nav['tag']}</div>
+        <div class="foot-link"><a href="https://www.youtube.com/@catarinamedia" target="_blank" rel="noopener">{nav['essays']}</a></div>
         <div class="copy">&copy; 2026 Catarina Fidalgo &middot; {nav['rights']}</div>
       </div>
       <div class="foot-cta">
