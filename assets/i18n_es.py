@@ -414,3 +414,17 @@ META = {
 }
 UI.update({'Video essays on YouTube →': 'Ensayos en vídeo en YouTube →'})
 UI.update({'Creative Direction &amp; Post-Production': 'Dirección Creativa &amp; Posproducción'})
+
+# About page, broader services (October 2026)
+UI.update({
+    "Today I work across the whole life of a video, for household-name consumer brands, international organizations and global tech companies, sometimes direct and sometimes through their agencies. It starts with creative direction: the concept, the look, the message and the script. Then comes the edit, with the motion graphics, color, sound and voiceover that finish it. And it carries on after the main cut, into campaign versions for every platform, ads to test against each other, case study videos and the guidelines that keep a brand's video consistent.":
+        'Hoy trabajo a lo largo de toda la vida de un vídeo, para marcas de gran consumo que todo el mundo conoce, organizaciones internacionales y empresas tecnológicas globales, a veces directamente y a veces a través de sus agencias. Empieza por la dirección creativa: el concepto, el estilo, el mensaje y el guion. Luego viene el montaje, con los grafismos animados, el color, el sonido y la locución que lo terminan. Y sigue después del corte principal, con las versiones de la campaña para cada plataforma, anuncios para probar unos contra otros, vídeos de casos de éxito y las guías que mantienen coherente el vídeo de una marca.',
+    'One person, no team, no account managers. You deal directly with whoever is making your video, from the first idea to the final file. I still watch every cut forty times and find something to move, and I still edit things nobody asked for at weekends, which is why my drives are full of work no client will ever see.':
+        'Una persona, sin equipo, sin gestores de cuenta. Hablas directamente con quien está haciendo tu vídeo, de la primera idea al archivo final. Sigo viendo cada corte cuarenta veces y encontrando algo que mover, y sigo montando cosas que nadie me ha pedido los fines de semana, y por eso tengo los discos llenos de trabajo que ningún cliente verá.',
+})
+UI.update({
+    'Today I work across the whole life of a video, for household-name brands, international organizations and global tech companies, directly or through their agencies: the creative direction and the script, the edit itself, and every version a campaign needs after it.':
+        'Hoy trabajo a lo largo de toda la vida de un vídeo, para marcas que todo el mundo conoce, organizaciones internacionales y empresas tecnológicas globales, directamente o a través de sus agencias: la dirección creativa y el guion, el montaje en sí, y todas las versiones que necesita una campaña después.',
+    'One person, no team, no account managers. You deal directly with whoever is making your video, from the first idea to the final file.':
+        'Una persona, sin equipo, sin gestores de cuenta. Hablas directamente con quien está haciendo tu vídeo, de la primera idea al archivo final.',
+})
