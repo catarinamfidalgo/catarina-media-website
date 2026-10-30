@@ -1122,8 +1122,6 @@
      on the dark hero, so they are white at reduced strength, not a new purple. */
   .hero-sub { max-width: 560px; margin: -8px 0 30px; font-size: 1.08rem;
     line-height: 1.6; color: rgba(255,255,255,.8); }
-  .hero-trust { margin: 26px 0 0; font-size: .72rem; font-weight: 700;
-    letter-spacing: .14em; text-transform: uppercase; color: rgba(255,255,255,.55); }
   @media (max-width: 600px) { .hero-sub { font-size: 1rem; } }
 
   /* Services come in three stages. Numbering runs on across all three, so

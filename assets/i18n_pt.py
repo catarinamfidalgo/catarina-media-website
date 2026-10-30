@@ -315,8 +315,6 @@ UI.update({
         'Direção Criativa &amp; Edição de Vídeo',
     'Creative direction, scripting and post-production for brands, agencies and creators, built around the results the video has to bring in.':
         'Direção criativa, guião e pós-produção para marcas, agências e criadores, pensadas para os resultados que o vídeo tem de trazer.',
-    'Work for teams at Coca-Cola, UNESCO, Volkswagen, Danone, Capgemini and Fairmont':
-        'Trabalho para equipas da Coca-Cola, UNESCO, Volkswagen, Danone, Capgemini e Fairmont',
     'From the brief to the <i>results</i>':
         'Do briefing aos <i>resultados</i>',
     'Most projects need more than a cut. These are the three stages I take on, one at a time or from start to finish.':

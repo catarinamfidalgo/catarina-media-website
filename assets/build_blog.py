@@ -1000,7 +1000,7 @@ PAGE = """<!DOCTYPE html>
 <meta property="og:description" content="{excerpt}">
 <meta property="og:url" content="{canonical}">
 {og_image}
-<link rel="stylesheet" href="{root}assets/site.css?v=cd2">
+<link rel="stylesheet" href="{root}assets/site.css?v=cd3">
 
 <!-- Google Analytics (GA4), behind consent. It also measures Google Ads
      conversions (generate_lead, imported into Ads). Analytics sets a cookie,
