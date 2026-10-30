@@ -1134,10 +1134,9 @@
     letter-spacing: -.01em; color: var(--text); }
   @media (max-width: 600px) { .service-group { margin-top: 40px; font-size: 1.2rem; } }
 
-  /* The video essay channel: one quiet link in the footer, and inline on the
-     creators section. The footer is dark in both themes, hence white. */
+  /* The video essay channel: one quiet link in the footer. The footer is
+     dark in both themes, hence white. */
   .foot-link { margin: 10px 0 6px; font-size: .8rem; }
   .foot-link a { color: rgba(255,255,255,.75); text-decoration: none;
     border-bottom: 1px solid rgba(255,255,255,.3); }
   .foot-link a:hover { color: #fff; border-bottom-color: #fff; }
-  #for-creators p.copy a { color: var(--accent); }
