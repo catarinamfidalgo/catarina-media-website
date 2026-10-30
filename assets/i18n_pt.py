@@ -313,8 +313,8 @@ DESCS = {
 UI.update({
     'Creative Direction &amp; Video Editing':
         'Direção Criativa &amp; Edição de Vídeo',
-    'Creative direction, scripting and post-production for brands, agencies and creators, built around the results the video has to bring in.':
-        'Direção criativa, guião e pós-produção para marcas, agências e criadores, pensadas para os resultados que o vídeo tem de trazer.',
+    'Creative direction, scripting and post-production for brands, agencies and content creators, built around the results the video has to bring in.':
+        'Direção criativa, guião e pós-produção para marcas, agências e criadores de conteúdo, pensadas para os resultados que o vídeo tem de trazer.',
     'From the brief to the <i>results</i>':
         'Do briefing aos <i>resultados</i>',
     'Most projects need more than a cut. These are the three stages I take on, one at a time or from start to finish.':
@@ -380,15 +380,15 @@ UI.update({
 })
 META = {
     "title": "Catarina Fidalgo - Direção Criativa e Edição de Vídeo",
-    "description": "Catarina Fidalgo - direção criativa, guião e edição de vídeo para marcas, agências e criadores, em Portugal. Anúncios, filmes de marca, campanhas, YouTube e conteúdo social, em inglês, português e espanhol.",
+    "description": "Catarina Fidalgo - direção criativa, guião e edição de vídeo para marcas, agências e criadores de conteúdo, em Portugal. Anúncios, filmes de marca, campanhas, YouTube e conteúdo social, em inglês, português e espanhol.",
 }
 
 # Creative-director positioning (October 2026)
 UI.update({
     'Creative Director &amp; Video Editor':
         'Diretora Criativa &amp; Editora de Vídeo',
-    'Creative direction for brands, agencies and creators: the concept, the look and the story, carried through to every final cut, and built around the results the video has to bring in.':
-        'Direção criativa para marcas, agências e criadores: o conceito, o visual e a história, levados até ao último corte e pensados para os resultados que o vídeo tem de trazer.',
+    'Creative direction for brands, agencies and content creators: the concept, the look and the story, carried through to every final cut, and built around the results the video has to bring in.':
+        'Direção criativa para marcas, agências e criadores de conteúdo: o conceito, o visual e a história, levados até ao último corte e pensados para os resultados que o vídeo tem de trazer.',
     'I work as a creative director who also makes the work: the concept, the look and the script, then the edit and every version a campaign needs. One person from the first idea to the final file.':
         'Trabalho como diretora criativa que também faz o trabalho: o conceito, o visual e o guião, depois a montagem e todas as versões de que uma campanha precisa. Uma só pessoa, da primeira ideia ao ficheiro final.',
     'Who the video is for, what they need to believe by the end, and what should make them act. Settled before the script, so every scene has a job.':
@@ -414,7 +414,7 @@ UI.update({
 })
 META = {
     "title": "Catarina Fidalgo - Diretora Criativa e Editora de Vídeo",
-    "description": "Catarina Fidalgo - diretora criativa e editora de vídeo para marcas, agências e criadores, em Portugal. Conceitos, guiões, filmes de marca, campanhas, YouTube e conteúdo social, em inglês, português e espanhol.",
+    "description": "Catarina Fidalgo - diretora criativa e editora de vídeo para marcas, agências e criadores de conteúdo, em Portugal. Conceitos, guiões, filmes de marca, campanhas, YouTube e conteúdo social, em inglês, português e espanhol.",
 }
 UI.update({'Video essays on YouTube →': 'Ensaios em vídeo no YouTube →'})
 UI.update({'Creative Direction &amp; Post-Production': 'Direção Criativa &amp; Pós-Produção'})
