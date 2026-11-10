@@ -413,26 +413,28 @@
     animation: fairyVisit 3.8s cubic-bezier(.16,.62,.24,1) .25s both; }
   .hero-fairy-figure img { position: absolute; inset: 0; width: 100%; height: 100%;
     object-fit: contain; }
-  .hero-fairy-main { animation: fairyInnerGlow 1.15s ease-in-out infinite alternate; }
-  /* Only the trailing fabric moves. The clip used to run from 48% across and
-     39% down, which takes in the extended right arm at 62-78% by 37-45% and
-     both legs at 62-82% by 60-85%. Moving that layer moved copies of them
-     too, which is where the spare arms and legs came from. It is now the
-     streaming tail alone, starting past the arm and above the knees, hinged
-     at its left edge so the far end travels and the join does not.
+  /* She is three cut-out pieces of one drawing, not copies of it. Moving a
+     clipped copy over the still original showed both at once: doubled
+     petals and a hard straight edge where the clip ended.
 
-     The feet layer is gone. A foot cannot be moved independently of the leg
-     it belongs to without tearing at the ankle, and nothing is gained by it. */
-  .hero-fairy-dress-motion { z-index: 2;
-    clip-path: polygon(76% 45%,100% 42%,100% 74%,76% 77%);
-    transform-origin: 76% 60%; opacity: .9;
-    animation: fairyDressFloat 1.18s ease-in-out infinite alternate; }
-  /* A narrow duplicate moves only the pointed shoe and the last few pixels
-     of ankle. The travel stays tiny so the joint never visibly separates. */
-  .hero-fairy-foot-motion { z-index: 3;
-    clip-path: polygon(73% 84%,85% 82%,87% 98%,75% 99%);
-    transform-origin: 76% 84%; opacity: .96;
-    animation: fairyFootMove .92s ease-in-out infinite alternate; }
+     fairy-body-base   everything except the back leg and the far tail
+     fairy-dress-tail  the streaming tail, faded in over 3% at its root so
+                       the join is soft; the base keeps the root, the tail
+                       covers it, so a rotation never opens a gap
+     fairy-leg-back    the upper leg with its bowed shoe, drawn behind the
+                       base and hinged at the hip under the skirt; its thigh
+                       runs on under the petals so lifting it shows no seam
+
+     The leg moves as a whole from the hip, so nothing tears at the ankle or
+     knee. All three share the glow so they never drift apart in tone. */
+  .hero-fairy-leg  { z-index: 0; transform-origin: 65% 66%;
+    animation: fairyLegSwing 1.6s ease-in-out infinite alternate,
+               fairyInnerGlow 1.15s ease-in-out infinite alternate; }
+  .hero-fairy-main { z-index: 1;
+    animation: fairyInnerGlow 1.15s ease-in-out infinite alternate; }
+  .hero-fairy-tail { z-index: 2; transform-origin: 70% 58%;
+    animation: fairyDressFloat 1.18s ease-in-out infinite alternate,
+               fairyInnerGlow 1.15s ease-in-out infinite alternate; }
   .hero-fairy-twinkle { position: absolute; z-index: 4; inset: 9% 8% 8% 11%;
     opacity: 0; mix-blend-mode: screen;
     background:
@@ -587,12 +589,12 @@
     to   { filter: brightness(1.055) saturate(1.08); }
   }
   @keyframes fairyDressFloat {
-    from { transform: rotate(-2.2deg) translate(0,2px) skewY(-1deg) scaleY(.97); }
-    to   { transform: rotate(2.7deg) translate(3px,-3.5px) skewY(1.4deg) scaleY(1.035); }
+    from { transform: rotate(-2deg) skewY(-.8deg); }
+    to   { transform: rotate(2.4deg) skewY(1deg); }
   }
-  @keyframes fairyFootMove {
-    from { transform: translateY(.2px) rotate(-.35deg); }
-    to   { transform: translate(.45px,-.65px) rotate(.8deg); }
+  @keyframes fairyLegSwing {
+    from { transform: rotate(-1.6deg); }
+    to   { transform: rotate(1.8deg); }
   }
   @keyframes fairyBodyTwinkle {
     0%,100% { opacity: .18; transform: translate(0,0) scale(.96); }

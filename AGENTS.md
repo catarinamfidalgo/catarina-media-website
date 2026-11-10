@@ -103,13 +103,18 @@ Two transform animations on one element do not compose: the later one wins
 outright. Put the drift on the figure and the landing is discarded the moment
 it starts.
 
-**The dress layer is a second copy of the whole drawing, clipped.** It was
-once clipped from 48% across and 39% down, which takes in the extended right
-arm and both legs, so moving it moved copies of them and she grew spare limbs.
-Clip to the streaming tail only, past the arm and above the knees.
+**She is three cut-out pieces, not copies.** The dress and foot layers used
+to be clipped copies of the whole drawing moved over the still original, so
+both showed at once: doubled petals and a hard edge. Now `fairy-body-base.webp`
+has the far tail and the back leg removed, `fairy-dress-tail.webp` is the tail
+alone with a soft 3% root that the base still covers, and `fairy-leg-back.webp`
+is the upper leg with its bowed shoe, behind the base, hinged at the hip under
+the skirt. All three are 600×400 and overlay exactly. They are cut from
+`fairy-body.webp`, which is kept as the master.
 
-**There is no feet layer, on purpose.** A foot cannot move independently of
-the leg it belongs to without tearing at the ankle.
+**The leg moves from the hip, never from the foot.** A foot cannot move
+independently of the leg it belongs to without tearing at the ankle. The whole
+leg swings a degree or two and the skirt hides the joint.
 
 **There is no dust layer, on purpose.** It sat at the destination with no
 offset and fired while she was still flying in, so specks glowed over the word
