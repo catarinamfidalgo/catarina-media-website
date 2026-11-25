@@ -41,44 +41,49 @@
 
 <link rel="stylesheet" href="../../assets/site.css?v=cd5">
 
-<!-- Google Analytics (GA4), behind consent. It also measures Google Ads
-     conversions (generate_lead, imported into Ads). Analytics sets a cookie,
-     so under EU law it may not run until the visitor agrees. Nothing here loads until consent is stored: no script is fetched,
-     no cookie is written, no request reaches Google. Declining is remembered
-     too, so the bar is not shown again.
-     The choice lives in localStorage, not a cookie — storing a consent record
+<!-- Google Analytics (GA4) with Consent Mode v2, advanced. It also measures
+     Google Ads conversions (generate_lead, imported into Ads).
+     The tag loads on every visit, but starts with everything denied: until the
+     visitor agrees, it writes no cookie and sends Google only cookie-free
+     pings, which Google uses to estimate the visits and conversions it cannot
+     count. Without this, everyone who ignored the bar was invisible, which in
+     practice was almost everyone. Accepting turns cookies on; declining keeps
+     them off and is remembered, so the bar is not shown again.
+     The privacy section says all of this in plain words. If this behaviour
+     changes, change that text with it.
+     The choice lives in localStorage, not a cookie - storing a consent record
      in a cookie you have not yet been allowed to set is its own problem. -->
 <script>
   (function () {
     var GA_ID = "G-DS7JJYXNM5";
     var KEY = "cm-consent";
 
-    function load() {
-      if (!/^G-[A-Z0-9]+$/.test(GA_ID) || window.__gaLoaded) return;
-      window.__gaLoaded = true;
+    function stored() {
+      try { return localStorage.getItem(KEY); } catch (e) { return null; }
+    }
+
+    // Google Ads in the EU needs ad_user_data and ad_personalization stated
+    // explicitly, or it will not count conversions. Personalisation always
+    // stays denied: ads are measured, never used to follow anyone around.
+    function state(yes) {
+      var v = yes ? "granted" : "denied";
+      return { analytics_storage: v, ad_storage: v, ad_user_data: v,
+               ad_personalization: "denied" };
+    }
+
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = function () { window.dataLayer.push(arguments); };
+    window.gtag("consent", "default", state(stored() === "granted"));
+    // No ad identifiers in the cookie-free pings.
+    window.gtag("set", "ads_data_redaction", true);
+    window.gtag("js", new Date());
+    window.gtag("config", GA_ID);
+
+    if (/^G-[A-Z0-9]+$/.test(GA_ID)) {
       var s = document.createElement("script");
       s.async = true;
       s.src = "https://www.googletagmanager.com/gtag/js?id=" + GA_ID;
       document.head.appendChild(s);
-      window.dataLayer = window.dataLayer || [];
-      window.gtag = function () { window.dataLayer.push(arguments); };
-      // Consent Mode v2. This only runs after the visitor said yes, so
-      // the state is "granted" from the first call. Google Ads in the EU
-      // needs ad_user_data and ad_personalization stated explicitly, or it
-      // will not count conversions. Personalisation stays denied: ads are
-      // measured, never used to follow anyone around the web.
-      window.gtag("consent", "default", {
-        analytics_storage: "granted",
-        ad_storage: "granted",
-        ad_user_data: "granted",
-        ad_personalization: "denied"
-      });
-      window.gtag("js", new Date());
-      window.gtag("config", GA_ID, { anonymize_ip: true });
-    }
-
-    function stored() {
-      try { return localStorage.getItem(KEY); } catch (e) { return null; }
     }
 
     // Exposed so the bar and the privacy page can call them.
@@ -86,16 +91,7 @@
       try { localStorage.setItem(KEY, yes ? "granted" : "denied"); } catch (e) {}
       var bar = document.getElementById("cookieBar");
       if (bar) bar.hidden = true;
-      if (yes) load();
-      else if (window.__gaLoaded && window.gtag) {
-        // Withdrawn after it had loaded: stop it for the rest of this page.
-        window.gtag("consent", "update", {
-          analytics_storage: "denied",
-          ad_storage: "denied",
-          ad_user_data: "denied",
-          ad_personalization: "denied"
-        });
-      }
+      window.gtag("consent", "update", state(yes));
     };
 
     window.resetConsent = function () {
@@ -103,8 +99,6 @@
       var bar = document.getElementById("cookieBar");
       if (bar) bar.hidden = false;
     };
-
-    if (stored() === "granted") load();
 
     // Show the bar only when no choice has been made yet.
     document.addEventListener("DOMContentLoaded", function () {
@@ -183,21 +177,21 @@
   </div>  <div class="container section" id="privacy">
     <div class="eyebrow">Privacidad</div>
     <h2>Lo que este sitio <i>recoge.</i></h2>
-    <p class="copy">Versión corta: casi nada, y nada sin preguntar.</p>
+    <p class="copy">Versión corta: muy poco, y ninguna cookie sin preguntar.</p>
     <h3 class="priv-h">Número de visitas</h3>
-    <p class="copy">Si estás de acuerdo, este sitio usa Google Analytics para contar visitas - qué páginas se leen, aproximadamente desde dónde llega la gente, y si vinieron de una búsqueda. Instala una cookie para distinguir una visita de otra. Si lo rechazas, Analytics no llega a cargarse y no se instala ninguna cookie. Puedes cambiar de opinión cuando quieras con el botón de abajo.</p>
+    <p class="copy">Este sitio usa Google Analytics para contar visitas: qué páginas se leen, aproximadamente desde dónde llega la gente y si vino desde una búsqueda. Si aceptas, guarda una cookie para distinguir una visita de otra. Si la rechazas, no se guarda ninguna cookie, pero cada página sigue enviando a Google una señal básica, sin cookies, de que se ha visto, para que pueda saber aproximadamente a cuánta gente llega el sitio. Como cualquier petición, esa señal lleva tu dirección de internet hasta Google. Puedes cambiar de opinión en cualquier momento con el botón de abajo.</p>
     <h3 class="priv-h">Publicidad</h3>
-    <p class="copy">Este sitio se anuncia en Google. Si aceptas las cookies, Google Analytics también le indica a Google Ads si una visita que empezó en uno de esos anuncios terminó en una consulta, para que yo sepa qué anuncios merecen la pena. No se usa para mostrarte anuncios en otros sitios ni para crear un perfil tuyo. Si lo rechazas, nada de esto ocurre.</p>
+    <p class="copy">Este sitio se anuncia en Google. Si aceptas las cookies, Google Analytics también le dice a Google Ads si una visita que empezó en uno de esos anuncios terminó en una consulta, para que pueda ver qué anuncios merecen la pena. No se usa para mostrarte anuncios en otros sitios ni para crear un perfil tuyo. Si las rechazas, no se guarda ninguna cookie de publicidad, y Google solo usa la señal sin cookies para estimar, en conjunto, cuántas consultas traen los anuncios.</p>
     <h3 class="priv-h">El formulario de contacto</h3>
     <p class="copy">Cuando pulsas enviar, tu mensaje va a un pequeño script en mi propia cuenta de Google, que me lo envía por correo. Aparte de ese correo, no se guarda nada, y no hay ninguna base de datos. Si alguna vez falla, se abre tu propia aplicación de correo con los datos ya rellenados.</p>
     <h3 class="priv-h">Nada más</h3>
-    <p class="copy">Sin píxeles de redes sociales, sin newsletter, sin perfilado y sin anuncios que te sigan a otros sitios. Las tipografías se sirven desde este sitio y no desde Google, así que ningún tercero ve tu visita.</p>
+    <p class="copy">Sin píxeles de redes sociales, sin newsletter, sin perfilado y sin anuncios que te sigan a otros sitios. Las tipografías se sirven desde este sitio y no desde Google, así que el único tercero que ve tu visita es Google Analytics, como se describe arriba.</p>
     <h3 class="priv-h">Tu elección</h3>
-    <p class="copy">Analytics y la medición de anuncios están desactivados a menos que los actives, y puedes retirar ese permiso cuando quieras.</p>
+    <p class="copy">Las cookies de análisis y de medición de anuncios están desactivadas a menos que las actives, y puedes retirar ese permiso cuando quieras.</p>
     <h3 class="priv-h">Quién trata los datos</h3>
     <p class="copy">Catarina Fidalgo, que trabaja en Portugal. Cualquier cuestión sobre tus datos puede ir por el formulario de contacto.</p>
     <h3 class="priv-h">Con qué base</h3>
-    <p class="copy">Tu consentimiento, y nada más. Analytics y la medición de anuncios solo funcionan si dices que sí, y puedes retirarlo cuando quieras.</p>
+    <p class="copy">Las cookies de análisis y de medición de anuncios solo se guardan con tu consentimiento, que puedes retirar cuando quieras. El recuento sin cookies se basa en mi interés legítimo en saber, en conjunto, a cuánta gente llegan el sitio y los anuncios.</p>
     <h3 class="priv-h">Qué puedes pedir</h3>
     <p class="copy">Puedes pedir saber qué se guarda sobre ti, pedir que se corrija o se borre, y retirar tu consentimiento en cualquier momento. Basta con pedirlo por el formulario de contacto y te respondo.</p>
     <h3 class="priv-h">Cuánto tiempo se guarda</h3>
@@ -228,7 +222,7 @@
   <div class="cookie-bar" id="cookieBar" role="dialog" aria-live="polite"
        aria-label="Cookie choice" hidden>
     <div class="cookie-inner">
-      <p class="cookie-text">Este sitio puede usar Google Analytics para contar visitas y para saber si sus anuncios en Google generan consultas. Instala una cookie, así que solo funciona si estás de acuerdo. <a href="../privacy/">Qué significa eso</a>.</p>
+      <p class="cookie-text">Este sitio usa Google Analytics para contar visitas y para ver si sus anuncios en Google traen consultas. Las cookies solo se guardan si aceptas; si no, envía un recuento básico sin ellas. <a href="../privacy/">Qué significa eso</a>.</p>
       <div class="cookie-actions">
         <button type="button" class="btn btn--ghost cookie-no" onclick="setConsent(false)">Rechazar</button>
         <button type="button" class="btn cookie-yes" onclick="setConsent(true)">Aceptar</button>

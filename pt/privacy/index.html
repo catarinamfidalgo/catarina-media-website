@@ -41,44 +41,49 @@
 
 <link rel="stylesheet" href="../../assets/site.css?v=cd5">
 
-<!-- Google Analytics (GA4), behind consent. It also measures Google Ads
-     conversions (generate_lead, imported into Ads). Analytics sets a cookie,
-     so under EU law it may not run until the visitor agrees. Nothing here loads until consent is stored: no script is fetched,
-     no cookie is written, no request reaches Google. Declining is remembered
-     too, so the bar is not shown again.
-     The choice lives in localStorage, not a cookie — storing a consent record
+<!-- Google Analytics (GA4) with Consent Mode v2, advanced. It also measures
+     Google Ads conversions (generate_lead, imported into Ads).
+     The tag loads on every visit, but starts with everything denied: until the
+     visitor agrees, it writes no cookie and sends Google only cookie-free
+     pings, which Google uses to estimate the visits and conversions it cannot
+     count. Without this, everyone who ignored the bar was invisible, which in
+     practice was almost everyone. Accepting turns cookies on; declining keeps
+     them off and is remembered, so the bar is not shown again.
+     The privacy section says all of this in plain words. If this behaviour
+     changes, change that text with it.
+     The choice lives in localStorage, not a cookie - storing a consent record
      in a cookie you have not yet been allowed to set is its own problem. -->
 <script>
   (function () {
     var GA_ID = "G-DS7JJYXNM5";
     var KEY = "cm-consent";
 
-    function load() {
-      if (!/^G-[A-Z0-9]+$/.test(GA_ID) || window.__gaLoaded) return;
-      window.__gaLoaded = true;
+    function stored() {
+      try { return localStorage.getItem(KEY); } catch (e) { return null; }
+    }
+
+    // Google Ads in the EU needs ad_user_data and ad_personalization stated
+    // explicitly, or it will not count conversions. Personalisation always
+    // stays denied: ads are measured, never used to follow anyone around.
+    function state(yes) {
+      var v = yes ? "granted" : "denied";
+      return { analytics_storage: v, ad_storage: v, ad_user_data: v,
+               ad_personalization: "denied" };
+    }
+
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = function () { window.dataLayer.push(arguments); };
+    window.gtag("consent", "default", state(stored() === "granted"));
+    // No ad identifiers in the cookie-free pings.
+    window.gtag("set", "ads_data_redaction", true);
+    window.gtag("js", new Date());
+    window.gtag("config", GA_ID);
+
+    if (/^G-[A-Z0-9]+$/.test(GA_ID)) {
       var s = document.createElement("script");
       s.async = true;
       s.src = "https://www.googletagmanager.com/gtag/js?id=" + GA_ID;
       document.head.appendChild(s);
-      window.dataLayer = window.dataLayer || [];
-      window.gtag = function () { window.dataLayer.push(arguments); };
-      // Consent Mode v2. This only runs after the visitor said yes, so
-      // the state is "granted" from the first call. Google Ads in the EU
-      // needs ad_user_data and ad_personalization stated explicitly, or it
-      // will not count conversions. Personalisation stays denied: ads are
-      // measured, never used to follow anyone around the web.
-      window.gtag("consent", "default", {
-        analytics_storage: "granted",
-        ad_storage: "granted",
-        ad_user_data: "granted",
-        ad_personalization: "denied"
-      });
-      window.gtag("js", new Date());
-      window.gtag("config", GA_ID, { anonymize_ip: true });
-    }
-
-    function stored() {
-      try { return localStorage.getItem(KEY); } catch (e) { return null; }
     }
 
     // Exposed so the bar and the privacy page can call them.
@@ -86,16 +91,7 @@
       try { localStorage.setItem(KEY, yes ? "granted" : "denied"); } catch (e) {}
       var bar = document.getElementById("cookieBar");
       if (bar) bar.hidden = true;
-      if (yes) load();
-      else if (window.__gaLoaded && window.gtag) {
-        // Withdrawn after it had loaded: stop it for the rest of this page.
-        window.gtag("consent", "update", {
-          analytics_storage: "denied",
-          ad_storage: "denied",
-          ad_user_data: "denied",
-          ad_personalization: "denied"
-        });
-      }
+      window.gtag("consent", "update", state(yes));
     };
 
     window.resetConsent = function () {
@@ -103,8 +99,6 @@
       var bar = document.getElementById("cookieBar");
       if (bar) bar.hidden = false;
     };
-
-    if (stored() === "granted") load();
 
     // Show the bar only when no choice has been made yet.
     document.addEventListener("DOMContentLoaded", function () {
@@ -183,21 +177,21 @@
   </div>  <div class="container section" id="privacy">
     <div class="eyebrow">Privacidade</div>
     <h2>O que este site <i>recolhe.</i></h2>
-    <p class="copy">Versão curta: quase nada, e nada sem perguntar.</p>
+    <p class="copy">Versão curta: muito pouco, e nenhum cookie sem perguntar.</p>
     <h3 class="priv-h">Número de visitas</h3>
-    <p class="copy">Se concordar, este site usa o Google Analytics para contar visitas - que páginas são lidas, aproximadamente de onde vêm as pessoas, e se chegaram através de uma pesquisa. Define um cookie para distinguir uma visita de outra. Se recusar, o Analytics nunca chega a ser carregado e nenhum cookie é criado. Pode mudar de ideias a qualquer momento no botão abaixo.</p>
+    <p class="copy">Este site usa o Google Analytics para contar visitas - que páginas são lidas, aproximadamente de onde vêm as pessoas, e se chegaram através de uma pesquisa. Se concordar, define um cookie para distinguir uma visita de outra. Se recusar, nenhum cookie é criado, mas cada página envia na mesma ao Google um sinal básico, sem cookies, de que foi vista, para eu perceber aproximadamente quantas pessoas o site alcança. Como qualquer pedido, esse sinal leva o seu endereço de internet até ao Google. Pode mudar de ideias a qualquer momento no botão abaixo.</p>
     <h3 class="priv-h">Publicidade</h3>
-    <p class="copy">Este site faz publicidade no Google. Se aceitar os cookies, o Google Analytics também indica ao Google Ads se uma visita que começou num desses anúncios terminou num pedido de contacto, para eu perceber que anúncios compensam. Não é usado para lhe mostrar anúncios noutros sites nem para criar um perfil seu. Se recusar, nada disto acontece.</p>
+    <p class="copy">Este site faz publicidade no Google. Se aceitar os cookies, o Google Analytics também indica ao Google Ads se uma visita que começou num desses anúncios terminou num pedido de contacto, para eu perceber que anúncios compensam. Não é usado para lhe mostrar anúncios noutros sites nem para criar um perfil seu. Se recusar, nenhum cookie de publicidade é criado, e o Google só usa o sinal sem cookies para estimar, em conjunto, quantos pedidos de contacto os anúncios trazem.</p>
     <h3 class="priv-h">O formulário de contacto</h3>
     <p class="copy">Quando carrega em enviar, a mensagem segue para um pequeno script na minha própria conta Google, que ma envia por email. Para além desse email, nada fica guardado, e não existe qualquer base de dados. Se algum dia isso falhar, abre-se a sua aplicação de email, com os dados já preenchidos.</p>
     <h3 class="priv-h">Mais nada</h3>
-    <p class="copy">Sem pixels de redes sociais, sem newsletter, sem perfis de utilizador, e sem anúncios que o sigam para outros sites. As fontes são servidas a partir deste site e não do Google, por isso nenhum terceiro vê a sua visita.</p>
+    <p class="copy">Sem pixels de redes sociais, sem newsletter, sem perfis de utilizador, e sem anúncios que o sigam para outros sites. As fontes são servidas a partir deste site e não do Google, por isso o único terceiro que vê a sua visita é o Google Analytics, como descrito acima.</p>
     <h3 class="priv-h">A sua escolha</h3>
-    <p class="copy">O Analytics e a medição de anúncios estão desligados a menos que os ligue, e pode retirar essa autorização quando quiser.</p>
+    <p class="copy">Os cookies de análise e de medição de anúncios estão desligados a menos que os ligue, e pode retirar essa autorização quando quiser.</p>
     <h3 class="priv-h">Quem trata os dados</h3>
     <p class="copy">Catarina Fidalgo, a trabalhar em Portugal. Qualquer questão sobre os seus dados pode seguir pelo formulário de contacto.</p>
     <h3 class="priv-h">Com que fundamento</h3>
-    <p class="copy">O seu consentimento, e mais nada. O Analytics e a medição de anúncios só funcionam se disser que sim, e pode retirar essa autorização quando quiser.</p>
+    <p class="copy">Os cookies de análise e de medição de anúncios só são criados com o seu consentimento, que pode retirar quando quiser. A contagem sem cookies baseia-se no meu interesse legítimo em saber, em conjunto, quantas pessoas o site e os anúncios alcançam.</p>
     <h3 class="priv-h">O que pode pedir</h3>
     <p class="copy">Pode pedir para saber o que é guardado sobre si, pedir que seja corrigido ou apagado, e retirar o consentimento a qualquer momento. Basta pedir pelo formulário de contacto e eu respondo.</p>
     <h3 class="priv-h">Durante quanto tempo fica guardado</h3>
@@ -228,7 +222,7 @@
   <div class="cookie-bar" id="cookieBar" role="dialog" aria-live="polite"
        aria-label="Cookie choice" hidden>
     <div class="cookie-inner">
-      <p class="cookie-text">Este site pode usar o Google Analytics para contar visitas e para perceber se os seus anúncios no Google resultam em pedidos de contacto. Define um cookie, por isso só funciona se concordar. <a href="../privacy/">O que isso significa</a>.</p>
+      <p class="cookie-text">Este site usa o Google Analytics para contar visitas e para perceber se os seus anúncios no Google resultam em pedidos de contacto. Os cookies só são criados se concordar; caso contrário, envia uma contagem básica sem eles. <a href="../privacy/">O que isso significa</a>.</p>
       <div class="cookie-actions">
         <button type="button" class="btn btn--ghost cookie-no" onclick="setConsent(false)">Recusar</button>
         <button type="button" class="btn cookie-yes" onclick="setConsent(true)">Aceitar</button>

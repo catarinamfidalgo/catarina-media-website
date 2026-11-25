@@ -83,6 +83,7 @@ use `--purple-deep` and `--purple-light`, which do not swap.
   like the CSS is wrong rather than stale. This has already cost one round trip
   over a signature that appeared black and full-size because its rule was in a
   stylesheet nobody had re-fetched.
+- Analytics runs in Consent Mode v2, advanced: the tag loads on every visit with everything denied, so visitors who ignore or decline the bar are counted by cookie-free pings and no cookie is set. Accepting turns cookies on. The privacy section describes exactly this in three languages, so change it with the code
 - `generate_lead` fires only on a confirmed send, not on click. It used to fire on click, which would have reported conversions for enquiries that never arrived
 
 ## Ask before changing these
