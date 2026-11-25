@@ -40,11 +40,15 @@ POSTS = [
         "image": "video-cost",
         "image_alt": "Purple scales balancing a clock, a gem, and a brush, pen and film strip",
         "title": "How much does video editing cost?",
+        "seo_title": "How much does video editing cost? What moves the price",
         "excerpt": "It's almost always the first question. What actually moves the price, why the "
                    "length of the video tells you little, and how to get a quote that matches what "
                    "you'll receive.",
         "pt": {
             "title": "Quanto custa editar um vídeo?",
+            "seo_title": "Preço de edição de vídeo: quanto custa editar um vídeo?",
+            "description": "Quanto custa a edição de um vídeo? O que faz o valor subir ou descer, "
+                           "porque é que a duração diz pouco e como pedir um orçamento claro.",
             "excerpt": "É quase sempre a primeira pergunta. O que faz o preço subir ou descer, "
                        "porque é que a duração do vídeo diz pouco, e como pedir um orçamento que "
                        "corresponda ao que vai receber.",
@@ -100,10 +104,16 @@ porque acrescentar depois custa sempre mais do que incluir no início.</p>
 <p>Diga-me para que é o vídeo, mais ou menos quanto material tem, onde vai passar e para quando
 precisa dele. Chega para um orçamento. <a href="../../contact/">Fale comigo</a> e respondo com o
 que custaria.</p>
+
+<p>Vai trabalhar com alguém à distância? Também escrevi sobre
+<a href="../freelance-video-editor-portugal/">contratar um editor de vídeo freelancer em Portugal</a>.</p>
 """,
         },
         "es": {
             "title": "¿Cuánto cuesta editar un vídeo?",
+            "seo_title": "Precio de edición de vídeo: ¿cuánto cuesta editar un vídeo?",
+            "description": "¿Cuánto cuesta el montaje de un vídeo? Qué hace subir o bajar el precio de "
+                           "la edición, por qué la duración dice poco y cómo pedir un presupuesto claro.",
             "excerpt": "Casi siempre es la primera pregunta. Qué hace subir o bajar el precio, por "
                        "qué la duración del vídeo dice poco, y cómo pedir un presupuesto que se "
                        "ajuste a lo que vas a recibir.",
@@ -159,6 +169,9 @@ antes de aceptar, porque añadirlo después siempre cuesta más que incluirlo de
 <p>Cuéntame para qué es el vídeo, más o menos cuánto material tienes, dónde se va a ver y para
 cuándo lo necesitas. Con eso basta para un presupuesto. <a href="../../contact/">Escríbeme</a> y te
 digo cuánto costaría.</p>
+
+<p>¿Vas a trabajar con alguien a distancia? También he escrito sobre
+<a href="../freelance-video-editor-portugal/">contratar a un editor de vídeo freelance en Portugal</a>.</p>
 """,
         },
         "body": """
@@ -232,6 +245,9 @@ agree, because adding it later always costs more than including it at the start.
 <p>Tell me what the video is for, roughly how much footage you have, where it will run and when you
 need it. That's enough for a quote. <a href="../../contact/">Get in touch</a> and I'll come back
 with what it would cost.</p>
+
+<p>Working with someone abroad? I've also written about
+<a href="../freelance-video-editor-portugal/">hiring a freelance video editor in Portugal</a>.</p>
 """,
     },
     {
@@ -982,8 +998,8 @@ PAGE = """<!DOCTYPE html>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{title} - Catarina Fidalgo</title>
-<meta name="description" content="{excerpt}">
+<title>{seo_title} - Catarina Fidalgo</title>
+<meta name="description" content="{description}">
 <link rel="canonical" href="{canonical}">
 {alts}
 <link rel="icon" href="/favicon.ico?v=3" sizes="any">
@@ -996,8 +1012,8 @@ PAGE = """<!DOCTYPE html>
 <link rel="icon" href="/assets/favicon-192.v3.png" type="image/png" sizes="192x192">
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.v3.png">
 <meta property="og:type" content="article">
-<meta property="og:title" content="{title}">
-<meta property="og:description" content="{excerpt}">
+<meta property="og:title" content="{seo_title}">
+<meta property="og:description" content="{description}">
 <meta property="og:url" content="{canonical}">
 {og_image}
 <link rel="stylesheet" href="{root}assets/site.css?v=cd5">
@@ -1277,6 +1293,11 @@ def build():
                 alts=hreflang(urls),
                 title=html.escape(c["title"], quote=True),
                 excerpt=html.escape(c["excerpt"], quote=True),
+                # A search title and description can differ from the heading
+                # and the excerpt on the index: they are written for the
+                # words people actually type, not for someone already here.
+                seo_title=html.escape(c.get("seo_title", c["title"]), quote=True),
+                description=html.escape(c.get("description", c["excerpt"]), quote=True),
                 canonical=urls[lang], root=root, og_image=og_image,
                 header=header(root, lang, other), main=main, footer=footer(root, lang)))
 
@@ -1312,6 +1333,7 @@ def build():
             lang={"en": "en", "pt": "pt-PT", "es": "es-ES"}[lang],
             alts=hreflang(index_urls),
             title=nav["index_title"], excerpt=nav["index_lede"],
+            seo_title=nav["index_title"], description=nav["index_lede"],
             canonical=index_urls[lang], root=root, og_image=index_og(posts),
             header=header(root, lang, other), main=main, footer=footer(root, lang)))
         print(f"  built {base}/index.html and {len(posts)} post page(s)")

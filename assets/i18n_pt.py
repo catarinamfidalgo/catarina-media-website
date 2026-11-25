@@ -56,6 +56,10 @@ UI = {
         'Qualquer dúvida sobre isto pode seguir pelo formulário de contacto.',
     'This site can use Google Analytics to count visits and to see whether its Google ads lead to enquiries. It sets a cookie, so it only runs if you agree.':
         'Este site pode usar o Google Analytics para contar visitas e para perceber se os seus anúncios no Google resultam em pedidos de contacto. Define um cookie, por isso só funciona se concordar.',
+    'Wondering what it might cost?':
+        'Quer saber quanto pode custar?',
+    "Here's what moves the price":
+        'Veja o que faz variar o preço',
     'What that means':
         'O que isso significa',
     'Decline':
